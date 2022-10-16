@@ -597,6 +597,8 @@ ENDR
     ld   [hl], $00                                ; $2639: $36 $00
     push hl                                       ; $263B: $E5
 
+    ; Check if the current character has a diacritic tile above
+    ; (if compiled with support for diacritics)
     ld   a, BANK(DiacriticsTable)                 ; $263C: $3E $1C
     ld   [MBC3SelectBank], a ; current character  ; $263E: $EA $00 $21
     ldh  a, [hMultiPurpose1]                      ; $2641: $F0 $D8
