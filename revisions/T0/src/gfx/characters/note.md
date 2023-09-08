@@ -1,0 +1,1 @@
+the fish speech bubble is different in every version; check the other languages

@@ -122,7 +122,7 @@ class BackgroundCoder:
             for group in grouped_row:
                 amount = len(group) - 1
                 is_repetition = len(group) > 1 and len(set(group)) == 1
-                if is_repetition and group[0] == filler:
+                if group[0] == filler:
                     address += len(group)
                     continue
 

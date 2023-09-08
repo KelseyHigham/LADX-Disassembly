@@ -41,6 +41,7 @@ ifeq ($(shell expr \
     --nop-after-halt
 endif
 
+# Append junk data
 LD      := rgblink
 LDFLAGS :=
 
@@ -157,6 +158,24 @@ src/main.azlf-r1.o: $(azlf_asm) $(azlf_gfx:.png=.2bpp) $(azlf_bin) azlg-r1.gbc
 azlf-r1_ASFLAGS = -DLANG=FR -DVERSION=1 -i revisions/F0/src/
 azlf-r1_LDFLAGS = -O azlg-r1.gbc
 azlf-r1_FXFLAGS = --rom-version 1 --non-japanese --title "ZELDA" --game-id "AZLF"
+
+#
+# toki pona
+#
+
+azlt_asm = $(shell find revisions/T0 -type f -name '*.asm')
+azlt_gfx = $(shell find revisions/T0 -type f -name '*.png')
+azlt_bin = $(shell find revisions/T0 -type f -name '*.tilemap.encoded' -o -name '*.attrmap.encoded')
+
+games += azlt.gbc
+src/main.azlt.o: $(azlt_asm) $(azlt_gfx:.png=.2bpp) $(azlt_bin)
+azlt_ASFLAGS = -DLANG=TP -DVERSION=0 -i revisions/T0/src/
+azlt_FXFLAGS = --rom-version 0 --non-japanese --title "ZELDA"
+
+games += azlt-r1.gbc
+src/main.azlt-r1.o: $(azlt_asm) $(azlt_gfx:.png=.2bpp) $(azlt_bin)
+azlt-r1_ASFLAGS = -DLANG=TP -DVERSION=1 -i revisions/T0/src/
+azlt-r1_FXFLAGS = --rom-version 1 --non-japanese --title "ZELDA" --game-id "AZLT"
 
 #
 # English

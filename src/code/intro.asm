@@ -598,58 +598,55 @@ func_001_71C7::
 .return
     ret                                           ; $71DE: $C9
 
-Data_001_71DF::
-    db   $9A, $16, $0F, $80, $81, $82, $83, $84   ; $71DF
-    db   $85, $86, $87, $88, $89, $8A, $8B, $8C   ; $71E7
-    db   $8D, $8E, $8F                            ; $71EF
 
-Data_001_71F2::
-    db   $9A, $36, $0F, $90, $91                  ; $71F2
-    db   $92, $93, $94, $95, $96, $97, $98, $99   ; $71F7
-    db   $9A, $9B, $9C, $9D, $9E, $9F             ; $71FF
 
-Data_001_7205::
-    db   $9A, $56                                 ; $7205
-    db   $0F, $A0, $A1, $A2, $A3, $A4, $A5, $A6   ; $7207
-    db   $A7, $A8, $A9, $AA, $AB, $AC, $AD, $AE   ; $720F
-    db   $AF                                      ; $7217
+; Title screen tilemap, encoded
 
-Data_001_7218::
-    db   $9A, $76, $0F, $B0, $B1, $B2, $B3        ; $7218
-    db   $B4, $B5, $B6, $B7, $B8, $B9, $BA, $BB   ; $721F
-    db   $BC, $BD, $BE, $BF                       ; $7227
+TitleTileMap1::
+    db   $9A, $16, $0F
+    db   $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $8A, $8B, $8C, $8D, $8E, $8F
 
-Data_001_722B::
-    db   $9A, $96, $0F, $C0                       ; $722B
-    db   $C1, $C2, $C3, $C4, $C5, $C6, $C7, $C8   ; $722F
-    db   $C9, $CA, $CB, $CC, $CD, $CE, $CF        ; $7237
+TitleTileMap2::
+    db   $9A, $36, $0F
+    db   $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $9A, $9B, $9C, $9D, $9E, $9F
 
-Data_001_723E::
-    db   $9A                                      ; $723E
-    db   $B6, $0F, $D0, $D1, $D2, $D3, $D4, $D5   ; $723F
-    db   $D6, $D7, $D8, $D9, $DA, $DB, $DC, $DD   ; $7247
-    db   $DE, $DF                                 ; $724F
+TitleTileMap3::
+    db   $9A, $56, $0F
+    db   $A0, $A1, $A2, $A3, $A4, $A5, $A6, $A7, $A8, $A9, $AA, $AB, $AC, $AD, $AE, $AF
 
-Data_001_7251::
-    db   $9A, $D6, $0F, $E0, $E1, $E2             ; $7251
-    db   $E3, $E4, $E5, $E6, $E7, $E8, $E9, $EA   ; $7257
-    db   $EB, $EC, $ED, $EE, $EF                  ; $725F
+TitleTileMap4::
+    db   $9A, $76, $0F
+    db   $B0, $B1, $B2, $B3, $B4, $B5, $B6, $B7, $B8, $B9, $BA, $BB, $BC, $BD, $BE, $BF
 
-Data_001_7264::
-    dw Data_001_7218                              ; $7264
-    dw Data_001_7205                              ; $7266
-    dw Data_001_722B                              ; $7268
-    dw Data_001_71F2                              ; $726A
-    dw Data_001_723E                              ; $726C
-    dw Data_001_71DF                              ; $726E
-    dw Data_001_7251                              ; $7270
+TitleTileMap5::
+    db   $9A, $96, $0F
+    db   $C0, $C1, $C2, $C3, $C4, $C5, $C6, $C7, $C8, $C9, $CA, $CB, $CC, $CD, $CE, $CF
+
+TitleTileMap6::
+    db   $9A, $B6, $0F
+    db   $D0, $D1, $D2, $D3, $D4, $D5, $D6, $D7, $D8, $D9, $DA, $DB, $DC, $DD, $DE, $DF
+
+TitleTileMap7::
+    db   $9A, $D6, $0F
+    db   $E0, $E1, $E2, $E3, $E4, $E5, $E6, $E7, $E8, $E9, $EA, $EB, $EC, $ED, $EE, $EF
+
+TitleTileMap::
+    dw TitleTileMap4                              ; $7264
+    dw TitleTileMap3                              ; $7266
+    dw TitleTileMap5                              ; $7268
+    dw TitleTileMap2                              ; $726A
+    dw TitleTileMap6                              ; $726C
+    dw TitleTileMap1                              ; $726E
+    dw TitleTileMap7                              ; $7270
+
+
 
 IntroStage8Handler::
     ld   a, [wIntroSubTimer]                      ; $7272: $FA $02 $D0
     sla  a                                        ; $7275: $CB $27
     ld   e, a                                     ; $7277: $5F
     ld   d, $00                                   ; $7278: $16 $00
-    ld   hl, Data_001_7264                        ; $727A: $21 $64 $72
+    ld   hl, TitleTileMap                        ; $727A: $21 $64 $72
     add  hl, de                                   ; $727D: $19
     ld   a, [hli]                                 ; $727E: $2A
     ld   d, [hl]                                  ; $727F: $56
@@ -704,6 +701,21 @@ TitleAttrMap4::
 TitleAttrMap5::
     db   $9A, $96, $0F
     db   $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02
+TitleAttrMap6::
+    db   $9A, $B6, $0F
+    db   $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02
+TitleAttrMap7::
+    db   $9A, $D6, $0F
+    db   $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02
+
+ELIF LANG_TP ; Different gradient
+
+TitleAttrMap4::
+    db   $9A, $76, $0F
+    db   $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01
+TitleAttrMap5::
+    db   $9A, $96, $0F
+    db   $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01, $01
 TitleAttrMap6::
     db   $9A, $B6, $0F
     db   $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02, $02
@@ -1686,6 +1698,9 @@ func_001_7920::
 
 IF LANG_JP
 X_POS = $79
+Y_OFFSET = $46
+ELIF LANG_TP
+X_POS = $7C
 Y_OFFSET = $46
 ELSE
 X_POS = $78

@@ -1,0 +1,1 @@
+- modify the title screen code to check for JP *or* TP, so I can have a shiny logo

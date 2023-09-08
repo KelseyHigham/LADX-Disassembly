@@ -1,3 +1,11 @@
+; current updates:
+; - found InteriorPalette00, InteriorPalette01
+; - colored tunic room is for the opening
+; - map screen palette
+; - Daid found palettes in bank36
+; - inventory palettes in bank20: 
+;   - https://github.com/zladx/LADX-Disassembly/blob/ae55d951be6eb4317143409baaaa46b7c61174ef/src/code/bank20.asm#L3169
+
 ; Disassembly of "game.gbc"
 ; This file was created with mgbdis v1.3 - Game Boy ROM disassembler by Matt Currie.
 ; https://github.com/mattcurrie/mgbdis
@@ -275,7 +283,7 @@ jr_021_416C:
     and  a                                        ; $4184: $A7
     jr   nz, jr_021_4191                          ; $4185: $20 $0A
 
-    ld   hl, Data_021_73B0                        ; $4187: $21 $B0 $73
+    ld   hl, AsleepPalette                        ; $4187: $21 $B0 $73
     jr   jr_021_41B4                              ; $418A: $18 $28
 
 .jr_418C
@@ -583,8 +591,8 @@ IndoorPaletteMaps:: ; maps of palette indices
 ; Pointers to interior palette data, indexed by an index retrieved from IndoorPaletteMaps
 ; the comments come from searching for each index in the maps, and seeing which rooms are there; I didn't look for 00 and 01
 InteriorPalettes::
-    dw   InteriorPalette00
-    dw   InteriorPalette01
+    dw   InteriorPalette00 ; fishing minigame, and I'm guessing the sidescrolling area at $C0 $C1
+    dw   InteriorPalette01 ; the cave East of Mabe Village, and I'm guessing more caves
     dw   InteriorPalette02 ; cave in Mysterious Woods, cave at indoor_b $B6 $B7, something at $C5, something at $B3 B4
     dw   InteriorPalette03 ; unused
     dw   InteriorPalette04 ; Great Fairy $AC
@@ -1501,15 +1509,15 @@ Data_021_5548:: ; related to the Eagle Tower
 
 OverworldPalette00:: ; Mysterious Woods
     rgb   #98B8E8, #686010, #482818, #000000
-    rgb   #98B8E8, #6068A0, #301840, #000000
-    rgb   #98B8E8, #B80028, #600020, #000000
-    rgb   #98B8E8, #B86010, #582010, #000000
+    rgb   #98B8E8, #6068A0, #301840, #000000 ; UI (e.g. shield)
+    rgb   #98B8E8, #B80028, #600020, #000000 ; UI (e.g. hearts)
+    rgb   #98B8E8, #B86010, #582010, #000000 ; UI (e.g. magic powder)
     rgb   #98B8E8, #003060, #080030, #000000
     rgb   #785010, #686010, #482818, #000000
     rgb   #98B8E8, #308868, #185830, #000000
     rgb   #F8F888, #98B8E8, #105848, #000000
 
-    rgb   #98B8E8, #308868, #185830, #000000
+    rgb   #98B8E8, #308868, #185830, #000000 ; OBJ palette
     rgb   #98B8E8, #6068A0, #301840, #000000
 
 OverworldPalette01:: ; Toronbo Shores
@@ -2309,7 +2317,7 @@ WindFishsEggPalette:: ; 08 WINDFISHS_EGG
 
 
 
-InteriorPalette00::
+InteriorPalette00:: ; fishing minigame, and I'm guessing the sidescrolling area at $C0 $C1
     rgb   #F0F8C0, #7898F8, #2040F8, #100810
     rgb   #F8F888, #9878A0, #381850, #000000
     rgb   #F8F888, #B80028, #400020, #000000
@@ -2361,7 +2369,7 @@ InteriorPalette22:: ; Great Fairy $FB
     rgb   #C88818, #20B048, #084828, #000000
     rgb   #F8F888, #C80028, #500020, #000000
 
-InteriorPalette01::
+InteriorPalette01:: ; default cave, e.g. the one East of Mabe Village
     rgb   #C88818, #9878A0, #381850, #000000
     rgb   #F8F888, #9878A0, #381850, #000000
     rgb   #F8F888, #B80028, #400020, #000000
@@ -2778,9 +2786,8 @@ InteriorPalette1B:: ; Camera Shop
 
 
 
-
-; Blocks of $40 bytes of data, copied to wBGPal1
-Data_021_73B0::
+; Link is asleep in Marin's house, at the beginning of the game
+AsleepPalette::
     rgb   #F8F888, #E8B858, #A86828, #000000
     rgb   #F8F888, #8888A0, #283050, #000000
     rgb   #F8F888, #F81858, #700028, #000000
@@ -2791,19 +2798,7 @@ Data_021_73B0::
     rgb   #E8B858, #F8F800, #987000, #000000
     
     rgb   #F8F888, #000000, #8888A0, #F8F888
-    rgb   #F8F888, #000000, #10A840, #F8F888 ; green tunic?
-    
-    rgb   #F8F888, #E8B858, #A86828, #000000
-    rgb   #F8F888, #8888A0, #283050, #000000
-    rgb   #F8F888, #F81858, #700028, #000000
-    rgb   #F8F888, #C87020, #703020, #000000
-    rgb   #A07810, #F8F8F8, #A07810, #000000
-    rgb   #F07888, #F81858, #700028, #000000
-    rgb   #E8B858, #C87020, #703020, #000000
-    rgb   #E8B858, #F8F800, #987000, #000000
-    
-    rgb   #F8F888, #000000, #8888A0, #F8F888
-    rgb   #F8F888, #000000, #F80828, #F8F888 ; red tunic?
+    rgb   #F8F888, #000000, #10A840, #F8F888 ; green tunic
     
     rgb   #F8F888, #E8B858, #A86828, #000000
     rgb   #F8F888, #8888A0, #283050, #000000
@@ -2815,7 +2810,19 @@ Data_021_73B0::
     rgb   #E8B858, #F8F800, #987000, #000000
     
     rgb   #F8F888, #000000, #8888A0, #F8F888
-    rgb   #F8F888, #000000, #1880F8, #F8F888 ; blue tunic?
+    rgb   #F8F888, #000000, #F80828, #F8F888 ; red tunic
+    
+    rgb   #F8F888, #E8B858, #A86828, #000000
+    rgb   #F8F888, #8888A0, #283050, #000000
+    rgb   #F8F888, #F81858, #700028, #000000
+    rgb   #F8F888, #C87020, #703020, #000000
+    rgb   #A07810, #F8F8F8, #A07810, #000000
+    rgb   #F07888, #F81858, #700028, #000000
+    rgb   #E8B858, #C87020, #703020, #000000
+    rgb   #E8B858, #F8F800, #987000, #000000
+    
+    rgb   #F8F888, #000000, #8888A0, #F8F888
+    rgb   #F8F888, #000000, #1880F8, #F8F888 ; blue tunic
 
 ; Blocks of $40 bytes of data, copied to wBGPal1
 Data_021_74A0::
@@ -2840,16 +2847,16 @@ Data_021_74F0::
     dw 0
     dw 0
     dw 0
-    dw Data_021_75B6
+    dw MenuPalette
     dw 0
     dw Data_021_7536
     dw WorldMapPalette
     dw Data_021_7536
-    dw Data_021_75B6
+    dw MenuPalette
     dw 0
     dw 0
     dw Data_021_7536
-    dw Title_BG_Palettes
+    dw TitleBGPalette
     dw Data_021_7696
     dw Data_021_7636
     dw Data_021_76D6
@@ -2888,7 +2895,7 @@ Data_021_7536:
     rgb   #000000, #000000, #000000, #000000
     rgb   #000000, #000000, #000000, #000000
 
-Data_021_75B6:
+MenuPalette:
     rgb   #F8F8F8, #58D878, #206018, #000000
     rgb   #F8F8F8, #7090D8, #284080, #000000
     rgb   #F8F8F8, #F81070, #901830, #000000
@@ -3004,7 +3011,7 @@ WorldMapPalette:
     rgb   #F8F888, #4058F8, #282828, #000000
 
     rgb   #F8F888, #000000, #10A840, #F8B898
-    rgb   #F8F888, #000000, #F87808, #F8B888
+    rgb   #F8F888, #000000, #F87808, #F8B888 ; owl icon
     rgb   #F8F8F8, #000000, #F80828, #F8B898
 IF __PATCH_0__
     ; Palette used by the blinking "you are here"
@@ -3015,10 +3022,17 @@ ELSE
     ; blinks on DMG, and this palette is unused
     rgb   #F8F8F8, #F8F8F8, #F8F8F8, #F8F8F8
 ENDC
-    rgb   #F8F888, #606000, #10A840, #000000
-    rgb   #F8F888, #F80828, #F80828, #F8F8F8
-    rgb   #F8F888, #000000, #985020, #E0B050
-    rgb   #F8F888, #000000, #1880F8, #F8F8F8
+if LANG_TP
+    rgb   #F8F888, #606000, #F8F888, #000000 ; icon border
+    rgb   #F8F888, #F80828, #F80828, #F8F888 ; !? icon
+    rgb   #F8F888, #000000, #985020, #E0B050 ; cave entrance icon
+    rgb   #F8F888, #000000, #1880F8, #F8F8F8 ; shop icon
+ELSE
+    rgb   #F8F888, #606000, #10A840, #000000 ; icon border
+    rgb   #F8F888, #F80828, #F80828, #F8F8F8 ; !? icon
+    rgb   #F8F888, #000000, #985020, #E0B050 ; cave entrance icon
+    rgb   #F8F888, #000000, #1880F8, #F8F8F8 ; shop icon
+ENDC
 
 Data_021_78EE:
     rgb   #000000, #283098, #4058F8, #F8F8F8
@@ -3211,18 +3225,25 @@ Data_021_7D6E:
     rgb   #000000, #D8E030, #806088, #482860
 
 ; palette data for the title screen, including the Marin part.
-Title_BG_Palettes::
+TitleBGPalette::
 IF LANG_JP
+    rgb   #F8F8F8, #E83028, #B80028, #000000 ; BG
+    rgb   #F8F8F8, #F8C020, #F87020, #000000
+ELIF LANG_TP
     rgb   #F8F8F8, #E83028, #B80028, #000000 ; BG
     rgb   #F8F8F8, #F8C020, #F87020, #000000
 ELSE
     rgb   #F8F8F8, #F84840, #B80028, #000000
-    rgb   #482000, #287018, #002838, #000000
+    rgb   #482000, #287018, #002838, #000000 ; INTL trees
 ENDC
     rgb   #F8F8F8, #60C850, #881010, #000000
-    rgb   #F8F8F8, #6860F8, #002838, #E82098
+    rgb   #F8F8F8, #6860F8, #002838, #E82098 ; egg
     rgb   #F8F890, #E0B020, #606000, #000000
-    rgb   #F8F890, #60C850, #002838, #000000
+IF LANG_TP
+    rgb   #482000, #287018, #002838, #000000 ; INTL trees
+ELSE
+    rgb   #F8F890, #60C850, #002838, #000000 ; JP trees
+ENDC
     rgb   #F8F8F8, #D89048, #A04880, #6860F8
     rgb   #F8F8F8, #6860F8, #002838, #000000
 
@@ -3234,6 +3255,9 @@ ENDC
 IF LANG_JP
     rgb   #A8B8F0, #E0B020, #505000, #000000
     rgb   #A8B8F0, #E0B020, #505000, #000000
+; ELIF LANG_TP
+;     rgb   #A8B8F0, #E0B020, #505000, #000000
+;     rgb   #A8B8F0, #E0B020, #505000, #000000
 ELSE
     rgb   #A8B8F0, #000000, #886840, #F8D078
     rgb   #A8B8F0, #000000, #886840, #F8D078
