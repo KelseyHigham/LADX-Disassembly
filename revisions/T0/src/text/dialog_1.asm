@@ -897,6 +897,11 @@ Dialog025:: ;🆖; Grim Creeper (D7 Mini-Boss)
     ;db "Tu vas le payer!"
     ;db "Je saurai te    "
     ;db "retrouver!!@"
+    ;db "よくも、おれさまの　かわいい　　"
+    ;db "てしたを、やりやがったな！　　　"
+    ;db "あとで　ほえづらかくなよ！　　　"
+    ;db "おぼえてやがれっ！　けっ　ぺっ！"
+    ;db "@"
 
 Dialog026:: ;🆖; Grim Creeper (D7 Mini-Boss)
     db "Hey runt!  You  "
@@ -911,6 +916,10 @@ Dialog026:: ;🆖; Grim Creeper (D7 Mini-Boss)
     ;db "Allez les gars, "
     ;db "débarrassez-moi "
     ;db "de cet avorton!@"
+    ;db "へ－い　　そこの、オチビさん　　"
+    ;db "おれさまと、しょうぶするきか？　"
+    ;db "よし　じょうとうでい　やろうども"
+    ;db "たたんじまいな！　ぺっ！@"
 
 Dialog027:: ;🅿️; Papahl
     ;toki "lon a! jan lili li jan mi a!"
@@ -1604,7 +1613,7 @@ Dialog050:: ;🅿️; Narrator
     ;db "ハ－トのかけらが　４つそろった！"
     ;db "ハ－トのうつわが　１つふえた！@"
 
-Dialog051:: ;🆖; Narrator
+Dialog051:: ;🅿️; Narrator
     toki "kiwen laso... a lete!@"
     toki_li_pini
     ;db "Brrrr... This is"
