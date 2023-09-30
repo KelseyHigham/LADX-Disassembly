@@ -651,7 +651,7 @@ Dialog016:: ;🅿️; Marin, probably
 
 Dialog017:: ;🅿️; Crazy Tracy
     toki "mi jan nasa [telo esun suwi ilo] a-"
-    toki "mi esun e wawa len."
+    toki "mi esun e ijo wawa."
     toki_li_pini
     ;toki "mi esun e ijo len ni: ona li pona e sijelo sina a!"
 
@@ -672,7 +672,7 @@ Dialog017:: ;🅿️; Crazy Tracy
     ;db "@"
 
 Dialog018:: ;🅿️; Crazy Tracy
-    toki "   mani 28 sina wile ala wile wawa len?"
+    toki "   mani 28 sina wile ala wile ijo wawa?"
     toki "    wile     ala<ask>"
     ;db "Will you give me"
     ;db "28 Rupees for my"
@@ -686,7 +686,7 @@ Dialog018:: ;🅿️; Crazy Tracy
     ;db "　　　　する　　　しない<ask>"       do  don't
 
 Dialog019:: ;🅿️; Crazy Tracy
-    toki "   mani 42 sina wile ala wile wawa len?"
+    toki "   mani 42 sina wile ala wile ijo wawa?"
     toki "    wile     ala<ask>"
     ;db "How about it?   "
     ;db "42 Rupees for my"
@@ -700,26 +700,26 @@ Dialog019:: ;🅿️; Crazy Tracy
     ;db "　　　　する　　　しない<ask>"
 
 Dialog01A:: ;🅿️; Crazy Tracy
-    toki "o kama. mi pana e telo wawa tawa selo sina a!"
+    toki "o kama. mi pana e ko wawa tawa selo sina a!"
     toki "    mu pana     mu pana"
-    toki "sina moli la wawa sin li kama."
-    toki "tawa pona..."
+    toki "sina moli la ko li ijo."
+    toki "o kama sin..."
     toki_li_pini
-    db "All right, come "
-    db "here and I'll   "
-    db "rub it on you!  "
-    db "...There... I've"
-    db "applied my own  "
-    db "secret medicine!"
-    db "It will take    "
-    db "effect when you "
-IF VERSION >= 2
-    db "lose all hearts!"
-ELSE
-    db "lose all heart! "
-ENDC
-    db "Drop by again,  "
-    db "big guy!@"
+;    db "All right, come "
+;    db "here and I'll   "
+;    db "rub it on you!  "
+;    db "...There... I've"
+;    db "applied my own  "
+;    db "secret medicine!"
+;    db "It will take    "
+;    db "effect when you "
+;IF VERSION >= 2
+;    db "lose all hearts!"
+;ELSE
+;    db "lose all heart! "
+;ENDC
+;    db "Drop by again,  "
+;    db "big guy!@"
 
     ;db "Merci bien!     "
     ;db "Voilà, je viens "
@@ -736,51 +736,65 @@ ENDC
     ;db "ハ－トが０になったらきくわよ。　" heart reaches 0, it takes effect.
     ;db "また、よってらしてねえん．．．@" come back later...
 
-Dialog01B:: ;🆖; Crazy Tracy, probably
-    db "Beat it, then!  "
-    db "Come back when  "
-    db "you have some   "
-    db "cash!@"
+Dialog01B:: ;🅿️; Crazy Tracy, probably
+    toki "seme? mani li lili tawa wile."
+    toki "o weka! o kama e mani"
+    ;toki "a! mani li wile a!"
+    ;toki "o weka! o kama e mani a!"
+    toki_li_pini
+    ;db "Beat it, then!  "
+    ;db "Come back when  "
+    ;db "you have some   "
+    ;db "cash!@"
     ;db "Tu plaisantes?? "
     ;db "Reviens plutôt  "
     ;db "quand tu auras  "
     ;db "de l'argent...@"
-    ;db "ちょっと－！　アンタ、カネが　　"
-    ;db "たりないわよん。でなおしといで！"
+    ;db "ちょっと－！　アンタ、カネが　　" hey! you, kane ga
+    ;db "たりないわよん。でなおしといで！" insufficient wa yon. leave and come back!
     ;db "@"
 
-Dialog01C:: ;🆖; Crazy Tracy
-    db "... ... ... ... "
-    db "But I won't sell"
-    db "it to you!@"
+Dialog01C:: ;🅿️; Crazy Tracy
+    toki " ... ... ..."
+    toki "taso sina la mi wile ala esun a!"
+    toki_li_pini
+    ;db "... ... ... ... "
+    ;db "But I won't sell"
+    ;db "it to you!@"
     ;db "... ... ... ... "
     ;db "Non, je ne t'en "
     ;db "vendrai pas!!@"
     ;db "　．．．　．．．　．．．　　　　"
     ;db "でも、あんたには　うらない！@"
 
-Dialog01D:: ;🆖; Crazy Tracy, probably
-    db "Well!  I'm only "
-    db "offering you a  "
-    db "secret that will"
-    db "make you strong!"
-    db "You're such a   "
-    db "chicken!!@"
+Dialog01D:: ;🅿️; Crazy Tracy, probably
+    toki "mi wile pana e wawa taso..."
+    toki "sina pilin monsuta a!@"
+    toki_li_pini
+    ;db "Well!  I'm only "
+    ;db "offering you a  "
+    ;db "secret that will"
+    ;db "make you strong!"
+    ;db "You're such a   "
+    ;db "chicken!!@"
     ;db "Flûte, zut!!    "
     ;db "Je voulais juste"
     ;db "te rendre plus  "
     ;db "puissant!       "
     ;db "Tu n'es qu'une  "
     ;db "poule mouillée!@"
-    ;db "なにさ、せっかくげんきがでるって"
-    ;db "いってるのに．．．いくじなしっ！"
+    ;db "なにさ、せっかくげんきがでるって" but, at great pains, genki ga deru tte
+    ;db "いってるのに．．．いくじなしっ！" say... coward!
     ;db "@"
 
-Dialog01E:: ;🆖; Crazy Tracy
-    db "...You're so    "
-    db "cute!  I'll give"
-    db "you a 7 Rupee   "
-    db "discount!@"
+Dialog01E:: ;🅿️; Crazy Tracy
+    toki "...sina suwi la"
+    toki "mi lili 7e mani wile.@"
+    toki_li_pini
+    ;db "...You're so    "
+    ;db "cute!  I'll give"
+    ;db "you a 7 Rupee   "
+    ;db "discount!@"
     ;db "Tu es un amour! "
     ;db "Pour la peine,  "
     ;db "tu ne paieras   "
@@ -789,14 +803,19 @@ Dialog01E:: ;🆖; Crazy Tracy
     ;db "７ルピ－に　オマケしちゃうわあん"
     ;db "@"
 
-Dialog01F:: ;🆖; Narrator
-    db "You got Marin!  "
-    db "Is this your big"
-    db "chance?@"
+Dialog01F:: ;🅿️; Narrator
+    toki "jan [mu a loje ijo nena] li kama lon poka sina a!"
+    toki "o olin pona!@"
+    toki_li_pini
+    ;db "You got Marin!  "
+    ;db "Is this your big"
+    ;db "chance?@"
     ;db "Marine          "
     ;db "se joint à toi! "
     ;db "C'est la chance "
     ;db "da ta vie!?@"
+    ;db "やった！　マリンを　おかりした！"
+    ;db "　　　　チャ、チャンス！？@"
 
 Dialog020:: ;🅿️; Fox
     toki "mu  mu mu  ma mi mu"
@@ -824,7 +843,7 @@ Dialog021:: ;🅿️; Tarin
 
 Dialog022:: ;🅿️; BowWow
     toki "mu suli  mu suli"
-    toki "mu suli  mu suli"
+    toki "mu suli  mu suli@"
     toki_li_pini
     ;db "BOW WOW!        "
     ;db "BOW WOW!@"
@@ -838,7 +857,7 @@ Dialog023:: ;🅿️; ChowChow
     ;toki "mu mu mu mu"
     ;toki_li_pini
     toki "mu lili  mu lili"
-    toki "mu lili  mu lili"
+    toki "mu lili  mu lili@"
     toki_li_pini
     ;db "YIP YIP!        "
     ;db "YIP YIP!@"
@@ -848,8 +867,11 @@ Dialog023:: ;🅿️; ChowChow
     ;db "@"
 
 Dialog024:: ;🅿️; Great Fairy
-    toki "mi pona e sijelo. mi pana e pilin pona."
-    toki "tenpo lili la, o pini e lukin..."
+    ;toki "mi pona e sijelo. mi pana e pilin pona."
+    ;toki "mi pona e sijelo e pilin. mi weka e pakala."
+    ;toki ""
+    toki "mi weka e pakala. mi pona e pilin."
+    toki "o pini e lukin..."
     toki_li_pini
     ;db "Let's heal your "
     ;db "wounds and get  "
@@ -862,8 +884,8 @@ Dialog024:: ;🅿️; Great Fairy
     ;db "et remonter     "
     ;db "ton énergie.    "
     ;db "Ferme les yeux.@"
-    ;db "きずとつかれを　いやしましょう。"
-    ;db "すこしのあいだ、めをとじて．．@"
+    ;db "きずとつかれを　いやしましょう。" injuries and tiredness wo heal.
+    ;db "すこしのあいだ、めをとじて．．@" small pause, close your eyes..
 
 Dialog025:: ;🆖; Grim Creeper (D7 Mini-Boss)
     db "You dirty rat!  "
@@ -894,14 +916,17 @@ Dialog026:: ;🆖; Grim Creeper (D7 Mini-Boss)
 
 Dialog027:: ;🅿️; Papahl
     ; todo: revise
-    toki "lon a! jan lili li jan mi a!"
-    toki "mi jan mama [pan alasa pan alasa]."
-    toki "mi pilin pona tan ni: mi kama sona e sina."
-    toki ""
-    toki "tenpo kama la, mi tawa ma nena."
+    ;toki "lon a! jan lili li jan mi a!"
+    ;toki "mi jan mama [pan alasa pan alasa]."
+    ;toki "mi pilin pona tan ni: mi kama sona e sina."
+    ;toki ""
+    ;toki "tenpo kama la, mi tawa ma nena."
+    ;toki "ken la, mi pakala. ni la, o pona e mi"
+    toki "mi mama [pan alasa pan alasa]."
+    toki "mi mama pi jan lili tu tu."
+    toki "tenpo kama la, mi tawa nena suli."
     toki "ken la, mi pakala. ni la, o pona e mi"
     toki_li_pini
-
     ;db "Yep!  Those're  "
     ;db "my boys!  I'm   "
     ;db "Papahl, pleased "
@@ -919,28 +944,38 @@ Dialog027:: ;🅿️; Papahl
     ;db "Tu viendras     "
     ;db "m'aider, hein?@"
 
-    ;db "あっしが、４つごのおやじ　　　　"
-    ;db "そのなもパパ－ルっていうっスよ！"
-    ;db "いずれ、やまでそうなんするっスよ"
-    ;db "そのときゃあ、たのむっスよ！@"
+    ;db "あっしが、４つごのおやじ　　　　" me, 4 go's father
+    ;db "そのなもパパ－ルっていうっスよ！" papahl's the name?
+    ;db "いずれ、やまでそうなんするっスよ" in the future, mountain [ijo]
+    ;db "そのときゃあ、たのむっスよ！@" if kyaa, then help!
 
-Dialog028:: ;🆖; Marin, probably
-    db "Yes!!  Yes!!    "
-    db "Break them!     "
-    db "Break them all! "
-    db "... ... ... ... "
-    db "What?  What's   "
-    db "wrong?@"
+Dialog028:: ;🅿️; Marin, probably
+    toki "pona a! o pakala! o pakala a!"
+    toki "mu pakala  o moli e ona a!"
+    toki ""
+    toki "seme? mi toki ala@"
+    toki_li_pini
+    ;db "Yes!!  Yes!!    "
+    ;db "Break them!     "
+    ;db "Break them all! "
+    ;db "... ... ... ... "
+    ;db "What?  What's   "
+    ;db "wrong?@"
     ;db "Oui, oui!!      "
     ;db "Casse-les!      "
     ;db "Casse tout!     "
     ;db "... ... ... ... "
     ;db "Quoi? Il y a    "
     ;db "un problème?@"
+    ;db "キャ－－－ッ！　わって！わって！"
+    ;db "どんどん　ブチこわしてっ！！　　"
+    ;db "　　　　　　　　　　　　　　　　"
+    ;db "えっ？　なに？　どうかしたの？@" todo: look up
 
 Dialog029:: ;🅿️; Shopkeeper
-    toki "pakala a!"
-    toki "jan lili o, sina ken ala kepeken ni."
+    ;toki "pakala a!"
+    toki "a! jan lili o,  sina ken ala kepeken ni."
+    toki "o pana e ijo ante tawa mi!"
     toki_li_pini
     ;db "Aye Caramba!    "
     ;db "Kid, you have a "
@@ -954,13 +989,13 @@ Dialog029:: ;🅿️; Shopkeeper
     ;db "Pourquoi acheter"
     ;db "des choses      "
     ;db "inutiles?@"
-    ;db "おっと、そいつをかってもムダだぜ"
-    ;db "まだまだべんきょうが、たりねえな"
+    ;db "おっと、そいつをかってもムダだぜ" whoa, that thing wo buy mo muda da ze
+    ;db "まだまだべんきょうが、たりねえな" still more studying to do ga, bring to the counter nee na
     ;db "@"
 
 Dialog02A:: ;🅿️; Narrator
-    toki "sina kama jo e pilin a! ona li pana e pona tawa poki pilin."
-    toki " mu pilin  mu pilin     mu pilin  mu pilin"
+    toki "sina kama jo e pilin a!"
+    toki " mu pilin  mu pilin     mu pilin  mu pilin@"
     toki_li_pini
     ;db "You've got a    "
     ;db "Heart!  Thump!  "
@@ -976,9 +1011,9 @@ Dialog02A:: ;🅿️; Narrator
     ;db "ドックンドックン　ハ－トまんたん"
     ;db "@"
 
-Dialog02B:: ;🅿️; Shopkeeper, Link
+Dialog02B:: ; Shopkeeper, Link
 Dialog02C:: ;🅿️; Shopkeeper, Link
-    toki "     ilo pi palisa tawa en palisa tawa    "
+    toki "      ilo alasa en palisa    "
     toki "      mani 980taso      "
     toki "    o esun    sina wile e mani ale a<ask>"
     ;db "Bow & Arrow Set "
@@ -1007,7 +1042,7 @@ Dialog02D:: ;🅿️; Shopkeeper, Link
 
 Dialog02E:: ;🅿️; Shopkeeper
     toki "kama pona a!"
-    toki "sina wile e ijo la, o pana e ona tawa mi"
+    toki "sina wile e ijo la, o pana e ona tawa mi@"
     toki_li_pini
 
     ;db "Hey!  Welcome!  "
@@ -1023,20 +1058,19 @@ Dialog02E:: ;🅿️; Shopkeeper
     ;db "@"
 
 Dialog02F:: ;🅿️; Shopkeeper
-    toki "o awen a!"
-    toki "o esun a!"
+    toki "o awen a! o esun a!@"
     toki_li_pini
     ;db "Hey! You! Stop! "
     ;db "You gotta pay!  "
     ;db "Put it back!@"
     ;db "Hé! Une minute! "
     ;db "Tu dois payer!@"
-    ;db "おお－っと！そいつはいけねえや！"
-    ;db "ちゃんとカネはらってくだせえ。@"
+    ;db "おお－っと！そいつはいけねえや！" (todo)
+    ;db "ちゃんとカネはらってくだせえ。@" quickly pay please.
 
 Dialog030:: ;🅿️; Shopkeeper, Link
     ;toki "      ilo tawa ma pona      "
-    toki "    ilo pi lupa ma pi pona mute"
+    toki "     ilo lupa pi pona mute"
     toki "      mani 200      "
     toki "ona li wile e mani mute a!"
     toki "    o esun    ala a!<ask>"
@@ -1067,7 +1101,7 @@ Dialog031:: ;🅿️; Shopkeeper, Link
     ;db "　　　　かう　　　かわないよ！<ask>"
 
 Dialog032:: ;🅿️; Shopkeeper, Link
-    toki "       sinpin awen       "
+    toki "       ilo awen       "
     toki "       mani 20      "
     toki "sina ken sitelen e nimi sina lon ilo."
     toki "    o esun    mi wile ala<ask>"
@@ -1083,7 +1117,7 @@ Dialog032:: ;🅿️; Shopkeeper, Link
     ;db "　　　　かう　　　かわないよ<ask>"
 
 Dialog033:: ;🅿️; Shopkeeper, Link
-    toki "      ilo pakala 10      "
+    toki "      sike pakala 10      "
     toki "       mani 10      "
     toki "    o esun    mi wile ala<ask>"
     toki_li_pini
@@ -1108,6 +1142,9 @@ Dialog034:: ;🅿️; Shopkeeper
     ;db "assez de rubis. "
     ;db "Reviens donc    "
     ;db "plus tard.@"
+    ;db "おおっと、カネがたりないんじゃあ" hey, kane ga insufficient njyaa
+    ;db "しかたね－。でなおしておくんな！" way-. come again o young man! 
+    ;db "@"
 
 Dialog035:: ;🅿️; Shopkeeper
     toki "pona tawa sina a!"
@@ -1117,10 +1154,12 @@ Dialog035:: ;🅿️; Shopkeeper
     ;db "And come again!@"
     ;db "Merci beaucoup! "
     ;db "Et au plaisir!@"
+    ;db "ありがとうございやした！　　　　" ty
+    ;db "また　よってくだせえ。@" (todo)
 
 Dialog036:: ;🅿️; Narrator
     toki "seme a!"
-    toki "sina kama jo e ni kepeken mani ala a!"
+    toki "sina kama jo e ijo kepeken mani ala a!"
     toki "... ... ... ...a"
     toki_li_pini
     ;db "Guess what?  You"
@@ -1132,18 +1171,16 @@ Dialog036:: ;🅿️; Narrator
     ;db "Tu n'as pas     "
     ;db "honte, voyou?!@"
     ;db "　　　　　なんとっ！？　　　　　"
-    ;db "ただでものをてにいれてしまった！"
+    ;db "ただでものをてにいれてしまった！" free stuff got!
     ;db "　　．．．　．．．　．．ん？？@" ; what does this mean
                                      ; maybe it's like
                                      ; oh cool!
                                      ; ...wait
 
-Dialog037:: ;🅿️; Shopkeeper
+Dialog037:: ; Shopkeeper
 Dialog038:: ;🅿️; Shopkeeper
-    toki "mi toki e ni tawa sina:"
-    toki "o pana e mani!"
-    toki "sina pana ala..."
-    toki "o moli a!"
+    toki "mi toki e ni tawa sina: o pana e mani!"
+    toki "sina pana ala... o moli a!"
     toki_li_pini
     ;db "I wasn't kidding"
     ;db "when I said pay!"
@@ -1154,25 +1191,31 @@ Dialog038:: ;🅿️; Shopkeeper
     ;db "dit de me payer."
     ;db "Tu vas le       "
     ;db "regretter...@"
-    ;db "あれほど、ちゃんとカネはらえって"
-    ;db "いったのに．．．　　しかたがない"
+    ;db "あれほど、ちゃんとカネはらえって" to that extent, quickly pay tte
+    ;db "いったのに．．．　　しかたがない" said... it can't be helped
     ;db "しんでもらう！@" ; take it! (death)
 
-Dialog039:: ;🆖; Narrator
-    db "Hunh?  It sounds"
-    db "like the castle "
-    db "gate opened! You"
-    db "can easily leave"
-    db "the castle now!@"
+Dialog039:: ;🅿️; Narrator
+    toki "seme? lupa suli li open a!"
+    toki "ni la, sina ken weka.@"
+    toki_li_pini
+    ;db "Hunh?  It sounds"
+    ;db "like the castle "
+    ;db "gate opened! You"
+    ;db "can easily leave"
+    ;db "the castle now!@"
     ;db "La porte semble "
     ;db "être ouverte.   "
     ;db "Tu pourras donc "
     ;db "sortir sans     "
     ;db "aucun problème.@"
+    ;db "オオッ？おしろのもんがひらいた！" huh? the castle gate opened!
+    ;db "これで、かえりは　ラクチンだっ！" ni la, return wa rakuchin da!
+    ;db "@"
 
-Dialog03A:: ;🅿️; Trendy Gamester
+Dialog03A:: ; Trendy Gamester
 Dialog03B:: ;🅿️; Trendy Gamester
-    toki "   musi pona a! alasa 1 mani 10"
+    toki "   musi sin a! alasa 1 mani 10"
     toki "    o musi!   o weka!<ask>"
     ;db "  TRENDY GAME!  "
     ;db " One Play 10 Rs."
@@ -1202,10 +1245,10 @@ Dialog03C:: ;🅿️; Trendy Gamester
     ;db "Dirige-toi vers "
     ;db "les boutons.    "
     ;db "Bonne chance!@"
-    ;db "ボタンをおしてクレ－ンをうごかす"
-    ;db "．．あとは、そのタイミングだけ！"
-    ;db "さあ、ボタンのまえへ、いっとくれ"
-    ;db "ガンバってね！@"
+    ;db "ボタンをおしてクレ－ンをうごかす"  button wo press crane wo move
+    ;db "．．あとは、そのタイミングだけ！" ...behind, that timing dake!
+    ;db "さあ、ボタンのまえへ、いっとくれ"  saa saa, button no infrontof he, have the only way!
+    ;db "ガンバってね！@"             ganbatte ne! (todo)
 
 Dialog03D:: ;🅿️; Narrator
     toki "sina kama jo e sinpin awen a!"
@@ -1218,8 +1261,8 @@ Dialog03D:: ;🅿️; Narrator
     ;db "le Bouclier!    "
     ;db "Tu peux même y  "
     ;db "graver ton nom!@"
-    ;db "タテをてにいれた！　　　　　　　"
-    ;db "うらになまえを　かいておこ－！@"
+    ;db "タテをてにいれた！　　　　　　　" shield wo obtained!
+    ;db "うらになまえを　かいておこ－！@"    back ni namae wo write-te o ke- (todo)   
 
 Dialog03E:: ;🅿️; Trendy Gamester, Link
     toki "sina wile ala wile musi sin?"
@@ -1229,7 +1272,7 @@ Dialog03E:: ;🅿️; Trendy Gamester, Link
     ;db "Un autre essai? "
     ;db "    Oui  Non<ask>"
     ;db "もいちどやってみちゃ－どうだい？"
-    ;db "　　　　やる　　　もうやめる<ask>"
+    ;db "　　　　やる　　　もうやめる<ask>" play     again-stop
 
 Dialog03F:: ;🅿️; Trendy Gamester
     toki "o musi pona a!"
