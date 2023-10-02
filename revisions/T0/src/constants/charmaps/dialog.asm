@@ -38,7 +38,7 @@ ENDM
 
 
 
-;; more readable alphabet
+;; fallback Latin alphabet
 
 ;; nanpa is broken, because it's stored at $20.
 ;; Hh is broken, because I decided it looks like nanpa.
@@ -55,9 +55,9 @@ ENDM
 ;charmap "(", $fb  ; monsi
 ;charmap ")", $85  ; sinpin
 
-;charmap ",", $7e
-;charmap ", ", $7e
-;charmap "-", $19
+;charmap ",", $7e  ; SPACE
+;charmap ", ", $7e ; SPACE
+;charmap "-", $fa  
 ;charmap ".", $4f
 
 ;charmap "0", $70
@@ -71,48 +71,48 @@ ENDM
 ;charmap "8", $78
 ;charmap "9", $79
 ;charmap ":", $4e
-;charmap ";", $4f
+;charmap ";", $4f ; PERIOD
 
-;charmap "?", $7e
-;charmap "? ", $7e
+;charmap "?", $7e ; SPACE
+;charmap "? ", $7e; SPACE
 
 ;;charmap "A", $a0
 ;;charmap "B", $ef
-;charmap "C", $1d
-;charmap "D", $01
-;charmap "E", $73
-;charmap "F", $29
-;charmap "G", $0a
-;charmap "H", $20
-;charmap "I", $71
-;charmap "J", $51
-;charmap "K", $0d
-;charmap "L", $50
-;charmap "M", $83
-;charmap "N", $6d
-;charmap "O", $70
-;charmap "P", $69
-;charmap "Q", $67
-;charmap "R", $3a
-;;charmap "S", $75
-;;charmap "T", $77
-;charmap "U", $66
-;charmap "V", $2f
-;charmap "W", $38
-;charmap "X", $53
-;charmap "Y", $57
-;charmap "Z", $72
+;charmap "C", $fb ; monsi
+;charmap "D", $01 ; alasa
+;charmap "E", $73 ; 3
+;charmap "F", $29 ; pipi
+;charmap "G", $0a ; jo
+;charmap "H", $c0 ; nanpa
+;charmap "I", $71 ; 1
+;charmap "J", $51 ; ] without the top
+;charmap "K", $0d ; ken
+;charmap "L", $50 ; [ without the top
+;charmap "M", $83 ; sijelo
+;charmap "N", $6d ; nena
+;charmap "O", $70 ; 0
+;charmap "P", $69 ; mi
+;charmap "Q", $67 ; mama
+;charmap "R", $3a ; pali
+;charmap "S", $75 ; 5
+;;charmap "T", $77; 7, except now it's the end of START
+;charmap "U", $66 ; lupa
+;charmap "V", $2f ; suli
+;charmap "W", $38 ; wile
+;charmap "X", $53 ; ala
+;charmap "Y", $57 ; anu
+;charmap "Z", $72 ; 2
 
 ;charmap "'", $63
 
 ;;charmap "a", $a0
 ;;charmap "b", $ef
-;charmap "c", $1d
+;charmap "c", $fb
 ;charmap "d", $01
 ;charmap "e", $73
 ;charmap "f", $29
 ;charmap "g", $0a
-;charmap "h", $20
+;charmap "h", $c0
 ;charmap "i", $71
 ;charmap "j", $51
 ;charmap "k", $0d
@@ -123,7 +123,7 @@ ENDM
 ;charmap "p", $69
 ;charmap "q", $67
 ;charmap "r", $3a
-;;charmap "s", $75
+;charmap "s", $75
 ;;charmap "t", $77
 ;charmap "u", $66
 ;charmap "v", $2f
@@ -132,7 +132,7 @@ ENDM
 ;charmap "y", $57
 ;charmap "z", $72
 
-;charmap "+", $02
+;charmap "+", $02 ; en
 
 
 
@@ -356,7 +356,9 @@ ENDM
 
 
 
-
+; LADX-standard way of encoding characters.
+; This relies on a more complicated codepoint_to_tile.asm file.
+; It also touches codepoint_to_diacritic.asm and name_entry.asm.
 
 ; codepoint_to_tile addresses
 ;d
