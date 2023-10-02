@@ -2,8 +2,8 @@
 ; Map codepoints (bytes of text as stored in the ROM) to diacritic tiles.
 ;
 ; The Toki Pona text uses two diacritics:
-; - 1: ¯ (upper line of [, tile $C9)
-; - 2: ¯ (upper line of ], tile $C8)
+; - 1: ¯ (tile $C9, upper line of [)
+; - 2: ¯ (tile $C8, upper line of ], head of kijetesantakalu)
 ;
 ; The two diacritic tiles are on these tilesheets:
 ;
