@@ -1341,7 +1341,7 @@ Dialog043:: ;🅿️; Ghost
     toki ""
     toki "...  o pana ala e ko a!  ..."
     toki ""
-    toki "...  mi pakala e sina a! mu ko  ..."
+    toki "... mi pakala e sina a! mu ko ..."
     toki ""
     toki_li_pini
     ;db "Cough Cough...  "
@@ -1651,7 +1651,7 @@ Dialog053:: ;🅿️; Genie (D2 Nightmare)
 
 Dialog054:: ;🅿️; Tarin
     toki "a jan [#####] li kama lon"
-    toki "mi mama Talin. sina pilin seme?"
+    toki "mi mama [tawa alasa loje ijo nena]. sina pilin seme?"
     toki "mi sona e nimi sina tan seme..."
     toki "ni li nasa anu seme..."
     toki "supa ni li toki e nimi sina a!"
@@ -1877,7 +1877,7 @@ Dialog061:: ;🅿️; Map
     ;db "@"
 
 Dialog062:: ;🅿️; Map
-    toki "      ma kasi lupa@"
+    toki "      ma lupa@"
     toki_li_pini
     ;db "Pothole Field@"
     ;db "     Champ      "
@@ -1916,7 +1916,7 @@ Dialog066:: ;🅿️; Map
     ; tomo pi jan kalama Mali
     ;      pi jan mama Tali
     toki "  tomo pi jan kalama [mu a loje ijo nena]"
-    toki "   pi jan mama [tawa alasa loje ijo nena]"
+    toki "   pi mama [tawa alasa loje ijo nena]"
     ;toki "jan kalama [mu a loje ijo nena]  en"
     ;toki "   jan mama [tawa alasa loje ijo nena]  li lon tomo ni"
     toki_li_pini
@@ -1927,7 +1927,8 @@ Dialog066:: ;🅿️; Map
     ;db "　　　マリンとタリンのいえ@"
 
 Dialog067:: ;🅿️; Map
-    toki "    tomo pi jan suli pi ko nasa@"
+    toki "      tomo pi jan suli"
+    toki "       pi ko nasa@"
     toki_li_pini
     ;db "   Witch's Hut@"
     ;db "     Hutte      "
@@ -2354,7 +2355,7 @@ Dialog090:: ;🅿️; Narrator
     ;db "@"
 
 Dialog091:: ;🅿️; Narrator
-    toki "sina kama jo sin e sinpin awen a!"
+    toki "sina kama jo sin e ilo awen a!"
     toki "sina ken tawa e pipi kepeken ilo ni."
     toki_li_pini
 
