@@ -3,7 +3,7 @@
 ; Used for the player's name.
 ;
 ; The character positions are under src/data/name_entry_characters.asm
-; They get passed to here. Then these hex values are stored. 
+; They get passed to here. Then these hex values are stored in the save file. 
 ; When they're displayed, the graphics are read from codepoint_to_tile.asm
 ;
 
@@ -42,7 +42,7 @@ charmap     "lon ", $19 + 1
 charmap   "lukin ", $1a + 1
 charmap      "ma ", $1b + 1
 charmap    "moli ", $1c + 1
-charmap   "monsi ", $1d + 1
+charmap "monsuta ", $1d + 1
 charmap      "mu ", $1e + 1
 charmap     "mun ", $1f + 1
 

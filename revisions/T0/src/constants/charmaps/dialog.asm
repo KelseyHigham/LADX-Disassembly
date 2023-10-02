@@ -336,10 +336,7 @@ ENDM
 
 
 
-; previous, janky tilemaps
-; resurrect if something breaks
-
-; ascii_to_tile addresses
+; codepoint_to_tile addresses
 charmap "<skull>", $dc
 charmap "<link>", $dd
 charmap "<marin>", $de
@@ -390,6 +387,7 @@ charmap "!", $20
 charmap "? ", $20
 charmap "?", $20
 
+  ; buttons
   nanpa_sitelen      "ST", $aa ; Start button
   nanpa_sitelen      "AR", $ab
   nanpa_sitelen       "T", $ac
@@ -397,12 +395,15 @@ charmap "?", $20
   nanpa_sitelen      "LE", $ae
   nanpa_sitelen      "CT", $af
 
+  ; nimisin and monsi
   nanpa_sitelen "kijetesa", $f4
   nanpa_sitelen  "ntakalu", $f5
   nanpa_sitelen      "kin", $f6
   nanpa_sitelen        "n", $f7
   nanpa_sitelen        "-", $f8
+  nanpa_sitelen    "monsi", $f9
 
+  ; nimi pu and monsuta
   nanpa_sitelen   "akesi", $00 ; characters allowed in
   nanpa_sitelen   "alasa", $01 ; the player's name
   nanpa_sitelen      "en", $02
@@ -433,7 +434,8 @@ charmap "?", $20
   nanpa_sitelen   "lukin", $1a
   nanpa_sitelen      "ma", $1b
   nanpa_sitelen    "moli", $1c
-  nanpa_sitelen   "monsi", $1d
+  ;nanpa_sitelen   "monsi", $1d
+  nanpa_sitelen "monsuta", $1d
   nanpa_sitelen      "mu", $1e
   nanpa_sitelen     "mun", $1f ; up to here is already correct in the new system
 

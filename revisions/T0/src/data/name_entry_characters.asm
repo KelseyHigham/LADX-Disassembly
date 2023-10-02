@@ -9,7 +9,7 @@
     PUSHC
     SETCHARMAP NameEntryCharmap
     db   "akesi alasa en esun ijo ike ilo insa jan jelo jo kala kasi ken kili kon "
-    db   "kule kulupu kute lape laso len lete linja loje lon lukin ma moli monsi mu mun "
+    db   "kule kulupu kute lape laso len lete linja loje lon lukin ma moli monsuta mu mun "
     db   "nanpa nasa nasin noka o olin pan pilin pimeja pipi pona seli sewi sin soweli suli "
     db   "suno suwi tan tawa telo tenpo toki unpa uta utala wan waso wawa  :."
     POPC

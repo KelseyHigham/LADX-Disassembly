@@ -21,7 +21,7 @@ CodepointToTileMap::
 db      $00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0a, $0b, $0c, $0d, $0e, $0f
 
 ;1
-;nimi   kule klpu kute lape laso len  lete lnja loje lon  lkin  ma  moli mnsi  mu  mun
+;nimi   kule klpu kute lape laso len  lete lnja loje lon  lkin  ma  moli mnst  mu  mun
 db      $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1a, $1b, $1c, $1d, $1e, $1f
 
 ;2            !    "    #    $    %    &    '    (    )    *    +    ,    -    .    /
@@ -89,8 +89,8 @@ db      $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $1a, $1b, $1c, $1d, $1
     ;db  $e0, $e1, $e2, $e3, $e4, $e5, $e6, $e7, $e8, $e9, $ea, $eb, $ec, $ed, $ee, $ef
     
 ;f       UP  DOWN LEFT RITE                                             BLANK RESERVED_
-;ala                        kjts ntkl kin   n    -
-    db  $34, $35, $36, $37, $bd, $be, $ea, $eb, $fa, 0  , 0  , 0  , 0  , $7e, 0  , 0
+;ala                        kjts ntkl kin   n    -   mnsi
+    db  $34, $35, $36, $37, $bd, $be, $ea, $eb, $fa, $fb, 0  , 0  , 0  , $7e, 0  , 0
     ;db  $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $fa, $fb, $fc, $fd, $fe, $ff
 
 ;
