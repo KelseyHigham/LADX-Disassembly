@@ -40,10 +40,17 @@ ENDM
 
 ;; fallback Latin alphabet
 
-;; nanpa is broken, because it's stored at $20.
-;; Hh is broken, because I decided it looks like nanpa.
-;; I can move the blank character to $20,
-;; and it'll be a dead codepoint.
+;; make sure these are covered
+;;charmap "'",           $c3  ; lili
+;;charmap "] ",          $5d
+;;; convert "jan [#####] o, " into "jan [#####] o "
+;;charmap ", ",          $20
+;;; hide "a" and "seme" and "o" punctuation
+;;charmap "! ",          $20
+;;charmap "!",           $20
+;;charmap "? ",          $20
+;;charmap "?",           $20
+;;  nanpa_sitelen        "-", $f8
 
 ;charmap "!", $7e
 ;charmap "! ", $7e
@@ -362,62 +369,48 @@ ENDM
 
 ; codepoint_to_tile addresses
 ;d
-charmap "<skull>", $dc
-charmap "<link>", $dd
-charmap "<marin>", $de
-charmap "<tarin>", $df
+charmap "<skull>",     $dc
+charmap "<link>",      $dd
+charmap "<marin>",     $de
+charmap "<tarin>",     $df
 
 ;e
-charmap "<yoshi>", $e0
-
-charmap "<ribbon>", $e1
-charmap "<dogfood>", $e2
-charmap "<bananas>", $e3
-charmap "<stick>", $e4
+charmap "<yoshi>",     $e0 ; tile row 8
+charmap "<ribbon>",    $e1
+charmap "<dogfood>",   $e2
+charmap "<bananas>",   $e3
+charmap "<stick>",     $e4
 charmap "<honeycomb>", $e5
 charmap "<pineapple>", $e6
-
-charmap "<flower2>", $e7
-
-charmap "<broom>", $e8
-charmap "<fishhook>", $e9
-charmap "<bra>", $ea
-charmap "<scale>", $eb
-charmap "<glass>", $ec
-
-charmap "<letter>", $ed
-
-charmap "<dpad>", $ee
+charmap "<flower2>",   $e7 ; tile row 8
+charmap "<broom>",     $e8
+charmap "<fishhook>",  $e9
+charmap "<bra>",       $ea
+charmap "<scale>",     $eb
+charmap "<glass>",     $ec
+charmap "<letter>",    $ed ; tile row 8
+charmap "<dpad>",      $ee ; tile row 8
 
 ;f
-charmap "<up>", $f0
-charmap "<down>", $f1
-charmap "<left>", $f2
-charmap "<right>", $f3
+charmap "<up>",        $f0
+charmap "<down>",      $f1
+charmap "<left>",      $f2
+charmap "<right>",     $f3
 
-charmap "<ask>", $fe
-charmap "@", $ff
+charmap "<ask>",       $fe
+charmap "@",           $ff
 
-charmap "'", $c3
-charmap "] ", $5d
-charmap "_ ", $20
-charmap "_", $20
-charmap "!", $2e
-charmap "?", $2e
+charmap "'",           $c3  ; lili
+charmap "] ",          $5d
 
 ; convert "jan [#####] o, " into "jan [#####] o "
-charmap ", ", $20
+charmap ", ",          $20
 
-; experiment
-; hide "a" and "seme" punctuation
-;charmap ". ", $20
-;charmap ".", $20
-;charmap ": ", $20
-;charmap ":", $20
-charmap "! ", $20
-charmap "!", $20
-charmap "? ", $20
-charmap "?", $20
+; hide "a" and "seme" and "o" punctuation
+charmap "! ",          $20
+charmap "!",           $20
+charmap "? ",          $20
+charmap "?",           $20
 
   ; buttons
   nanpa_sitelen      "ST", $aa ; Start button
