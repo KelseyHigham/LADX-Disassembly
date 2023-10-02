@@ -21,6 +21,23 @@ MACRO nanpa_sitelen
 ENDM
 
 
+
+
+
+;; ALTERNATIVE NASIN FOR CHARACTER ENCODING
+;; Theoretically, I can make codepoint_to_tile.asm return the input, and store
+;; tile addresses directly in this file.
+;; The main impediment to this is that $20 is hard-coded as a space codepoint,
+;; and I get glitches if I put another character on that codepoint. 
+;; This means that tile $20 would have to be blank or unused.
+;; Making tile $20 unused would also complicate the fact that I'm using the rest
+;; of that row for name input symbols.
+;; So I would have greater flexibility for adding new sitelen, but lose one
+;; sitelen, and complicate the name entry tilemap.
+
+
+
+
 ;; more readable alphabet
 
 ;; nanpa is broken, because it's stored at $20.
@@ -30,13 +47,13 @@ ENDM
 
 ;charmap "!", $7e
 ;charmap "! ", $7e
-;charmap "\"", $63
-;charmap "#", $20
+;charmap "\"", $63 ; lili
+;charmap "#", $c0  ; nanpa
 
-;charmap "&", $5a
+;charmap "&", $5a  ; jaki
 
-;charmap "(", $1d
-;charmap ")", $85
+;charmap "(", $fb  ; monsi
+;charmap ")", $85  ; sinpin
 
 ;charmap ",", $7e
 ;charmap ", ", $7e
@@ -161,11 +178,13 @@ ENDM
 ;  nanpa_sitelen   "lukin", $1a
 ;  nanpa_sitelen      "ma", $1b
 ;  nanpa_sitelen    "moli", $1c
-;  nanpa_sitelen   "monsi", $1d
+;  nanpa_sitelen "monsuta", $1d
 ;  nanpa_sitelen      "mu", $1e
 ;  nanpa_sitelen     "mun", $1f
 
-;  nanpa_sitelen   "nanpa", $20
+;  nanpa_sitelen   "nanpa", $c0 ; The codepoint $20 is hard-coded as SPACE, so
+;                               ; we use the codepoint $c0 to access tile $20.
+;                               ; See codepoint_to_tile.asm
 ;  nanpa_sitelen    "nasa", $21
 ;  nanpa_sitelen   "nasin", $22
 ;  nanpa_sitelen    "noka", $23
@@ -301,32 +320,35 @@ ENDM
 ;charmap "<bra>", $98
 ;charmap "<scale>", $99
 ;charmap "<glass>", $9a
-;  nanpa_sitelen    "sona", $9b
-;  nanpa_sitelen    "supa", $9c
-;  nanpa_sitelen    "taso", $9d
-;  nanpa_sitelen   "taso,", $9d
-;  nanpa_sitelen    "tomo", $9e
-;  nanpa_sitelen    "walo", $9f
+  ;nanpa_sitelen    "sona", $9b
+  ;nanpa_sitelen    "supa", $9c
+  ;nanpa_sitelen    "taso", $9d
+  ;nanpa_sitelen   "taso,", $9d
+  ;nanpa_sitelen    "tomo", $9e
+  ;nanpa_sitelen    "walo", $9f
 
-;  nanpa_sitelen "A", $a0
-;  ;nanpa_sitelen "a", $a0 ; interferes with the toki pona word
-;  nanpa_sitelen "SE", $a1
-;  nanpa_sitelen "TAR", $a2
+  ;nanpa_sitelen "A", $a0
+  ;nanpa_sitelen "B", $ef
 
-;  nanpa_sitelen "CT", $b0
-;  nanpa_sitelen "LE", $b1
+  ;nanpa_sitelen "ST", $cb
+  ;nanpa_sitelen "AR", $a2
+  ;nanpa_sitelen "T", $db
 
-;  nanpa_sitelen "S", $cb
-;  nanpa_sitelen "s", $cb
+  ;nanpa_sitelen "SE", $a1
+  ;nanpa_sitelen "LE", $b1
+  ;nanpa_sitelen "CT", $b0
 
-;  nanpa_sitelen "T", $db
-;  nanpa_sitelen "t", $db
+  ;nanpa_sitelen "kijetesa", $bd
+  ;nanpa_sitelen "ntakalu", $be
+  ;nanpa_sitelen   "kin", $ea
+  ;nanpa_sitelen   "n", $eb
+  ;nanpa_sitelen   "-", $fa
+  ;nanpa_sitelen   "monsi", $fb
 
-;  nanpa_sitelen "B", $ef
-;  nanpa_sitelen "b", $ef
-
-;  ;nanpa_sitelen "", $ff ; not reachable, since $ff is hard-coded as end-of-text, and represented by "@"
-;                         ; reachable if I steal some spots on codepoint_to_tile
+  ;;nanpa_sitelen "", $ff ; Not reachable, since $ff is hard-coded as 
+  ;;                      ; end-of-text, and represented by "@".
+  ;;                      ; I can use this tile if I use another codepoint,
+  ;;                      ; like $cf, to reach it.
 
 
 
@@ -337,27 +359,35 @@ ENDM
 
 
 ; codepoint_to_tile addresses
+;d
 charmap "<skull>", $dc
 charmap "<link>", $dd
 charmap "<marin>", $de
 charmap "<tarin>", $df
+
+;e
 charmap "<yoshi>", $e0
+
 charmap "<ribbon>", $e1
 charmap "<dogfood>", $e2
 charmap "<bananas>", $e3
 charmap "<stick>", $e4
 charmap "<honeycomb>", $e5
 charmap "<pineapple>", $e6
+
 charmap "<flower2>", $e7
+
 charmap "<broom>", $e8
 charmap "<fishhook>", $e9
 charmap "<bra>", $ea
 charmap "<scale>", $eb
 charmap "<glass>", $ec
+
 charmap "<letter>", $ed
 
 charmap "<dpad>", $ee
 
+;f
 charmap "<up>", $f0
 charmap "<down>", $f1
 charmap "<left>", $f2
@@ -394,6 +424,9 @@ charmap "?", $20
   nanpa_sitelen      "SE", $ad ; Select button
   nanpa_sitelen      "LE", $ae
   nanpa_sitelen      "CT", $af
+  ; handled by ASCII fallback
+  ;                   "A", $41 ; A button
+  ;                   "B", $42 ; B button
 
   ; nimisin and monsi
   nanpa_sitelen "kijetesa", $f4
@@ -434,17 +467,17 @@ charmap "?", $20
   nanpa_sitelen   "lukin", $1a
   nanpa_sitelen      "ma", $1b
   nanpa_sitelen    "moli", $1c
-  ;nanpa_sitelen   "monsi", $1d
+  ;nanpa_sitelen  "monsi", $1d
   nanpa_sitelen "monsuta", $1d
   nanpa_sitelen      "mu", $1e
-  nanpa_sitelen     "mun", $1f ; up to here is already correct in the new system
+  nanpa_sitelen     "mun", $1f
 
   nanpa_sitelen   "nanpa", $80
   nanpa_sitelen    "nasa", $81
   nanpa_sitelen   "nasin", $82
   nanpa_sitelen    "noka", $83
   nanpa_sitelen       "o", $84
-  ;nanpa_sitelen      "o,", $84
+  ;nanpa_sitelen     "o,", $84
   nanpa_sitelen    "olin", $85
   nanpa_sitelen     "pan", $86
   nanpa_sitelen   "pilin", $87
@@ -456,6 +489,7 @@ charmap "?", $20
   nanpa_sitelen     "sin", $8d
   nanpa_sitelen  "soweli", $8e
   nanpa_sitelen    "suli", $8f
+
   nanpa_sitelen    "suno", $90
   nanpa_sitelen    "suwi", $91
   nanpa_sitelen     "tan", $92
@@ -472,7 +506,7 @@ charmap "?", $20
 
   nanpa_sitelen       "a", $b2 ; characters not allowed in
   nanpa_sitelen      "a,", $b2 ; the player's name
-  ;nanpa_sitelen      "a!", $b2 ; this breaks "suli a! sina ken ala tawa e ni kepeken wawa sina"
+  ;nanpa_sitelen     "a!", $b2 ; this breaks "suli a! sina ken ala tawa e ni kepeken wawa sina"
   nanpa_sitelen     ", a", $b2
   nanpa_sitelen     "ala", $b3
   nanpa_sitelen     "ale", $b4
@@ -487,6 +521,7 @@ charmap "?", $20
   nanpa_sitelen "kepeken", $bd
   nanpa_sitelen   "kiwen", $be
   nanpa_sitelen      "ko", $bf
+
   nanpa_sitelen      "la", $c0
   nanpa_sitelen     "la,", $c0
   nanpa_sitelen    ", la", $c0
@@ -519,20 +554,25 @@ charmap "?", $20
   nanpa_sitelen      "pu", $2c
   nanpa_sitelen    "sama", $2d
   nanpa_sitelen    "selo", $2f
+
   nanpa_sitelen    "seme", $3b
   nanpa_sitelen  "sijelo", $3c
   nanpa_sitelen    "sike", $3d
   nanpa_sitelen    "sina", $3e
   nanpa_sitelen  "sinpin", $3f
+
   nanpa_sitelen "sitelen", $5c
   nanpa_sitelen    "sona", $5e
+
   nanpa_sitelen    "supa", $60
+
   nanpa_sitelen    "taso", $7b
   nanpa_sitelen   "taso,", $7b
   nanpa_sitelen    "tomo", $7c
   nanpa_sitelen      "tu", $7d
   nanpa_sitelen    "walo", $7e
   nanpa_sitelen    "weka", $7f
+
   nanpa_sitelen    "wile", $a9
 
 

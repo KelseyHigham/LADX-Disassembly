@@ -46,8 +46,43 @@ charmap "monsuta ", $1d + 1
 charmap      "mu ", $1e + 1
 charmap     "mun ", $1f + 1
 
-charmap        ".", $2e + 1
-charmap        ":", $3a + 1
+;; using simple codepoint_to_tile.asm
+
+;charmap   "nanpa ", $20 + 1
+;charmap    "nasa ", $21 + 1
+;charmap   "nasin ", $22 + 1
+;charmap    "noka ", $23 + 1
+;charmap       "o ", $24 + 1
+;charmap    "olin ", $25 + 1
+;charmap     "pan ", $26 + 1
+;charmap   "pilin ", $27 + 1
+;charmap  "pimeja ", $28 + 1
+;charmap    "pipi ", $29 + 1
+;charmap    "pona ", $2a + 1
+;charmap    "seli ", $2b + 1
+;charmap    "sewi ", $2c + 1
+;charmap     "sin ", $2d + 1
+;charmap  "soweli ", $2e + 1
+;charmap    "suli ", $2f + 1
+
+;charmap    "suno ", $40 + 1
+;charmap    "suwi ", $41 + 1
+;charmap     "tan ", $42 + 1
+;charmap    "tawa ", $43 + 1
+;charmap    "telo ", $44 + 1
+;charmap   "tenpo ", $45 + 1
+;charmap    "toki ", $46 + 1
+;charmap    "unpa ", $47 + 1
+;charmap     "uta ", $48 + 1
+;charmap   "utala ", $49 + 1
+;charmap     "wan ", $4a + 1
+;charmap    "waso ", $4b + 1
+;charmap    "wawa ", $4c + 1
+
+;charmap        ":", $4e + 1
+;charmap        ".", $4f + 1
+
+; using complicated codepoint_to_tile.asm
 
 charmap   "nanpa ", $80 + 1
 charmap    "nasa ", $81 + 1
@@ -79,5 +114,8 @@ charmap   "utala ", $99 + 1
 charmap     "wan ", $9a + 1
 charmap    "waso ", $9b + 1
 charmap    "wawa ", $9c + 1
+
+charmap        ".", $2e + 1
+charmap        ":", $3a + 1
 
 POPC
