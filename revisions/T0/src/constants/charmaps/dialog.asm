@@ -25,15 +25,12 @@ ENDM
 
 
 ;; ALTERNATIVE NASIN FOR CHARACTER ENCODING
-;; Theoretically, I can make codepoint_to_tile.asm return the input, and store
-;; tile addresses directly in this file.
-;; The main impediment to this is that $20 is hard-coded as a space codepoint,
-;; and I get glitches if I put another character on that codepoint. 
-;; This means that tile $20 would have to be blank or unused.
-;; Making tile $20 unused would also complicate the fact that I'm using the rest
-;; of that row for name input symbols.
-;; So I would have greater flexibility for adding new sitelen, but lose one
-;; sitelen, and complicate the name entry tilemap.
+;; I can make codepoint_to_tile.asm mostly return the input, and store tile
+;; addresses directly in this file.
+;; The main impediment is that $20 and $ff, possibly others, are reserved
+;; codepoints. 
+;; So I'm using the codepoints $c0 and $cf to access the tiles $20 and $ff.
+;; This is reflected in codepoint_to_tile.asm.
 
 
 
@@ -52,8 +49,8 @@ ENDM
 ;;charmap "?",           $20
 ;;  nanpa_sitelen        "-", $f8
 
-;charmap "!", $7e
-;charmap "! ", $7e
+;charmap "!", $7e  ; SPACE
+;charmap "! ", $7e ; SPACE
 ;charmap "\"", $63 ; lili
 ;charmap "#", $c0  ; nanpa
 
