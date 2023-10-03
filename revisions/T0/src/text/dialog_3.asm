@@ -1251,7 +1251,7 @@ Dialog157:: ;🆖; Wind Fish, probably
     db "The Egg on the  "
     db "mountain calls!@"
 
-Dialog158:: ;🅿️; Grandma Yahoo
+Dialog158:: ; Grandma Yahoo
 Dialog159:: ;🆖; Grandma Yahoo
     db "Then YOU sweep  "
     db "the island!@"

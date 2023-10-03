@@ -46,14 +46,19 @@ Dialog001:: ;🅿️; Marin
     ;toki "poka poki pona pu sama seli selo seme sewi sijelo sike sin sina sinpin sitelen sona"
     ;toki "soweli suli suno supa suwi tan taso tawa telo tenpo toki tomo tu unpa uta utala"
     ;toki "walo wan waso wawa weka wile"
+    ;toki "nena START en nena SELECT"
+    ;toki "kijetesantakalu kin n meli mije monsuta monsi-"
+    ;toki "o kepeken nena A. nena A en nena B li pona."
+    ;toki "a! toki! toki a! mu!"
 
 
     toki "sina lon a! pona"
     toki "sina lape la mi pilin e ike..."
     toki "monsuta li lon lape sina anu seme..."
     toki "sina mu ike lon lape."
+
     toki "... ... seme? sina toki e "
-    toki "jan lawa [sewi esun telo alasa] anu seme?"
+    toki "jan lawa [suno esun tenpo alasa] anu seme?"
     toki "mi ona ala."
     toki "mi jan kalama [mu a loje ijo nena]."
     toki "ken la sina awen nasa tan lape."
@@ -670,7 +675,7 @@ Dialog017:: ;🅿️; Crazy Tracy
     ;db "@"
 
 Dialog018:: ;🅿️; Crazy Tracy
-    toki "   mani 28 sina wile ala wile ijo wawa?"
+    toki "   mani 28  sina wile ala wile ijo wawa?"
     toki "    wile     ala<ask>"
     ;db "Will you give me"
     ;db "28 Rupees for my"
@@ -684,7 +689,7 @@ Dialog018:: ;🅿️; Crazy Tracy
     ;db "　　　　する　　　しない<ask>"       do  don't
 
 Dialog019:: ;🅿️; Crazy Tracy
-    toki "   mani 42 sina wile ala wile ijo wawa?"
+    toki "   mani 42  sina wile ala wile ijo wawa?"
     toki "    wile     ala<ask>"
     ;db "How about it?   "
     ;db "42 Rupees for my"
@@ -787,7 +792,7 @@ Dialog01D:: ;🅿️; Crazy Tracy, probably
 
 Dialog01E:: ;🅿️; Crazy Tracy
     toki "...sina suwi la"
-    toki "mi lili 7e mani wile.@"
+    toki "mi lili 7 e mani wile.@"
     toki_li_pini
     ;db "...You're so    "
     ;db "cute!  I'll give"
@@ -1020,7 +1025,7 @@ Dialog02A:: ;🅿️; Narrator
 Dialog02B:: ; Shopkeeper, Link
 Dialog02C:: ;🅿️; Shopkeeper, Link
     toki "      ilo alasa en palisa    "
-    toki "      mani 980taso      "
+    toki "      mani 980 taso      "
     toki "    o esun    sina wile e mani ale a<ask>"
     ;db "Bow & Arrow Set "
     ;db "Only 980 Rupees!"
@@ -1223,7 +1228,7 @@ Dialog039:: ;🅿️; Narrator
 
 Dialog03A:: ; Trendy Gamester
 Dialog03B:: ;🅿️; Trendy Gamester
-    toki "   musi sin a! alasa 1 mani 10"
+    toki "   musi sin a! alasa 1  mani 10"
     toki "    o musi!   o weka!<ask>"
     ;db "  TRENDY GAME!  "
     ;db " One Play 10 Rs."
@@ -1321,7 +1326,7 @@ Dialog041:: ;🅿️; Narrator
     ;db "@"
 
 Dialog042:: ;🅿️; Trendy Gamester, probably
-    toki "ni li mani 30a!"
+    toki "ni li mani 30 a!"
     toki "sina ken musi tu wan kepeken ona a!"
     toki_li_pini
     ;db "It's 30 Rupees! "
@@ -1383,7 +1388,7 @@ Dialog044:: ;🅿️; Narrator
     ;db "ゲ－ムで、みかけるな－。@"
 
 Dialog045:: ;🅿️; Fisherman
-    toki "alasa kala li seme tawa sina? mani10taso."
+    toki "alasa kala li seme tawa sina? mani 10 taso."
     toki "    pona     mi tawa<ask>"
 
     ;db "How about some  "
@@ -1526,7 +1531,7 @@ Dialog04C:: ;🅿️; Fisherman, Link
     ;db "　　では、ごきげんよう！@"
 
 Dialog04D:: ;🅿️; Fisherman, Link
-    toki "kala lili. mi pana e mani 5taso."
+    toki "kala lili. mi pana e mani 5 taso."
     toki "sina wile ala wile musi sin?"
     toki "    wile a    mi pini<ask>"
     ;db "It's a runt!    "
@@ -1650,7 +1655,7 @@ Dialog053:: ;🅿️; Genie (D2 Nightmare)
     ;db "@"
 
 Dialog054:: ;🅿️; Tarin
-    toki "a jan [#####] li kama lon"
+    toki "a! jan [#####] li kama lon."
     toki "mi mama [tawa alasa loje ijo nena]. sina pilin seme?"
     toki "mi sona e nimi sina tan seme..."
     toki "ni li nasa anu seme..."
@@ -1705,7 +1710,7 @@ Dialog054:: ;🅿️; Tarin
 
 
 Dialog055:: ;🅿️; Tarin
-    toki "a o sona:"
+    toki "a! o sona:"
     toki "ilo ante sina li kama lon poka telo."
     toki "sina alasa e ilo la,"
     toki "o awen pona. monsuta li lon."
@@ -1859,7 +1864,7 @@ Dialog05E:: ;🅿️; Map
 
 Dialog05F:: ; Map
 Dialog060:: ;🅿️; Map
-    toki "      nasin sewi linja@"
+    toki "       nasin linja@"
     toki_li_pini
     ;db "Mountain Bridge @"
     ;db " Pont suspendu@"
@@ -1867,7 +1872,8 @@ Dialog060:: ;🅿️; Map
     ;db "@"
 
 Dialog061:: ;🅿️; Map
-    toki "    esun kili pi akesi [soweli esun]@"
+    toki "      esun kili pi"
+    toki "     akesi [soweli esun]@"
     toki_li_pini
     ;db "Sale's House O' "
     ;db "    Bananas@"
@@ -1882,10 +1888,8 @@ Dialog062:: ;🅿️; Map
     ;db "Pothole Field@"
     ;db "     Champ      "
     ;db "   des Pièges@"
-    ;db "　　　　アナボコばたけ　　　　　" ; Anaboko? todo
+    ;db "　　　　アナボコばたけ　　　　　" ; 穴ぼこ
     ;db "@"
-
-    ; RESUME TRANSLATING/REVIEWING FROM HERE
 
 Dialog063:: ;🅿️; Map
     toki "      tomo pi poka telo@"
@@ -1916,7 +1920,7 @@ Dialog066:: ;🅿️; Map
     ; tomo pi jan kalama Mali
     ;      pi jan mama Tali
     toki "  tomo pi jan kalama [mu a loje ijo nena]"
-    toki "   pi mama [tawa alasa loje ijo nena]"
+    toki "    pi mama [tawa alasa loje ijo nena]"
     ;toki "jan kalama [mu a loje ijo nena]  en"
     ;toki "   jan mama [tawa alasa loje ijo nena]  li lon tomo ni"
     toki_li_pini
@@ -1985,7 +1989,7 @@ Dialog06C:: ;🅿️; Map
     ;db "　　　タルタル　さんみゃく@"
 
 Dialog06D:: ;🅿️; Map
-    toki "     nasin nasa pi sinpin toki@"
+    toki "      nasin pi sinpin toki@"
     toki_li_pini
     ;db "  Signpost Maze @"
     ;db "     Dédale     "
@@ -1994,7 +1998,7 @@ Dialog06D:: ;🅿️; Map
 
 Dialog06E:: ;🅿️; Map
     ; ma tomo [mu en pilin en]
-    toki "     ma tomo [mu e]@"
+    toki "     ma tomo [mu e pona e]@"
     toki_li_pini
     ;db "  Mabe Village  @"
     ;db "     Village    "
@@ -2017,7 +2021,7 @@ Dialog070:: ;🅿️; Map
     ;db "　　　　　　　ぼち@"
 
 Dialog071:: ;🅿️; Map
-    toki "     musi tawa pi telo wawa@"
+    toki "       nasin telo@"
     toki_li_pini
     ;db "   Rapids Ride  @"
     ;db "    Descente    "
@@ -2048,7 +2052,7 @@ Dialog073:: ;🅿️; Map
 
 Dialog074:: ;🅿️; Map
     ; ma telo [meli ante sijelo ante]
-    toki "    telo suli [ma ante sijelo ante]@"
+    toki "    telo suli [meli ante sijelo ante]@"
     toki_li_pini
     ;db "  Martha's Bay@"
     ;db " Baie de Martha@"
@@ -2063,7 +2067,7 @@ Dialog075:: ;🅿️; Map
     ;db "　　　　いりえのひがし@"
 
 Dialog076:: ;🅿️; Map
-    ; TODO: according to GB, formerly known as Wakiiga Swap
+    ; according to jan GB, formerly known as Wakiiga Swap
     ; DeepL translator mysteriously says:
     ; goponga (Orectolobus goponga, extinct)
     ; https://en.wikipedia.org/wiki/Orectolobus
@@ -2077,7 +2081,7 @@ Dialog076:: ;🅿️; Map
     ;db "　　　　ゴポンガのぬま@"
 
 Dialog077:: ;🅿️; Map
-    toki "     tomo sewi pi sinpin jan@"
+    toki "      tomo sewi sinpin@"
     toki_li_pini
     ;db "   Face Shrine @"
     ;db "Temple du Masque"
@@ -2114,7 +2118,7 @@ Dialog07A:: ;🅿️; Map
     ;db "　　　　タバ－ルのはやし@"
 
 Dialog07B:: ;🅿️; Map
-    toki "      ma pi poka tomo@"
+    toki "       poka tomo@"
     toki_li_pini
     ;db "  South of the  "
     ;db "    Village@"
@@ -2140,8 +2144,8 @@ Dialog07D:: ;🅿️; Map
     ; meli mu mu
     ; 󱥭󱥍󱤳󱤹󱤹
     ; 󱥢󱤧󱤬󱦜  󱥄󱤈󱥔󱤀
-    toki "     tomo pi jan suli mu mu"
-    toki "   soweli li lon. o awen pona a@"
+    toki "     tomo pi meli mu mu"
+    toki "   soweli li lon. o awen pona a!@"
     toki_li_pini
     ;db "Madam MeowMeow's"
     ;db "     House      "
@@ -2156,7 +2160,8 @@ Dialog07D:: ;🅿️; Map
 
 Dialog07E:: ;🅿️; Map
     ; 󱥭󱥍󱤑󱥣󱦐󱥰󱤩󱥰󱤩󱤎󱤩󱤀󱦑
-    toki " tomo pi jan suli [uta linja uta linja ilo linja a]@"
+    toki " tomo pi jan suli [uta linja uta linja ilo linja a]"
+    toki "  pi jan suli wawa a-!"
     toki_li_pini
     ;db "Old Man Ulrira's"
     ;db "     House      @"
@@ -2165,11 +2170,11 @@ Dialog07E:: ;🅿️; Map
     ;db "　　うるりらじいさんのいえ@"
 
 Dialog07F:: ;🅿️; Map
-    ; TODO: GB says this is a reference to SimCity's Dr. Wright, who's named after Will Wright
+    ; jan GB says this is a reference to SimCity's Dr. Wright, who's named after Will Wright
     ; jan nasa Wasi
     ; jan nasa sitelen
     ; 󱤑󱥠󱤾
-    toki "     tomo pi jan sitelen nasa@"
+    toki "   tomo pi jan nasa [wawa ante sitelen ilo]@"
     toki_li_pini
     ;db "Weird Mr. Write @"
     ;db " Chez Mr Wright "
@@ -2215,7 +2220,7 @@ Dialog082:: ;🅿️; Map
 
 Dialog083:: ;🅿️; Signpost
     toki "tomo pi ilo toki"
-    toki "<down> nasin nasa pi sinpin toki"
+    toki "<down> nasin pi sinpin toki"
     toki_li_pini
     ;db "Telephone Booth "
     ;db "<down> Signpost Maze @"
@@ -2225,7 +2230,7 @@ Dialog083:: ;🅿️; Signpost
     ;db "　　<down>　カンバンのめいろ@"
 
 Dialog084:: ;🅿️; Map
-    toki "     tomo suli pi kiwen kala@"
+    toki "     tomo wawa pi kiwen kala@"
     toki_li_pini
     ;db "Seashell Mansion@"
     ;db "     Maison     "
@@ -2233,7 +2238,8 @@ Dialog084:: ;🅿️; Map
     ;db "　　　　かいがらのやかた@"
 
 Dialog085:: ;🅿️; Map
-    toki "  tomo ante pi jan lawa lili [wan ijo suli ale]@"
+    toki "      tomo sin pi"
+    toki "   jan lawa lili [wan ijo suli ale]@"
     toki_li_pini
     ;db "Richard's Villa @"
     ;db "Villa de Richard"
@@ -2274,6 +2280,8 @@ Dialog089:: ;🅿️; Map
     ;db "    Warp Hole   @"
     ;db "   Trou Warp@"
     ;db "　　　　　ワ－プのあな@"
+
+; RESUME TRANSLATING FROM HERE
 
 Dialog08A:: ;🅿️; Narrator
     toki "n... kiwen ni li pakala lili..."
