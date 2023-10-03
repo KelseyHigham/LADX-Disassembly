@@ -1,3 +1,5 @@
+; 88 lines in this file
+
 Dialog0A4:: ;🆖; Narrator
     db "You've got the  "
     db "Face Key!@"

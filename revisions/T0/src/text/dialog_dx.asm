@@ -1,3 +1,5 @@
+; 98 lines in this file
+
 ; pads a line to 16 sitelen with spaces
 ; sitelen are defined in `src/constants/charmaps/main.asm`
 MACRO toki

@@ -1,6 +1,7 @@
-; 312 [P]
-; 366 [NG]
-; 678 total
+; 160 lines in this file
+; 312 [P] lines
+; 366 [NG] lines
+; 678 lines total
 
 ; the word "nanpa" is broken because it's mapped to $20
 ; the fallback letter "H" is broken because it's mapped to $20 (because it looks like nanpa)
@@ -251,8 +252,8 @@ Dialog005:: ;🅿️; Marin
 Dialog006:: ;🅿️; Marin
     toki "jan [#####] o!"
     toki "mama [tawa alasa loje ijo nena] li lape lon tomo."
-    toki "mi wile kalama e kalama a!"
-    toki "mi pana e kalama musi pi kala kon.@"
+    toki "mi wile kalama a!"
+    toki "mi pana e kalama musi pi sewi kala kon.@"
     toki_li_pini
 
     ;toki "suno en sewi laso en mu li lon. mi sona ala e ni:"
@@ -703,7 +704,7 @@ Dialog019:: ;🅿️; Crazy Tracy
     ;db "　　　　する　　　しない<ask>"
 
 Dialog01A:: ;🅿️; Crazy Tracy
-    toki "o kama. mi pana e ko wawa tawa selo sina a!"
+    toki "o kama. mi pana e ko misikeke tawa selo sina a!"
     toki "    mu pana     mu pana"
     toki "sina moli la ko li pali."
     toki "o kama sin..."
@@ -2281,8 +2282,6 @@ Dialog089:: ;🅿️; Map
     ;db "   Trou Warp@"
     ;db "　　　　　ワ－プのあな@"
 
-; RESUME TRANSLATING FROM HERE
-
 Dialog08A:: ;🅿️; Narrator
     toki "n... kiwen ni li pakala lili..."
     toki "sina ken weka e ona kepeken nasin seme?@"
@@ -2297,8 +2296,11 @@ Dialog08A:: ;🅿️; Narrator
     ;db "@"
 
 Dialog08B:: ;🅿️; Narrator
-    toki "n  ko nasa... ken la, nasin pakala li ni:"
-    toki "o pana e ale pi palisa utala lon tenpo lili lili.@"
+    ; todo: revisit
+    ;toki "n  ko nasa... ken la, nasin pakala li ni:"
+    ;toki "o pana e ale pi palisa utala lon tenpo lili lili.@"
+    toki "n  ko nasa... sina pilin e ona la"
+    toki "ona li kama kiwen kepeken tenpo lili."
     toki_li_pini
     ;db "Oh? What a weird"
     ;db "object!  There  "
@@ -2310,7 +2312,8 @@ Dialog08B:: ;🅿️; Narrator
     ;db "@"
 
 Dialog08C:: ;🅿️; Narrator
-    toki "seme? kiwen ni li jo e lupa lupa a!"
+    toki "seme? kiwen ni li jo e lupa a!"
+    toki "sina pana e ilo la lupa li open e lupa tomo."
     toki "o kama sin  o kepeken ilo lupa a!@"
     toki_li_pini
     ;db "Hunh?  This rock"
@@ -2322,8 +2325,7 @@ Dialog08C:: ;🅿️; Narrator
     ;db "@"
 
 Dialog08D:: ;🅿️; Narrator
-    ; todo: revise
-    toki "suli a! sina ken ala tawa e ni kepeken wawa sina.@"
+    toki "suli wawa a! sina ken ala tawa e ona kepeken luka taso...@"
     toki_li_pini
 
     ;db "Wow!  This looks"
@@ -2338,20 +2340,32 @@ Dialog08D:: ;🅿️; Narrator
     ;db "jamais rien que "
     ;db "par la force    "
     ;db "de tes bras!@"
+    ;db "ウッ！！　こいつは　おもいぞ！　"
+    ;db "すでじゃ　ムリみたいだ．．．　　"
+    ;db "@"
 
-Dialog08E:: ;🆖; Narrator, probably
-    db "Well, it's an   "
-    db "Ocarina, but you"
-    db "don't know how  "
-    db "to play it...@"
+Dialog08E:: ;🅿️; Narrator
+    toki "ilo kalama a!"
+    toki "taso... sina sona ala kalama..."
+    toki_li_pini
+    ;db "Well, it's an   "
+    ;db "Ocarina, but you"
+    ;db "don't know how  "
+    ;db "to play it...@"
+    ;db "オカリナだ！　し、しかし．．．．"
+    ;db "まだキョクを　おぼえてなかった。"
+    ;db "@"
 
-Dialog08F:: ;🆖; Marin, probably
-    db "No!  No!  Poor  "
-    db "hen!  Stop that!@"
+Dialog08F:: ;🅿️; Marin
+    toki "o pini a! waso li pona a! mu ike a!"
+    ;db "No!  No!  Poor  "
+    ;db "hen!  Stop that!@"
+    ;db "ダメ－－ッ！　ニワトリさんが　　"
+    ;db "かわいそうじゃない！　モオッ！@"
 
 Dialog090:: ;🅿️; Narrator
     toki "sina kama jo e len luka wawa a!"
-    toki "sina ken tawa e kiwen e poki kepeken ni a!"
+    toki "kepeken ni la, sina ken jo e kiwen e poki a!"
     toki_li_pini
     ;db "You found the   "
     ;db "Power Bracelet! "
@@ -2363,8 +2377,8 @@ Dialog090:: ;🅿️; Narrator
     ;db "@"
 
 Dialog091:: ;🅿️; Narrator
-    toki "sina kama jo sin e ilo awen a!"
-    toki "sina ken tawa e pipi kepeken ilo ni."
+    toki "sina kama jo e ilo awen sina a!"
+    toki "sina ken tawa e pipi kepeken ilo ni.@"
     toki_li_pini
 
     ;db "You got your    "
@@ -2377,50 +2391,91 @@ Dialog091:: ;🅿️; Narrator
     ;db "Utilisez-le pour"
     ;db "repousser vos   "
     ;db "ennemis!@"
+    ;db "タテが、もどってきた！　ボタンを"
+    ;db "おしてるあいだ、テキをはじけるよ"
+    ;db "@"
 
-Dialog092:: ;🆖; Desert skull
-    db "Ahhh... Yess... "
-    db "That dust was so"
-    db "refreshing...   "
-    db "For that, I'll  "
-    db "tell you a hint!"
-    db "Use a Bomb in a "
-    db "place where the "
-    db "sand swallows   "
-    db "you... There is "
-    db "a treat on the  "
-    db "other side of   "
-    db "the wall... Bye!@"
+Dialog092:: ;🅿️; Desert skull
+    toki "mu wawa a-! mi kama sin a!"
+    toki "sina pona e mi la mi pana e sona."
+    toki "ko li ken moku e sina."
+    toki "moku la, o pana e sike pakala tawa sinpin."
+    toki "ijo pona li lon monsi sinpin..."
+    toki "tawa pona a! mu mu mu@"
+    toki_li_pini
+    ;db "Ahhh... Yess... "
+    ;db "That dust was so"
+    ;db "refreshing...   "
+    ;db "For that, I'll  "
+    ;db "tell you a hint!"
+    ;db "Use a Bomb in a "
+    ;db "place where the "
+    ;db "sand swallows   "
+    ;db "you... There is "
+    ;db "a treat on the  "
+    ;db "other side of   "
+    ;db "the wall... Bye!@"
+    ;db "ヒャッホウ！　いきかえるぜっ！　"
+    ;db "それじゃ、おまえにおしえてやろう"
+    ;db "すなにのみこまれて　おちるとこ。"
+    ;db "あそこで、バクダンつかってみな。"
+    ;db "かべのむこうに　なにかがあるぜ！"
+    ;db "じゃあなっ！　　ポキポキポキッ！"
+    ;db "@"
 
-Dialog093:: ;🆖; Narrator
-    db "You've got the  "
-    db "Hook Shot!  Its "
-    db "chain stretches "
-    db "long when you   "
-    db "use it!@"
+Dialog093:: ;🅿️; Narrator
+    toki "sina kama jo e linja tawa a!"
+    toki "sina kepeken ona la ona li kama suli a!@"
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Hook Shot!  Its "
+    ;db "chain stretches "
+    ;db "long when you   "
+    ;db "use it!@"
+    ;db "フックショットをてにいれた！　　"
+    ;db "ボヨヨ－ンと　のばしてつかおう！"
+    ;db "@"
 
-Dialog094:: ;🆖; Narrator
-    db "You've got the  "
-    db "Magic Rod!  Now "
-    db "you can burn    "
-    db "things! Burn it!"
-    db "Burn, baby burn!@"
+Dialog094:: ;🅿️; Narrator
+    toki "sina kama jo e palisa seli a!"
+    toki "o seli! o seli! o seli wawa e ale a!@"
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Magic Rod!  Now "
+    ;db "you can burn    "
+    ;db "things! Burn it!"
+    ;db "Burn, baby burn!@"
+    ;db "マジックロッドを　てにいれた！　"
+    ;db "もやせ！もやせ！やきつくせ！！@"
 
-Dialog095:: ;🆖; Narrator
-    db "You've got the  "
-    db "Pegasus Boots!  "
-    db "If you hold down"
-    db "the Button, you "
-    db "can dash!@"
+Dialog095:: ;🅿️; Narrator
+    toki "sina kama jo e len noka [poka en kon ale sewi ilo] a!"
+    toki "o pilin e nena ilo lon tenpo suli. la sina tawa wawa a!"
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Pegasus Boots!  "
+    ;db "If you hold down"
+    ;db "the Button, you "
+    ;db "can dash!@"
+    ;db "ペガサスのくつをてにいれた！　　"
+    ;db "ボタンをおしつづけるとダッシュだ"
+    ;db "@"
 
-Dialog096:: ;🆖; Narrator
-    db "You've got the  "
-    db "Ocarina!  You   "
-    db "should learn to "
-    db "play many songs!@"
+Dialog096:: ;🅿️; Narrator
+    toki "sina kama jo e ilo kalama a!"
+    toki "o pana e kalama mute!"
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Ocarina!  You   "
+    ;db "should learn to "
+    ;db "play many songs!@"
+    ;db "オカリナを　てにいれた！　　　　"
+    ;db "いろんなきょくが　ふけるといいな"
+    ;db "@"
 
 Dialog097:: ;🅿️; Narrator
-    toki "sina kama jo e linja pi waso suli a! sina pilin lili sama waso."
+    toki "sina kama jo e linja pi waso suli a!"
+    toki "sina pilin lili sama waso."
     toki_li_pini
     ;db "You've got the  "
     ;db "Roc's Feather!  "
@@ -2431,7 +2486,7 @@ Dialog097:: ;🅿️; Narrator
     ;db "なんだか、からだがかるくなる。@"
 
 Dialog098:: ;🅿️; Narrator
-    toki "sina kama jo e ilo pi lupa ma a!"
+    toki "sina kama jo e ilo pi lupa ma a! o kepeken!"
     toki "sina ken pilin pona tan lupa."
     toki_li_pini
     ;db "You've got a    "
@@ -2455,10 +2510,17 @@ Dialog099:: ;🅿️; Narrator
     ;db "いろんなものに　ふりかけてみよう"
     ;db "@"
 
-Dialog09A:: ;🆖; Narrator, probably
-    db "You've got a    "
-    db "bomb! Way to    "
-    db "go!@"
+Dialog09A:: ;🅿️; Narrator
+    toki "sina kama jo e sike pakala a!"
+    toki "mu pakala  mu pakala"
+    toki_li_pini
+    ;db "You've got a    "
+    ;db "bomb! Way to    "
+    ;db "go!@"
+    ;db "バクダンを　てにいれた！　　　　"
+    ;db "ド－ンといこう、ド－ンと！@"
+
+    ; RESUME TRANSLATING FROM HERE
 
 Dialog09B:: ;🅿️; Narrator
     toki "sina kama jo e palisa utala sina a!"
@@ -2478,53 +2540,94 @@ Dialog09B:: ;🅿️; Narrator
     ;db "なまえいりだから　まちがいない！"
     ;db "@"
 
-Dialog09C:: ;🆖; Narrator
-    db "You've got the  "
-    db "Flippers! If you"
-    db "press the B     "
-    db "Button while you"
-    db "swim, you can   "
-    db "dive underwater!@"
+Dialog09C:: ;🅿️; Narrator
+    toki "sina kama jo e noka kala a!"
+    toki "nena A la sina tawa wawa. nena B la sina tawa anpa."
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Flippers! If you"
+    ;db "press the B     "
+    ;db "Button while you"
+    ;db "swim, you can   "
+    ;db "dive underwater!@"
+    ;db "アングラ－のみずかきだっ！　　　"
+    ;db "Ｂボタンをおせば　もぐれるぞっ！"
+    ;db "@"
 
-Dialog09D:: ;🆖; Narrator
-    db "You've got the  "
-    db "Magnifying Lens!"
-    db "This will reveal"
-    db "many things you "
-    db "couldn't see    "
-    db "before!@"
+Dialog09D:: ;🅿️; Narrator
+    toki "seme a? ni li ilo pi lukin wawa a!"
+    toki "sina ken lukin e ijo len sin kepeken ni a!"
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Magnifying Lens!"
+    ;db "This will reveal"
+    ;db "many things you "
+    ;db "couldn't see    "
+    ;db "before!@"
+    ;db "なんと！　これは、ふしぎなメガネ"
+    ;db "「みとおしレンズ」だ－っ！　　　"
+    ;db "いままでみえなかったアレやコレが"
+    ;db "みえるようになるぞっ！！　　　　"
+    ;db "@"
 
-Dialog09E:: ;🆖; Narrator
-Dialog09F:: ;🆖; Narrator
-    db "You've got a    "
-    db "new Sword!  You "
-    db "should put your "
-    db "name on it right"
-    db "away!@"
+Dialog09E:: ; Narrator
+Dialog09F:: ;🅿️; Narrator
+    toki "sina kama jo e palisa sin a!"
+    toki "open la, o sitelen e nimi sina lon ona."
+    toki_li_pini
+    ;db "You've got a    "
+    ;db "new Sword!  You "
+    ;db "should put your "
+    ;db "name on it right"
+    ;db "away!@"
+    ;db "あたらしいけんを　てにいれたっ！"
+    ;db "さっそく、なまえをかいておこう！"
+    ;db "@"
 
-Dialog0A0:: ;🆖; Narrator
-    db "You found the   "
-    db "secret medicine!"
-    db "You should apply"
-    db "this and see    "
-    db "what happens!@"
+Dialog0A0:: ;🅿️; Narrator
+    toki "seme? sina kama jo e ko misikeke a!"
+    toki "mu pana  mu pana  sina pana e ko tawa selo."
+    toki_li_pini
+    ;db "You found the   "
+    ;db "secret medicine!"
+    ;db "You should apply"
+    ;db "this and see    "
+    ;db "what happens!@"
+    ;db "なんと？これはヒミツのくすりだ！"
+    ;db "ヌリ　ヌリ．．．じぶんでぬった。"
+    ;db "@"
 
 Dialog0A1:: ;🅿️; Narrator
     toki "sina kama jo e ilo lupa pi pipi linja a!"
-    toki "sina ken open e lupa pi pipi linja a!"
+    toki "ilo ni li ken open e lupa pi pipi linja a!"
     toki_li_pini
     ;db "You've got the  "
     ;db "Tail Key!  Now  "
     ;db "you can open the"
     ;db "Tail Cave gate!@"
+    ;db "テ－ルのカギを　てにいれた！　　"
+    ;db "これで、テ－ルのとびらがひらく！"
+    ;db "@"
 
-Dialog0A2:: ;🆖; Narrator
-    db "You've got the  "
-    db "Slime Key!  Now "
-    db "you can open the"
-    db "gate in Ukuku   "
-    db "Prairie!@"
+Dialog0A2:: ;🅿️; Narrator
+    ; todo: revisit
+    toki "sina kama jo e ilo lupa pi ko lukin a!"
+    toki "ilo li ken open e lupa sin."
+    toki "o tawa lupa lon ma kasi [utala kasi utala kasi utala].@"
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Slime Key!  Now "
+    ;db "you can open the"
+    ;db "gate in Ukuku   "
+    ;db "Prairie!@"
+    ;db "スライムのかぎを　てにいれた！　"
+    ;db "ウククそうげんのいりぐちへゆこう"
+    ;db "@"
 
-Dialog0A3:: ;🆖; Narrator
-    db "You've got the  "
-    db "Angler Key!@"
+Dialog0A3:: ;🅿️; Narrator
+    toki "sina kama jo e ilo lupa pi kala alasa a!"
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Angler Key!@"
+    ;db "アングラ－のかぎを　てにいれた！"
+    ;db "@"

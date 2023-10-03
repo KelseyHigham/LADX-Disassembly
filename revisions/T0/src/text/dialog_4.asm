@@ -1,3 +1,5 @@
+; 190 lines in this file
+
 Dialog190:: ;🅿️; Moblin
     toki "a! jan seme a! jan lili nasa a!"
     toki "jan ale o pakala e ona a!"
@@ -75,7 +77,7 @@ Dialog195:: ;🆖; Marin
 
 Dialog196:: ;🅿️; Fox
     toki "... ... ... ... "
-    toki "ona li kute e kalama musi."
+    toki "ona li wile ala a pini e kute.@"
     toki_li_pini
     ; it cannot stop listening
     ; it can only listen

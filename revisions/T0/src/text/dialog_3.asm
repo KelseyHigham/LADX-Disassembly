@@ -1,25 +1,52 @@
-Dialog108:: ;🆖; Photographer
-    db "Hi! It's me, the"
-    db "photographer!   "
-    db "You seem curious"
-    db "about Grandpa   "
-    db "Ulrira.@"
+; 135 lines in this file
 
-Dialog109:: ;🆖; Photographer
-    db "I'll call this  "
-    db "'##### Dis-     "
-    db "covers Ulrira's "
-    db "Secret!'@"
+Dialog108:: ;🅿️; Photographer
+    toki "mi soweli sitelen a! mi olin e sitelen a!"
+    toki "sina wile sona e jan suli [uta linja uta linja ilo linja a]"
+    toki "anu seme?@"
+    toki_li_pini
+    ;db "Hi! It's me, the"
+    ;db "photographer!   "
+    ;db "You seem curious"
+    ;db "about Grandpa   "
+    ;db "Ulrira.@"
+    ;db "しゃしんスキスキしゃしんやさん！" ; i'm the photography lover!
+    ;db "うるりらさんが　きになるのかい？" ; you're curious about Ulrira?
+    ;db "@"
 
-Dialog10A:: ;🆖; Photographer, probably
-    db "#####, now run  "
-    db "away before he  "
-    db "finds you.@"
+Dialog109:: ;🅿️; Photographer
+    toki "mi pana e nimi ni tawa sitelen:"
+    toki "jan [#####] li kama sona e"
+    toki "ijo len [uta linja uta linja ilo linja a]."
+    toki_li_pini
+    ;db "I'll call this  "
+    ;db "'##### Dis-     "
+    ;db "covers Ulrira's "
+    ;db "Secret!'@"
+    ;db "だいめい「げきしゃ！#####は"
+    ;db "うるりらの　ヒミツを　みた！」@"
 
-Dialog10B:: ;🆖; Photographer
-    db "I'll go develop "
-    db "this. Come see  "
-    db "it later, OK?@"
+Dialog10A:: ;🅿️; Photographer
+    toki "pona. ni la, jan [#####] o weka."
+    toki "jan suli o kama ala sona e pali sina."
+    toki_li_pini
+    ;db "#####, now run  "
+    ;db "away before he  "
+    ;db "finds you.@"
+    ;db "それじゃ　みつかるまえに　　　　"
+    ;db "#####もにげろよ！じゃっ@"
+
+Dialog10B:: ;🅿️; Photographer
+    toki "mi tawa. mi pali e sitelen tan sina tawa sina."
+    toki "o kama a! o lukin e ona a!"
+    toki_li_pini
+    ;db "I'll go develop "
+    ;db "this. Come see  "
+    ;db "it later, OK?@"
+    ;db "それじゃ、げんぞうしときますから"
+    ;db "できたしゃしんも　みにきてね！@"
+
+    ; CONTINUE TRANSLATING/REVIEWING FROM HERE
 
 Dialog10C:: ;🅿️; Photographer
     toki "mi olin e sitelen a! mi soweli lawa pi tomo sitelen a!"
