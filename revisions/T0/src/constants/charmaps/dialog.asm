@@ -231,6 +231,7 @@ charmap         "<glass>", $9a
   nanpa_sitelen     "meli", $ea
   nanpa_sitelen     "mije", $eb
   nanpa_sitelen        "-", $ef
+  nanpa_sitelen "misikeke", $fa
 charmap            "<ask>", $fe ; END-OF-DIALOG; QUESTION
 charmap                "@", $ff ; END-OF-DIALOG
 
