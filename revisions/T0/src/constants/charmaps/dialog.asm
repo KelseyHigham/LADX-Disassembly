@@ -278,7 +278,7 @@ charmap  "j",  $51
 charmap  "k",  $0d
 charmap  "l",  $50
 charmap  "m",  $83
-charmap  "n",  $6d
+;charmap "n",  $6d ; toki pona word
 ;charmap "o",  $70 ; toki pona word
 charmap  "p",  $69
 charmap  "q",  $67
