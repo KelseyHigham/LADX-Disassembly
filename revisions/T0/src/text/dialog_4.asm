@@ -1022,7 +1022,7 @@ Dialog1FD:: ;🅿️; Bucket Mouse
 
 Dialog1FE:: ;🅿️; Fisherman, Link
     toki "a! suli a! pona la, ona li jo e lili pilin a!"
-    toki "kin la, sina kama jo e mani 20a!"
+    toki "kin la, sina kama jo e mani 20 a!"
     toki "sina wile ala wile musi sin?"
     toki "    wile a!   mi pini<ask>"
     ;db "Oh!  It's a big "
@@ -1042,7 +1042,7 @@ Dialog1FE:: ;🅿️; Fisherman, Link
 Dialog1FF:: ;🅿️; Fisherman, Link
     toki "a! suli a! pona la, ona li jo e lili pilin a!"
     toki "sina jo e lili pilin tu tu la, sina kama jo e poki pilin a!"
-    toki "kin la, sina kama jo e mani 20a!"
+    toki "kin la, sina kama jo e mani 20 a!"
     toki "sina wile ala wile musi sin?"
     toki "    wile a!   mi pini<ask>"
     ;db "Oh!  It's a big "

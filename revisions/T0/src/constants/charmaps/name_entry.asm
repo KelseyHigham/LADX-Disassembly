@@ -2,9 +2,11 @@
 ; Mapping from Unicode to the codepoints used by the ROM.
 ; Used for the player's name.
 ;
-; The character positions are under src/data/name_entry_characters.asm
+; The character positions are under src/data/name_entry_characters.asm.
 ; They get passed to here. Then these hex values are stored in the save file. 
-; When they're displayed, the graphics are read from codepoint_to_tile.asm
+; When they're displayed, the graphics are read from codepoint_to_tile.asm.
+; Except codepoint_to_tile.asm returns the input, so these are direct
+; addresses to tiles.
 ;
 
 PUSHC
@@ -46,76 +48,38 @@ charmap "monsuta ", $1d + 1
 charmap      "mu ", $1e + 1
 charmap     "mun ", $1f + 1
 
-;; using simple codepoint_to_tile.asm
+charmap   "nanpa ", $20 + 1
+charmap    "nasa ", $21 + 1
+charmap   "nasin ", $22 + 1
+charmap    "noka ", $23 + 1
+charmap       "o ", $24 + 1
+charmap    "olin ", $25 + 1
+charmap     "pan ", $26 + 1
+charmap   "pilin ", $27 + 1
+charmap  "pimeja ", $28 + 1
+charmap    "pipi ", $29 + 1
+charmap    "pona ", $2a + 1
+charmap    "seli ", $2b + 1
+charmap    "sewi ", $2c + 1
+charmap     "sin ", $2d + 1
+charmap  "soweli ", $2e + 1
+charmap    "suli ", $2f + 1
 
-;charmap   "nanpa ", $20 + 1
-;charmap    "nasa ", $21 + 1
-;charmap   "nasin ", $22 + 1
-;charmap    "noka ", $23 + 1
-;charmap       "o ", $24 + 1
-;charmap    "olin ", $25 + 1
-;charmap     "pan ", $26 + 1
-;charmap   "pilin ", $27 + 1
-;charmap  "pimeja ", $28 + 1
-;charmap    "pipi ", $29 + 1
-;charmap    "pona ", $2a + 1
-;charmap    "seli ", $2b + 1
-;charmap    "sewi ", $2c + 1
-;charmap     "sin ", $2d + 1
-;charmap  "soweli ", $2e + 1
-;charmap    "suli ", $2f + 1
-
-;charmap    "suno ", $40 + 1
-;charmap    "suwi ", $41 + 1
-;charmap     "tan ", $42 + 1
-;charmap    "tawa ", $43 + 1
-;charmap    "telo ", $44 + 1
-;charmap   "tenpo ", $45 + 1
-;charmap    "toki ", $46 + 1
-;charmap    "unpa ", $47 + 1
-;charmap     "uta ", $48 + 1
-;charmap   "utala ", $49 + 1
-;charmap     "wan ", $4a + 1
-;charmap    "waso ", $4b + 1
-;charmap    "wawa ", $4c + 1
-
-;charmap        ":", $4e + 1
-;charmap        ".", $4f + 1
-
-; using complicated codepoint_to_tile.asm
-
-charmap   "nanpa ", $80 + 1
-charmap    "nasa ", $81 + 1
-charmap   "nasin ", $82 + 1
-charmap    "noka ", $83 + 1
-charmap       "o ", $84 + 1
-charmap    "olin ", $85 + 1
-charmap     "pan ", $86 + 1
-charmap   "pilin ", $87 + 1
-charmap  "pimeja ", $88 + 1
-charmap    "pipi ", $89 + 1
-charmap    "pona ", $8a + 1
-charmap    "seli ", $8b + 1
-charmap    "sewi ", $8c + 1
-charmap     "sin ", $8d + 1
-charmap  "soweli ", $8e + 1
-charmap    "suli ", $8f + 1
-
-charmap    "suno ", $90 + 1
-charmap    "suwi ", $91 + 1
-charmap     "tan ", $92 + 1
-charmap    "tawa ", $93 + 1
-charmap    "telo ", $94 + 1
-charmap   "tenpo ", $95 + 1
-charmap    "toki ", $96 + 1
-charmap    "unpa ", $97 + 1
-charmap     "uta ", $98 + 1
-charmap   "utala ", $99 + 1
-charmap     "wan ", $9a + 1
-charmap    "waso ", $9b + 1
-charmap    "wawa ", $9c + 1
-
-charmap        ".", $2e + 1
-charmap        ":", $3a + 1
+charmap    "suno ", $40 + 1
+charmap    "suwi ", $41 + 1
+charmap     "tan ", $42 + 1
+charmap    "tawa ", $43 + 1
+charmap    "telo ", $44 + 1
+charmap   "tenpo ", $45 + 1
+charmap    "toki ", $46 + 1
+charmap    "unpa ", $47 + 1
+charmap     "uta ", $48 + 1
+charmap   "utala ", $49 + 1
+charmap     "wan ", $4a + 1
+charmap    "waso ", $4b + 1
+charmap    "wawa ", $4c + 1
+;          space
+charmap        ":", $4e + 1
+charmap        ".", $4f + 1
 
 POPC

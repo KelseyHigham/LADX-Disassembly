@@ -79,7 +79,7 @@ Dialog0AA:: ;🅿️; Narrator
     ;db "@"
 
 Dialog0AB:: ;🅿️; Narrator
-    toki "    sina kama jo e mani 20a!"
+    toki "    sina kama jo e mani 20 a!"
     toki "       pona a!"
     toki_li_pini
     ;db "   You got 20   "
@@ -89,7 +89,7 @@ Dialog0AB:: ;🅿️; Narrator
     ;db "ちょっとうれしい。@"
 
 Dialog0AC:: ;🅿️; Narrator
-    toki "    sina kama jo e mani 50a!"
+    toki "    sina kama jo e mani 50 a!"
     toki "       pona mute a!"
     toki_li_pini
     ;db "    You got 50  "
@@ -99,7 +99,7 @@ Dialog0AC:: ;🅿️; Narrator
     ;db "わりとうれしい。@"
 
 Dialog0AD:: ;🅿️; Narrator
-    toki "    sina kama jo e mani 100a!"
+    toki "    sina kama jo e mani 100 a!"
     toki "       pona wawa a!"
     toki_li_pini
     ;db "   You got 100  "
@@ -109,7 +109,7 @@ Dialog0AD:: ;🅿️; Narrator
     ;db "かなりうれしい。@"
 
 Dialog0AE:: ;🅿️; Narrator
-    toki "    sina kama jo e mani 200a!"
+    toki "    sina kama jo e mani 200 a!"
     toki "       pona sewi a!"
     toki_li_pini
     ;db "   You got 200  "
