@@ -381,8 +381,7 @@ Dialog27D:: ;🅿️; Cukeman
     ;db "べつに．．．@"
 
 Dialog27E:: ;🅿️; Cukeman
-    toki "................"
-    toki "...............mu"
+    toki "sina wile ala wile moku e ko suwi?"
     toki_li_pini
     ;db "It can display  "
     ;db "millions of     "
@@ -390,9 +389,8 @@ Dialog27E:: ;🅿️; Cukeman
     ;db "うん　わかってるよ。@"
 
 Dialog27F:: ;🅿️; Cukeman
-    toki "KIJETESANTAKALU"
-    toki "TONSI LI LANPAN"
-    toki "E SOKO."
+    toki "................"
+    toki "...............mu"
     toki_li_pini
     ;db "I definitely    "
     ;db "need it, as soon"
