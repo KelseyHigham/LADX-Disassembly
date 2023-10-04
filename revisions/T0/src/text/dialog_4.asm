@@ -419,7 +419,7 @@ Dialog1C2:: ;🆖; Marin, probably
 
 Dialog1C3:: ;🅿️; Signpost
     toki "      pipi pi selo pakala      "
-    toki "     o pilin kepeken sinpin awen taso     "
+    toki "     o pilin kepeken ilo awen taso     "
     toki_li_pini
     ;db "Beware of Sea   "
     ;db "Urchins!  Don't "
@@ -582,7 +582,7 @@ Dialog1CC:: ;🅿️; Sale
 
 Dialog1CD:: ;🅿️; Sale
     toki "jan pona mi o! sina tawa ala tawa telo wawa kepeken supa?"
-    toki "sina ken lon poka pi supa sewi [tawa awen tawa awen] a!"
+    toki "sina ken ni lon poka pi supa sewi [tawa awen tawa awen] a!"
     toki "o ni a!"
     toki_li_pini
     ;db "Hey friend! Have"
@@ -1822,11 +1822,13 @@ Dialog230:: ;🅿️; Narrator
     ;db "@"
 
 Dialog231:: ;🆖; Narrator
+    ; todo: available after dungeon 2
     db "Hunh?  A keyhole"
     db "here?  It says, "
     db "'Slime Keyhole'@"
 
 Dialog232:: ;🆖; Narrator
+    ; after dungeon 2
     db "Hunh?  A keyhole"
     db "here?  It says, "
     db "'Angler Keyhole'@"

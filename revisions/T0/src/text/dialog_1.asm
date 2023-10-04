@@ -1,6 +1,5 @@
 ; 160 lines in this file
-; 312 [P] lines
-; 366 [NG] lines
+; 333 [P] lines
 ; 678 lines total
 
 ; the word "nanpa" is broken because it's mapped to $20
@@ -760,7 +759,7 @@ Dialog01B:: ;🅿️; Crazy Tracy, probably
 
 Dialog01C:: ;🅿️; Crazy Tracy
     toki " ... ... ..."
-    toki "taso sina la mi wile ala esun a!"
+    toki "taso mi wile ala pana e ona tawa sina a!"
     toki_li_pini
     ;db "... ... ... ... "
     ;db "But I won't sell"
@@ -773,7 +772,7 @@ Dialog01C:: ;🅿️; Crazy Tracy
 
 Dialog01D:: ;🅿️; Crazy Tracy, probably
     toki "mi wile pana e wawa taso..."
-    toki "sina pilin monsuta a!@"
+    toki "sina pilin monsuta a a a!@"
     toki_li_pini
     ;db "Well!  I'm only "
     ;db "offering you a  "
@@ -1347,7 +1346,7 @@ Dialog043:: ;🅿️; Ghost
     toki ""
     toki "...  o pana ala e ko a!  ..."
     toki ""
-    toki "... mi pakala e sina a! mu ko ..."
+    toki "... mi pakala e sina a! mu ko  ..."
     toki ""
     toki_li_pini
     ;db "Cough Cough...  "
@@ -1884,7 +1883,7 @@ Dialog061:: ;🅿️; Map
     ;db "@"
 
 Dialog062:: ;🅿️; Map
-    toki "      ma lupa@"
+    toki "     ma kasi lupa@"
     toki_li_pini
     ;db "Pothole Field@"
     ;db "     Champ      "
@@ -1893,13 +1892,14 @@ Dialog062:: ;🅿️; Map
     ;db "@"
 
 Dialog063:: ;🅿️; Map
+    ; todo: revise, check ghost dialog
     toki "      tomo pi poka telo@"
     toki_li_pini
     ;db "    House By    "
     ;db "     The Bay@"
     ;db "     Maison     "
     ;db "   de la Baie@"
-    ;db "　　　　　いりえのいえ　　　　　"
+    ;db "　　　　　いりえのいえ　　　　　" ; 暗い空き家 ; dark vacant house
     ;db "@"
 
 Dialog064:: ;🅿️; Map
@@ -2022,7 +2022,7 @@ Dialog070:: ;🅿️; Map
     ;db "　　　　　　　ぼち@"
 
 Dialog071:: ;🅿️; Map
-    toki "       nasin telo@"
+    toki "      nasin pi telo wawa@"
     toki_li_pini
     ;db "   Rapids Ride  @"
     ;db "    Descente    "
@@ -2112,7 +2112,8 @@ Dialog07A:: ;🅿️; Map
     ; 󱤰󱤷󱦐󱥫󱤂󱥈󱤂󱦑 ma moli [tenpo ala pakala ala]
     ; 󱤰󱥍󱥎󱤷      ma pi pilin moli
     ; 󱤰󱤷         ma moli
-    toki "    ma moli [tenpo ala pakala ala]@"
+    ;toki "    ma moli [tenpo ala pakala ala]@"
+    toki "       kasi moli@"
     toki_li_pini
     ;db "Tabahl Wasteland@"
     ;db "  Morne Plaine@"
@@ -2189,7 +2190,7 @@ Dialog080:: ;🅿️; Map
     ;        󱥭󱥛     tomo sijelo
     ; 󱥍󱤑󱤾 󱦐󱥪󱤋󱥦󱤎󱦑 pi jan nasa [telo esun suwi ilo] //maybe swap suwi
 
-    toki "       tomo sijelo"
+    toki "       tomo misikeke"
     toki "   pi jan nasa [telo esun suwi ilo]@"
     toki_li_pini
     ;db " Crazy Tracy's  "
@@ -2299,22 +2300,22 @@ Dialog08B:: ;🅿️; Narrator
     ; todo: revisit
     ;toki "n  ko nasa... ken la, nasin pakala li ni:"
     ;toki "o pana e ale pi palisa utala lon tenpo lili lili.@"
-    toki "n  ko nasa... sina pilin e ona la"
-    toki "ona li kama kiwen kepeken tenpo lili."
+    toki "n  ko nasa..."
+    toki "o pakala e ona kepeken sijelo a!"
     toki_li_pini
     ;db "Oh? What a weird"
     ;db "object!  There  "
     ;db "must be some way"
     ;db "to tackle this  "
     ;db "obstacle.@"
-    ;db "ムッ？えたいのしれないカタマリだ"
+    ;db "ムッ？えたいのしれないカタマリだ" ; 体当たりで壊れる岩
     ;db "いっきにつっこめば　こわせるかも"
     ;db "@"
 
 Dialog08C:: ;🅿️; Narrator
-    toki "seme? kiwen ni li jo e lupa a!"
-    toki "sina pana e ilo la lupa li open e lupa tomo."
-    toki "o kama sin  o kepeken ilo lupa a!@"
+    toki "seme? kiwen ni li jo e lupa ilo a!"
+    toki "sina kepeken ilo la kiwen li open."
+    toki "o kama sin! o kepeken ilo lupa a!@"
     toki_li_pini
     ;db "Hunh?  This rock"
     ;db "has a key hole! "
@@ -2325,7 +2326,7 @@ Dialog08C:: ;🅿️; Narrator
     ;db "@"
 
 Dialog08D:: ;🅿️; Narrator
-    toki "suli wawa a! sina ken ala tawa e ona kepeken luka taso...@"
+    toki "suli wawa a! sina ken ala tawa e ni kepeken luka taso...@"
     toki_li_pini
 
     ;db "Wow!  This looks"

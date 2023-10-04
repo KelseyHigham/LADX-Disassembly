@@ -49,7 +49,7 @@ Dialog10B:: ;🅿️; Photographer
     ; CONTINUE TRANSLATING/REVIEWING FROM HERE
 
 Dialog10C:: ;🅿️; Photographer
-    toki "mi olin e sitelen a! mi soweli lawa pi tomo sitelen a!"
+    toki "mi olin e sitelen a! mi soweli sitelen a!"
     toki "mi ken ala ken sitelen e sina a?"
     ;toki "o kama pona lon tomo pi ilo sitelen a!"
     ;toki "mi olin e sitelen ilo. mi ken ala ken sitelen e sina?"
@@ -68,7 +68,7 @@ Dialog10C:: ;🅿️; Photographer
     ;db "　　　　とって　　ヤダ！<ask>"
 
 Dialog10D:: ;🅿️; Photographer
-    toki "ni la, o tawa sinpin len a!"
+    toki "ni la, o tawa monsi tomo a! o awen lon len a!"
     toki_li_pini
     ;db "Go to the back  "
     ;db "of the room and "
@@ -79,7 +79,7 @@ Dialog10D:: ;🅿️; Photographer
 
 Dialog10E:: ;🅿️; Photographer
     toki "mi awen sitelen ala e sina..."
-    toki "o tawa lon len lon sinpin len a!"
+    toki "o tawa sinpin len a!"
     toki_li_pini
     ;db "Hey! I haven't  "
     ;db "taken your      "
@@ -633,11 +633,14 @@ Dialog12C:: ;🅿️; Mamasha
     ;db "confused...     @"
 
 Dialog12D:: ;🅿️; Richard
-    toki "a! o! o! sina sona e ike ni-"
-    toki "soweli mu mu o lon ala poka sina."
-    toki "sina olin e soweli utala la, ni li nasa tawa mi-"
-    toki "ona li lon ala la, mi toki tawa sina. tawa pona-"
+    ; todo: come up with more nasins for charming+annoying
+    toki "a! ike! ike a!"
+    toki "soweli mu mu o lon ala tomo mi."
+    toki "soweli utala li ike tawa mi a!"
+    toki "ona li weka la mi toki tawa sina."
+    toki "tawa pona-@"
     toki_li_pini
+
     ;db "Ahem!  Really, I"
     ;db "must insist that"
     ;db "you not bring   "
@@ -654,14 +657,26 @@ Dialog12D:: ;🅿️; Richard
     ;db "ソイツのいないときに、またあおう" when he's not here, I'll see you,
     ;db "じゃ、さよなら－。@"           bye~
 
-Dialog12E:: ;🆖; Photographer
-    db "You want to know"
-    db "about that      "
-    db "ghost? I'll bet "
-    db "he's happy      "
-    db "thanks to you.  "
-    db "Are you ready   "
-    db "for a picture?@"
+Dialog12E:: ;🅿️; Photographer
+    toki "sina wile sona e kon anu seme?"
+    toki "pilin mi la ona li kama pona tan sina."
+    toki "sina wile ala wile sitelen?"
+    toki "o mu!"
+    toki_li_pini
+    ;db "You want to know"
+    ;db "about that      "
+    ;db "ghost? I'll bet "
+    ;db "he's happy      "
+    ;db "thanks to you.  "
+    ;db "Are you ready   "
+    ;db "for a picture?@"
+    ;db "なるほど、あのユ－レイさんが　　"
+    ;db "どうなったか　きになるんだね。　"
+    ;db "#####のおかげで、きっと　　"
+    ;db "ユ－レイさんも　しあわせだよ！　"
+    ;db "しゃしんを、とってあげるから　　"
+    ;db "ニッコリわらってね！　　　　　　"
+    ;db "@"
 
 Dialog12F:: ;🅿️; Madam MeowMeow
     toki "mu musi  mu musi  mu musi a!"
@@ -784,6 +799,11 @@ Dialog134:: ;🆖; Weird Mr. Write
     db "...And look! The"
     db "letter came with"
     db "a photograph!@"
+    ;db "なっ、なんとぶんつうのおへんじを"
+    ;db "もってきてくれたんですか！！　　"
+    ;db "うっ、うれし－－－－っ！！　　　"
+    ;db "あっ！しかもブロマイドつきだ－！"
+    ;db "@"
 
 Dialog135:: ;🆖; Weird Mr. Write
     db "Mmm... She's so "
@@ -797,6 +817,11 @@ Dialog135:: ;🆖; Weird Mr. Write
     db "broom... how'll "
     db "that be?        "
     db "    Fine No...<ask>"
+    ;db "ウ－－ン　なんとうつくしい！　　"
+    ;db "．．．あっ、おれいをしなくては！"
+    ;db "でも、ホウキくらいしかないんです"
+    ;db "これで、よろしいですか？　　　　"
+    ;db "　　　　いいよ　　いやだ<ask>"
 
 Dialog136:: ;🆖; Narrator
     db "You got a Broom "
@@ -804,22 +829,33 @@ Dialog136:: ;🆖; Narrator
     db "from Mr. Write! "
     db "But that photo  "
     db "was not of...@"
+    ;db "おれいにホウキ　<broom>　をもらった！"
+    ;db "しかし、あのブロマイドは．．．．"
+    ;db "@"
 
 Dialog137:: ;🆖; Weird Mr. Write
     db "Please! I really"
     db "must insist you "
     db "have this <broom>!    "
     db "    Okay No Way<ask>"
+    ;db "おねがいです！　ホウキ　<broom>　を　"
+    ;db "うけとってください！　　　　　　"
+    ;db "　　　　わかった　だ－め<ask>"
 
 Dialog138:: ;🆖; Weird Mr. Write
     db "Oh boy!  Letter "
     db "writing is such "
     db "a great hobby!@"
+    ;db "いやあ、ぶんつうって　ほんと－に"
+    ;db "いいもんですよ！@"
 
 Dialog139:: ;🆖; Weird Mr. Write
     db "Hello!  I'm     "
     db "writing back to "
     db "Christine now!@"
+    ;db "やあ、いまクリスチ－ヌに　　　　"
+    ;db "てがみを　かいてるところですよ。"
+    ;db "@"
 
 Dialog13A:: ;🆖; Richard
     db "Salutations!    "
@@ -846,6 +882,18 @@ Dialog13A:: ;🆖; Richard
     db "the castle when "
     db "I fled...       "
     db "    Okay No Way<ask>"
+    ;db "やあ、ボカァこうみえてもオシロに"
+    ;db "すんでたことも、あるんだけどさ。"
+    ;db "けらいにマモノが、とりついたんで"
+    ;db "にげてきちゃったんだよなあ．．．"
+    ;db "ところできみは、ウククそうげんの"
+    ;db "いりぐちのカギがほしいんでしょ？"
+    ;db "ボカァしらないわけじゃないんだが"
+    ;db "．．．　ねえ、とりひきしようよ。"
+    ;db "にげだすとき　オシロにおいてきた"
+    ;db "「おうごんのはっぱ」を　　　　　"
+    ;db "マモノから　とりかえしてほしい！"
+    ;db "　　　　わかった　いやだ<ask>"
 
     ; Liz Bushouse: 
     ;   In J Richard literally says his servants were possessed by monsters, while in E he just says they went berserk.
@@ -884,7 +932,7 @@ Dialog13C:: ;🆖; Richard
     db "leave me... just"
     db "get out here!@"
 
-Dialog13D:: ;🆖; Richard
+Dialog13D:: ;🆖; Richard ;
     db "Ahh!  Tres Bien!"
     db "I see you have  "
     db "recovered all of"
@@ -900,7 +948,7 @@ Dialog13E:: ;🆖; Richard
     db "getting my      "
     db "leaves back!@"
 
-Dialog13F:: ;🆖; Richard
+Dialog13F:: ;🆖; Richard ; 1--4 leaves
     db "Ah!  Bonjour!   "
     db "#####, for the  "
     db "love of justice,"
@@ -1248,14 +1296,26 @@ Dialog151:: ;🆖; Wind Fish, probably
     ;db "そうげんが、まっている．．．　@"
 
 Dialog152:: ;🆖; Wind Fish, probably
+    ;toki "...nasin telo... insa pi nasin telo..."
+    ;toki "ijo li len lon ona....."
+    ;toki_li_pini
     db "...WATERFALL... "
     db "It is hidden in "
     db "the waterfall...@"
+    ;db "．．．タキ．．．タキのなかに．．"
+    ;db "かくされている．．．．．　　　　"
+    ;db "@"
 
 Dialog153:: ;🆖; Wind Fish, probably
+    ;toki "...telo suli... anpa pi telo suli..."
+    ;toki "nasin sina li tawa telo..."
+    ;toki_li_pini
     db "    ...BAY...   "
     db "Your road goes  "
     db "into the bay... @"
+    ;db "．．．いりえ．．いりえのなかにも"
+    ;db "おまえのゆくみちは　つづいてる　"
+    ;db "@"
 
 Dialog154:: ;🆖; Wind Fish, probably
     db "   ...SHRINE... "
@@ -1280,14 +1340,13 @@ Dialog157:: ;🆖; Wind Fish, probably
 
 Dialog158:: ; Grandma Yahoo
 Dialog159:: ;🆖; Grandma Yahoo
+    ; 15C no
     db "Then YOU sweep  "
     db "the island!@"
 
 Dialog15A:: ;🅿️; Grandma Yahoo
-    ; todo: check with DeepL
-    ; todo: check if "o" by itself can be used for "hey"
     toki "wawa a-! mi pilin pona a!"
-    toki "mi wile e ni: sina kin li pilin pona a-!"
+    toki "sina kin o pilin pona a-!"
     toki_li_pini
     ;db "YAHOO!   I'm    "
     ;db "fine, and you?!@"
@@ -1309,6 +1368,7 @@ Dialog15C:: ;🆖; Grandma Yahoo
     db "    Yes  No<ask>"
 
 Dialog15D:: ;🆖; Grandma Yahoo
+    ; 15C yes
     db "Okay!  In return"
     db "you can have    "
     db "this fishing    "
@@ -1339,7 +1399,7 @@ Dialog15F:: ;🆖; Grandma Yahoo
 
 Dialog160:: ;🅿️; Kiki
     toki "seme a-   soweli mu mu a!"
-    toki "o utala a!  [kili insa kili insa]-"
+    toki "o utala a!  mu jan-"
     toki_li_pini
     ;db "Kiiiki!  What?! "
     ;db "All right, mutt!"
@@ -1385,7 +1445,7 @@ Dialog163:: ;🅿️; Kiki
     ;db "@"
 
 Dialog164:: ;🅿️; Narrator
-    toki "jan li pana e palisa tawa ma..."
+    toki "jan li weka e palisa..."
     toki "sina kama jo e ona a!"
     toki_li_pini
     ;db "You found a     "
@@ -1398,7 +1458,7 @@ Dialog164:: ;🅿️; Narrator
 Dialog165:: ;🅿️; Kiki, Narrator, Link
     toki "    <bananas>a    <bananas>a    "
     toki "    mu jan-    mu jan-"
-    toki "sina wile pana e ona tawa jan [kili insa kili insa] anu seme?"
+    toki "sina wile ala wile pana e ona tawa jan [kili insa kili insa]?"
     toki "    <bananas>    ala a!<ask>"
     ;db "    <bananas>!    <bananas>!    "
     ;db "  Oooh!  Oooh!  "
@@ -1559,12 +1619,12 @@ Dialog177:: ;🆖; Papahl
     db "    Nope Can't<ask>"
 
 Dialog178:: ;🅿️; Grandma Yahoo
-    toki "wawa a-! jan pi tomo pi poka nasin ante la  <up>"
-    toki "ike suli li tawa ona a-!"
+    toki "wawa a-!"
+    toki "ike suli li tawa jan pi tomo<up>a-"
     toki "mi ken ala weka e ike suli..."
     toki "mi ken weka e ko anpa taso..."
     toki "ken la, ike suli li tan"
-    toki "supa sewi [tawa awen tawa awen]. "
+    toki "supa sewi [tawa awen tawa awen]."
     toki_li_pini
     ;db "She's had an    "
     ;db "awful tragedy   "
@@ -1593,18 +1653,39 @@ Dialog179:: ;🆖; Spirit of the Mansion
     db "gate to receive "
     db "the ultimate    "
     db "sword!@"
+    ;db "．．．だれもいない　やかたに．．"
+    ;db "．．．こえがひびく．．．　　　　"
+    ;db "「ワタシは　カイがらのやかたに　"
+    ;db "　やどりしもの．．．　　　　　　"
+    ;db "　ヤミの　チカラに　いどむものを"
+    ;db "　まっていた．．．　　　　　　　"
+    ;db "　．．．しまに　かくされた　　　"
+    ;db "　ヒミツのカイがらを　あつめよ！"
+    ;db "　あつめしカイがらをもちて、　　"
+    ;db "　ゲ－トを　くぐるが　よい．．．"
+    ;db "　しかくあるものに　ひかりの　　"
+    ;db "　チカラもつ　けんをあたえる！」"
+    ;db "よしっ、たくさん　カイがらを　　"
+    ;db "あつめて、ゲ－トをくぐってみよう"
+    ;db "@"
 
 Dialog17A:: ;🆖; Narrator
     db "Hmmm. No        "
     db "response. You   "
     db "must not have   "
     db "enough shells.@"
+    ;db "　．．．はんのうが　ない．．．　"
+    ;db "カイがらが　たりないようだ．．．"
+    ;db "@"
 
 Dialog17B:: ;🆖; Spirit of the Mansion
     db "My job here     "
     db "is finished.@"
+    ;db "「．．これで．．．ようやく．．．"
+    ;db "　ワタシの　やくめも　おわった」"
+    ;db "@"
 
-Dialog17C:: ;🆖; idk, might be unused?
+Dialog17C:: ;🆖; quadruplet, might be unused
     db "Hey you! Have   "
     db "you been to the "
     db "Camera Shop in  "
@@ -1668,9 +1749,9 @@ Dialog17E:: ;🅿️; Witch
 
 Dialog17F:: ;🅿️; Genie (D2 Nightmare)
     toki "...a! mi ken ala tawa."
-    toki "taso, mi awen pona. poki mi li kiwen suli."
+    toki "taso, mi awen pona. poki mi li kiwen wawa."
     toki "palisa utala sina li kiwen lili a tawa poki mi."
-    toki "palisa sina li kiwen lili tawa sinpin tomo a a a!"
+    toki "palisa sina li kiwen lili tawa sinpin tomo kin a a a!"
     toki_li_pini
     ;db ". . . .! I can't"
     ;db "move! But I am  "

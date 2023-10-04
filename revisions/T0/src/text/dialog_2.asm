@@ -126,6 +126,9 @@ Dialog0AF:: ;🆖; Hippo
     db "sit still so    "
     db "Schule can paint"
     db "my portrait!@"
+    ;db "あんまりしつこいと　オジサンて　"
+    ;db "なまえつけちゃうわよっ！　モウ！"
+    ;db "@"
 
 Dialog0B0:: ;🅿️; Moldorm (D1 Nightmare)
     toki "mu ike a! mu ike a!"
@@ -157,7 +160,7 @@ Dialog0B3:: ;🆖; Slime Eel (D5 Nightmare)
 
 Dialog0B4:: ;🅿️; Genie (D2 Nightmare)
     ; todo: revise
-    toki "mu musi ike! mu musi ike! jan utala nanpa ni li mi a!"
+    toki "mu musi ike! mu musi ike! mi jan utala pi tenpo ni a!"
     toki "mu musi ike! mu musi ike!@"
     toki_li_pini
     ;db "HO HO HO!       "
@@ -409,7 +412,7 @@ Dialog0C4:: ;🅿️; Owl
     toki "mi sona ala e tenpo pini lape. mi lukin lon tenpo suli."
     toki "sina kepeken ilo kalama sewi luka tu wan lon poka sike la"
     toki "kala kon li pini e lape ona."
-    toki "ni li nasin taso ni: sina weka tan ma ni..."
+    toki "nasin ni taso la sina ken weka tan ma ni..."
     toki "    mu sona     mu sona"
     toki_li_pini ; written without looking at the English
     ;db "ホッホウ！「かぜのさかな」は　　"
@@ -423,19 +426,19 @@ Dialog0C4:: ;🅿️; Owl
     ;db "ほうほうぢゃて．．．　　　　　　"
     ;db "　　ホッホウ！　ホッホウ！　　　"
     ;db "@"
-    db "Hoooot! The Wind"
-    db "Fish sleeps long"
-    db "and dreamily in "
-    db "the Egg above..."
-    db "When you play   "
-    db "the eight Siren "
-    db "Instruments in  "
-    db "front of the Egg"
-    db "he will awaken. "
-    db "This, my friend,"
-    db "is the only way "
-    db "for you to leave"
-    db "the island! Hoo!@"
+    ;db "Hoooot! The Wind"
+    ;db "Fish sleeps long"
+    ;db "and dreamily in "
+    ;db "the Egg above..."
+    ;db "When you play   "
+    ;db "the eight Siren "
+    ;db "Instruments in  "
+    ;db "front of the Egg"
+    ;db "he will awaken. "
+    ;db "This, my friend,"
+    ;db "is the only way "
+    ;db "for you to leave"
+    ;db "the island! Hoo!@"
 
 Dialog0C5:: ;🆖; Owl
     db "Hoot!  How many "
