@@ -218,9 +218,9 @@ Dialog1A5:: ;🅿️; Signpost
 Dialog1A6:: ;🅿️; Signpost
     ;toki "o awen tan supa anpa pakala a!"
     ;toki "o awen ala lon ona a!"
-    toki_li_pini
     toki "supa anpa li pakala a!"
     toki "o awen ala lon ona a!"
+    toki_li_pini
     ;db "Beware of floors"
     ;db "with cracks!  A "
     ;db "heavy person    "
@@ -450,9 +450,11 @@ Dialog1C5:: ;🆖; idk
 
 Dialog1C6:: ;🅿️; Sale
     toki "kama pona tawa esun kili a! mi akesi [soweli esun]."
-    toki "taso, mi la, kili li lili. moku nasa li pona li suli."
-    toki "akesi sama mi li pali e sitelen. ona li kama e mani lili."
-    toki "akesi mute li nasa, a a a!"
+    toki "taso, mi la, kili li suli ala. moku nasa li pona li suli."
+    ;toki "akesi sama mi li pali e sitelen. ona li kama e mani lili."
+    ;toki "akesi mute li nasa, a a a!"
+    toki "akesi pi mama sama li sitelen musi. ona li kama jo e"
+    toki "mani lili taso. akesi mute li nasa, a a a!"
     toki_li_pini
 
     ;db "Welcome to      "
@@ -967,8 +969,7 @@ Dialog1FC:: ;🅿️; Signpost
     ;db "@"
 
 Dialog1FD:: ;🅿️; Bucket Mouse
-    toki "mu ilo  mu ilo"
-    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo  mu ilo  mu ilo"
     toki "toki a! ni li tomo moku anu seme?"
     toki "mi o esun  e pan suwi  e ko poki  e moku soweli"
     toki "e telo kili  e ko walo  e pan jelo  e pan poki"
@@ -1812,7 +1813,7 @@ Dialog22E:: ;🆖; Photographer
 Dialog22F:: ;🆖; Narrator
 Dialog230:: ;🅿️; Narrator
     toki "ni li lupa lupa. ona li lon ni tan seme?"
-    toki "ona li toki e ni: lupa lupa pi pipi linja"
+    toki "sitelen li toki e ni: lupa lupa pi pipi linja"
     toki_li_pini
     ;db "Hunh?  A keyhole"
     ;db "here?  It says, "

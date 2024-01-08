@@ -2,6 +2,8 @@
 ; 333 [P] lines
 ; 678 lines total
 
+; todo: add periods to the left sentences in "sina moli"
+
 ; the word "nanpa" is broken because it's mapped to $20
 ; the fallback letter "H" is broken because it's mapped to $20 (because it looks like nanpa)
 
@@ -135,7 +137,7 @@ Dialog002:: ;🅿️; Marin
     ; nasin li lon poka pi tomo ni.
     toki "sina weka tan tomo la, nasin li lon. sina tawa lon nasin la"
     toki "sina lukin e telo suli. sina tan telo ni."
-    toki "akesi ike en pipi ike li kama lon tenpo sama."
+    toki "sina en monsuta mute li kama lon tenpo sama."
     toki "o awen pona!"
     toki_li_pini
 
@@ -936,7 +938,7 @@ Dialog027:: ;🅿️; Papahl
     toki "mi mama [pan alasa pan alasa]."
     toki "mi mama pi jan lili tu tu."
     toki "tenpo kama la, mi tawa nena suli."
-    toki "ken la, mi pakala. ni la, o pona e mi"
+    toki "ken la, mi pakala. mi ni la, o pona e mi"
     toki_li_pini
     ;db "Yep!  Those're  "
     ;db "my boys!  I'm   "
@@ -1371,7 +1373,7 @@ Dialog043:: ;🅿️; Ghost
     ;db "@"
 
 Dialog044:: ;🅿️; Narrator
-    toki "sina kama jo e sitelen <yoshi>[jo olin suwi insa] a!"
+    toki "sina kama jo e ko <yoshi>[jo olin suwi insa] a!"
     toki "akesi ni li lon musi mute a!"
     toki_li_pini
     ;db "You got a Yoshi "
@@ -1713,9 +1715,9 @@ Dialog055:: ;🅿️; Tarin
     toki "a! o sona:"
     toki "ilo ante sina li kama lon poka telo."
     toki "sina alasa e ilo la,"
-    toki "o awen pona. monsuta li lon."
+    toki "o awen pona. akesi li lon."
     toki "jan [#####] o, sina kama la,"
-    toki "monsuta mute li kama kin."
+    toki "akesi mute li kama kin."
     toki_li_pini
 
     ;toki "a! jan [#####] o!"
@@ -2326,7 +2328,7 @@ Dialog08C:: ;🅿️; Narrator
     ;db "@"
 
 Dialog08D:: ;🅿️; Narrator
-    toki "suli wawa a! sina ken ala tawa e ni kepeken luka taso...@"
+    toki "suli wawa a! sina ken ala tawa e ni kepeken luka taso..."
     toki_li_pini
 
     ;db "Wow!  This looks"
@@ -2379,7 +2381,8 @@ Dialog090:: ;🅿️; Narrator
 
 Dialog091:: ;🅿️; Narrator
     toki "sina kama jo e ilo awen sina a!"
-    toki "sina ken tawa e pipi kepeken ilo ni.@"
+    ;toki "nasa la, sina ken tawa e pipi kepeken ilo ni.@"
+    toki "ilo li wawa nanpa wan, la ona li ken tawa e pipi."
     toki_li_pini
 
     ;db "You got your    "
@@ -2525,7 +2528,7 @@ Dialog09A:: ;🅿️; Narrator
 
 Dialog09B:: ;🅿️; Narrator
     toki "sina kama jo e palisa utala sina a!"
-    toki "nimi sina li lon ona a!"
+    toki "sina sitelen e nimi sina lon ona a!"
     toki_li_pini
     ;db "You found your  "
     ;db "Sword!  It must "

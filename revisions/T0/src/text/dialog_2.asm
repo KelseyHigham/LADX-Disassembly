@@ -691,7 +691,7 @@ Dialog0D9:: ;🅿️; Owl
     toki "    mu sona          "
     toki "          mu sona    " ; for pairing lines of text
     toki "a  palisa utala li palisa sina..."
-    toki "akesi ike en pipi ike en soweli ike li utala tan ni..."
+    toki "akesi li utala tan kama sina..."
     toki "jan lili wawa li kama li pini e lape pi kala kon..."
     toki "sina ni ala la sina ken ala weka tan ma ni..."
     toki "<up> o tawa ni tawa ma kasi nasa!"

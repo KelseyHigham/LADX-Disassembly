@@ -166,7 +166,7 @@ Dialog117:: ;🆖; idk
 
 Dialog118:: ;🅿️; Kid
     toki "jan suli o!"
-    toki "sina wile awen e sona sina la, "
+    toki "sina wile awen e pali sina la, "
     toki "o luka e nena Ae nena Be nena START"
     toki "e nena SELECT lon tenpo sama."
     toki "taso, mi lili, la mi sona ala."
@@ -1792,7 +1792,7 @@ Dialog180:: ;🅿️; CiaoCiao
 Dialog181:: ;🅿️; CiaoCiao, Link
     toki "mu a! len suwi li pona mute tawa mi a!"
     toki "mi wile e len lili sin kin..."
-    toki "a! len lili sina li suwi a!"
+    toki "a! len sina li suwi a!"
     toki "o esun e ona e moku soweli mi!"
     toki "    a mi ni. ala.<ask>"
     ;db "Make-up! Jewels!"
