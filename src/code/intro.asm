@@ -785,15 +785,33 @@ TitleScreenSfxHandler::
 .return
     ret                                           ; $7363: $C9
 
+IF LANG_TP
+TitleScreenCopyrightDrawCommandTPCartouche::
+    db   $9B, $94, $14
+    db   $7C, $7C, $7C, $77, $75, $7E, $7E, $65, $72, $72, $72, $72, $72, $72, $72, $7B, $78, $7C, $7C, $7C, $00
+TitleScreenCopyrightDrawCommandTPText::
+    db   $9B, $B7, $0D
+    db   $7C, $66, $67, $68, $69, $6A, $6B, $6C, $6D, $6E, $6F, $70, $71, $7C, $00
+ELSE
 TitleScreenCopyrightDrawCommand::
     db   $9B, $B7, $0D, $65, $66, $67, $68, $69   ; $7364 ; $7364
     db   $6A, $6B, $6C, $6D, $6E, $6F, $70, $71   ; $736C ; $736C
     db   $72, $00                                 ; $7374 ; $7374
+ENDC
 
 IntroStageAHandler::
+IF LANG_TP
+    ld   de, TitleScreenCopyrightDrawCommandTPCartouche
+    ld   hl, wDrawCommand
+    ld   c, $17
+    ld   de, TitleScreenCopyrightDrawCommandTPText
+    ld   hl, wDrawCommand
+    ld   c, $12
+ELSE
     ld   de, TitleScreenCopyrightDrawCommand      ; $7376: $11 $64 $73
     ld   hl, wDrawCommand                         ; $7379: $21 $01 $D6
     ld   c, $12                                   ; $737C: $0E $12
+ENDC
 
 .loop
     ld   a, [de]                                  ; $737E: $1A
@@ -1700,8 +1718,8 @@ IF LANG_JP
 X_POS = $79
 Y_OFFSET = $46
 ELIF LANG_TP
-X_POS = $7C
-Y_OFFSET = $46
+X_POS = $7A
+Y_OFFSET = $45
 ELSE
 X_POS = $78
 Y_OFFSET = $59
