@@ -786,12 +786,12 @@ TitleScreenSfxHandler::
     ret                                           ; $7363: $C9
 
 IF LANG_TP
-TitleScreenCopyrightDrawCommandTPCartouche::
-    db   $9B, $94, $14
-    db   $7C, $7C, $7C, $77, $75, $7E, $7E, $65, $72, $72, $72, $72, $72, $72, $72, $7B, $78, $7C, $7C, $7C, $00
-TitleScreenCopyrightDrawCommandTPText::
+TitleScreenCopyrightDrawCommandTP::
+    db   $9B, $94, $13
+    db   $7C, $7C, $7C, $77, $75, $7E, $7E, $65, $72, $72, $72, $72, $72, $72, $72, $7B, $78, $7C, $7C, $7C
     db   $9B, $B7, $0D
-    db   $7C, $66, $67, $68, $69, $6A, $6B, $6C, $6D, $6E, $6F, $70, $71, $7C, $00
+    db   $7C, $66, $67, $68, $69, $6A, $6B, $6C, $6D, $6E, $6F, $70, $71, $7C
+    db   $00
 ELSE
 TitleScreenCopyrightDrawCommand::
     db   $9B, $B7, $0D, $65, $66, $67, $68, $69   ; $7364 ; $7364
@@ -801,12 +801,9 @@ ENDC
 
 IntroStageAHandler::
 IF LANG_TP
-    ld   de, TitleScreenCopyrightDrawCommandTPCartouche
+    ld   de, TitleScreenCopyrightDrawCommandTP
     ld   hl, wDrawCommand
-    ld   c, $17
-    ld   de, TitleScreenCopyrightDrawCommandTPText
-    ld   hl, wDrawCommand
-    ld   c, $12
+    ld   c, $17 + $12
 ELSE
     ld   de, TitleScreenCopyrightDrawCommand      ; $7376: $11 $64 $73
     ld   hl, wDrawCommand                         ; $7379: $21 $01 $D6
@@ -845,13 +842,21 @@ ResetIntroTimers::
     ld   [wD003], a                               ; $73A8: $EA $03 $D0
     ret                                           ; $73AB: $C9
 
-Data_001_73AC::
-    db   $9B, $B7, $4D, $07, $00                  ; $73AC
+Data_001_73AC:: ; paint the copyright portion of the title screen attrmap, after the intro cutscene
+    db   $9B, $B7, $4D, $07
+IF LANG_TP
+    db   $9B, $97, $4D, $07
+ENDC
+    db   $00
 
 func_001_73B1::
     ld   de, Data_001_73AC                        ; $73B1: $11 $AC $73
     ld   hl, wDrawCommandAlt                      ; $73B4: $21 $91 $DC
+IF LANG_TP
+    ld   c, $12 + $12
+ELSE
     ld   c, $12                                   ; $73B7: $0E $12
+ENDC
 
 .loop
     ld   a, [de]                                  ; $73B9: $1A
@@ -2078,55 +2083,26 @@ InertLinkState3Handler::
 .return
     ret                                           ; $7AE3: $C9
 
-Data_001_7AE4::
-    db   $7C, $7C, $44, $45, $7D, $7D, $7D, $7D   ; $7AE4
-    db   $7D, $7D, $7D, $7D, $7D, $7D, $7D, $7D   ; $7AEC
-    db   $4C, $4D, $7C, $7C, $7C, $7C, $7C, $7C   ; $7AF4
-    db   $44, $45, $7D, $2D, $2E, $2D, $2E, $2D   ; $7AFC
-    db   $2E, $7D, $4C, $4D, $7C, $7C, $7C, $7C   ; $7B04
-    db   $7C, $7C, $7C, $7C, $7C, $77, $46, $7E   ; $7B0C
-    db   $7E, $7E, $7E, $7E, $7E, $4B, $79, $7C   ; $7B14
-    db   $7C, $7C, $7C, $7C, $7C, $7C, $7C, $77   ; $7B1C
-    db   $75, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7B24
-    db   $7E, $7E, $7E, $75, $78, $7C, $7C, $7C   ; $7B2C
-    db   $7C, $7C, $77, $7A, $7A, $74, $73, $74   ; $7B34
-    db   $5C, $5D, $5E, $5F, $73, $74, $73, $7A   ; $7B3C
-    db   $7E, $78, $7C, $7C, $7C, $7C, $73, $75   ; $7B44
-    db   $78, $77, $78, $79, $58, $59, $5A, $5B   ; $7B4C
-    db   $79, $79, $77, $75, $7E, $74, $7C, $7C   ; $7B54
-    db   $7C, $7C, $7C, $73, $74, $76, $73, $7A   ; $7B5C
-    db   $54, $55, $56, $57, $7A, $74, $76, $73   ; $7B64
-    db   $74, $7C, $7C, $7C, $77, $78, $7C, $79   ; $7B6C
-    db   $7C, $7C, $7C, $7C, $50, $51, $52, $53   ; $7B74
-    db   $7C, $7C, $7C, $7C, $7C, $7C, $77, $78   ; $7B7C
-    db   $7E, $7E, $75, $7E, $78, $77, $75, $78   ; $7B84
-    db   $79, $2B, $2C, $79, $79, $77, $75, $78   ; $7B8C
-    db   $77, $75, $7E, $7E, $7E, $7E, $7E, $7E   ; $7B94
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7B9C
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BA4
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BAC
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BB4
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BBC
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BC4
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BCC
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BD4
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BDC
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BE4
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BEC
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BF4
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7BFC
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C04
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C0C
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C14
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C1C
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C24
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C2C
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C34
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C3C
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C44
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C4C
-    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E   ; $7C54
-    db   $7E, $7E, $7E, $7E                       ; $7C5C
+Data_001_7AE4:: ; title screen, after the beach intro plays out
+    db   $7C, $7C, $44, $45, $7D, $7D, $7D, $7D, $7D, $7D, $7D, $7D, $7D, $7D, $7D, $7D, $4C, $4D, $7C, $7C
+    db   $7C, $7C, $7C, $7C, $44, $45, $7D, $2D, $2E, $2D, $2E, $2D, $2E, $7D, $4C, $4D, $7C, $7C, $7C, $7C
+    db   $7C, $7C, $7C, $7C, $7C, $77, $46, $7E, $7E, $7E, $7E, $7E, $7E, $4B, $79, $7C, $7C, $7C, $7C, $7C
+    db   $7C, $7C, $7C, $77, $75, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $75, $78, $7C, $7C, $7C
+    db   $7C, $7C, $77, $7A, $7A, $74, $73, $74, $5C, $5D, $5E, $5F, $73, $74, $73, $7A, $7E, $78, $7C, $7C
+    db   $7C, $7C, $73, $75, $78, $77, $78, $79, $58, $59, $5A, $5B, $79, $79, $77, $75, $7E, $74, $7C, $7C
+    db   $7C, $7C, $7C, $73, $74, $76, $73, $7A, $54, $55, $56, $57, $7A, $74, $76, $73, $74, $7C, $7C, $7C
+    db   $77, $78, $7C, $79, $7C, $7C, $7C, $7C, $50, $51, $52, $53, $7C, $7C, $7C, $7C, $7C, $7C, $77, $78
+    db   $7E, $7E, $75, $7E, $78, $77, $75, $78, $79, $2B, $2C, $79, $79, $77, $75, $78, $77, $75, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E
+    db   $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E, $7E                       ; $7C5C
 
 func_7C60::
     ld   a, [wD00A]                               ; $7C60: $FA $0A $D0
