@@ -9,7 +9,7 @@ Dialog0A5:: ;🆖; Narrator
     db "Bird Key!@"
 
 Dialog0A6:: ;🅿️; Narrator
-    toki "tenpo alasa li pini a! sina kama jo e lipu tomo a!"
+    toki "tenpo alasa li pini a! sina jo e lipu tomo."
     toki "o lukin e ona kepeken nena START."
     toki_li_pini
     ;db "At last, you got"
@@ -43,8 +43,8 @@ Dialog0A7:: ;🅿️; Narrator
     ;db "@"
 
 Dialog0A8:: ;🅿️; Narrator
-    toki "sina kama jo e uta waso kiwen a!"
-    toki "o alasa e waso sona kiwen ona."
+    toki "sina jo e uta kiwen a!"
+    toki "o alasa e waso kiwen ona."
     toki_li_pini
     ;db "You found a     "
     ;db "stone beak!     "
@@ -55,8 +55,8 @@ Dialog0A8:: ;🅿️; Narrator
     ;db "フクロウのせきぞうをさがそう。@"
 
 Dialog0A9:: ;🅿️; Narrator
-    toki "sina kama jo e ilo lupa suli a!"
-    toki "sina ken open e lupa pi ike suli."
+    toki "sina jo e ilo lupa monsuta a!"
+    toki "sina ken open e lupa pi monsuta suli."
     toki_li_pini
     ;db "You've got the  "
     ;db "Nightmare's Key!"
@@ -69,8 +69,8 @@ Dialog0A9:: ;🅿️; Narrator
     ;db "@"
 
 Dialog0AA:: ;🅿️; Narrator
-    toki "sina kama jo e ilo lupa lili a!"
-    toki "ona li ken open e lupa wan."
+    toki "sina jo e ilo lupa a!"
+    toki "ona li open e lupa wan."
     toki_li_pini
     ;db "You got a Small "
     ;db "Key!  You can   "
@@ -131,7 +131,7 @@ Dialog0AF:: ;🆖; Hippo
     ;db "@"
 
 Dialog0B0:: ;🅿️; Moldorm (D1 Nightmare)
-    toki "mu ike a! mu ike a!"
+    toki "mu monsuta a! mu monsuta a!"
     toki "jan pi ma weka a! jan pi ma weka a!"
     toki_li_pini
     ;db "BUZZZZZ! BUZZZZ!"
@@ -160,8 +160,8 @@ Dialog0B3:: ;🆖; Slime Eel (D5 Nightmare)
 
 Dialog0B4:: ;🅿️; Genie (D2 Nightmare)
     ; todo: revise
-    toki "mu musi ike! mu musi ike! mi jan utala pi tenpo ni a!"
-    toki "mu musi ike! mu musi ike!@"
+    toki "mu musi monsuta! mu musi monsuta! mi monsuta pi tenpo ni a!"
+    toki "mu musi monsuta! mu musi monsuta!@"
     toki_li_pini
     ;db "HO HO HO!       "
     ;db "I'm your bad guy"
@@ -343,9 +343,9 @@ Dialog0C2:: ;🅿️; Owl
     toki "tenpo pini la, mi pilin ala e ni..."
     toki "sina kalama kepeken ilo ni kepeken ilo ante luka tu la,"
     toki "sina pini e lape pi kala kon. o kama jo e ilo ale!"
-    toki "sewi kala kon li pana e mi tawa sina tawa wile ni:"
+    toki "sewi kala kon li pana e mi tawa sina tawa ni:"
     toki "mi pana e nasin."
-    toki "<up> o tawa ni tawa ma ko [pan o noka kala a]"
+    toki "o tawa <up> tawa ma ko [pan o noka kala a]"
     toki "mu sona-"
     toki_li_pini
     ;db "Hoooot!  That is"
@@ -408,7 +408,7 @@ Dialog0C3:: ;🅿️; Owl
 
 Dialog0C4:: ;🅿️; Owl
     ; todo: revise
-    toki "mu sona! sewi kala kon li lape lon sike sewi ni..."
+    toki "mu sona! sewi kala kon li lape lon sike sewi <up>..."
     toki "mi sona ala e tenpo pini lape. mi lukin lon tenpo suli."
     toki "sina kepeken ilo kalama sewi luka tu wan lon poka sike la"
     toki "kala kon li pini e lape ona."
@@ -1004,6 +1004,24 @@ Dialog0F5:: ;🆖; Nightmare (final boss)
     db "You can never   "
     db "defeat us!!!    "
     db "Let's rumble!@"
+    
+    ; GlitterBerri, literal:
+    ; "We are those who were born
+    ; from within a nightmare...
+    ; In order to establish order in
+    ; this closed world known as a dream,
+    ; we put the Wind Fish to sleep
+    ; for all eternity...
+    ; This way, the island will never
+    ; vanish because of its awakening.
+    ; It's WE who are the gods!
+    ; ............
+    ; ...But then you came along...
+    ; You won't get in our way!
+    ; Heh heh heh. Someone like
+    ; you could never defeat us!
+    ;              Here we come!" 
+
 
 Dialog0F6:: ;🆖; Nightmare (final boss)
     db "This island is  "

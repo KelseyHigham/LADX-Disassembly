@@ -467,7 +467,7 @@ Dialog288:: ;🅿️; Owl Statue
     ;db "a stone block.@"
 
 Dialog289:: ;🅿️; Owl Statue
-    toki "sina wan e kiwen e supa la..."
+    toki "sina wan e kiwen tu la..."
     toki "nasin sin li open..."
     toki_li_pini
     ;db "Make every block"

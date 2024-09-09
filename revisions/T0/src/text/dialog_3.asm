@@ -104,9 +104,8 @@ Dialog10F:: ;🅿️; Photographer
     ;db "@"
 
 Dialog110:: ;🅿️; Narrator
-    toki "waso sona kiwen li toki."
-    toki "taso, sina ken ala kute e ona tan ni:"
-    toki "ona li jo ala e uta."
+    toki "waso kiwen li wile toki..."
+    toki "taso ona li jo ala e uta."
     toki_li_pini
     ;db "This owl statue "
     ;db "is trying to say"
@@ -858,6 +857,15 @@ Dialog139:: ;🆖; Weird Mr. Write
     ;db "@"
 
 Dialog13A:: ;🆖; Richard
+    toki ""
+;toki a!
+;mi suli. tenpo pini la, mi lape lon ma tomo kiwen.
+
+;taso monsuta li kama lawa nasa e jan mi.
+;jan mi li weka e mi tan tomo tan nasa...
+
+;a  sina wile tawa ma kasi [utala kasi utala kasi uta] anu seme
+
     db "Salutations!    "
     db "You wouldn't    "
     db "know by the look"
@@ -1028,8 +1036,8 @@ Dialog142:: ;🅿️; Ulrira
     toki "mi jan suli [uta linja uta linja ilo linja a] a!"
     toki "soweli ike mute li tan ma kasi nasa."
     toki ""
-    toki "taso, soweli ike lili li lon"
-    toki "lupa ma pi supa sewi [tawa awen tawa awen]..."
+    toki "taso, soweli ike lili li lon lupa ma pi"
+    toki "supa sewi [tawa awen tawa awen]..."
     toki "sona ni li pona ala pona tawa sina?"
     toki "jan suli [uta linja uta linja ilo linja a] li tawa---"
     toki "mu ilo pini"
@@ -1063,7 +1071,7 @@ Dialog143:: ;🅿️; Ulrira
     toki "kasi kule pi ma ko [pan o noka kala a]..."
     toki "ona li pona nanpa wan tawa soweli mu mu."
     toki "o tawa noka tawa ona lon poka ona a!"
-    toki "jan suli [uta linja uta linja ilo linja a] li tawa---"
+    toki "jan [uta linja uta linja ilo linja a] li tawa-"
     toki "mu ilo pini"
     toki_li_pini
     ;db "'BRRING! BRRING!"
@@ -1088,32 +1096,67 @@ Dialog143:: ;🅿️; Ulrira
     ;db "どうだい？　うるりら－　ガチャ」"
     ;db "@"
 
-Dialog144:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Hi, it's Ulrira!"
-    db "...Have you met "
-    db "everyone on the "
-    db "island?  There's"
-    db "a man named     "
-    db "Richard who     "
-    db "lives in Pothole"
-    db "Field, southeast"
-    db "of the village. "
-    db "Why not pay him "
-    db "a visit?  That's"
-    db "all I can tell  "
-    db "you for now!    "
-    db "Bye!  CLICK!'@"
+Dialog144:: ;🅿️; Ulrira
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "sina toki ala toki tawa jan ale pi ma ni?"
+    toki "tan ma tomo [mu e pona e] la, o tawa ma kasi lupa."
+    toki "jan [wan ijo suli ale] li lon.   <right><down>"
+    toki "weka [uta linja uta linja ilo linja a]-"
+    toki "mu ilo pini"
+    toki_li_pini
+    ;db "'BRRING! BRRING!"
+    ;db "Hi, it's Ulrira!"
+    ;db "...Have you met "
+    ;db "everyone on the "
+    ;db "island?  There's"
+    ;db "a man named     "
+    ;db "Richard who     "
+    ;db "lives in Pothole"
+    ;db "Field, southeast"
+    ;db "of the village. "
+    ;db "Why not pay him "
+    ;db "a visit?  That's"
+    ;db "all I can tell  "
+    ;db "you for now!    "
+    ;db "Bye!  CLICK!'@"
+    ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
+    ;db "．．．　プルルル　プルル　ガチャ"
+    ;db "わしじゃ、うるりらじいさんじゃ！"
+    ;db "このしまのみんなには、あったか？"
+    ;db "むらのナントウ　アナボコばたけに"
+    ;db "リチャ－ドというおとこがおる．．"
+    ;db "いちど、あってみてはどうかね？　"
+    ;db "では、うるりら－　ガチャッ！　」"
+    ;db "@"
 
 Dialog145:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Old man Ulrira  "
-    db "here! ...Do you "
-    db "like bananas?   "
-    db "Try talking to  "
-    db "people in the   "
-    db "village again!  "
-    db "Bye!  CLICK!'@"
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "kili palisa jelo li pona ala pona tawa sina?"
+    toki "o toki tawa jan pi ma tomo."
+    toki "pini [uta linja uta linja ilo linja a]-"
+    toki "mu ilo pini"
+    toki_li_pini
+    ;db "'BRRING! BRRING!"
+    ;db "Old man Ulrira  "
+    ;db "here! ...Do you "
+    ;db "like bananas?   "
+    ;db "Try talking to  "
+    ;db "people in the   "
+    ;db "village again!  "
+    ;db "Bye!  CLICK!'@"
+    ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
+    ;db "．．．　プルルル　プルル　ガチャ"
+    ;db "わしじゃ、うるりらじいさんじゃっ"
+    ;db "ところでバナナは、いらんかのう？"
+    ;db "もういちど、むらのひととはなして"
+    ;db "みるといいじゃろう．．．　　　　"
+    ;db "　うるりら－　　　ガチャ！　」@"
 
 Dialog146:: ;🅿️; Ulrira
     toki "mu ilo  mu ilo"
@@ -1159,17 +1202,35 @@ Dialog146:: ;🅿️; Ulrira
     ;db "@"
 
 Dialog147:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Ya, it's Ulrira!"
-    db "You say you     "
-    db "haven't found   "
-    db "all five Golden "
-    db "Leaves? Go ask  "
-    db "the crow at the "
-    db "castle. I'm sure"
-    db "he can help you."
-    db "Bye!            "
-    db "CLICK!'@"
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "sina wile alasa e linja waso, anu seme? nasa."
+    toki "taso, o tawa tomo lawa kiwen. waso pimeja li lon li nasa."
+    toki "o monsuta tawa waso..."
+    toki "weka [uta linja uta linja ilo linja a]-"
+    toki "mu ilo pini"
+    toki_li_pini
+    ;db "'BRRING! BRRING!"
+    ;db "Ya, it's Ulrira!"
+    ;db "You say you     "
+    ;db "haven't found   "
+    ;db "all five Golden "
+    ;db "Leaves? Go ask  "
+    ;db "the crow at the "
+    ;db "castle. I'm sure"
+    ;db "he can help you."
+    ;db "Bye!            "
+    ;db "CLICK!'@"
+    ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
+    ;db "．．．　プルルル　プルル　ガチャ"
+    ;db "うるりらじゃ。　フム、「はっぱ」" hm, 'leaves'
+    ;db "が、５まいそろわんとな．．．？　" five of them must be gathered...?
+    ;db "よくわからんが　．．．カラス．．" idk, but... crows...
+    ;db "おしろのカラスが　あやしいのう　" castle's crows are sus
+    ;db "すこしおどかしてみてはどうかな？" why not startle a little?
+    ;db "うるりら－－　　ガチャッ」@"
 
 Dialog148:: ;🆖; Ulrira
     db "'BRRING! BRRING!"

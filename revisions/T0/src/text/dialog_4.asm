@@ -2,7 +2,7 @@
 
 Dialog190:: ;🅿️; Moblin
     toki "a! jan seme a! jan lili nasa a!"
-    toki "jan ale o pakala e ona a!"
+    toki "soweli ale o pakala e ona a!"
     toki_li_pini
     ;db "Ennh?  Who's    "
     ;db "this suspicious-"
@@ -329,6 +329,9 @@ Dialog1B6:: ;🅿️; Owl Statue
     ;db "ねいろに　カミはこたえよう　　　"
     ;db "@"
     ; カミのタマゴにあいにゆけ  音色に  神は応えよう
+    ; GlitterBerri, literal:
+    ; "Go meet the god of the egg.
+    ; Let the god listen to the timbre."
 
 Dialog1B7:: ;🅿️; Owl Statue
     toki "     kala kon li lon ala telo"
@@ -583,7 +586,7 @@ Dialog1CC:: ;🅿️; Sale
     ;db "ど－も、ごちそうさんでした！@"
 
 Dialog1CD:: ;🅿️; Sale
-    toki "jan pona mi o! sina tawa ala tawa telo wawa kepeken supa?"
+    toki "jan mi o! sina tawa ala tawa telo wawa kepeken supa?"
     toki "sina ken ni lon poka pi supa sewi [tawa awen tawa awen] a!"
     toki "o ni a!"
     toki_li_pini
@@ -1024,8 +1027,8 @@ Dialog1FD:: ;🅿️; Bucket Mouse
     ;db "@"
 
 Dialog1FE:: ;🅿️; Fisherman, Link
-    toki "a! suli a! pona la, ona li jo e lili pilin a!"
-    toki "kin la, sina kama jo e mani 20 a!"
+    toki "a! suli a! pona la, ona li jo e tu pilin a!"
+    toki "kin la, mi pana e mani 20 a!"
     toki "sina wile ala wile musi sin?"
     toki "    wile a!   mi pini<ask>"
     ;db "Oh!  It's a big "
@@ -1890,6 +1893,18 @@ Dialog23C:: ;🆖; Richard
     db "this deserves a "
     db "photo, don't you"
     db "think?@"
+    ;db "キミたち、このボクのオシロに　　"
+    ;db "みとれているのかい？　　　　　　"
+    ;db "じつは、このオシロのもん　　　　"
+    ;db "おかね　かかってんだよね－！　　"
+    ;db "いや　しかし、ボクの　このゆうき"
+    ;db "キネンをのこすに　あたいするね！"
+    ;db "よし、１まいとることをゆるすぞ！"
+    ;db "@"
+    ;ChatGPT, spoonfed: "You guys, are you admiring my awesomeness?
+    ;Actually, these are my golden leaves, right? 
+    ;Well, my courage deserves commemoration! 
+    ;Alright, I'll allow you to take one."
 
 Dialog23D:: ;🆖; Tarin
     db "Hey, Marin and  "

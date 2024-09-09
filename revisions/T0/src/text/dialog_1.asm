@@ -291,8 +291,8 @@ Dialog006:: ;🅿️; Marin
 
 Dialog007:: ;🅿️; Narrator
     toki "seme? lupa li pini wawa a!"
-    toki "sina ken ala tawa tomo pi ike suli."
-    toki "o kama jo e ilo open suli.@"
+    toki "sina ken ala tawa tomo pi monsuta suli."
+    toki "o alasa e ilo lupa monsuta.@"
     toki_li_pini
 
     ;toki "seme? lupa li moku ala e sina."
@@ -1581,7 +1581,7 @@ Dialog04F:: ;🅿️; Narrator
     ;toki "sina kama jo e pilin lili a! sina wile lukin la, lipu la,"
     ;toki "o luka e nena SELECT"
     ;toki_li_pini
-    toki "sina kama jo e lili pilin a! sina wile lukin e pilin la"
+    toki "sina jo e tu pilin a! sina wile lukin e pilin la"
     toki "o luka e nena SELECTlon lipu START."
     toki_li_pini
 
@@ -2367,7 +2367,7 @@ Dialog08F:: ;🅿️; Marin
     ;db "かわいそうじゃない！　モオッ！@"
 
 Dialog090:: ;🅿️; Narrator
-    toki "sina kama jo e len luka wawa a!"
+    toki "sina jo e len luka wawa a!"
     toki "kepeken ni la, sina ken jo e kiwen e poki a!"
     toki_li_pini
     ;db "You found the   "
@@ -2478,7 +2478,7 @@ Dialog096:: ;🅿️; Narrator
     ;db "@"
 
 Dialog097:: ;🅿️; Narrator
-    toki "sina kama jo e linja pi waso suli a!"
+    toki "sina jo e linja pi waso suli!"
     toki "sina pilin lili sama waso."
     toki_li_pini
     ;db "You've got the  "
