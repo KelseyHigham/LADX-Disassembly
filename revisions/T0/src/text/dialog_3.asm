@@ -857,7 +857,6 @@ Dialog139:: ;🆖; Weird Mr. Write
     ;db "@"
 
 Dialog13A:: ;🆖; Richard
-    toki ""
 ;toki a!
 ;mi suli. tenpo pini la, mi lape lon ma tomo kiwen.
 
@@ -866,30 +865,59 @@ Dialog13A:: ;🆖; Richard
 
 ;a  sina wile tawa ma kasi [utala kasi utala kasi uta] anu seme
 
-    db "Salutations!    "
-    db "You wouldn't    "
-    db "know by the look"
-    db "of me, but I    "
-    db "used to live in "
-    db "the castle! My  "
-    db "servants went   "
-    db "berserk and I   "
-    db "was forced to   "
-    db "flee to my      "
-    db "villa... So, you"
-    db "want the key to "
-    db "Ukuku Prairie,  "
-    db "do you?  I may  "
-    db "be able to help "
-    db "you...  Let's   "
-    db "make... a deal, "
-    db "shall we? I want"
-    db "you to retrieve "
-    db "the Golden Leaf "
-    db "I left behind in"
-    db "the castle when "
-    db "I fled...       "
-    db "    Okay No Way<ask>"
+
+    toki "tenpo pini la, mi lawa e jan e ma."
+    toki "tomo kiwen suli [kule awen nanpa awen] li tomo mi."
+
+    toki "taso, monsuta li kama lawa e jan mi..."
+    toki "jan li kama nasa li utala e mi. mi weka tan ni."
+
+    toki "sina wile tawa ma kasi [utala kasi utala kasi utala] anu seme"
+    toki "mi o esun."
+
+    toki "o alasa e lipu kasi jelo mi."
+    toki "mi weka tan tomo kiwen la, linja li awen lon."
+
+    toki "    pona     ala a<ask>"
+;tenpo pini la, mi lawa e jan e ma.
+; tomo kiwen suli li tomo mi.
+
+; taso, monsuta li kama lawa e jan mi...
+; jan li kama nasa, li utala e mi. mi weka tan monsuta tan jan.
+
+; sina wile tawa ma Ukuku, anu seme?
+; mi o esun.
+
+; o alasa e linja waso jelo mi.
+; mi weka tan tomo kiwen la, linja li awen lon.
+
+; pona    ala a
+
+
+    ;db "Salutations!    "
+    ;db "You wouldn't    "
+    ;db "know by the look"
+    ;db "of me, but I    "
+    ;db "used to live in "
+    ;db "the castle! My  "
+    ;db "servants went   "
+    ;db "berserk and I   "
+    ;db "was forced to   "
+    ;db "flee to my      "
+    ;db "villa... So, you"
+    ;db "want the key to "
+    ;db "Ukuku Prairie,  "
+    ;db "do you?  I may  "
+    ;db "be able to help "
+    ;db "you...  Let's   "
+    ;db "make... a deal, "
+    ;db "shall we? I want"
+    ;db "you to retrieve "
+    ;db "the Golden Leaf "
+    ;db "I left behind in"
+    ;db "the castle when "
+    ;db "I fled...       "
+    ;db "    Okay No Way<ask>"
     ;db "やあ、ボカァこうみえてもオシロに"
     ;db "すんでたことも、あるんだけどさ。"
     ;db "けらいにマモノが、とりついたんで"
@@ -913,12 +941,19 @@ Dialog13A:: ;🆖; Richard
 
 
 Dialog13B:: ;🆖; Richard
-    db "I am impressed. "
-    db "There are five  "
-    db "leaves in all.  "
-    db "Remember to buy "
-    db "a shovel on your"
-    db "way back.@"
+    toki "wawa a! sina pona. taso..."
+    toki "lipu kasi luka li lon. mi wile e ona ale."
+
+    toki "o sona: sina kama sin tawa mi la, sina o tawa e ma."
+    toki "o esun e ilo pi lupa ma."
+    toki_li_pini
+
+    ;db "I am impressed. "
+    ;db "There are five  "
+    ;db "leaves in all.  "
+    ;db "Remember to buy "
+    ;db "a shovel on your"
+    ;db "way back.@"
     ; DMG version:
     ; Smashing!  To
     ; tell you the
@@ -931,38 +966,76 @@ Dialog13B:: ;🆖; Richard
     ; shovel!  Are you
     ; off then? Good
     ; luck!
+    ;db "いやあ、かんげきだなあ！　　　　"
+    ;db "じつは「はっぱ」は、５まいなんだ"
+    ;db "あっ、もどってくるまえにスコップ"
+    ;db "かっといてね－。じゃ、よろしく－"
+    ;db "@"
 
 Dialog13C:: ;🆖; Richard
-    db "Well, I never!  "
-    db "I thought you   "
-    db "looked cowardly,"
-    db "but...  Please, "
-    db "leave me... just"
-    db "get out here!@"
+; probably upon refusal?
+
+    toki "sina ike. o weka."
+    toki_li_pini
+
+    ;db "Well, I never!  "
+    ;db "I thought you   "
+    ;db "looked cowardly,"
+    ;db "but...  Please, "
+    ;db "leave me... just"
+    ;db "get out here!@"
+    ;db "ボカァきみのような　いくじなしは"
+    ;db "かおもみたくないよ！　シッシッ@"
 
 Dialog13D:: ;🆖; Richard ;
-    db "Ahh!  Tres Bien!"
-    db "I see you have  "
-    db "recovered all of"
-    db "the leaves! Now,"
-    db "move this box   "
-    db "and you will    "
-    db "find your       "
-    db "reward!@"
+    toki "a- sina wawa-"
+    toki "sina kama jo e lipu kasi jelo ale a!"
+
+    toki "o tawa e poki ni."
+    toki "mi a li pana e pona tawa sina."
+
+    toki_li_pini
+
+    ;db "Ahh!  Tres Bien!"
+    ;db "I see you have  "
+    ;db "recovered all of"
+    ;db "the leaves! Now,"
+    ;db "move this box   "
+    ;db "and you will    "
+    ;db "find your       "
+    ;db "reward!@"
+    ;db "ウ－－－ン　トレビア－ン！　　　"
+    ;db "はっぱがすべて、そろったんだね！"
+    ;db "さあ、このきばこをうごかしたまえ"
+    ;db "ボクからの　おれいのしるしだよ！"
+    ;db "@"
 
 Dialog13E:: ;🆖; Richard
-    db "I am forever in "
-    db "your debt for   "
-    db "getting my      "
-    db "leaves back!@"
+    toki "sina pona e mi. mi pilin pona tan sina."
+    toki_li_pini
+    ;db "I am forever in "
+    ;db "your debt for   "
+    ;db "getting my      "
+    ;db "leaves back!@"
+    ;db "きみのおかげで　はっぱももどって"
+    ;db "ボカァ　しあわせだなあ－！@"
 
 Dialog13F:: ;🆖; Richard ; 1--4 leaves
-    db "Ah!  Bonjour!   "
-    db "#####, for the  "
-    db "love of justice,"
-    db "and my own sake,"
-    db "you must find   "
-    db "all the leaves!@"
+    toki "a! jan [#####] o! toki a!"
+    toki "o alasa e lipu ale mi..."
+
+    toki "tan pona  tan olin  tan lawa."
+    toki_li_pini
+    ;db "Ah!  Bonjour!   "
+    ;db "#####, for the  "
+    ;db "love of justice,"
+    ;db "and my own sake,"
+    ;db "you must find   "
+    ;db "all the leaves!@"
+    ;db "ボンジュ－ル　#####　　　　"
+    ;db "あいと　せいぎと、それから．．．"
+    ;db "ボクのしあわせのために、はっぱを"
+    ;db "すべて、そろえてくれたまえ！@"
 
 Dialog140:: ;🅿️; Ulrira, Narrator
     toki "n... ... mu lili..."
