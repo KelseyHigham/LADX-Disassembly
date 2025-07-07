@@ -18,6 +18,27 @@
 
 ; "When I recently played these two games in Japanese after all these years, it’s pretty clear to me now that the reason for most of the ellipses or leaders is due to the “silent” protagonist." -Bob
 
+
+
+; INSTALLATION (Windows)
+; type "wsl" to install WSL
+; go to /mnt/c/Users/Kelly/Documents/GitHub
+; git clone https://github.com/gbdev/rgbds.git
+; cd rgbds
+; git checkout v0.6.0
+; open ~/.gitconfig and append this:
+;[core]
+;    autocrlf = false
+; redownload LADX-Disassembly after that! it'll fix the line endings for WSL
+
+; WORKFLOW
+; open WSL
+; navigate to /mnt/c/Users/Kelly/Documents/GitHub/LADX-Disassembly
+; make azlt-r1.gbc
+; open in SameBoy
+; Ctrl-1 for quick save, Ctrl-Shift-1 for quick load
+; hot reload to test dialogue
+
 Dialog000:: ;🅿️; Tarin
     ;toki "jan lili o! o awen a! mi wile toki tawa sina."
     toki "a- o awen! o kama!@"
@@ -861,8 +882,8 @@ Dialog023:: ;🅿️; ChowChow
     ;toki "soweli li kalama lili:"
     ;toki "mu mu mu mu"
     ;toki_li_pini
-    toki "mu lili  mu lili"
-    toki "mu lili  mu lili@"
+    toki "mu sike  mu sike"
+    toki "mu sike  mu sike@"
     toki_li_pini
     ;db "YIP YIP!        "
     ;db "YIP YIP!@"

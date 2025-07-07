@@ -101,8 +101,8 @@ Dialog0AC:: ;🅿️; Narrator
     ;db "わりとうれしい。@"
 
 Dialog0AD:: ;🅿️; Narrator
-    toki "    sina kama jo e mani 100 a!"
-    toki "       pona wawa a!"
+    toki "   sina kama jo e mani 100 a!"
+    toki "      pona wawa a!"
     toki_li_pini
     ;db "   You got 100  "
     ;db "     Rupees!    "
@@ -111,8 +111,8 @@ Dialog0AD:: ;🅿️; Narrator
     ;db "かなりうれしい。@"
 
 Dialog0AE:: ;🅿️; Narrator
-    toki "    sina kama jo e mani 200 a!"
-    toki "       pona sewi a!"
+    toki "   sina kama jo e mani 200 a!"
+    toki "      pona sewi a!"
     toki_li_pini
     ;db "   You got 200  "
     ;db "     Rupees!    "
