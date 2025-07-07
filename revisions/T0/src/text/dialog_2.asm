@@ -18,7 +18,7 @@ Dialog0A6:: ;🅿️; Narrator
     ;db "to look at it!@"
 
 Dialog0A7:: ;🅿️; Narrator
-    toki "sina kama jo e ilo nasin a!"
+    toki "sina jo e ilo nasin a!"
     toki ""
     toki "sina kepeken nena START la, ilo li pana e sona ni:"
     toki "poki mani en ilo lupa suli li lon seme?"
@@ -91,8 +91,8 @@ Dialog0AB:: ;🅿️; Narrator
     ;db "ちょっとうれしい。@"
 
 Dialog0AC:: ;🅿️; Narrator
-    toki "    sina kama jo e mani 50 a!"
-    toki "       pona mute a!"
+    toki "    sina jo e mani 50 a!"
+    toki "      pona mute a!"
     toki_li_pini
     ;db "    You got 50  "
     ;db "      Rupees!   "

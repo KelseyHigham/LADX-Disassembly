@@ -478,7 +478,7 @@ Dialog00E:: ;🅿️; Narrator
     ;db "@"
 
 Dialog00F:: ;🅿️; Narrator
-    toki "sina kama jo e kili nasa a!"
+    toki "sina jo e kili nasa a!"
     toki "ona li pana e pilin suwi tawa nena sina."
     toki_li_pini
     ;db "You pick the    "
@@ -1007,7 +1007,7 @@ Dialog029:: ;🅿️; Shopkeeper
     ;db "@"
 
 Dialog02A:: ;🅿️; Narrator
-    toki "sina kama jo e pilin a!"
+    toki "sina jo e pilin a!"
     toki " mu pilin  mu pilin     mu pilin  mu pilin@"
     toki_li_pini
     ;db "You've got a    "
@@ -1174,7 +1174,7 @@ Dialog035:: ;🅿️; Shopkeeper
 
 Dialog036:: ;🅿️; Narrator
     toki "seme a!"
-    toki "sina kama jo e ijo kepeken mani ala a!"
+    toki "sina jo e ijo kepeken mani ala a!"
     toki "... ... ... ...a"
     toki_li_pini
     ;db "Guess what?  You"
@@ -1266,7 +1266,7 @@ Dialog03C:: ;🅿️; Trendy Gamester
     ;db "ガンバってね！@"             ganbatte ne!
 
 Dialog03D:: ;🅿️; Narrator
-    toki "sina kama jo e ilo awen a!"
+    toki "sina jo e ilo awen a!"
     toki "o sitelen e nimi sina lon ilo a!"
     toki_li_pini
     ;db "It's a Shield!  "
@@ -1310,7 +1310,7 @@ Dialog040:: ;🅿️; Trendy Gamester
     ;db "また、あそびにきてちょ－だい！@"
 
 Dialog041:: ;🅿️; Narrator
-    toki "sina kama jo e ko nasa a!"
+    toki "sina jo e ko nasa a!"
     toki "o pana e ona tawa ijo mute a!"
     toki_li_pini
     ;db "You got some    "
@@ -1373,7 +1373,7 @@ Dialog043:: ;🅿️; Ghost
     ;db "@"
 
 Dialog044:: ;🅿️; Narrator
-    toki "sina kama jo e ko <yoshi>[jo olin suwi insa] a!"
+    toki "sina jo e ko <yoshi>[jo olin suwi insa] a!"
     toki "akesi ni li lon musi mute a!"
     toki_li_pini
     ;db "You got a Yoshi "
@@ -2380,7 +2380,7 @@ Dialog090:: ;🅿️; Narrator
     ;db "@"
 
 Dialog091:: ;🅿️; Narrator
-    toki "sina kama jo e ilo awen sina a!"
+    toki "sina jo e ilo awen sina a!"
     ;toki "nasa la, sina ken tawa e pipi kepeken ilo ni.@"
     toki "ilo li wawa nanpa wan, la ona li ken tawa e pipi."
     toki_li_pini
@@ -2428,7 +2428,7 @@ Dialog092:: ;🅿️; Desert skull
     ;db "@"
 
 Dialog093:: ;🅿️; Narrator
-    toki "sina kama jo e linja tawa a!"
+    toki "sina jo e linja tawa a!"
     toki "sina kepeken ona la ona li kama suli a!@"
     toki_li_pini
     ;db "You've got the  "
@@ -2441,7 +2441,7 @@ Dialog093:: ;🅿️; Narrator
     ;db "@"
 
 Dialog094:: ;🅿️; Narrator
-    toki "sina kama jo e palisa seli a!"
+    toki "sina jo e palisa seli a!"
     toki "o seli! o seli! o seli wawa e ale a!@"
     toki_li_pini
     ;db "You've got the  "
@@ -2453,7 +2453,7 @@ Dialog094:: ;🅿️; Narrator
     ;db "もやせ！もやせ！やきつくせ！！@"
 
 Dialog095:: ;🅿️; Narrator
-    toki "sina kama jo e len noka [poka en kon ale sewi ilo] a!"
+    toki "sina jo e len noka [poka en kon ale sewi ilo] a!"
     toki "o pilin e nena ilo lon tenpo suli. la sina tawa wawa a!"
     toki_li_pini
     ;db "You've got the  "
@@ -2466,7 +2466,7 @@ Dialog095:: ;🅿️; Narrator
     ;db "@"
 
 Dialog096:: ;🅿️; Narrator
-    toki "sina kama jo e ilo kalama a!"
+    toki "sina jo e ilo kalama a!"
     toki "o pana e kalama mute!"
     toki_li_pini
     ;db "You've got the  "
@@ -2490,7 +2490,7 @@ Dialog097:: ;🅿️; Narrator
     ;db "なんだか、からだがかるくなる。@"
 
 Dialog098:: ;🅿️; Narrator
-    toki "sina kama jo e ilo pi lupa ma a! o kepeken!"
+    toki "sina jo e ilo pi lupa ma a! o kepeken!"
     toki "sina ken pilin pona tan lupa."
     toki_li_pini
     ;db "You've got a    "
@@ -2502,7 +2502,7 @@ Dialog098:: ;🅿️; Narrator
     ;db "@"
 
 Dialog099:: ;🅿️; Narrator
-    toki "sina kama jo e ko nasa a!"
+    toki "sina jo e ko nasa a!"
     toki "o pana e ona tawa ijo mute a!"
     toki_li_pini
     ;db "You've got some "
@@ -2515,7 +2515,7 @@ Dialog099:: ;🅿️; Narrator
     ;db "@"
 
 Dialog09A:: ;🅿️; Narrator
-    toki "sina kama jo e sike pakala a!"
+    toki "sina jo e sike pakala a!"
     toki "mu pakala  mu pakala"
     toki_li_pini
     ;db "You've got a    "
@@ -2527,7 +2527,7 @@ Dialog09A:: ;🅿️; Narrator
     ; RESUME TRANSLATING FROM HERE
 
 Dialog09B:: ;🅿️; Narrator
-    toki "sina kama jo e palisa utala sina a!"
+    toki "sina jo e palisa utala sina a!"
     toki "sina sitelen e nimi sina lon ona a!"
     toki_li_pini
     ;db "You found your  "
@@ -2545,7 +2545,7 @@ Dialog09B:: ;🅿️; Narrator
     ;db "@"
 
 Dialog09C:: ;🅿️; Narrator
-    toki "sina kama jo e noka kala a!"
+    toki "sina jo e noka kala a!"
     toki "nena A la sina tawa wawa. nena B la sina tawa anpa."
     toki_li_pini
     ;db "You've got the  "
@@ -2576,7 +2576,7 @@ Dialog09D:: ;🅿️; Narrator
 
 Dialog09E:: ; Narrator
 Dialog09F:: ;🅿️; Narrator
-    toki "sina kama jo e palisa sin a!"
+    toki "sina jo e palisa sin a!"
     toki "open la, o sitelen e nimi sina lon ona."
     toki_li_pini
     ;db "You've got a    "
@@ -2589,7 +2589,7 @@ Dialog09F:: ;🅿️; Narrator
     ;db "@"
 
 Dialog0A0:: ;🅿️; Narrator
-    toki "seme? sina kama jo e ko misikeke a!"
+    toki "seme? sina jo e ko misikeke a!"
     toki "mu pana  mu pana  sina pana e ko tawa selo."
     toki_li_pini
     ;db "You found the   "
@@ -2602,7 +2602,7 @@ Dialog0A0:: ;🅿️; Narrator
     ;db "@"
 
 Dialog0A1:: ;🅿️; Narrator
-    toki "sina kama jo e ilo lupa pi pipi linja a!"
+    toki "sina jo e ilo lupa pi pipi linja a!"
     toki "ilo ni li ken open e lupa pi pipi linja a!"
     toki_li_pini
     ;db "You've got the  "
@@ -2615,7 +2615,7 @@ Dialog0A1:: ;🅿️; Narrator
 
 Dialog0A2:: ;🅿️; Narrator
     ; todo: revisit
-    toki "sina kama jo e ilo lupa pi ko lukin a!"
+    toki "sina jo e ilo lupa pi ko lukin a!"
     toki "ilo li ken open e lupa sin."
     toki "o tawa lupa lon ma kasi [utala kasi utala kasi utala].@"
     toki_li_pini
@@ -2629,7 +2629,7 @@ Dialog0A2:: ;🅿️; Narrator
     ;db "@"
 
 Dialog0A3:: ;🅿️; Narrator
-    toki "sina kama jo e ilo lupa pi kala alasa a!"
+    toki "sina jo e ilo lupa pi kala alasa a!"
     toki_li_pini
     ;db "You've got the  "
     ;db "Angler Key!@"

@@ -1518,7 +1518,7 @@ Dialog216:: ;🆖; Ghost
 
 Dialog217:: ;🅿️; Book, Narrator
     toki "sike sike... nasin sike pi sike sewi..."
-    toki "　<left>　<left>　<up>　<right>　<right>　<up>　<left>　<up>"
+    toki " <left> <left> <up> <right> <right> <up> <left> <up>"
     toki "seme? ...lipu ni li pana e sona len..."
     toki_li_pini
     ;db "Round and round,"
@@ -1535,7 +1535,7 @@ Dialog217:: ;🅿️; Book, Narrator
 
 Dialog218:: ;🅿️; Book, Narrator
     toki "sike sike... nasin sike pi sike sewi..."
-    toki "　<right>　<up>　<up>　<right>　<up>　<up>　<right>　<up>"
+    toki " <right> <up> <up> <right> <up> <up> <right> <up>"
     toki "seme? ...lipu ni li pana e sona len..."
     toki_li_pini
     ;db "Round and round,"
@@ -1552,7 +1552,7 @@ Dialog218:: ;🅿️; Book, Narrator
 
 Dialog219:: ;🅿️; Book, Narrator
     toki "sike sike... nasin sike pi sike sewi..."
-    toki "　<left>　<up>　<right>　<up>　<left>　<up>　<right>　<up>"
+    toki " <left> <up> <right> <up> <left> <up> <right> <up>"
     toki "seme? ...lipu ni li pana e sona len..."
     toki_li_pini
     ;db "Round and round,"
@@ -1569,7 +1569,7 @@ Dialog219:: ;🅿️; Book, Narrator
 
 Dialog21A:: ;🅿️; Book, Narrator
     toki "sike sike... nasin sike pi sike sewi..."
-    toki "　<right>　<right>　<right>　<right>　<up>　<up>　<up>　<up>"
+    toki " <right> <right> <right> <right> <up> <up> <up> <up>"
     toki "seme? ...lipu ni li pana e sona len..."
     toki_li_pini
     ;db "Round and round,"

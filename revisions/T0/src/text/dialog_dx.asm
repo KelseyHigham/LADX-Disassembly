@@ -765,9 +765,15 @@ Dialog2AC:: ;🆖; Photographer, probably
     db "Bye!@"
 
 Dialog2AD:: ;🆖; Photographer, probably
-    db "See me later,   "
-    db "when you're     "
-    db "alone!@"
+    ;db "See me later,   "
+    ;db "when you're     "
+    ;db "alone!@"
+    ;toki "o toki tawa mi lon tenpo ni:"
+    ;toki "sina lon ala soweli mu mu."
+    toki "mi wile toki tawa sina taso. taso sina taso ala."
+    toki "la o taso. la o toki tawa mi taso."
+    toki "ni taso."
+    toki_li_pini
 
 Dialog2AE:: ;🆖; Photographer, probably
     db "Are you sure?   "
