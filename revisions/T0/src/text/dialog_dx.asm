@@ -56,10 +56,17 @@ Dialog253:: ;🆖; idk
     db "won't move for  "
     db "cowards.@"
 
-Dialog254:: ;🆖; idk
-    db "I'm not afraid. "
-    db "I just decided  "
-    db "to wait at home.@"
+Dialog254:: ;🆖; Richard, Richard photo part 4
+    ;db "I'm not afraid. "
+    ;db "I just decided  "
+    ;db "to wait at home.@"
+    ;db "コワイわけじゃないんだが、ボカァ"
+    ;db "いえでまつことにするよ！じゃっ！"
+    ;db "@"
+    toki "mi pilin monsuta ala. taso..."
+    toki "mi awen lon tomo."
+    toki "mi weka a!"
+    toki_li_pini
 
 Dialog255:: ;🆖; Marin, probably
     db "This is my first"
@@ -296,7 +303,7 @@ Dialog270:: ;🅿️; Photographer
     ;db "もっと　ワンワンのそばに！@"
 
 Dialog271:: ;🅿️; BowWow
-    toki "mu suli"
+    toki "mu suli soweli"
     toki_li_pini
     ;db "Grrrr!@"
     ;db "　　　　　　バウッ！@"

@@ -1749,6 +1749,8 @@ Dialog227:: ;🆖; Secret Goriya
     db "How about some- "
     db "thing else?@"
 
+
+
 Dialog228:: ;🆖; Ulrira
     db "'BRRING! BRRING!"
     db "Ya, it's Ulrira!"
@@ -1761,6 +1763,13 @@ Dialog228:: ;🆖; Ulrira
     db "might try and   "
     db "take 'em! Bye!  "
     db "CLICK!'@"
+    ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
+    ;db "．．．　プルルル　プルル　ガチャ"
+    ;db "うるりらじゃ。　フム、「はっぱ」"
+    ;db "が、５まいそろわんとな．．．？　"
+    ;db "う－む．．．　テキの　へいしが　"
+    ;db "もっておるのかも　しれんのう。　"
+    ;db "　　うるりら－　　ガチャッ！」@"
 
 Dialog229:: ;🆖; Ulrira
     db "'BRRING! BRRING!"
@@ -1773,6 +1782,14 @@ Dialog229:: ;🆖; Ulrira
     db "Hope that helps."
     db "Bye!            "
     db "CLICK!'@"
+    ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
+    ;db "．．．　プルルル　プルル　ガチャ"
+    ;db "うるりらじゃ。　フム、「はっぱ」"
+    ;db "が、５まいそろわんとな．．．？　"
+    ;db "そうじゃのう．．あやしいところに"
+    ;db "バクダンをおいてみてはどうじゃ。"
+    ;db "やくに　たったかな？　　　　　　"
+    ;db "　　うるりら－　　　ガチャッ」@"
 
 Dialog22A:: ;🆖; Ulrira
     db "'BRRING! BRRING!"
@@ -1786,6 +1803,16 @@ Dialog22A:: ;🆖; Ulrira
     db "if that helps!  "
     db "Bye!            "
     db "CLICK!'@"
+    ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
+    ;db "．．．　プルルル　プルル　ガチャ"
+    ;db "うるりらじゃ。　フム、「はっぱ」"
+    ;db "が、５まいそろわんとな．．．？　"
+    ;db "よくわからんが　．．．カラス．．"
+    ;db "おしろのカラスが　あやしいのう　"
+    ;db "うるりら－－　　ガチャッ」@"
+
+
+
 
 Dialog22B:: ;🅿️; Photo Album, Narrator
     toki "   jan suli [#####]"
@@ -1822,13 +1849,23 @@ Dialog22D:: ;🆖; Signpost, probably
     db "Beware of the   "
     db "bird!@"
 
-Dialog22E:: ;🆖; Photographer
-    db "Hi, #####. You  "
-    db "know I love to  "
-    db "take pictures.  "
-    db "Wouldn't this   "
-    db "old castle make "
-    db "a great photo?@"
+Dialog22E:: ;🆖; Photographer, Richard photo part 1
+    ;db "Hi, #####. You  "
+    ;db "know I love to  "
+    ;db "take pictures.  "
+    ;db "Wouldn't this   "
+    ;db "old castle make "
+    ;db "a great photo?@"
+    ;db "あ、#####、しゃしんスキスキ"
+    ;db "しゃしんやさん　だよ！　　　　　"
+    ;db "ショボイおしろ　だけど、　　　　"
+    ;db "１まい　とるかい？@"
+    toki "jan [#####] o! toki a!"
+    toki "mi soweli sitelen a! mi olin e sitelen a!"
+    toki "tomo ni li jaki  taso..."
+    toki "sina wile ala wile sitelen wan?"
+    toki_li_pini
+
 
 Dialog22F:: ;🆖; Narrator
 Dialog230:: ;🅿️; Narrator
@@ -1905,17 +1942,17 @@ Dialog23A:: ;🆖; Marin
 Dialog23B:: ;🆖; Tarin
     db "MAAAAAAARINNNN!!@"
 
-Dialog23C:: ;🆖; Richard
-    db "Nothing yet?! I "
-    db "grow tired of   "
-    db "waiting. I want "
-    db "those Golden    "
-    db "Leaves delivered"
-    db "soon!           "
-    db "Courage like    "
-    db "this deserves a "
-    db "photo, don't you"
-    db "think?@"
+Dialog23C:: ;🆖; Richard, Richard photo part 2
+    ;db "Nothing yet?! I "
+    ;db "grow tired of   "
+    ;db "waiting. I want "
+    ;db "those Golden    "
+    ;db "Leaves delivered"
+    ;db "soon!           "
+    ;db "Courage like    "
+    ;db "this deserves a "
+    ;db "photo, don't you"
+    ;db "think?@"
     ;db "キミたち、このボクのオシロに　　"
     ;db "みとれているのかい？　　　　　　"
     ;db "じつは、このオシロのもん　　　　"
@@ -1924,10 +1961,21 @@ Dialog23C:: ;🆖; Richard
     ;db "キネンをのこすに　あたいするね！"
     ;db "よし、１まいとることをゆるすぞ！"
     ;db "@"
-    ;ChatGPT, spoonfed: "You guys, are you admiring my awesomeness?
-    ;Actually, these are my golden leaves, right? 
-    ;Well, my courage deserves commemoration! 
-    ;Alright, I'll allow you to take one."
+    ;ChatGPT: "You all, are you looking at my castle?"
+    ;"Are you mesmerized?" or "Are you entranced?"
+    ;"Actually, this castle is expensive!"
+    ;"It costs money, you know!"
+    ;"But still, my courage..."
+    ;"It's worth leaving a memorial!"
+    ;"Alright, I’ll allow you to take one photo!"
+    toki "a-  sina lukin e tomo mi a!"
+    toki "sina pilin e wawa anu seme..."
+    toki "lon la... tomo li wile e mani a!"
+    toki "o pana a!"
+    toki "n... taso"
+    toki "mi o awen e wawa mi lon sitelen..."
+    toki "sina ken sitelen wan taso a!"
+    toki_li_pini
 
 Dialog23D:: ;🆖; Tarin
     db "Hey, Marin and  "
@@ -2142,11 +2190,16 @@ Dialog248:: ;🆖; Ulrira
 
 
 
-Dialog249:: ;🆖; idk
-    db "Go ahead and    "
-    db "take a picture  "
-    db "of me. Any angle"
-    db "you like!@"
+Dialog249:: ;🆖; Richard, Richard photo part 3
+    ;db "Go ahead and    "
+    ;db "take a picture  "
+    ;db "of me. Any angle"
+    ;db "you like!@"
+    ;db "さあ、どこからでも　とるがいい！"
+    ;db "@"
+    toki "o sitelen e mi a!"
+    toki "lon tenpo wile  lon nasin wile"
+    toki_li_pini
 
 Dialog24A:: ;🆖; idk
     db "Yarna Desert?   "

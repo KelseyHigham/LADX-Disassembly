@@ -1703,7 +1703,7 @@ Dialog161:: ;🅿️; Kiki
     ;db "おなかがすいたよ　サルキッキ！@"
 
 Dialog162:: ;🅿️; Kiki
-    toki "  <bananas>a!  <bananas>a!  mu-   mu"
+    toki " <bananas>a!  <bananas>a!  mu-   mu"
     toki "jan  o kama  o esun  jan mu mu a"
     toki_li_pini
     ;db "    <bananas>!    <bananas>!    "

@@ -1395,7 +1395,7 @@ Dialog043:: ;🅿️; Ghost
 
 Dialog044:: ;🅿️; Narrator
     toki "sina jo e ko <yoshi>[jo olin suwi insa] a!"
-    toki "akesi ni li lon musi mute a!"
+    toki "akesi ni li lon musi ilo mute a!"
     toki_li_pini
     ;db "You got a Yoshi "
     ;db "Doll!  Recently,"
