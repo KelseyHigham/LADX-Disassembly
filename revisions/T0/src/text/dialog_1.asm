@@ -39,7 +39,7 @@
 ; Ctrl-1 for quick save, Ctrl-Shift-1 for quick load
 ; hot reload to test dialogue
 
-Dialog000:: ;🅿️; Tarin
+Dialog000:: ;P1;🅿️; Tarin
     ;toki "jan lili o! o awen a! mi wile toki tawa sina."
     toki "a- o awen! o kama!@"
     toki_li_pini
@@ -59,7 +59,7 @@ Dialog000:: ;🅿️; Tarin
     ;db "ちょ－っと、まったあ！　　　　　" a! o awen!
     ;db "こっちさ、くるだよ。@" o kama!
 
-Dialog001:: ;🅿️; Marin
+Dialog001:: ;P1;🅿️; Marin
     ;; font test
     ;toki "a akesi ala alasa ale anpa ante anu awen e en esun ijo ike ilo insa"
     ;toki "jaki jan jelo jo kala kalama kama kasi ken kepeken kili kiwen ko kon kule kulupu" 
@@ -154,7 +154,7 @@ Dialog001:: ;🅿️; Marin
 
 
 
-Dialog002:: ;🅿️; Marin
+Dialog002:: ;P1;🅿️; Marin
     ; nasin li lon poka pi tomo ni.
     toki "sina weka tan tomo la, nasin li lon. sina tawa lon nasin la"
     toki "sina lukin e telo suli. sina tan telo ni."
@@ -196,7 +196,7 @@ Dialog002:: ;🅿️; Marin
     ;db "@"
         ; Bing chat: “あるけば” is a contraction of “あるく” (to walk) and “ば” (if). It is a conditional form that means “if you walk”.
 
-Dialog003:: ;🅿️; Marin
+Dialog003:: ;P1;🅿️; Marin
     toki "a! jan [#####] o! toki."
     toki ""
     toki "mama [tawa alasa loje ijo nena] li tawa ma pi kasi suli."
@@ -253,7 +253,7 @@ Dialog004:: ;🅿️; Marin, probably
     ;db "わたしのうたにあわせてふいてみて" my singing ni simultaneously blow
     ;db "@"
 
-Dialog005:: ;🅿️; Marin
+Dialog005:: ;P2;🅿️; Marin
     toki "kalama li musi mute tawa mi."
     toki "jan [#####] o, seme li musi tawa sina?"
     toki_li_pini
@@ -271,7 +271,7 @@ Dialog005:: ;🅿️; Marin
     ;db "やっぱりわたしは、うたがすき！　" i still like singing!
     ;db "#####は、なにがすき？@" ##### o, what do you like?
 
-Dialog006:: ;🅿️; Marin
+Dialog006:: ;P1;🅿️; Marin
     toki "jan [#####] o!"
     toki "mama [tawa alasa loje ijo nena] li lape lon tomo."
     toki "mi wile kalama a!"
@@ -310,7 +310,7 @@ Dialog006:: ;🅿️; Marin
     ;db "そう「かぜのさかな」の　うたよ。" ; this wind fish song.
     ;db "@"
 
-Dialog007:: ;🅿️; Narrator
+Dialog007:: ;P1;🅿️; Narrator
     toki "seme? lupa li pini wawa a!"
     toki "sina ken ala tawa tomo pi monsuta suli."
     toki "o alasa e ilo lupa monsuta.@"
@@ -333,7 +333,7 @@ Dialog007:: ;🅿️; Narrator
     ;db "ボスのカギで、あけられるはずだ。" boss key de, open should da.
     ;db "@"
 
-Dialog008:: ;🅿️; Narrator
+Dialog008:: ;P1;🅿️; Narrator
     ;toki "sina luka e poki wawa lili a! sina pilin e ni:"
     toki "sina pilin e poki wawa lili a!"
     toki "wawa li tawa sijelo.@"
@@ -355,7 +355,7 @@ Dialog008:: ;🅿️; Narrator
     ;db "ちからのかけらを、みつけた！　　" vigor no fragment o, discovered!
     ;db "なんだか　ちからがわいてきた！@" somewhat vigor ga appears.
 
-Dialog009:: ;🅿️; Witch
+Dialog009:: ;P1;🅿️; Witch
     toki "   pona a! mi pali e ko tan kili-"
     toki "    pona la, mi pali kepeken tenpo lili-"
     toki_li_pini
@@ -378,7 +378,7 @@ Dialog009:: ;🅿️; Witch
     ;db "３びょうでイイもんつくってやろう" 3 seconds de good quality make~
     ;db "@"
 
-Dialog00A:: ;🅿️; Tarin
+Dialog00A:: ;P1;🅿️; Tarin
     toki "n... mi moku e kili nasa"
     toki "la mi sitelen lape e ni: mi kama kijetesantakalu."
     toki "mi sona ala e tan. taso mi musi.@"
@@ -415,7 +415,7 @@ Dialog00A:: ;🅿️; Tarin
     ;db "なんだか、たのしかっただよ。　　" somewhat, fun.
     ;db "@"
 
-Dialog00B:: ;🅿️; Tarin
+Dialog00B:: ;P1;🅿️; Tarin
     toki "n... mi pilin wawa ala..."
     toki "mi lape lili. tenpo kama la mi tawa tomo."
     toki_li_pini
@@ -433,7 +433,7 @@ Dialog00B:: ;🅿️; Tarin
     ;db "おらは、もうすこしやすんでから　" me, 
     ;db "うちへ　かえることにするだ。@"
 
-Dialog00C:: ;🅿️; Witch
+Dialog00C:: ;P1;🅿️; Witch
     toki "  mu nasa  mu nasa  mi ken pali e ko nasa"
     toki "  tan kili nasa  mu nasa  mu nasa  mu nasa"
     toki_li_pini
@@ -453,7 +453,7 @@ Dialog00C:: ;🅿️; Witch
     ;db "トロ－リトロリ　もりのキノコで　" forest's mushrooms de
     ;db "まほうのこな　トロ－リトロリ@"   magic powder
 
-Dialog00D:: ;🅿️; Tarin
+Dialog00D:: ;P1;🅿️; Tarin
     toki "mi kijetesantakalu la, nena mi li pilin wawa e kon..."
     toki "la ko kon li jaki mute tawa mi.@"
     toki_li_pini
@@ -472,7 +472,7 @@ Dialog00D:: ;🅿️; Tarin
     ;db "コナっぽいものが、きらいだ－よ。" powder-ish things ga, hate da yo.
     ;db "@"
 
-Dialog00E:: ;🅿️; Narrator
+Dialog00E:: ;P1;🅿️; Narrator
     toki "sina pana e kili nasa tawa sewi."
     toki "kili li pana e pilin suwi tawa nena sina.@"
     toki_li_pini
@@ -498,7 +498,7 @@ Dialog00E:: ;🅿️; Narrator
     ;db "かほりが、あたりにひろがる．．．" fragrant aroma ga, around ni spread...
     ;db "@"
 
-Dialog00F:: ;🅿️; Narrator
+Dialog00F:: ;P1;🅿️; Narrator
     toki "sina jo e kili nasa a!"
     toki "ona li pana e pilin suwi tawa nena sina."
     toki_li_pini
@@ -519,7 +519,7 @@ Dialog00F:: ;🅿️; Narrator
     ;db "かほりが、はなのおくにひろがる。" fragrance ga, it spreads in your nose.
     ;db "@"
 
-Dialog010:: ;🅿️; Tarin
+Dialog010:: ;p?;🅿️; Tarin
     toki "mu lape... sina sona ala la... o toki"
     toki "tawa jan suli [uta linja uta linja ilo linja a]..."
     toki "mu lape...@"
@@ -541,7 +541,7 @@ Dialog010:: ;🅿️; Tarin
     ;db "じいさんに　デンワするとえ－だよ" grampa ni phone suru to e- dayo
     ;db "．．．　グ－　　グ－　　グ－@"
 
-Dialog011:: ;🅿️; Tarin
+Dialog011:: ;P1;🅿️; Tarin
     toki "mi pilin wawa ala... la..."
     toki "lape lili... mu lape  mu lape"
     toki_li_pini
@@ -555,7 +555,7 @@ Dialog011:: ;🅿️; Tarin
     ;db "ウ－ン　おら、つかれただ。　　　" nnn me, worn out.
     ;db "すこしねるだ．．．　グ－　グ－@"  small sleep da... zzz
 
-Dialog012:: ;🅿️; Talking Tree
+Dialog012:: ;P3;🅿️; Talking Tree
     toki "a! jan li toki tawa mi a!"
     toki "mi pana e sona len tawa sina."
     toki "o palisa utala e sinpin tomo. sinpin li mu lili."
@@ -592,7 +592,7 @@ Dialog012:: ;🅿️; Talking Tree
     ;db "こわせるんだよ！　きがついてた？" kowaserundayo! notice?
     ;db "@"
 
-Dialog013:: ;🅿️; Narrator, probably
+Dialog013:: ;p?;🅿️; Narrator, probably
     toki "jan [mu a loje ijo nena] li pana e ken pi"
     toki "kalama musi pi kala kon a!"
     toki "kalama uta ona li suwi"
@@ -616,7 +616,7 @@ Dialog013:: ;🅿️; Narrator, probably
     ;db "ここちよく　みみにのこる。　　　" comfortable/pleasant   ear ni remain.
     ;db "@"
 
-Dialog014:: ;🅿️; Marin, probably
+Dialog014:: ;p?;🅿️; Marin, probably
     ;toki "o kalama ni lon tenpo. sona kalama o awen a!"
     ;toki "kalama o awen lon lawa. o kalama lon tenpo tawa ni a!"
     toki "kalama musi ni li suli tawa mi. o awen sona e ona."
@@ -637,7 +637,7 @@ Dialog014:: ;🅿️; Marin, probably
     ;db "このうた、わすれないように　　　" this song, not forget  in order to
     ;db "ときどき　うたってね！@"        sometimes  please sing!
 
-Dialog015:: ;🅿️; Marin, probably
+Dialog015:: ;p?;🅿️; Marin, probably
     toki "a! o kama sona a!"
     toki "kalama musi ni li pona nanpa wan tawa mi."
     toki_li_pini
@@ -652,7 +652,7 @@ Dialog015:: ;🅿️; Marin, probably
     ;db "え－っ！　ちゃんとおぼえてね！　"
     ;db "わたしのすきな　うたなんだから@"
 
-Dialog016:: ;🅿️; Marin, probably
+Dialog016:: ;p?;🅿️; Marin, probably
     toki "kalama o pona tawa sina."
     toki "ona li wawa e pilin."
     toki "ona li awen ala awen lon lawa sina?"
@@ -675,7 +675,7 @@ Dialog016:: ;🅿️; Marin, probably
     ;db "ちゃんと　おぼえた？　　　　　　"
     ;db "　　　　うん　　　ちっとも<ask>"
 
-Dialog017:: ;🅿️; Crazy Tracy
+Dialog017:: ;P4;🅿️; Crazy Tracy
     toki "mi jan nasa [telo esun suwi ilo] a-"
     toki "mi esun e ijo wawa."
     toki_li_pini
@@ -697,7 +697,7 @@ Dialog017:: ;🅿️; Crazy Tracy
     ;db "げんきになるヒミツ　うってるの。"
     ;db "@"
 
-Dialog018:: ;🅿️; Crazy Tracy
+Dialog018:: ;P4;🅿️; Crazy Tracy
     toki "   mani 28  sina wile ala wile ijo wawa?"
     toki "    wile     ala<ask>"
     ;db "Will you give me"
@@ -711,7 +711,7 @@ Dialog018:: ;🅿️; Crazy Tracy
     ;db "　２８ルピ－で　ヒミツする？　　" 28 rupees de   do secret?
     ;db "　　　　する　　　しない<ask>"       do  don't
 
-Dialog019:: ;🅿️; Crazy Tracy
+Dialog019:: ;P4;🅿️; Crazy Tracy
     toki "   mani 42  sina wile ala wile ijo wawa?"
     toki "    wile     ala<ask>"
     ;db "How about it?   "
@@ -725,7 +725,7 @@ Dialog019:: ;🅿️; Crazy Tracy
     ;db "　４２ルピ－で　ヒミツする？　　"
     ;db "　　　　する　　　しない<ask>"
 
-Dialog01A:: ;🅿️; Crazy Tracy
+Dialog01A:: ;P4;🅿️; Crazy Tracy
     toki "o kama. mi pana e ko misikeke tawa selo sina a!"
     toki "    mu pana     mu pana"
     toki "sina moli la ko li pali."
@@ -762,7 +762,7 @@ Dialog01A:: ;🅿️; Crazy Tracy
     ;db "ハ－トが０になったらきくわよ。　" heart reaches 0, it takes effect.
     ;db "また、よってらしてねえん．．．@" come back later...
 
-Dialog01B:: ;🅿️; Crazy Tracy, probably
+Dialog01B:: ;P4;🅿️; Crazy Tracy, probably
     toki "seme? mani li lili tawa wile."
     toki "o weka! o kama e mani"
     ;toki "a! mani li wile a!"
@@ -780,7 +780,7 @@ Dialog01B:: ;🅿️; Crazy Tracy, probably
     ;db "たりないわよん。でなおしといで！" insufficient wa yon. leave and come back!
     ;db "@"
 
-Dialog01C:: ;🅿️; Crazy Tracy
+Dialog01C:: ;P4;🅿️; Crazy Tracy
     toki " ... ... ..."
     toki "taso mi wile ala pana e ona tawa sina a!"
     toki_li_pini
@@ -793,7 +793,7 @@ Dialog01C:: ;🅿️; Crazy Tracy
     ;db "　．．．　．．．　．．．　　　　"
     ;db "でも、あんたには　うらない！@"
 
-Dialog01D:: ;🅿️; Crazy Tracy, probably
+Dialog01D:: ;P4;🅿️; Crazy Tracy, probably
     toki "mi wile pana e wawa taso..."
     toki "sina pilin monsuta a a a!@"
     toki_li_pini
@@ -813,7 +813,7 @@ Dialog01D:: ;🅿️; Crazy Tracy, probably
     ;db "いってるのに．．．いくじなしっ！" say... coward!
     ;db "@"
 
-Dialog01E:: ;🅿️; Crazy Tracy
+Dialog01E:: ;P4;🅿️; Crazy Tracy
     toki "...sina suwi la"
     toki "mi lili 7 e mani wile.@"
     toki_li_pini
@@ -829,7 +829,7 @@ Dialog01E:: ;🅿️; Crazy Tracy
     ;db "７ルピ－に　オマケしちゃうわあん"
     ;db "@"
 
-Dialog01F:: ;🅿️; Narrator
+Dialog01F:: ;p?;🅿️; Narrator
     toki "jan [mu a loje ijo nena] li kama lon poka sina a!"
     toki "o olin pona!@"
     toki_li_pini
@@ -843,7 +843,7 @@ Dialog01F:: ;🅿️; Narrator
     ;db "やった！　マリンを　おかりした！"
     ;db "　　　　チャ、チャンス！？@"
 
-Dialog020:: ;🅿️; Fox
+Dialog020:: ;P1;🅿️; Fox
     toki "mu  mu mu  ma mi mu"
     toki_li_pini
     ;db "GRRRR...@"
@@ -851,7 +851,7 @@ Dialog020:: ;🅿️; Fox
     ;db "コ－ン　コンコン　カキクケコ－ン"
     ;db "@"
 
-Dialog021:: ;🅿️; Tarin
+Dialog021:: ;P1;🅿️; Tarin
     toki " mu musi mute  mu musi mute   ma pi kili nasa la"
     toki " mu kijetesantakalu  mu kijetesantakalu   nasin li lon seme a?"
     toki_li_pini
@@ -867,7 +867,7 @@ Dialog021:: ;🅿️; Tarin
     ;db "ポンポコポコリン　まようだべ－！"
     ;db "@"
 
-Dialog022:: ;🅿️; BowWow
+Dialog022:: ;p?;🅿️; BowWow
     toki "mu suli  mu suli"
     toki "mu suli  mu suli@"
     toki_li_pini
@@ -878,7 +878,7 @@ Dialog022:: ;🅿️; BowWow
     ;db "バウバウッ　　　バウバウッ　　　"
     ;db "@"
 
-Dialog023:: ;🅿️; ChowChow
+Dialog023:: ;P1;🅿️; ChowChow
     ;toki "soweli li kalama lili:"
     ;toki "mu mu mu mu"
     ;toki_li_pini
@@ -892,7 +892,7 @@ Dialog023:: ;🅿️; ChowChow
     ;db "キャン　キャン　キャン　キャン　"
     ;db "@"
 
-Dialog024:: ;🅿️; Great Fairy
+Dialog024:: ;P1;🅿️; Great Fairy
     ;toki "mi pona e sijelo. mi pana e pilin pona."
     ;toki "mi pona e sijelo e pilin. mi weka e pakala."
     ;toki ""
@@ -913,7 +913,7 @@ Dialog024:: ;🅿️; Great Fairy
     ;db "きずとつかれを　いやしましょう。" injuries and tiredness wo heal.
     ;db "すこしのあいだ、めをとじて．．@" small pause, close your eyes..
 
-Dialog025:: ;🆖; Grim Creeper (D7 Mini-Boss)
+Dialog025:: ;P7;🆖; Grim Creeper (D7 Mini-Boss)
     db "You dirty rat!  "
     db "You k-k-k...beat"
     db "my brothers!    "
@@ -931,7 +931,7 @@ Dialog025:: ;🆖; Grim Creeper (D7 Mini-Boss)
     ;db "おぼえてやがれっ！　けっ　ぺっ！"
     ;db "@"
 
-Dialog026:: ;🆖; Grim Creeper (D7 Mini-Boss)
+Dialog026:: ;P7;🆖; Grim Creeper (D7 Mini-Boss)
     db "Hey runt!  You  "
     db "think you can   "
     db "take me?!  All  "
@@ -949,7 +949,7 @@ Dialog026:: ;🆖; Grim Creeper (D7 Mini-Boss)
     ;db "よし　じょうとうでい　やろうども"
     ;db "たたんじまいな！　ぺっ！@"
 
-Dialog027:: ;🅿️; Papahl
+Dialog027:: ;P1;🅿️; Papahl
     ;toki "lon a! jan lili li jan mi a!"
     ;toki "mi jan mama [pan alasa pan alasa]."
     ;toki "mi pilin pona tan ni: mi kama sona e sina."
@@ -983,7 +983,7 @@ Dialog027:: ;🅿️; Papahl
     ;db "いずれ、やまでそうなんするっスよ" in the future, mountain [ijo]
     ;db "そのときゃあ、たのむっスよ！@" if kyaa, then help!
 
-Dialog028:: ;🅿️; Marin, probably
+Dialog028:: ;p?;🅿️; Marin, probably
     toki "pona a! o pakala! o pakala a!"
     toki "mu pakala  o moli e ona a!"
     toki ""
@@ -1006,7 +1006,7 @@ Dialog028:: ;🅿️; Marin, probably
     ;db "　　　　　　　　　　　　　　　　"
     ;db "えっ？　なに？　どうかしたの？@"
 
-Dialog029:: ;🅿️; Shopkeeper
+Dialog029:: ;P1;🅿️; Shopkeeper
     ;toki "pakala a!"
     toki "a! jan lili o,  sina ken ala kepeken ni."
     toki "o pana e ijo ante tawa mi!"
@@ -1027,7 +1027,7 @@ Dialog029:: ;🅿️; Shopkeeper
     ;db "まだまだべんきょうが、たりねえな" still more studying to do ga, bring to the counter nee na
     ;db "@"
 
-Dialog02A:: ;🅿️; Narrator
+Dialog02A:: ;P1;🅿️; Narrator
     toki "sina jo e pilin a!"
     toki " mu pilin  mu pilin     mu pilin  mu pilin@"
     toki_li_pini
@@ -1045,8 +1045,8 @@ Dialog02A:: ;🅿️; Narrator
     ;db "ドックンドックン　ハ－トまんたん"
     ;db "@"
 
-Dialog02B:: ; Shopkeeper, Link
-Dialog02C:: ;🅿️; Shopkeeper, Link
+Dialog02B:: ;P1; Shopkeeper, Link
+Dialog02C:: ;P1;🅿️; Shopkeeper, Link
     toki "      ilo alasa en palisa    "
     toki "      mani 980 taso      "
     toki "    o esun    sina wile e mani ale a<ask>"
@@ -1060,7 +1060,7 @@ Dialog02C:: ;🅿️; Shopkeeper, Link
     ;db "　　　　かう　　　たかすぎるよ！"
     ;db "<ask>"
 
-Dialog02D:: ;🅿️; Shopkeeper, Link
+Dialog02D:: ;P1;🅿️; Shopkeeper, Link
     toki "      palisa tawa 10      "
     toki "       mani 10      "
     toki "    o esun    ala a!<ask>"
@@ -1074,7 +1074,7 @@ Dialog02D:: ;🅿️; Shopkeeper, Link
     ;db "　や　１０ぽん　　１０ルピ－　　"
     ;db "　　　　かう　　　いらないよ<ask>"
 
-Dialog02E:: ;🅿️; Shopkeeper
+Dialog02E:: ;P1;🅿️; Shopkeeper
     toki "kama pona a!"
     toki "sina wile e ijo la, o pana e ona tawa mi@"
     toki_li_pini
@@ -1091,9 +1091,9 @@ Dialog02E:: ;🅿️; Shopkeeper
     ;db "ここへ、もってきてくだせえ。　　"
     ;db "@"
 
-Dialog02F:: ;🅿️; Shopkeeper
+Dialog02F:: ;P1;🅿️; Shopkeeper
     ;toki "o awen a! o esun a!@"
-    toki "a o weka ala!"
+    toki "a! o weka ala!"
     toki "o pana e mani."
     toki_li_pini
     ;db "Hey! You! Stop! "
@@ -1104,7 +1104,7 @@ Dialog02F:: ;🅿️; Shopkeeper
     ;db "おお－っと！そいつはいけねえや！" oootto! soitsu ha ike nee ya!
     ;db "ちゃんとカネはらってくだせえ。@" quickly pay please.
 
-Dialog030:: ;🅿️; Shopkeeper, Link
+Dialog030:: ;P1;🅿️; Shopkeeper, Link
     ;toki "      ilo tawa ma pona      "
     toki "     ilo lupa pi pona mute"
     toki "      mani 200      "
@@ -1122,7 +1122,7 @@ Dialog030:: ;🅿️; Shopkeeper, Link
     ;db "いかしたスコップ　２００ルピ－　"
     ;db "　　　　かう　　　いらないよ<ask>"
 
-Dialog031:: ;🅿️; Shopkeeper, Link
+Dialog031:: ;P1;🅿️; Shopkeeper, Link
     toki "       pilin 3       "
     toki "       mani 10      "
     toki "    o esun    mi wile ala a!<ask>"
@@ -1136,7 +1136,7 @@ Dialog031:: ;🅿️; Shopkeeper, Link
     ;db "ハ－ト　３こ　１０ルピ－　　　　"
     ;db "　　　　かう　　　かわないよ！<ask>"
 
-Dialog032:: ;🅿️; Shopkeeper, Link
+Dialog032:: ;P1;🅿️; Shopkeeper, Link
     toki "       ilo awen       "
     toki "       mani 20      "
     toki "sina ken sitelen e nimi sina lon ilo."
@@ -1152,7 +1152,7 @@ Dialog032:: ;🅿️; Shopkeeper, Link
     ;db "タテ　２０ルピ－なまえもいれます"
     ;db "　　　　かう　　　かわないよ<ask>"
 
-Dialog033:: ;🅿️; Shopkeeper, Link
+Dialog033:: ;p?;🅿️; Shopkeeper, Link
     toki "      sike pakala 10      "
     toki "       mani 10      "
     toki "    o esun    mi wile ala<ask>"
@@ -1164,7 +1164,7 @@ Dialog033:: ;🅿️; Shopkeeper, Link
     ;db "    10 rubis!   "
     ;db "    Oui  Non<ask>"
 
-Dialog034:: ;🅿️; Shopkeeper
+Dialog034:: ;P1;🅿️; Shopkeeper
     toki "jan lili o, sina jo ala e mani wile!"
     toki "sina kama jo e mani la, o kama sin!"
     toki_li_pini
@@ -1182,7 +1182,7 @@ Dialog034:: ;🅿️; Shopkeeper
     ;db "しかたね－。でなおしておくんな！" way-. come again o young man! 
     ;db "@"
 
-Dialog035:: ;🅿️; Shopkeeper
+Dialog035:: ;P1;🅿️; Shopkeeper
     toki "pona tawa sina a!"
     toki "o kama sin a!"
     toki_li_pini
@@ -1193,7 +1193,7 @@ Dialog035:: ;🅿️; Shopkeeper
     ;db "ありがとうございやした！　　　　" ty
     ;db "また　よってくだせえ。@" 
 
-Dialog036:: ;🅿️; Narrator
+Dialog036:: ;P1;🅿️; Narrator
     toki "seme a!"
     toki "sina esun e ijo kepeken mani ala a!"
     toki "seme a-"
@@ -1214,7 +1214,7 @@ Dialog036:: ;🅿️; Narrator
                                      ; ...wait
 
 Dialog037:: ; Shopkeeper
-Dialog038:: ;🅿️; Shopkeeper
+Dialog038:: ;P1;🅿️; Shopkeeper
     toki "mi toki e ni tawa sina: o pana e mani!"
     toki "sina pana ala... o moli a!"
     toki_li_pini
@@ -1231,7 +1231,7 @@ Dialog038:: ;🅿️; Shopkeeper
     ;db "いったのに．．．　　しかたがない" said... it can't be helped
     ;db "しんでもらう！@" ; take it! (death)
 
-Dialog039:: ;🅿️; Narrator
+Dialog039:: ;P3;🅿️; Narrator
     toki "seme? lupa suli pi tomo kiwen li open a!"
     toki "ni la, sina ken weka.@"
     toki_li_pini
@@ -1250,7 +1250,7 @@ Dialog039:: ;🅿️; Narrator
     ;db "@"
 
 Dialog03A:: ; Trendy Gamester
-Dialog03B:: ;🅿️; Trendy Gamester
+Dialog03B:: ;P1;🅿️; Trendy Gamester
     toki "   musi sin a! alasa 1  mani 10"
     toki "    o musi!   o weka!<ask>"
     ;db "  TRENDY GAME!  "
@@ -1262,7 +1262,7 @@ Dialog03B:: ;🅿️; Trendy Gamester
     ;db "はやりのゲ－ム　１かい１０ルピ－"
     ;db "　　　　やる　　　やめとく<ask>"
 
-Dialog03C:: ;🅿️; Trendy Gamester
+Dialog03C:: ;P1;🅿️; Trendy Gamester
     toki "nena Aen nena Bli tawa e luka ilo..."
     toki "o kepeken ona lon tenpo pona a!"
     toki "o tawa nena AB o musi pona a!"
@@ -1286,7 +1286,7 @@ Dialog03C:: ;🅿️; Trendy Gamester
     ;db "さあ、ボタンのまえへ、いっとくれ"  saa saa, button no infrontof he, have the only way!
     ;db "ガンバってね！@"             ganbatte ne!
 
-Dialog03D:: ;🅿️; Narrator
+Dialog03D:: ;P1;🅿️; Narrator
     toki "sina jo e ilo awen a!"
     toki "o sitelen e nimi sina lon ilo a!"
     toki_li_pini
@@ -1300,7 +1300,7 @@ Dialog03D:: ;🅿️; Narrator
     ;db "タテをてにいれた！　　　　　　　" shield wo obtained!
     ;db "うらになまえを　かいておこ－！@"    back ni namae wo write-te o ke- 
 
-Dialog03E:: ;🅿️; Trendy Gamester, Link
+Dialog03E:: ;P1;🅿️; Trendy Gamester, Link
     toki "sina wile ala wile musi sin?"
     toki "    o musi!   ...mi weka<ask>"
     ;db "Challenge Again?"
@@ -1310,13 +1310,13 @@ Dialog03E:: ;🅿️; Trendy Gamester, Link
     ;db "もいちどやってみちゃ－どうだい？"
     ;db "　　　　やる　　　もうやめる<ask>" play     again-stop
 
-Dialog03F:: ;🅿️; Trendy Gamester
+Dialog03F:: ;P1;🅿️; Trendy Gamester
     toki "o musi pona a!"
     toki_li_pini
     ;db "Good Luck!@"
     ;db "Bonne chance!@"
 
-Dialog040:: ;🅿️; Trendy Gamester
+Dialog040:: ;P1;🅿️; Trendy Gamester
     toki "a! tenpo ni la, musi li pini."
     toki "o musi sin lon tenpo kama!"
     toki_li_pini
@@ -1330,7 +1330,7 @@ Dialog040:: ;🅿️; Trendy Gamester
     ;db "もう　きょうは、みせじまいだよ　"
     ;db "また、あそびにきてちょ－だい！@"
 
-Dialog041:: ;🅿️; Narrator
+Dialog041:: ;P1;🅿️; Narrator
     toki "sina jo e ko nasa a!"
     toki "o pana e ona tawa ijo mute a!"
     toki_li_pini
@@ -1348,7 +1348,7 @@ Dialog041:: ;🅿️; Narrator
     ;db "いろんなものに　フリフリしよう！"
     ;db "@"
 
-Dialog042:: ;🅿️; Trendy Gamester, probably
+Dialog042:: ;P1;🅿️; Trendy Gamester, probably
     toki "ni li mani 30 a!"
     toki "sina ken musi tu wan kepeken ona a!"
     toki_li_pini
@@ -1364,7 +1364,7 @@ Dialog042:: ;🅿️; Trendy Gamester, probably
     ;db "これであと　３かいは、できるよ。"
     ;db "@"
 
-Dialog043:: ;🅿️; Ghost
+Dialog043:: ;p?;🅿️; Ghost
     toki "... mu ko  mu ko  mu ko  ..."
     toki ""
     toki "...  o pana ala e ko a!  ..."
@@ -1393,7 +1393,7 @@ Dialog043:: ;🅿️; Ghost
     ;db "　　　　　　　　　　　　　　　　"
     ;db "@"
 
-Dialog044:: ;🅿️; Narrator
+Dialog044:: ;P1;🅿️; Narrator
     toki "sina jo e ko <yoshi>[jo olin suwi insa] a!"
     toki "akesi ni li lon musi ilo mute a!"
     toki_li_pini
@@ -1410,7 +1410,7 @@ Dialog044:: ;🅿️; Narrator
     ;db "ヨッシ－だっ！　このごろいろんな"
     ;db "ゲ－ムで、みかけるな－。@"
 
-Dialog045:: ;🅿️; Fisherman
+Dialog045:: ;P1;🅿️; Fisherman
     toki "alasa kala li seme tawa sina? mani 10 taso."
     toki "    pona     mi tawa<ask>"
 
@@ -1429,7 +1429,7 @@ Dialog045:: ;🅿️; Fisherman
     ;db "つりはどうかね？　１０ルピ－だよ"
     ;db "　　　　します　　けっこうです<ask>"
 
-Dialog046:: ;🅿️; Fisherman
+Dialog046:: ;P1;🅿️; Fisherman
     toki "pakala... o pilin e pona kala a!"
     toki_li_pini
     ;db "You have to have"
@@ -1441,7 +1441,7 @@ Dialog046:: ;🅿️; Fisherman
     ;db "もっと　じょうねつをもたないと　"
     ;db "だめだよ！@"
 
-Dialog047:: ;🅿️; Fisherman
+Dialog047:: ;P1;🅿️; Fisherman
     toki "pona... ni la  <dpad>la, o kepeken nena <left><right>."
     toki "kala li moku e linja la, o luka mute e nena AB."
     toki "o musi pona a!@"
@@ -1468,7 +1468,7 @@ Dialog047:: ;🅿️; Fisherman
     ;db "あとはボタンを　れんしゃしなさい"
     ;db "ガンバルのだよ！@"
 
-Dialog048:: ;🅿️; Fisherman, Link
+Dialog048:: ;P1;🅿️; Fisherman, Link
     toki "wile la, sina ken musi sin."
     toki "    wile a    mi pini<ask>"
     ;db "Why not try one "
@@ -1481,7 +1481,7 @@ Dialog048:: ;🅿️; Fisherman, Link
     ;db "まだ、するかね？　　　　　　　　"
     ;db "　　　　もちろん　けっこうです<ask>"
 
-Dialog049:: ;🅿️; Fisherman, Link
+Dialog049:: ;P1;🅿️; Fisherman, Link
     ; todo: revise
     toki "ike a! linja li pakala."
     toki "sina wile ala wile musi sin?"
@@ -1499,7 +1499,7 @@ Dialog049:: ;🅿️; Fisherman, Link
     ;db "またするかね？　　　　　　　　　"
     ;db "　　　　もちろん　けっこうです<ask>"
 
-Dialog04A:: ;🅿️; Fisherman, Link
+Dialog04A:: ;P1;🅿️; Fisherman, Link
     ; todo: revise
     toki "a! kala suli a! mi pana e mani 20."
     toki ""
@@ -1524,7 +1524,7 @@ Dialog04A:: ;🅿️; Fisherman, Link
     ;db "またするかね？　　　　　　　　　"
     ;db "　　　　もちろん　けっこうです<ask>"
 
-Dialog04B:: ;🅿️; Fisherman, Link
+Dialog04B:: ;P1;🅿️; Fisherman, Link
     toki "kala ala. sina wile ala wile alasa lon telo suli?"
     toki "    wile a    mi pini<ask>"
     ;db "This pond's all "
@@ -1541,7 +1541,7 @@ Dialog04B:: ;🅿️; Fisherman, Link
     ;db "つぎは、うみでどうかね？　　　　" ;next, how about the ocean?
     ;db "　　　　もちろん　けっこうです<ask>" ;of course! no thanks
 
-Dialog04C:: ;🅿️; Fisherman, Link
+Dialog04C:: ;P1;🅿️; Fisherman, Link
     toki "a- mi ken ala ni. tawa pona."
     toki_li_pini
     ;db "Did I say that? "
@@ -1553,7 +1553,7 @@ Dialog04C:: ;🅿️; Fisherman, Link
     ;db "いや－、やっぱりそれはむりだよ。"
     ;db "　　では、ごきげんよう！@"
 
-Dialog04D:: ;🅿️; Fisherman, Link
+Dialog04D:: ;P1;🅿️; Fisherman, Link
     toki "kala lili. mi pana e mani 5 taso."
     toki "sina wile ala wile musi sin?"
     toki "    wile a    mi pini<ask>"
@@ -1576,7 +1576,7 @@ Dialog04D:: ;🅿️; Fisherman, Link
     ;db "　　またするかね？　　　　　　　"
     ;db "　　　　もちろん　けっこうです<ask>"
 
-Dialog04E:: ;🅿️; Fisherman
+Dialog04E:: ;P1;🅿️; Fisherman
     toki "sina jo ala e mani anu seme?"
     toki "sina kama jo la o kama sin."
     toki_li_pini
@@ -1597,7 +1597,7 @@ Dialog04E:: ;🅿️; Fisherman
     ;db "おかねがたまったら、またきなさい"
     ;db "@"
 
-Dialog04F:: ;🅿️; Narrator
+Dialog04F:: ;P1;🅿️; Narrator
     ; lipu la is too vague
     ;toki "sina kama jo e pilin lili a! sina wile lukin la, lipu la,"
     ;toki "o luka e nena SELECT"
@@ -1622,7 +1622,7 @@ Dialog04F:: ;🅿️; Narrator
     ;db "サブがめんでセレクトボタンを　　"
     ;db "おせば　かくにんできるよ！@"
 
-Dialog050:: ;🅿️; Narrator
+Dialog050:: ;P1;🅿️; Narrator
     toki " sina jo   e lili pilin tu tu"
     toki "la sina kama jo  e poki pilin wan a!"
     toki_li_pini
@@ -1641,7 +1641,7 @@ Dialog050:: ;🅿️; Narrator
     ;db "ハ－トのかけらが　４つそろった！"
     ;db "ハ－トのうつわが　１つふえた！@"
 
-Dialog051:: ;🅿️; Narrator
+Dialog051:: ;p?;🅿️; Narrator
     toki "kiwen laso... a lete!@"
     toki_li_pini
     ;db "Brrrr... This is"
@@ -1651,7 +1651,7 @@ Dialog051:: ;🅿️; Narrator
     ;db "まっさおな、こおりだ！．．．．　"
     ;db "おおっ？　つ、つめたいぞ！！@"
 
-Dialog052:: ;🅿️; Genie (D2 Nightmare)
+Dialog052:: ;P2;🅿️; Genie (D2 Nightmare)
     toki "mu musi ike! mu musi ike! mi jo e poki mi la,"
     toki "sina ken ala pakala e mi a!@"
     toki_li_pini
@@ -1663,7 +1663,7 @@ Dialog052:: ;🅿️; Genie (D2 Nightmare)
     ;db "あるかぎり、ふじみでごじゃるよ！"
     ;db "@"
 
-Dialog053:: ;🅿️; Genie (D2 Nightmare)
+Dialog053:: ;P2;🅿️; Genie (D2 Nightmare)
     ;toki "sina pakala e seme a? mi pilin ike suli tawa sina a!"
     toki "seme a! sina pakala e poki mi..."
     toki "mi pana e ike wawa tawa sina a!"
@@ -1677,7 +1677,7 @@ Dialog053:: ;🅿️; Genie (D2 Nightmare)
     ;db "ワシャもうゆるさんでごじゃるよ！"
     ;db "@"
 
-Dialog054:: ;🅿️; Tarin
+Dialog054:: ;P1;🅿️; Tarin
     toki "a! jan [#####] li kama lon."
     toki "mi mama [tawa alasa loje ijo nena]. sina pilin seme?"
     toki "mi sona e nimi sina tan seme..."
@@ -1732,7 +1732,7 @@ Dialog054:: ;🅿️; Tarin
     ;db "@"
 
 
-Dialog055:: ;🅿️; Tarin
+Dialog055:: ;P1;🅿️; Tarin
     toki "a! o sona:"
     toki "ilo ante sina li kama lon poka telo."
     toki "sina alasa e ilo la,"
@@ -1779,7 +1779,7 @@ Dialog055:: ;🅿️; Tarin
     ;db "ウロつくように　なっただ。@"
 
 
-Dialog056:: ;🅿️; Map
+Dialog056:: ;P1;🅿️; Map
     ; tomo pi pipi linja
     toki " tomo suli nanpa wan"
     toki "    lupa ma pi pipi linja@"
@@ -1791,7 +1791,7 @@ Dialog056:: ;🅿️; Map
     ;db "　レベル１　　　　　　　　　　　"
     ;db "　　　テ－ルのほらあな@"
 
-Dialog057:: ;🅿️; Map
+Dialog057:: ;P1;🅿️; Map
     toki " tomo suli nanpa tu"
     toki "    tomo nena pi poki kiwen@"
     toki_li_pini
@@ -1802,7 +1802,7 @@ Dialog057:: ;🅿️; Map
     ;db "　レベル２　　　　　　　　　　　"
     ;db "　　　　つぼのどうくつ@"
 
-Dialog058:: ;🅿️; Map
+Dialog058:: ;P1;🅿️; Map
     toki " tomo suli nanpa tu wan"     ; "key cavern" is confusing to direct people to after Richard
     toki "    tomo kiwen pi lukin ko@" ; also the key is called "slime key"
     toki_li_pini                       ; so i just renamed it!
@@ -1814,7 +1814,7 @@ Dialog058:: ;🅿️; Map
     ;db "　レベル３　　　　　　　　　　　"
     ;db "　　　　カギのあなぐら@"
 
-Dialog059:: ;🅿️; Map
+Dialog059:: ;P1;🅿️; Map
     toki " tomo suli nanpa tu tu"
     toki "    lupa len pi kala alasa@"
     toki_li_pini
@@ -1827,7 +1827,7 @@ Dialog059:: ;🅿️; Map
     ;db "　　アングラ－のたきつぼ@"
 
 
-Dialog05A:: ;🅿️; Map
+Dialog05A:: ;P1;🅿️; Map
     ; read this
     ; https://en.wikipedia.org/wiki/Namazu
     toki " tomo suli nanpa luka"
@@ -1840,7 +1840,7 @@ Dialog05A:: ;🅿️; Map
     ;db "　レベル５　　　　　　　　　　　"
     ;db "　　　　ナマズのおおぐち@"
 
-Dialog05B:: ;🅿️; Map
+Dialog05B:: ;P1;🅿️; Map
     toki " tomo suli nanpa luka wan"
     toki "    tomo sewi pi sinpin jan@"
     toki_li_pini
@@ -1852,7 +1852,7 @@ Dialog05B:: ;🅿️; Map
     ;db "　レベル６　　　　　　　　　　　"
     ;db "　　　　かおのしんでん@"
 
-Dialog05C:: ;🅿️; Map
+Dialog05C:: ;P1;🅿️; Map
     ; todo: read this, possibly change translation
     ; https://en.wikipedia.org/wiki/Steller%27s_sea_eagle
     toki " tomo suli nanpa luka tu"
@@ -1865,7 +1865,7 @@ Dialog05C:: ;🅿️; Map
     ;db "　レベル７　　　　　　　　　　　"
     ;db "　　　　オオワシのとう@"
 
-Dialog05D:: ;🅿️; Map
+Dialog05D:: ;P1;🅿️; Map
     toki " tomo suli nanpa luka tu wan"
     toki "    kiwen akesi@"
     toki_li_pini
@@ -1877,7 +1877,7 @@ Dialog05D:: ;🅿️; Map
     ;db "　レベル８　　　　　　　　　　　"
     ;db "　　　　　　カメイワ@"
 
-Dialog05E:: ;🅿️; Map
+Dialog05E:: ;P1;🅿️; Map
     ; sike sewi
     toki "       sike sewi@"
     toki_li_pini
@@ -1886,7 +1886,7 @@ Dialog05E:: ;🅿️; Map
     ;db "　　　　せいなるタマゴ@" ; holy egg
 
 Dialog05F:: ; Map
-Dialog060:: ;🅿️; Map
+Dialog060:: ;P1;🅿️; Map
     toki "       nasin linja@"
     toki_li_pini
     ;db "Mountain Bridge @"
@@ -1894,7 +1894,7 @@ Dialog060:: ;🅿️; Map
     ;db "　　　　　　つりばし　　　　　　"
     ;db "@"
 
-Dialog061:: ;🅿️; Map
+Dialog061:: ;P1;🅿️; Map
     toki "      esun kili pi"
     toki "     akesi [soweli esun]@"
     toki_li_pini
@@ -1905,7 +1905,7 @@ Dialog061:: ;🅿️; Map
     ;db "　　バナナうり　セ－ルのいえ　　"
     ;db "@"
 
-Dialog062:: ;🅿️; Map
+Dialog062:: ;P1;🅿️; Map
     toki "     ma kasi lupa@"
     toki_li_pini
     ;db "Pothole Field@"
@@ -1914,7 +1914,7 @@ Dialog062:: ;🅿️; Map
     ;db "　　　　アナボコばたけ　　　　　" ; 穴ぼこ
     ;db "@"
 
-Dialog063:: ;🅿️; Map
+Dialog063:: ;P1;🅿️; Map
     ; todo: revise, check ghost dialog
     toki "      tomo pi poka telo@"
     toki_li_pini
@@ -1925,7 +1925,7 @@ Dialog063:: ;🅿️; Map
     ;db "　　　　　いりえのいえ　　　　　" ; 暗い空き家 ; dark vacant house
     ;db "@"
 
-Dialog064:: ;🅿️; Map
+Dialog064:: ;P1;🅿️; Map
     toki "       tomo musi@"
     toki_li_pini
     ;db "   Trendy Game@"
@@ -1933,14 +1933,14 @@ Dialog064:: ;🅿️; Map
     ;; Jeu dans le vent //Switch FR
     ;db "　　　いまはやりのゲ－ム@" ; game center (arcade)
 
-Dialog065:: ;🅿️; Map
+Dialog065:: ;P1;🅿️; Map
     toki "       esun ilo@"
     toki_li_pini
     ;db "  Town Tool Shop@"
     ;db "Bazar du Centre@"
     ;db "　　　むらのどうぐやさん@"
 
-Dialog066:: ;🅿️; Map
+Dialog066:: ;P1;🅿️; Map
     ; tomo pi jan kalama Mali
     ;      pi jan mama Tali
     toki "  tomo pi jan kalama [mu a loje ijo nena]"
@@ -1954,7 +1954,7 @@ Dialog066:: ;🅿️; Map
     ;db "   et Tarkin@"
     ;db "　　　マリンとタリンのいえ@"
 
-Dialog067:: ;🅿️; Map
+Dialog067:: ;P1;🅿️; Map
     toki "      tomo pi jan suli"
     toki "       pi ko nasa@"
     toki_li_pini
@@ -1964,7 +1964,7 @@ Dialog067:: ;🅿️; Map
     ;db "　　　まほうのこなをつくる　　　" ; makes magic dust
     ;db "　　　　　　おばあさん@" ; grandma
 
-Dialog068:: ;🅿️; Map
+Dialog068:: ;P1;🅿️; Map
     ; DeepL says that やーな means "hey you" fwiw
     toki "    ma ko [jelo anpa noka anpa]@"
     toki_li_pini
@@ -1973,7 +1973,7 @@ Dialog068:: ;🅿️; Map
     ;db "@"
     ;db "　　　　ヤ－ナ　さばく@"
 
-Dialog069:: ;🅿️; Map
+Dialog069:: ;P1;🅿️; Map
     toki "   ma kasi [utala kasi utala kasi utala]@"
     toki_li_pini
     ;db "  Ukuku Prairie@"
@@ -1981,14 +1981,14 @@ Dialog069:: ;🅿️; Map
     ; Prairie Oukoukou //Switch FR
     ;db "　　　　ウクク　そうげん@"
 
-Dialog06A:: ;🅿️; Map
+Dialog06A:: ;P1;🅿️; Map
     toki "      ma kasi nasa@"
     toki_li_pini
     ;db "Mysterious Woods@"
     ;db "Forêt Enchantée@"
     ;db "　　　　　ふしぎのもり@"
 
-Dialog06B:: ;🅿️; Map
+Dialog06B:: ;P1;🅿️; Map
     ; たまらん tamaran
     ;   intolerable; unbearable; unendurable
     ;   irresistible; tremendous; out of this world
@@ -2002,7 +2002,7 @@ Dialog06B:: ;🅿️; Map
     ;db " Mt Tamaranch@"
     ;db "　　　　タマランチ　やま@"
 
-Dialog06C:: ;🅿️; Map
+Dialog06C:: ;P1;🅿️; Map
     ; nena [tawa alasa tawa alasa]
     toki "    nena [tawa awen tawa awen]@"
     toki_li_pini
@@ -2012,7 +2012,7 @@ Dialog06C:: ;🅿️; Map
     ;db "    Tartare@"
     ;db "　　　タルタル　さんみゃく@"
 
-Dialog06D:: ;🅿️; Map
+Dialog06D:: ;P1;🅿️; Map
     toki "      nasin pi sinpin toki@"
     toki_li_pini
     ;db "  Signpost Maze @"
@@ -2020,7 +2020,7 @@ Dialog06D:: ;🅿️; Map
     ;db "  des Panneaux@"
     ;db "　　　　カンバンのめいろ@"
 
-Dialog06E:: ;🅿️; Map
+Dialog06E:: ;P1;🅿️; Map
     ; ma tomo [mu en pilin en]
     toki "     ma tomo [mu e pona e]@"
     toki_li_pini
@@ -2029,7 +2029,7 @@ Dialog06E:: ;🅿️; Map
     ;db "  des Mouettes@" ; seagull
     ;db "　　　　　メ－ベのむら@" ; me-be
 
-Dialog06F:: ;🅿️; Map
+Dialog06F:: ;P1;🅿️; Map
     toki "      ma tomo soweli@"
     toki_li_pini
     ;db " Animal Village @"
@@ -2037,14 +2037,14 @@ Dialog06F:: ;🅿️; Map
     ;db "  des Animaux@"
     ;db "　　　　　どうぶつむら@"
 
-Dialog070:: ;🅿️; Map
+Dialog070:: ;P1;🅿️; Map
     toki "       kiwen moli@"
     toki_li_pini
     ;db "    Cemetery    @"
     ;db "   Cimetière@"
     ;db "　　　　　　　ぼち@"
 
-Dialog071:: ;🅿️; Map
+Dialog071:: ;P1;🅿️; Map
     toki "      nasin pi telo wawa@"
     toki_li_pini
     ;db "   Rapids Ride  @"
@@ -2052,7 +2052,7 @@ Dialog071:: ;🅿️; Map
     ;db "  des Rapides@"
     ;db "　　　きゅうりゅうすべり@"
 
-Dialog072:: ;🅿️; Map
+Dialog072:: ;P1;🅿️; Map
     ; ma kasi [kon o kon o lape insa nena]
     toki "    ma kasi [kon o kon o]@"
     toki_li_pini
@@ -2060,7 +2060,7 @@ Dialog072:: ;🅿️; Map
     ;db "Plaine Cocolint@"
     ;db "　　　コホリント　へいげん@"
 
-Dialog073:: ;🅿️; Map
+Dialog073:: ;P1;🅿️; Map
     ; potential vibes
     ; toro: fat underbelly of tuna
     ; tonbo: dragonfly
@@ -2074,7 +2074,7 @@ Dialog073:: ;🅿️; Map
     ;db "   Plage Coco@" ; short for Koholint?
     ;db "　　　トロンボ　かいがん@"
 
-Dialog074:: ;🅿️; Map
+Dialog074:: ;P1;🅿️; Map
     ; ma telo [meli ante sijelo ante]
     toki "    telo suli [meli ante sijelo ante]@"
     toki_li_pini
@@ -2082,7 +2082,7 @@ Dialog074:: ;🅿️; Map
     ;db " Baie de Martha@"
     ;db "　　　　マ－サのいりえ@"
 
-Dialog075:: ;🅿️; Map
+Dialog075:: ;P1;🅿️; Map
     ; ma lon poka pi ma telo
     toki "      ma pi poka telo@"
     toki_li_pini
@@ -2090,21 +2090,21 @@ Dialog075:: ;🅿️; Map
     ;db " Est de la Baie@"
     ;db "　　　　いりえのひがし@"
 
-Dialog076:: ;🅿️; Map
+Dialog076:: ;P1;🅿️; Map
     ; according to jan GB, formerly known as Wakiiga Swap
     ; DeepL translator mysteriously says:
     ; goponga (Orectolobus goponga, extinct)
     ; https://en.wikipedia.org/wiki/Orectolobus
     ; it's found in Japan!
 
-    toki "   ma ko [pan o noka kala a]@"
+    toki "   ma ko [palisa o noka kala a]@"
     toki_li_pini
     ;db "  Goponga Swamp@"
     ;db "     Marais     "
     ;db "  des Anémones@"
     ;db "　　　　ゴポンガのぬま@"
 
-Dialog077:: ;🅿️; Map
+Dialog077:: ;P1;🅿️; Map
     toki "      tomo sewi sinpin@"
     toki_li_pini
     ;db "   Face Shrine @"
@@ -2112,7 +2112,7 @@ Dialog077:: ;🅿️; Map
     ;db "@"
     ;db "　　　　かおのしんでん@"
 
-Dialog078:: ;🅿️; Map
+Dialog078:: ;P1;🅿️; Map
     ; tomo suli lawa [kiwen awen nanpa awen lawa esun]
     toki "    tomo lawa [kule awen nanpa awen]@"
     toki_li_pini
@@ -2120,7 +2120,7 @@ Dialog078:: ;🅿️; Map
     ;db "Château Canulet@"
     ;db "　　　　カナレットのしろ@"
 
-Dialog079:: ;🅿️; Map
+Dialog079:: ;P1;🅿️; Map
     ; ma pi poka nena [tawa alasa tawa alasa]
     toki "    supa sewi [tawa awen tawa awen]@"
     toki_li_pini
@@ -2128,7 +2128,7 @@ Dialog079:: ;🅿️; Map
     ;db "Plateau Tartare@"
     ;db "　　　　タルタル　こうち@"
 
-Dialog07A:: ;🅿️; Map
+Dialog07A:: ;P1;🅿️; Map
     ; maybe this French surrealist photographer
     ; https://www.google.com/search?q=maurice+tabard
 
@@ -2142,7 +2142,7 @@ Dialog07A:: ;🅿️; Map
     ;db "  Morne Plaine@"
     ;db "　　　　タバ－ルのはやし@"
 
-Dialog07B:: ;🅿️; Map
+Dialog07B:: ;P1;🅿️; Map
     toki "       poka tomo@"
     toki_li_pini
     ;db "  South of the  "
@@ -2150,7 +2150,7 @@ Dialog07B:: ;🅿️; Map
     ;db " Sud du Village@"
     ;db "　　　　　むらのみなみ@"
 
-Dialog07C:: ;🅿️; Map
+Dialog07C:: ;P1;🅿️; Map
     ; 󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪󱥪 telo telo telo
     ;
     ;      󱤔  󱤔     󱤔                kala
@@ -2165,7 +2165,7 @@ Dialog07C:: ;🅿️; Map
     ;db "     Etang@"
     ;db "　　　　　つりぼり@"
 
-Dialog07D:: ;🅿️; Map
+Dialog07D:: ;P1;🅿️; Map
     ; meli mu mu
     ; 󱥭󱥍󱤳󱤹󱤹
     ; 󱥢󱤧󱤬󱦜  󱥄󱤈󱥔󱤀
@@ -2183,7 +2183,7 @@ Dialog07D:: ;🅿️; Map
     ;db "　　　ワンワンにちゅうい！　　　"
     ;db "@"
 
-Dialog07E:: ;🅿️; Map
+Dialog07E:: ;P1;🅿️; Map
     ; 󱥭󱥍󱤑󱥣󱦐󱥰󱤩󱥰󱤩󱤎󱤩󱤀󱦑
     toki " tomo pi jan suli [uta linja uta linja ilo linja a]"
     toki "  pi jan suli wawa a-!"
@@ -2194,7 +2194,7 @@ Dialog07E:: ;🅿️; Map
     ;db "   le Ramollo@"
     ;db "　　うるりらじいさんのいえ@"
 
-Dialog07F:: ;🅿️; Map
+Dialog07F:: ;P1;🅿️; Map
     ; jan GB says this is a reference to SimCity's Dr. Wright, who's named after Will Wright
     ; jan nasa Wasi
     ; jan nasa sitelen
@@ -2207,7 +2207,7 @@ Dialog07F:: ;🅿️; Map
     ;db "　　　　へんなおじさん　　　　　" ; weird uncle
     ;db "　　　　　ライトのいえ@"        ; Raito's house
 
-Dialog080:: ;🅿️; Map
+Dialog080:: ;P1;🅿️; Map
     ; 󱤑󱤾󱥍󱥛󱥔 jan nasa pi sijelo pona
 
     ;        󱥭󱥛     tomo sijelo
@@ -2223,7 +2223,7 @@ Dialog080:: ;🅿️; Map
     ;db "　　　きまぐれトレ－シ－の　　　"
     ;db "　　　　　くすりやさん@"
 
-Dialog081:: ;🅿️; Map
+Dialog081:: ;P1;🅿️; Map
     toki "     tomo pi jan lili tu tu@"
     toki_li_pini
     ;db "Quadruplet's    "
@@ -2232,7 +2232,7 @@ Dialog081:: ;🅿️; Map
     ;db " les Quadruplés@"
     ;db "　　　　　４つごのいえ@"
 
-Dialog082:: ;🅿️; Map
+Dialog082:: ;P1;🅿️; Map
     ; tomo pi lape wawa
     ; tomo lape sewi
     ; tomo pi sitelen lape
@@ -2243,7 +2243,7 @@ Dialog082:: ;🅿️; Map
     ;db "Gîte des Rêves@"
     ;db "　　　　　ユメのほこら@"
 
-Dialog083:: ;🅿️; Signpost
+Dialog083:: ;P3;🅿️; Signpost
     toki "tomo pi ilo toki"
     toki "<down> nasin pi sinpin toki"
     toki_li_pini
@@ -2254,7 +2254,7 @@ Dialog083:: ;🅿️; Signpost
     ;db "　　　　でんわボックス　　　　　"
     ;db "　　<down>　カンバンのめいろ@"
 
-Dialog084:: ;🅿️; Map
+Dialog084:: ;P1;🅿️; Map
     toki "     tomo wawa pi kiwen kala@"
     toki_li_pini
     ;db "Seashell Mansion@"
@@ -2262,7 +2262,7 @@ Dialog084:: ;🅿️; Map
     ;db "aux Coquillages@"
     ;db "　　　　かいがらのやかた@"
 
-Dialog085:: ;🅿️; Map
+Dialog085:: ;P1;🅿️; Map
     toki "      tomo sin pi"
     toki "   jan lawa lili [wan ijo suli ale]@"
     toki_li_pini
@@ -2271,21 +2271,21 @@ Dialog085:: ;🅿️; Map
     ;db "@"
     ;db "　　　リチャ－ドのべっそう@"
 
-Dialog086:: ;🅿️; Map
+Dialog086:: ;P1;🅿️; Map
     toki "       tomo waso@"
     toki_li_pini
     ;db "     Hen House  @"
     ;db "   Poulailler@"
     ;db "　　　　　ニワトリごや@" ; chicken coop
 
-Dialog087:: ;🅿️; Map
+Dialog087:: ;P1;🅿️; Map
     toki "       tomo lipu@"
     toki_li_pini
     ;db "Village Library @"
     ;db "  Bibliothèque@"
     ;db "　　　　むらのとしょかん@"
 
-Dialog088:: ;🅿️; Map
+Dialog088:: ;P1;🅿️; Map
     toki "      esun pi supa telo@"
     toki_li_pini
     ;db "    Raft Shop   @"
@@ -2293,7 +2293,7 @@ Dialog088:: ;🅿️; Map
     ;db "   de radeaux@"
     ;db "　　　　　　いかだや　　　@"
 
-Dialog089:: ;🅿️; Map
+Dialog089:: ;P1;🅿️; Map
     ; lupa pi ma ante
     ; lupa pi tawa nasa
     ; lupa pi tawa wawa
@@ -2306,7 +2306,7 @@ Dialog089:: ;🅿️; Map
     ;db "   Trou Warp@"
     ;db "　　　　　ワ－プのあな@"
 
-Dialog08A:: ;🅿️; Narrator
+Dialog08A:: ;p?;🅿️; Narrator
     toki "n... kiwen ni li pakala lili..."
     toki "sina ken weka e ona kepeken nasin seme?@"
     toki_li_pini
@@ -2319,7 +2319,7 @@ Dialog08A:: ;🅿️; Narrator
     ;db "なんとかすれば、こわせそうだぞ！"
     ;db "@"
 
-Dialog08B:: ;🅿️; Narrator
+Dialog08B:: ;P3;🅿️; Narrator
     ; todo: revisit
     ;toki "n  ko nasa... ken la, nasin pakala li ni:"
     ;toki "o pana e ale pi palisa utala lon tenpo lili lili.@"
@@ -2335,7 +2335,7 @@ Dialog08B:: ;🅿️; Narrator
     ;db "いっきにつっこめば　こわせるかも"
     ;db "@"
 
-Dialog08C:: ;🅿️; Narrator
+Dialog08C:: ;p?;🅿️; Narrator
     toki "seme? kiwen ni li jo e lupa ilo a!"
     toki "sina kepeken ilo la kiwen li open."
     toki "o kama sin! o kepeken ilo lupa a!@"
@@ -2348,7 +2348,7 @@ Dialog08C:: ;🅿️; Narrator
     ;db "カギをもって　またこよう！！　　"
     ;db "@"
 
-Dialog08D:: ;🅿️; Narrator
+Dialog08D:: ;P1;🅿️; Narrator
     toki "suli wawa a! sina ken ala tawa e ni kepeken luka taso..."
     toki_li_pini
 
@@ -2368,7 +2368,7 @@ Dialog08D:: ;🅿️; Narrator
     ;db "すでじゃ　ムリみたいだ．．．　　"
     ;db "@"
 
-Dialog08E:: ;🅿️; Narrator
+Dialog08E:: ;p?;🅿️; Narrator
     toki "ilo kalama a!"
     toki "taso... sina sona ala kalama..."
     toki_li_pini
@@ -2380,14 +2380,14 @@ Dialog08E:: ;🅿️; Narrator
     ;db "まだキョクを　おぼえてなかった。"
     ;db "@"
 
-Dialog08F:: ;🅿️; Marin
+Dialog08F:: ;p?;🅿️; Marin
     toki "o pini a! waso li pona a! mu ike a!"
     ;db "No!  No!  Poor  "
     ;db "hen!  Stop that!@"
     ;db "ダメ－－ッ！　ニワトリさんが　　"
     ;db "かわいそうじゃない！　モオッ！@"
 
-Dialog090:: ;🅿️; Narrator
+Dialog090:: ;P2;🅿️; Narrator
     toki "sina jo e len luka wawa a!"
     toki "kepeken ni la, sina ken jo e kiwen e poki a!"
     toki_li_pini
@@ -2400,7 +2400,7 @@ Dialog090:: ;🅿️; Narrator
     ;db "これで、ツボやいわが　かつげるぞ"
     ;db "@"
 
-Dialog091:: ;🅿️; Narrator
+Dialog091:: ;P1;🅿️; Narrator
     toki "sina jo e ilo awen sina a!"
     ;toki "nasa la, sina ken tawa e pipi kepeken ilo ni.@"
     toki "ilo li wawa nanpa wan, la ona li ken tawa e pipi."
@@ -2420,7 +2420,7 @@ Dialog091:: ;🅿️; Narrator
     ;db "おしてるあいだ、テキをはじけるよ"
     ;db "@"
 
-Dialog092:: ;🅿️; Desert skull
+Dialog092:: ;p?;🅿️; Desert skull
     toki "mu wawa a-! mi kama sin a!"
     toki "sina pona e mi la mi pana e sona."
     toki "ko li ken moku e sina."
@@ -2448,7 +2448,7 @@ Dialog092:: ;🅿️; Desert skull
     ;db "じゃあなっ！　　ポキポキポキッ！"
     ;db "@"
 
-Dialog093:: ;🅿️; Narrator
+Dialog093:: ;p?;🅿️; Narrator
     toki "sina jo e linja tawa a!"
     toki "sina kepeken ona la ona li kama suli a!@"
     toki_li_pini
@@ -2461,7 +2461,7 @@ Dialog093:: ;🅿️; Narrator
     ;db "ボヨヨ－ンと　のばしてつかおう！"
     ;db "@"
 
-Dialog094:: ;🅿️; Narrator
+Dialog094:: ;p?;🅿️; Narrator
     toki "sina jo e palisa seli a!"
     toki "o seli! o seli! o seli wawa e ale a!@"
     toki_li_pini
@@ -2473,7 +2473,7 @@ Dialog094:: ;🅿️; Narrator
     ;db "マジックロッドを　てにいれた！　"
     ;db "もやせ！もやせ！やきつくせ！！@"
 
-Dialog095:: ;🅿️; Narrator
+Dialog095:: ;P3;🅿️; Narrator
     toki "sina jo e len noka [poka en kon ale sewi ilo] a!"
     toki "o luka e nena ilo lon tenpo suli. la sina tawa wawa a!"
     toki_li_pini
@@ -2486,7 +2486,7 @@ Dialog095:: ;🅿️; Narrator
     ;db "ボタンをおしつづけるとダッシュだ"
     ;db "@"
 
-Dialog096:: ;🅿️; Narrator
+Dialog096:: ;p?;🅿️; Narrator
     toki "sina jo e ilo kalama a!"
     toki "o pana e kalama mute!"
     toki_li_pini
@@ -2498,7 +2498,7 @@ Dialog096:: ;🅿️; Narrator
     ;db "いろんなきょくが　ふけるといいな"
     ;db "@"
 
-Dialog097:: ;🅿️; Narrator
+Dialog097:: ;P1;🅿️; Narrator
     toki "sina jo e linja pi waso suli!"
     toki "sina pilin lili sama waso."
     toki_li_pini
@@ -2510,7 +2510,7 @@ Dialog097:: ;🅿️; Narrator
     ;db "ロックちょうのハネをてにいれた！"
     ;db "なんだか、からだがかるくなる。@"
 
-Dialog098:: ;🅿️; Narrator
+Dialog098:: ;P1;🅿️; Narrator
     toki "sina jo e ilo pi lupa ma a! o kepeken!"
     toki "sina ken pilin pona tan lupa."
     toki_li_pini
@@ -2522,7 +2522,7 @@ Dialog098:: ;🅿️; Narrator
     ;db "つちをほるよろこびをあじわおう。"
     ;db "@"
 
-Dialog099:: ;🅿️; Narrator
+Dialog099:: ;P1;🅿️; Narrator
     toki "sina jo e ko nasa a!"
     toki "o pana e ona tawa ijo mute a!"
     toki_li_pini
@@ -2535,7 +2535,7 @@ Dialog099:: ;🅿️; Narrator
     ;db "いろんなものに　ふりかけてみよう"
     ;db "@"
 
-Dialog09A:: ;🅿️; Narrator
+Dialog09A:: ;P3;🅿️; Narrator
     toki "sina jo e sike pakala a!"
     toki "mu pakala  mu pakala"
     toki_li_pini
@@ -2545,9 +2545,7 @@ Dialog09A:: ;🅿️; Narrator
     ;db "バクダンを　てにいれた！　　　　"
     ;db "ド－ンといこう、ド－ンと！@"
 
-    ; RESUME TRANSLATING FROM HERE
-
-Dialog09B:: ;🅿️; Narrator
+Dialog09B:: ;P1;🅿️; Narrator
     toki "sina jo e palisa utala sina a!"
     toki "sina sitelen e nimi sina lon ona a!"
     toki_li_pini
@@ -2565,7 +2563,7 @@ Dialog09B:: ;🅿️; Narrator
     ;db "なまえいりだから　まちがいない！"
     ;db "@"
 
-Dialog09C:: ;🅿️; Narrator
+Dialog09C:: ;p?;🅿️; Narrator
     toki "sina jo e noka kala a!"
     toki "nena A la sina tawa wawa. nena B la sina tawa anpa."
     toki_li_pini
@@ -2579,7 +2577,7 @@ Dialog09C:: ;🅿️; Narrator
     ;db "Ｂボタンをおせば　もぐれるぞっ！"
     ;db "@"
 
-Dialog09D:: ;🅿️; Narrator
+Dialog09D:: ;p?;🅿️; Narrator
     toki "seme a? ni li ilo pi lukin wawa a!"
     toki "sina ken lukin e ijo len sin kepeken ni a!"
     toki_li_pini
@@ -2596,7 +2594,8 @@ Dialog09D:: ;🅿️; Narrator
     ;db "@"
 
 Dialog09E:: ; Narrator
-Dialog09F:: ;🅿️; Narrator
+Dialog09F:: ;p?;🅿️; Narrator
+    ; is this for the L2 sword?
     toki "sina jo e palisa sin a!"
     toki "open la, o sitelen e nimi sina lon ona."
     toki_li_pini
@@ -2609,7 +2608,7 @@ Dialog09F:: ;🅿️; Narrator
     ;db "さっそく、なまえをかいておこう！"
     ;db "@"
 
-Dialog0A0:: ;🅿️; Narrator
+Dialog0A0:: ;P6;🅿️; Narrator
     toki "seme? sina jo e ko misikeke a!"
     toki "mu pana  mu pana  sina pana e ko tawa selo."
     toki_li_pini
@@ -2622,7 +2621,7 @@ Dialog0A0:: ;🅿️; Narrator
     ;db "ヌリ　ヌリ．．．じぶんでぬった。"
     ;db "@"
 
-Dialog0A1:: ;🅿️; Narrator
+Dialog0A1:: ;p?;🅿️; Narrator
     toki "sina jo e ilo lupa pi pipi linja a!"
     toki "ilo ni li ken open e lupa pi pipi linja a!"
     toki_li_pini
@@ -2634,8 +2633,7 @@ Dialog0A1:: ;🅿️; Narrator
     ;db "これで、テ－ルのとびらがひらく！"
     ;db "@"
 
-Dialog0A2:: ;🅿️; Narrator
-    ; todo: revisit
+Dialog0A2:: ;P3;🅿️; Narrator
     toki "sina jo e ilo lupa pi lukin ko a!"
     toki "ilo li ken open e lupa sin."
     toki "o tawa lupa lon ma kasi [utala kasi utala kasi utala].@"
@@ -2649,7 +2647,7 @@ Dialog0A2:: ;🅿️; Narrator
     ;db "ウククそうげんのいりぐちへゆこう"
     ;db "@"
 
-Dialog0A3:: ;🅿️; Narrator
+Dialog0A3:: ;p?;🅿️; Narrator
     toki "sina jo e ilo lupa pi kala alasa a!"
     toki_li_pini
     ;db "You've got the  "

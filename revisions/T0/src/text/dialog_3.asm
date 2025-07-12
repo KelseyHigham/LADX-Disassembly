@@ -163,7 +163,7 @@ Dialog117:: ;🆖; idk
     db "careful next    "
     db "time!@"
 
-Dialog118:: ;🅿️; Kid
+Dialog118:: ;P1;🅿️; Kid
     toki "jan suli o!"
     toki "sina wile awen e pali sina la, "
     toki "o luka e nena Ae nena Be nena START"
@@ -194,7 +194,7 @@ Dialog118:: ;🅿️; Kid
     ;db "ことやら、さっぱりわかんないや。"
     ;db "@"
 
-Dialog119:: ;🅿️; Kid
+Dialog119:: ;P1;🅿️; Kid
     ; todo: lupa tomo pi tenpo poka
     toki "tenpo ale la, sina open e musi ni la, sina lon lupa tomo."
     toki "taso, mi lili, la mi sona ala."
@@ -228,7 +228,7 @@ Dialog119:: ;🅿️; Kid
     ;db "ことやら、さっぱりわかんないや。"
     ;db "@"
 
-Dialog11A:: ;🅿️; Kid
+Dialog11A:: ;P1;🅿️; Kid
     toki "sina luka e nena SELECT la, sina lukin e lipu ma."
     toki "taso, mi lili, la mi sona ala."
     toki_li_pini
@@ -256,7 +256,7 @@ Dialog11A:: ;🅿️; Kid
     ;db "ことやら、さっぱりわかんないや。"
     ;db "@"
 
-Dialog11B:: ;🅿️; Kid
+Dialog11B:: ;P1;🅿️; Kid
     toki "<left><up> sina tawa ni la, ma kasi nasa li lon."
     toki "telo ma li lon ma kasi nasa."
     toki "jan sewi li lon telo ma."

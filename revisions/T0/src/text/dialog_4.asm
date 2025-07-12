@@ -1,6 +1,6 @@
 ; 190 lines in this file
 
-Dialog190:: ;🅿️; Moblin
+Dialog190:: ;P2;🅿️; Moblin
     toki "a! jan seme a! jan lili nasa a!"
     toki "soweli ale o pakala e ona a!"
     toki_li_pini
@@ -13,7 +13,7 @@ Dialog190:: ;🅿️; Moblin
     ;db "みなのもの、であえっ！であえ－！"
     ;db "@"
 
-Dialog191:: ;🅿️; Moblin Chief
+Dialog191:: ;P2;🅿️; Moblin Chief
     toki "a-! sina wile e soweli mu mu anu seme?"
     toki "ken la, meli mu mu li pana e sina tawa ni."
     toki "sina wile alasa e soweli mu mu."
@@ -75,7 +75,7 @@ Dialog195:: ;🆖; Marin
     db "never forgive   "
     db "you!@"
 
-Dialog196:: ;🅿️; Fox
+Dialog196:: ;P1;🅿️; Fox
     toki "... ... ... ... "
     toki "ona li wile ala a pini e kute.@"
     toki_li_pini
@@ -120,7 +120,7 @@ Dialog199:: ;🆖; Marin, probably
     db "are a bad boy,  "
     db "#####!@"
 
-Dialog19A:: ;🆖; Crazy Tracy, after you buy
+Dialog19A:: ;P3;🆖; Crazy Tracy, after you buy
     ;db "Here's some     "
     ;db "bonus treatment!"
     ;db "Behold!  Your   "
@@ -133,7 +133,7 @@ Dialog19A:: ;🆖; Crazy Tracy, after you buy
     toki_li_pini
 
 
-Dialog19B:: ;🆖; Schule Donavitch
+Dialog19B:: ;P4;🆖; Schule Donavitch
     ; akesi [sitelen unpa]
     ; brother of akesi [soweli esun]
     ;db "ミ－が、ゆうめいなゲイジュツカ　"
@@ -165,19 +165,19 @@ Dialog19C:: ;🆖; Mermaid Statue, Narrator
     db "? ...A scale is "
     db "missing...@"
 
-Dialog19D:: ;🅿️; Signpost and maybe ; Map
+Dialog19D:: ;P3;🅿️; Signpost
     toki "     tomo suli pi kiwen kala@"
     ;db "Seashell Mansion@"
     ;db "　　　　かいがらのやかた@"
 
-Dialog19E:: ;🆖; Signpost
+Dialog19E:: ;P4;🆖; Signpost
     toki "<right> ma ko [jelo anpa noka anpa]@"
     ;db "　<right>　ヤ－ナさばく　いりぐち@"
     ;db "Entrance to     "
     ;db "  Yarna Desert <right>@"
 
-Dialog19F:: ;🆖; Signpost
-Dialog1A0:: ;🅿️; Signpost
+Dialog19F:: ;P1;🆖; Signpost
+Dialog1A0:: ;P1;🅿️; Signpost
     toki "       ma kasi nasa"      ; centered differently 
     toki "      ona li nasa lili."  ; due to screen layout
     toki_li_pini
@@ -200,7 +200,7 @@ Dialog1A1:: ;🆖; Signpost, probably
     ;db "イカダで、きゅうりゅうくだり　　"
     ;db "　じむしょへ　どうぞ@"
 
-Dialog1A2:: ;🅿️; Signpost
+Dialog1A2:: ;P1;🅿️; Signpost
     toki "<right>   ma kasi [utala kasi utala kasi utala]"
     toki "<right> <right> ma tomo soweli"
     toki_li_pini
@@ -211,12 +211,12 @@ Dialog1A2:: ;🅿️; Signpost
     ;db "　ひがし<right>　ウククそうげん　　　"
     ;db "　ずっとひがし　どうぶつむら@"
 
-Dialog1A3:: ;🅿️; Signpost and maybe ; Map
+Dialog1A3:: ;🅿️; Signpost
     toki "    nena sewi [wawa ale ni suli insa]"
     toki_li_pini
     ;db "Mt. Tamaranch   @"
 
-Dialog1A4:: ;🅿️; Signpost
+Dialog1A4:: ;P1;🅿️; Signpost
     toki "<right> tomo pi pipi linja"
     toki "<down> poka telo [telo open pipi open]"
     toki_li_pini
@@ -225,7 +225,7 @@ Dialog1A4:: ;🅿️; Signpost
     ;db "　<right>　　　テ－ルのほらあな　　　"
     ;db "　<down>　　　トロンボ　かいがん@"
 
-Dialog1A5:: ;🅿️; Signpost
+Dialog1A5:: ;P1;🅿️; Signpost
     toki "<right> ma ko [pan o noka kala a]"
     toki "<down> ma kasi nasa"
     toki_li_pini
@@ -233,7 +233,7 @@ Dialog1A5:: ;🅿️; Signpost
     ;db "<down> Mysterious    "
     ;db "  Forest@"
 
-Dialog1A6:: ;🅿️; Signpost
+Dialog1A6:: ;P1;🅿️; Signpost
     ;toki "o awen tan supa anpa pakala a!"
     ;toki "o awen ala lon ona a!"
     toki "supa anpa li pakala a!"
@@ -249,12 +249,12 @@ Dialog1A6:: ;🅿️; Signpost
     ;db "おもたいひとは　のらないように！"
     ;db "@"
 
-Dialog1A7:: ;🅿️; Signpost and maybe ; Map
+Dialog1A7:: ;P1;🅿️; Signpost and ; Map
     toki "      tomo pi ilo toki@"
     toki_li_pini
     ;db "Telephone Booth @"
 
-Dialog1A8:: ;🅿️; Signpost
+Dialog1A8:: ;P1;🅿️; Signpost
     toki "       o awen!"
     toki "       o kama ala!"
     toki "    taso, soweli mu mu li ken kama."
@@ -266,27 +266,27 @@ Dialog1A8:: ;🅿️; Signpost
     ;db "ワンワンいがい　たちいりきんし！"
     ;db "@"
 
-Dialog1A9:: ;🆖; Signpost
+Dialog1A9:: ;P4;🆖; Signpost
     ;db "<down> GO THIS WAY@"
     ;db "　<down>　の　ほうこうへすすめ@"
     toki "      o tawa <down>@"
 
-Dialog1AA:: ;🆖; Signpost
+Dialog1AA:: ;P4;🆖; Signpost
     ;db "<up> GO THIS WAY@"
     ;db "　<up>　の　ほうこうへすすめ@"
     toki "      o tawa <up>@"
 
-Dialog1AB:: ;🆖; Signpost
+Dialog1AB:: ;P4;🆖; Signpost
     ;db "<right> GO THIS WAY@"
     ;db "　<right>　の　ほうこうへすすめ@"
     toki "      o tawa <right>@"
 
-Dialog1AC:: ;🆖; Signpost
+Dialog1AC:: ;P4;🆖; Signpost
     ;db "<left> GO THIS WAY@"
     ;db "　<left>　の　ほうこうへすすめ@"
     toki "      o tawa <left>@"
 
-Dialog1AD:: ;🆖; Signpost
+Dialog1AD:: ;P4;🆖; Signpost
     ;db " TRY AGAIN FROM "
     ;db "   THE START@"
     ;db "　　もういちど　さいしょから　　"
@@ -294,7 +294,7 @@ Dialog1AD:: ;🆖; Signpost
     toki "      o alasa sin a!"
     toki "       lon open@"
 
-Dialog1AE:: ;🆖; Signpost
+Dialog1AE:: ;p?;🆖; Signpost
     ;db "GREAT!  YOU DID "
     ;db "IT!  YOUR REWARD"
     ;db "IS <right> THIS WAY!@"
@@ -308,7 +308,7 @@ Dialog1AE:: ;🆖; Signpost
     toki "pona li tawa sina lon <right>"
     toki_li_pini
 
-Dialog1AF:: ;🆖; Signpost
+Dialog1AF:: ;p?;🆖; Signpost
     ;db "GONE ON TOUR    "
     ;db "         MAMU@"
     ;db "じゅんぎょうのため　たびにでます"
@@ -319,7 +319,7 @@ Dialog1AF:: ;🆖; Signpost
     toki_li_pini
 
 
-Dialog1B0:: ;🅿️; Signpost
+Dialog1B0:: ;P1;🅿️; Signpost
     toki "<right> tomo pi jan nasa [telo esun suwi ilo]"
     toki "<down> telo lili [mu a nasin pini open]"
     toki_li_pini
@@ -333,7 +333,7 @@ Dialog1B1:: ;🅿️; Signpost
     ;db "<right> Animal Village"
     ;db "<down> Martha's Bay@"
 
-Dialog1B2:: ;🆖; Signpost
+Dialog1B2:: ;P4;🆖; Signpost
     ;db "<right> Welcome to the"
     ;db " Animal Village!@"
     ;db "　<right>　どうぶつむら　にようこそ！"
@@ -341,7 +341,7 @@ Dialog1B2:: ;🆖; Signpost
     toki "<right> kama pona tawa ma tomo soweli a!"
     toki_li_pini
 
-Dialog1B3:: ;🅿️; Signpost
+Dialog1B3:: ;p?;🅿️; Signpost
     toki "<right> ma pi kiwen moli"
     toki "<down> ma kasi [utala kasi utala kasi utala]"
     toki_li_pini
@@ -1123,7 +1123,7 @@ Dialog1FD:: ;🅿️; Bucket Mouse
     ;db "ばんごうを、まちがえたみたいだ　"
     ;db "@"
 
-Dialog1FE:: ;🅿️; Fisherman, Link
+Dialog1FE:: ;P1;🅿️; Fisherman, Link
     toki "a! suli a! pona la, ona li jo e tu pilin a!"
     toki "kin la, mi pana e mani 20 a!"
     toki "sina wile ala wile musi sin?"
@@ -1142,7 +1142,7 @@ Dialog1FE:: ;🅿️; Fisherman, Link
     ;db "またするかね？　　　　　　　　　"
     ;db "　　　　もちろん　けっこうです<ask>"
 
-Dialog1FF:: ;🅿️; Fisherman, Link
+Dialog1FF:: ;P1;🅿️; Fisherman, Link
     toki "a! suli a! pona la, ona li jo e lili pilin a!"
     toki "sina jo e lili pilin tu tu la, sina kama jo e poki pilin a!"
     toki "kin la, sina kama jo e mani 20 a!"
@@ -1167,7 +1167,7 @@ Dialog1FF:: ;🅿️; Fisherman, Link
     ;db "またするかね？　　　　　　　　　"
     ;db "　　　　もちろん　けっこうです<ask>"
 
-Dialog200:: ;🅿️; Book, Narrator
+Dialog200:: ;P1;🅿️; Book, Narrator
     toki "      nasin pi sinpin awen      "
     toki "sina wile ala wile lukin e lipu ni?"
     toki "    wile     ala<ask>"
@@ -1186,7 +1186,7 @@ Dialog200:: ;🅿️; Book, Narrator
     ;db "このほんを　よもうかな？　　　　"
     ;db "　　　　よむ　　　よまない<ask>"
 
-Dialog201:: ;🅿️; Book
+Dialog201:: ;P1;🅿️; Book
     ;toki "sina awen luka e nena la, "
     ;sina awen luka e nena AB la, 
 
@@ -1232,7 +1232,7 @@ Dialog201:: ;🅿️; Book
     ;db "「かがみのタテ」があるそうです。"
     ;db "@"
 
-Dialog202:: ;🅿️; Book, Narrator
+Dialog202:: ;P1;🅿️; Book, Narrator
     toki "      nasin pi lipu ilo      "
     toki "sina wile ala wile lukin e lipu ni?"
     toki "    wile     ala<ask>"
@@ -1246,7 +1246,7 @@ Dialog202:: ;🅿️; Book, Narrator
     ;db "このほんを　よもうかな？　　　　"
     ;db "　　　　よむ　　　よまない<ask>"
 
-Dialog203:: ;🅿️; Book
+Dialog203:: ;P1;🅿️; Book
     toki "sina ken lukin e lipu ilo kepeken nena START."
     ;toki "o luka e nena START  la sina lukin e lipu."
     toki ""
@@ -1275,7 +1275,7 @@ Dialog203:: ;🅿️; Book
     ;db "たたかうことも　できるわけです。"
     ;db "いろいろ、おためしあれ！@"
 
-Dialog204:: ;🅿️; Book, Narrator
+Dialog204:: ;P1;🅿️; Book, Narrator
     toki "      nasin pi lipu ma"
     toki "     en lipu pi waso sona"
     toki "sina wile ala wile lukin e lipu ni?"
@@ -1288,7 +1288,7 @@ Dialog204:: ;🅿️; Book, Narrator
     ;db "このほんを　よもうかな？　　　　"
     ;db "　　　　よむ　　　よまない<ask>"
 
-Dialog205:: ;🅿️; Book, Narrator
+Dialog205:: ;P1;🅿️; Book, Narrator
     toki "sina ken lukin e lipu ma kepeken nena SELECT."
     toki ""
     toki "tenpo open la, lipu ma li pimeja. ma li len."
@@ -1347,7 +1347,7 @@ Dialog205:: ;🅿️; Book, Narrator
     ;db "メモをとらなくてもよいわけです。"
     ;db "うう－－ん　べんり！@"
 
-Dialog206:: ;🅿️; Book, Narrator
+Dialog206:: ;P1;🅿️; Book, Narrator
     toki "     tawa sike pi palisa utala      "
     toki "sina wile ala wile lukin e lipu ni?"
     toki "    wile     ala<ask>"
@@ -1363,7 +1363,7 @@ Dialog206:: ;🅿️; Book, Narrator
     ;db "このほんを　よもうかな？　　　　"
     ;db "　　　　よむ　　　よまない<ask>"
 
-Dialog207:: ;🅿️; Book
+Dialog207:: ;P1;🅿️; Book
     ;toki "nasin pi tawa sike pi palisa utala."
     ;toki ""
     toki "mama li pana e nasin ni tawa jan lili."
@@ -1416,7 +1416,7 @@ Dialog207:: ;🅿️; Book
     ;db "はたして、あなたには、できるか？"
     ;db "@"
 
-Dialog208:: ;🅿️; Book, Narrator
+Dialog208:: ;P1;🅿️; Book, Narrator
     toki "      sona pi lupa nasa"
     toki "sina wile ala wile lukin e lipu ni?"
     toki "    wile     ala<ask>"
@@ -1425,7 +1425,7 @@ Dialog208:: ;🅿️; Book, Narrator
     ;db "Read this book? "
     ;db "    YES  NO<ask>"
 
-Dialog209:: ;🅿️; Book
+Dialog209:: ;P1;🅿️; Book
     toki "lupa nasa mute li lon ma suli ni."
     toki "sina tawa lupa la, lupa li pana e sina tawa lupa ante pi ma ante."
     toki "taso, sina sona ala e lupa ante la,"
@@ -1477,7 +1477,7 @@ Dialog209:: ;🅿️; Book
     ;db "あなには、ワ－プできません！　　"
     ;db "@"
 
-Dialog20A:: ;🅿️; Book, Narrator
+Dialog20A:: ;P1;🅿️; Book, Narrator
     toki "      jo pi sike pakala"
     toki "sina wile ala wile lukin e lipu ni?"
     toki "    wile     ala<ask>"
@@ -1488,7 +1488,7 @@ Dialog20A:: ;🅿️; Book, Narrator
     ;db "このほんを　よもうかな？　　　　"
     ;db "　　　　よむ　　　よまない<ask>"
 
-Dialog20B:: ;🅿️; Book
+Dialog20B:: ;P1;🅿️; Book
     toki "o luka e nena! sina pana e sike pakala."
     toki "o luka sin e nena! sina kama jo sin e sike."
     toki "o luka sin e nena! sina pana sin e sike a!"
@@ -1511,7 +1511,7 @@ Dialog20B:: ;🅿️; Book
     ;db "をおして、なげられます！　　　　"
     ;db "　　　　　しってた？@"
 
-Dialog20C:: ;🅿️; Book, Narrator
+Dialog20C:: ;P1;🅿️; Book, Narrator
     toki "       lipu ma"
     toki "  pi ma telo [kon o kon o lape insa nena] "
     toki "o luka e nena <dpad>e nena A!"
@@ -1534,7 +1534,7 @@ Dialog20C:: ;🅿️; Book, Narrator
     ;db "このちずを　みようかな？　　　　"
     ;db "　　　　みる　　　みない<ask>"
 
-Dialog20D:: ;🅿️; Book, Narrator
+Dialog20D:: ;P1;🅿️; Book, Narrator
     toki "      lipu pi sona len"
     ;toki "       toki len suli"
     ;toki "  pi ma telo [kon o kon o lape insa nena]  "
@@ -1550,7 +1550,7 @@ Dialog20D:: ;🅿️; Book, Narrator
     ;db "このほんよみたい．．．？　　　　"
     ;db "　　　　うん！　　べ、べつに<ask>"
 
-Dialog20E:: ;🅿️; Book, Narrator
+Dialog20E:: ;P1;🅿️; Book, Narrator
     ; todo: jT suggests wekaing "o pilin pona"
     toki "a  sina lukin a"
     toki "................"
@@ -1722,8 +1722,8 @@ Dialog21E:: ;🆖; Marin
     db "didn't say any- "
     db "thing, really!@"
 
-Dialog21F:: ;🆖; Kid
-Dialog220:: ;🅿️; Kid
+Dialog21F:: ;P2;🆖; Kid
+Dialog220:: ;P2;🅿️; Kid
     toki "a-  jan suli o ni li suli a! ni li suli mute a"
     toki "n... n... ni li lon a!"
     toki "soweli ike li tawa ma tomo..."
@@ -1831,7 +1831,7 @@ Dialog227:: ;🆖; Secret Goriya
 
 
 
-Dialog228:: ;🆖; Ulrira
+Dialog228:: ;P3;🆖; Ulrira
     ;db "'BRRING! BRRING!"
     ;db "Ya, it's Ulrira!"
     ;db "You haven't     "
@@ -1860,7 +1860,7 @@ Dialog228:: ;🆖; Ulrira
     toki "mu ilo pini"
     toki_li_pini
 
-Dialog229:: ;🆖; Ulrira
+Dialog229:: ;P3;🆖; Ulrira
     ;db "'BRRING! BRRING!"
     ;db "Ya, it's Ulrira!"
     ;db "You haven't     "
@@ -1889,7 +1889,7 @@ Dialog229:: ;🆖; Ulrira
     toki "mi tawa.     mu ilo pini"
     toki_li_pini
 
-Dialog22A:: ;🆖; Ulrira
+Dialog22A:: ;P3;🆖; Ulrira
     ;db "'BRRING! BRRING!"
     ;db "Ya, it's Ulrira!"
     ;db "You haven't     "
@@ -1920,7 +1920,7 @@ Dialog22A:: ;🆖; Ulrira
 
 
 
-Dialog22B:: ;🅿️; Photo Album, Narrator
+Dialog22B:: ;P3;🅿️; Photo Album, Narrator
     toki "   jan suli [#####]"
     toki "sina wile ala wile lukin e lipu ni?"
     toki "    wile     ala<ask>"
@@ -1933,7 +1933,7 @@ Dialog22B:: ;🅿️; Photo Album, Narrator
     ;db "このアルバムをみる？　　　　　　" do you want to look at the album?
     ;db "　　　　みる　　　みない<ask>" look / don't look
 
-Dialog22C:: ;🅿️; Narrator
+Dialog22C:: ;P3;🅿️; Narrator
     toki "sina wile lukin e sitelen seme?"
     toki "o luka e sitelen wile kepeken nena <dpad> o lukin kepeken nena A"
     toki_li_pini
@@ -1955,7 +1955,7 @@ Dialog22D:: ;🆖; Signpost, probably
     db "Beware of the   "
     db "bird!@"
 
-Dialog22E:: ;🆖; Photographer, Richard photo part 1
+Dialog22E:: ;P3;🆖; Photographer, Richard photo part 1
     ;db "Hi, #####. You  "
     ;db "know I love to  "
     ;db "take pictures.  "
@@ -1973,8 +1973,8 @@ Dialog22E:: ;🆖; Photographer, Richard photo part 1
     toki_li_pini
 
 
-Dialog22F:: ;🆖; Narrator
-Dialog230:: ;🅿️; Narrator
+Dialog22F:: ;p?;🆖; Narrator
+Dialog230:: ;p?;🅿️; Narrator
     toki "ni li lupa lupa. ona li lon ni tan seme?"
     toki "sitelen li toki e ni: lupa lupa pi pipi linja"
     toki_li_pini
@@ -1985,8 +1985,7 @@ Dialog230:: ;🅿️; Narrator
     ;db "「テ－ルのカギあな」とかいてある"
     ;db "@"
 
-Dialog231:: ;🆖; Narrator
-    ; todo: available after dungeon 2
+Dialog231:: ;P3;🆖; Narrator
     toki "ni li lupa lupa. ona li lon ni tan seme?"
     toki "sitelen li toki e ni: lupa lupa pi lukin ko"
     toki_li_pini
@@ -1994,8 +1993,7 @@ Dialog231:: ;🆖; Narrator
     ;db "here?  It says, "
     ;db "'Slime Keyhole'@"
 
-Dialog232:: ;🆖; Narrator
-    ; after dungeon 2
+Dialog232:: ;p?;🆖; Narrator
     toki "ni li lupa lupa. ona li lon ni tan seme?"
     toki "sitelen li toki e ni: lupa lupa pi kala alasa"
     toki_li_pini
@@ -2048,7 +2046,7 @@ Dialog23A:: ;🆖; Marin
 Dialog23B:: ;🆖; Tarin
     db "MAAAAAAARINNNN!!@"
 
-Dialog23C:: ;🆖; Richard, Richard photo part 2
+Dialog23C:: ;P3;🆖; Richard, Richard photo part 2
     ;db "Nothing yet?! I "
     ;db "grow tired of   "
     ;db "waiting. I want "
@@ -2204,7 +2202,7 @@ Dialog243:: ;🆖; Ulrira
     db "know one little "
     db "answer!  CLICK!'@"
 
-Dialog244:: ;🆖; Ulrira
+Dialog244:: ;P3;🆖; Ulrira
     ;db "'BRRING! BRRING!"
     ;db "Ulrira at your  "
     ;db "service!  Oh?   "
@@ -2226,7 +2224,7 @@ Dialog244:: ;🆖; Ulrira
     toki "mi jan suli [uta linja uta linja ilo linja a] a!"
     toki "o pana e soweli mu mu tawa meli mu mu a!"
     toki "meli li pilin pona lon soweli."
-    toki "weka [uta linja uta linja ilo linja a]-" ; customize signoff
+    toki "weka [uta linja uta linja ilo linja a]-"
     toki "mu ilo pini"
     toki_li_pini
 
@@ -2296,7 +2294,7 @@ Dialog248:: ;🆖; Ulrira
 
 
 
-Dialog249:: ;🆖; Richard, Richard photo part 3
+Dialog249:: ;P3;🆖; Richard, Richard photo part 3
     ;db "Go ahead and    "
     ;db "take a picture  "
     ;db "of me. Any angle"
@@ -2307,7 +2305,7 @@ Dialog249:: ;🆖; Richard, Richard photo part 3
     toki "lon tenpo wile  lon nasin wile"
     toki_li_pini
 
-Dialog24A:: ;🆖; top-left house bunny
+Dialog24A:: ;P4;🆖; top-left house bunny
     db "Yarna Desert?   "
     db "There's a way to"
     db "get there to the"
@@ -2318,13 +2316,13 @@ Dialog24A:: ;🆖; top-left house bunny
     db "lazy walrus is  "
     db "in the way!@"
 
-Dialog24B:: ;🆖; top-left outside bunny
+Dialog24B:: ;P4;🆖; top-left outside bunny
     db "Ahhh... Sigh... "
     db "On such a nice  "
     db "day, we need a  "
     db "song from Marin!@"
 
-Dialog24C:: ;🆖; top-right outside bunny
+Dialog24C:: ;P4;🆖; top-right outside bunny
     db "Hey! Did ya know"
     db "Animal Village  "
     db "and Mabe Village"
@@ -2344,7 +2342,7 @@ Dialog24C:: ;🆖; top-right outside bunny
     db "inside...  Is   "
     db "that true?@"
 
-Dialog24D:: ;🆖; bottom-right outide bunny
+Dialog24D:: ;P4;🆖; bottom-right outide bunny
     db "I can't go to   "
     db "Mabe Village    "
     db "because of all  "
