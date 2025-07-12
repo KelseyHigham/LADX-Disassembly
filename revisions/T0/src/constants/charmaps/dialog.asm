@@ -132,6 +132,7 @@ charmap              "] ", $51
   nanpa_sitelen    "anpa", $55
   nanpa_sitelen    "ante", $56
   nanpa_sitelen     "anu", $57
+  nanpa_sitelen   ", anu", $57
   nanpa_sitelen    "awen", $58
   nanpa_sitelen       "e", $59
   nanpa_sitelen    "jaki", $5a
