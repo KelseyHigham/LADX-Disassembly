@@ -1097,7 +1097,7 @@ Dialog0F9:: ;🆖; Trendy Gamester
 
 Dialog0FA:: ;🅿️; Hippo
     ; naked hippo; has boobs in JPN
-    toki "o tawa a!"
+    toki "o weka a!"
     toki_li_pini
     ;db "Go away!@"
     ;db "Va-t'en!@"

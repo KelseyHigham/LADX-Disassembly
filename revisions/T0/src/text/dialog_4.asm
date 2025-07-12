@@ -136,6 +136,15 @@ Dialog19A:: ;🆖; Crazy Tracy, after you buy
 Dialog19B:: ;🆖; Schule Donavitch
     ; akesi [sitelen unpa]
     ; brother of akesi [soweli esun]
+    ;db "ミ－が、ゆうめいなゲイジュツカ　"
+    ;db "シュ－ル．ドナピッチ　ザンス！　"
+    ;db "いりえの、にんぎょぞうも　　　　"
+    ;db "ミ－の　じしんさくザンス。　　　"
+    ;db "．．．じつはあのぞう　ワケアリで"
+    ;db "みかんせいなんザンス　ホッホッ！"
+    ;db "ミ－のゲイジュツはムズカシすぎて"
+    ;db "アンタには、むりザンスね．．．．"
+    ;db "@"
     db "Ya, I am Schule "
     db "Donavitch!  Zee "
     db "mermaid statue  "
@@ -161,9 +170,11 @@ Dialog19D:: ;🅿️; Signpost and maybe ; Map
     ;db "Seashell Mansion@"
     ;db "　　　　かいがらのやかた@"
 
-Dialog19E:: ;🆖; Signpost, probably
-    db "Entrance to     "
-    db "  Yarna Desert <right>@"
+Dialog19E:: ;🆖; Signpost
+    toki "<right> ma ko [jelo anpa noka anpa]@"
+    ;db "　<right>　ヤ－ナさばく　いりぐち@"
+    ;db "Entrance to     "
+    ;db "  Yarna Desert <right>@"
 
 Dialog19F:: ;🆖; Signpost
 Dialog1A0:: ;🅿️; Signpost
@@ -704,7 +715,7 @@ Dialog1D0:: ;🆖; Narrator
     db "as sweet, but it"
     db "is delicious!   @"
 
-Dialog1D1:: ;🆖; Chef Bear, probably
+Dialog1D1:: ;🆖; Chef Bear
     db "That's a crying "
     db "shame, but I    "
     db "realize those   "
@@ -839,9 +850,15 @@ Dialog1DF:: ;🆖; idk
     db "Get ready for   "
     db "THIS!@"
 
-Dialog1E0:: ;🆖; idk
-    db "ZZZ ZZZ ZZZ ZZZ "
-    db " ... <marin> ... <marin> ...@"
+Dialog1E0:: ;🆖; Walrus
+    toki "....mu lape....mu lape...."
+    toki ".... <marin> ... <marin> ..."
+    toki_li_pini
+    ;db "．．．．オウ．．．．オウ．．．．"
+    ;db "．．．．　<marin>　．．．　<marin>　．．．"
+    ;db "@"
+    ;db "ZZZ ZZZ ZZZ ZZZ "
+    ;db " ... <marin> ... <marin> ...@"
 
 Dialog1E1:: ;🆖; Marin, probably, and Link
     db "Yes, it's that  "
@@ -857,13 +874,13 @@ Dialog1E2:: ;🆖; Marin, probably
     db "woke with a     "
     db "start!@"
 
-Dialog1E3:: ;🆖; idk
+Dialog1E3:: ;🆖; Marin, probably
     db "Hunh?  Oh, he's "
     db "calling me...   "
     db "It's the same as"
     db "always... Ha ha!@"
 
-Dialog1E4:: ;🆖; idk
+Dialog1E4:: ;🆖; Marin, probably
     db "You're right, it"
     db "would be mean to"
     db "wake him up now!"
@@ -876,7 +893,7 @@ Dialog1E5:: ;🆖; Marin, probably
     db "Village!  Please"
     db "drop by, okay?@"
 
-Dialog1E6:: ;🆖; idk
+Dialog1E6:: ;🆖; Bow-Wow, maybe?
     db "Arfh! Arfh! Arf!"
     db " <marin>  <marin>!  <marin>   <marin>!  "
     db "..... <link>?? @"
@@ -2290,7 +2307,7 @@ Dialog249:: ;🆖; Richard, Richard photo part 3
     toki "lon tenpo wile  lon nasin wile"
     toki_li_pini
 
-Dialog24A:: ;🆖; idk
+Dialog24A:: ;🆖; top-left house bunny
     db "Yarna Desert?   "
     db "There's a way to"
     db "get there to the"
@@ -2301,13 +2318,13 @@ Dialog24A:: ;🆖; idk
     db "lazy walrus is  "
     db "in the way!@"
 
-Dialog24B:: ;🆖; top-left bun
+Dialog24B:: ;🆖; top-left outside bunny
     db "Ahhh... Sigh... "
     db "On such a nice  "
     db "day, we need a  "
     db "song from Marin!@"
 
-Dialog24C:: ;🆖; idk
+Dialog24C:: ;🆖; top-right outside bunny
     db "Hey! Did ya know"
     db "Animal Village  "
     db "and Mabe Village"
@@ -2327,7 +2344,7 @@ Dialog24C:: ;🆖; idk
     db "inside...  Is   "
     db "that true?@"
 
-Dialog24D:: ;🆖; idk
+Dialog24D:: ;🆖; bottom-right outide bunny
     db "I can't go to   "
     db "Mabe Village    "
     db "because of all  "
