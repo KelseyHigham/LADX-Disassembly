@@ -17,7 +17,7 @@
 ; - Dialogue debugger  (Marin will become a text-debugging object if your name begins with one space)
 ; - Jump to credits    (Marin will trigger the ending if your name begins with two spaces)
 
-;ENABLE_DEBUG_1 equ 1
+ENABLE_DEBUG_1 equ 1
 
 
 ;
@@ -225,7 +225,7 @@ FILE_28 = $28
 FILE_6C = $6C
 FILE_2C = $2C
 FILE_64 = $64
-EASTER_EGG_FILENAME_1 equs "sewi esun telo alasa"
+EASTER_EGG_FILENAME_1 equs "suno esun tenpo alasa"
 EASTER_EGG_SONG_1 equ $60 ; MUSIC_ZELDA_NICKNAME_EASTER_EGG
 THIEF_NAME equs "lawa alasa noka pan:"
 DEBUG_SAVE_FILE_NAME equs "o pali:pona:"
