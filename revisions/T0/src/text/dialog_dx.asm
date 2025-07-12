@@ -1,7 +1,9 @@
 ; 98 lines in this file
+; 59 🆖
+; 39 ☀️
 
 ; pads a line to 16 sitelen with spaces
-; sitelen are defined in `src/constants/charmaps/main.asm`
+; sitelen are defined in `src/constants/charmaps/dialog.asm`
 MACRO toki
     db \1
     if charlen(\1) > 16 ; charlen counts sitelen after string conversion
@@ -56,7 +58,7 @@ Dialog253:: ;🆖; idk
     db "won't move for  "
     db "cowards.@"
 
-Dialog254:: ;🆖; Richard, Richard photo part 4
+Dialog254:: ;☀️; Richard, Richard photo part 4
     ;db "I'm not afraid. "
     ;db "I just decided  "
     ;db "to wait at home.@"
@@ -174,14 +176,14 @@ Dialog265:: ;🆖; idk
     db "Don't tell      "
     db "anyone.@"
 
-Dialog266:: ;🅿️; Narrator
+Dialog266:: ;☀️; Narrator
     toki "sina wile ala wile lukin e lipu ni?"
     toki "    wile     ala<ask>"
     ;db "Do you want to  "
     ;db "read this book? "
     ;db "    YES  NO<ask>"
 
-Dialog267:: ;🅿️; Book, Narrator
+Dialog267:: ;☀️; Book, Narrator
     toki "ma kule sin li lon anpa pi kiwen moli luka."
     toki ""
     toki " nanpa tu wan <up>  nanpa tu tu <right>  nanpa luka <up>"
@@ -283,7 +285,7 @@ Dialog26F:: ;🆖; idk (Color Dungeon)
     db "caution. Red is "
     db "danger.@"
 
-Dialog270:: ;🅿️; Photographer
+Dialog270:: ;☀️; Photographer
     toki "pona a! ni li pana e pilin pona a!"
     toki "mi pana e nimi ni tawa sitelen ni:"
     toki "    soweli mu mu li musi lon poka pi"
@@ -302,26 +304,26 @@ Dialog270:: ;🅿️; Photographer
     ;db "#####！」　じゃ、#####"
     ;db "もっと　ワンワンのそばに！@"
 
-Dialog271:: ;🅿️; BowWow
+Dialog271:: ;☀️; BowWow
     toki "mu suli soweli"
     toki_li_pini
     ;db "Grrrr!@"
     ;db "　　　　　　バウッ！@"
 
-Dialog272:: ;🅿️; Photographer
+Dialog272:: ;☀️; Photographer
     toki "jan [#####] o tawa ona a!"
     toki_li_pini
     ;db "#####, get      "
     ;db "closer!@"
     ;db "#####、もっとちかづいて！@"
 
-Dialog273:: ;🅿️; BowWow
+Dialog273:: ;☀️; BowWow
     toki "mu suli    mu suli"
     toki_li_pini
     ;db "Grrrr! Grrrr!!@"
     ;db "　　　　バウッ！バウッ！@"
 
-Dialog274:: ;🅿️; Photographer
+Dialog274:: ;☀️; Photographer
     toki "pona a-  ni la-  o awen a-"
     toki_li_pini
     ;db "Much closer! OK,"
@@ -330,7 +332,7 @@ Dialog274:: ;🅿️; Photographer
     ;db "よ－し　とるよ－、カッコつけて－"
     ;db "@"
 
-Dialog275:: ;🅿️; BowWow
+Dialog275:: ;☀️; BowWow
     toki "mu suli    mu suli    mu suli"
     toki_li_pini
     ;db "Grrrr! Grrrr!!  "
@@ -373,14 +375,14 @@ Dialog27B:: ;🆖; Marin, probably
     db "Are you okay?!  "
     db "#####?@"
 
-Dialog27C:: ;🅿️; Cukeman
+Dialog27C:: ;☀️; Cukeman
     toki "sina pu ala pu?"
     toki_li_pini
     ;db "Hey Mon!@"
     ;db "あんね？　まっええかおもってね．"
     ;db "．．@"
 
-Dialog27D:: ;🅿️; Cukeman
+Dialog27D:: ;☀️; Cukeman
     toki "tenpo li kama la  suno li lon    mu musi"
     toki "o lukin e sewi  o pilin e kon     mu musi"
     toki_li_pini
@@ -389,7 +391,7 @@ Dialog27D:: ;🅿️; Cukeman
     ;db "the best...@"
     ;db "べつに．．．@"
 
-Dialog27E:: ;🅿️; Cukeman
+Dialog27E:: ;☀️; Cukeman
     toki "sina wile ala wile moku e ko suwi?"
     toki_li_pini
     ;db "It can display  "
@@ -397,7 +399,7 @@ Dialog27E:: ;🅿️; Cukeman
     ;db "polygons!@"
     ;db "うん　わかってるよ。@"
 
-Dialog27F:: ;🅿️; Cukeman
+Dialog27F:: ;☀️; Cukeman
     toki "................"
     toki "...............mu"
     toki_li_pini
@@ -409,7 +411,7 @@ Dialog27F:: ;🅿️; Cukeman
     ;db "ゲ－ムとは、いっさいかんけい　　"
     ;db "ございません！@"
 
-Dialog280:: ;🅿️; Owl Statue
+Dialog280:: ;☀️; Owl Statue
     toki "pipi pi palisa pakala la..."
     toki "o kepeken sinpin awen sina..."
     toki_li_pini
@@ -419,7 +421,7 @@ Dialog280:: ;🅿️; Owl Statue
     ;db "トゲ　スルドキモノ　タテニテ　　"
     ;db "ハジキ　トバスベシ．．．@"
 
-Dialog281:: ;🅿️; Owl Statue
+Dialog281:: ;☀️; Owl Statue
     toki "nanpa open  soweli pi kute suli..."
     toki "nanpa pini  jan moli..."
     toki_li_pini
@@ -432,7 +434,7 @@ Dialog281:: ;🅿️; Owl Statue
     ;db "サイショ　オオミミノマモノ．．．"
     ;db "サイゴ　　ドクロナイト．．．@"
 
-Dialog282:: ;🆖; Owl Statue
+Dialog282:: ;☀️; Owl Statue
     ;db "Far away...     "
     ;db "Do not fear,    "
     ;db "dash and fly!@"
@@ -470,7 +472,7 @@ Dialog287:: ;🆖; Owl Statue
     db "this (<dpad>) is the "
     db "key!@"
 
-Dialog288:: ;🅿️; Owl Statue
+Dialog288:: ;☀️; Owl Statue
     toki "lupa pini la..."
     toki "o tawa e kiwen..."
     toki_li_pini
@@ -479,7 +481,7 @@ Dialog288:: ;🅿️; Owl Statue
     ;db "can't open, move"
     ;db "a stone block.@"
 
-Dialog289:: ;🅿️; Owl Statue
+Dialog289:: ;☀️; Owl Statue
     toki "sina wan e kiwen tu la..."
     toki "nasin sin li open..."
     toki_li_pini
@@ -492,7 +494,7 @@ Dialog289:: ;🅿️; Owl Statue
     ;db "アラタナ　ミチガ　ヒラカレル．．"
     ;db "@"
 
-Dialog28A:: ;🅿️; Owl Statue
+Dialog28A:: ;☀️; Owl Statue
     toki "nena supa li awen e sina..."
     toki "o pakala e sike laso..."
     toki_li_pini
@@ -503,7 +505,7 @@ Dialog28A:: ;🅿️; Owl Statue
     ;db "ミチヲ　フサグ　トビデタル　ユカ"
     ;db "アオキ　クリスタルヲ　タタケ　@"
 
-Dialog28B:: ;🆖; Owl Statue
+Dialog28B:: ;☀️; Owl Statue
     ;db "To defeat the   "
     ;db "black monster   "
     ;db "with the hard   "
@@ -569,7 +571,7 @@ Dialog293:: ;🆖; Owl Statue
     db "shoot it with   "
     db "the bow.@"
 
-Dialog294:: ;🅿️; Photographer, Link
+Dialog294:: ;☀️; Photographer, Link
     toki "seme? o sitelen a!"
     toki "    pona     mi awen wile ala a<ask>"
     ;db "Let's take a    "
@@ -579,7 +581,7 @@ Dialog294:: ;🅿️; Photographer, Link
     ;db "　　　　いいよ　　やっぱりヤダ！"
     ;db "<ask>"
 
-Dialog295:: ;🅿️; Photographer, Link
+Dialog295:: ;☀️; Photographer, Link
     toki "sina wile ala... sina pakala ala pakala lon toki sina?"
     toki "    pakala     pakala ala<ask>"
     ;db "No picture?! Are"
@@ -589,13 +591,13 @@ Dialog295:: ;🅿️; Photographer, Link
     ;db "どうしてもイヤ？　ウソだよね？　"
     ;db "　　　　ウソ　　　ホント！<ask>"
 
-Dialog296:: ;🅿️; Photographer
+Dialog296:: ;☀️; Photographer
     toki "ike a! ike a-"
     toki_li_pini
     ;db "What a bummer!@"
     ;db "ヒドイよ！ヒドイよ－っ！@"
 
-Dialog297:: ;🅿️; Photographer
+Dialog297:: ;☀️; Photographer
     toki "a... nasin musi a!"
     toki "mi pana e nimi ni tawa sitelen ni:"
     toki "sina moli."
@@ -606,7 +608,7 @@ Dialog297:: ;🅿️; Photographer
     ;db "あ．．．ゲ－ジュツ！　　　　　　"
     ;db "だいめい　「ゲ－ム　オ－バ－」@"
 
-Dialog298:: ;🅿️; Photographer
+Dialog298:: ;☀️; Photographer
     toki "a! jan pona o... nimi sina li seme?"
     toki "pona a! jan [#####] o!"
     toki "ni li lipu pi jan [#####]."
@@ -625,7 +627,7 @@ Dialog298:: ;🅿️; Photographer
     ;db "これが、#####のアルバムだ。"
     ;db "かえるまえに、みておいてくれ！@"
 
-Dialog299:: ;🅿️; Photographer
+Dialog299:: ;☀️; Photographer
     toki "tenpo ale la mi alasa e tenpo sitelen pona."
     toki "mi o pana e sitelen ale tawa lipu ni a!"
     toki_li_pini
@@ -635,7 +637,7 @@ Dialog299:: ;🅿️; Photographer
     ;db "いつも、チャンスをまってるから　"
     ;db "アルバムをいっぱいにしようね！@"
 
-Dialog29A:: ;🅿️; Photographer
+Dialog29A:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 11a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -646,7 +648,7 @@ Dialog29A:: ;🅿️; Photographer
     ;db "のこりのフィルム１１まい！　　　"
     ;db "どんなしゃしんを　とろうかな？@"
 
-Dialog29B:: ;🅿️; Photographer
+Dialog29B:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 10a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -655,7 +657,7 @@ Dialog29B:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog29C:: ;🅿️; Photographer
+Dialog29C:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 9a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -664,7 +666,7 @@ Dialog29C:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog29D:: ;🅿️; Photographer
+Dialog29D:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 8a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -673,7 +675,7 @@ Dialog29D:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog29E:: ;🅿️; Photographer
+Dialog29E:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 7a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -682,7 +684,7 @@ Dialog29E:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog29F:: ;🅿️; Photographer
+Dialog29F:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 6a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -691,7 +693,7 @@ Dialog29F:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog2A0:: ;🅿️; Photographer
+Dialog2A0:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 5a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -700,7 +702,7 @@ Dialog2A0:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog2A1:: ;🅿️; Photographer
+Dialog2A1:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 4a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -709,7 +711,7 @@ Dialog2A1:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog2A2:: ;🅿️; Photographer
+Dialog2A2:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 3a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -718,7 +720,7 @@ Dialog2A2:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog2A3:: ;🅿️; Photographer
+Dialog2A3:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 2a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -727,7 +729,7 @@ Dialog2A3:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog2A4:: ;🅿️; Photographer
+Dialog2A4:: ;☀️; Photographer
     toki "mi awen ken pana e sitelen 1a!"
     toki "mi o sitelen e seme?"
     toki_li_pini
@@ -736,7 +738,7 @@ Dialog2A4:: ;🅿️; Photographer
     ;db "picture should  "
     ;db "I take?@"
 
-Dialog2A5:: ;🅿️; Photographer
+Dialog2A5:: ;☀️; Photographer
     toki "pakala a! mi ken ala pana e sitelen sin a!"
     toki "taso, o lukin e lipu sitelen sina."
     toki_li_pini
@@ -783,7 +785,7 @@ Dialog2AC:: ;🆖; Photographer, probably
     db "to the store.   "
     db "Bye!@"
 
-Dialog2AD:: ;🆖; Photographer, probably
+Dialog2AD:: ;☀️; Photographer, probably
     ;db "See me later,   "
     ;db "when you're     "
     ;db "alone!@"
