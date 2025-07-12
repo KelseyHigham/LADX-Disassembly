@@ -236,22 +236,27 @@ charmap         "<glass>", $9a
 charmap            "<ask>", $fe ; END-OF-DIALOG; QUESTION
 charmap                "@", $ff ; END-OF-DIALOG
 
+; codepoint is $af, but tilemap address is $ff. 
+; we do the conversion in codepoint_to_tile.asm 
+; for drawing my name glyph, probably only used during development
+  nanpa_sitelen     "Keli", $af
+
 
 
 ; fallback Latin alphabet
 
-;charmap "A",  $a3
-;charmap "B",  $b3
-charmap  "C",  $4d ; monsi
+;charmap "A",  $a3 ; A button
+;charmap "B",  $b3 ; B button
+charmap  "C",  $50 ; cartouche open
 charmap  "D",  $01 ; alasa
 charmap  "E",  $73 ; 3
 charmap  "F",  $29 ; pipi
 charmap  "G",  $0a ; jo
 charmap  "H",  $20 ; nanpa
-charmap  "I",  $71 ; 1
-charmap  "J",  $51 ; ] without the top
+charmap  "I",  $3e ; pini
+charmap  "J",  $d1 ; ] without the top
 charmap  "K",  $0d ; ken
-charmap  "L",  $50 ; [ without the top
+charmap  "L",  $d0 ; [ without the top
 charmap  "M",  $83 ; sijelo
 charmap  "N",  $6d ; nena
 charmap  "O",  $70 ; 0
@@ -259,25 +264,26 @@ charmap  "P",  $69 ; mi
 charmap  "Q",  $67 ; mama
 charmap  "R",  $3a ; pali
 charmap  "S",  $75 ; 5
-;charmap "T",  $77; 7, except now it's the end of START
+;charmap "T",  $a2 ; end of START button
 charmap  "U",  $66 ; lupa
 charmap  "V",  $2f ; suli
 charmap  "W",  $38 ; wile
 charmap  "X",  $53 ; ala
 charmap  "Y",  $57 ; anu
 charmap  "Z",  $72 ; 2
+
 ;charmap "a",  $a3 ; toki pona word
 charmap  "b",  $b3
-charmap  "c",  $fb
+charmap  "c",  $50
 charmap  "d",  $01
 ;charmap "e",  $73 ; toki pona word
 charmap  "f",  $29
 charmap  "g",  $0a
 charmap  "h",  $20
-charmap  "i",  $71
-charmap  "j",  $51
+charmap  "i",  $3e
+charmap  "j",  $d1
 charmap  "k",  $0d
-charmap  "l",  $50
+charmap  "l",  $d0
 charmap  "m",  $83
 ;charmap "n",  $6d ; toki pona word
 ;charmap "o",  $70 ; toki pona word
@@ -285,7 +291,7 @@ charmap  "p",  $69
 charmap  "q",  $67
 charmap  "r",  $3a
 charmap  "s",  $75
-charmap  "t",  $77
+charmap  "t",  $a2
 charmap  "u",  $66
 charmap  "v",  $2f
 charmap  "w",  $38

@@ -2,6 +2,7 @@
 ; Map codepoints (bytes of text as stored in the ROM)
 ;         from `T0/src/constants/charmaps/dialog.asm`
 ;           to `T0/src/gfx/fonts/font.png`
+;       and to `T0/src/gfx/world/overworld_2.dmg.png`
 ;
 ; See: DialogCharmap, CodepointToDiacritic
 ;
@@ -9,7 +10,7 @@
 
 CodepointToTileMap::
 ;
-; 1-to-1 tilemap which returns the input.
+; 1-to-1 tilemap which (MOSTLY) returns the input.
 ; This lets us map directly from words to tiles in dialog.asm.
 ;
     db  $00, $01, $02, $03, $04, $05, $06, $07, $08, $09, $0a, $0b, $0c, $0d, $0e, $0f
@@ -22,11 +23,14 @@ CodepointToTileMap::
     db  $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $7a, $7b, $7c, $7d, $7e, $7f
     db  $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $8a, $8b, $8c, $8d, $8e, $8f
     db  $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $9a, $9b, $9c, $9d, $9e, $9f
-    db  $a0, $a1, $a2, $a3, $a4, $a5, $a6, $a7, $a8, $a9, $aa, $ab, $ac, $ad, $ae, $af
-    db  $b0, $b1, $b2, $b3, $b4, $b5, $b6, $b7, $b8, $b9, $ba, $bb, $bc, $bd, $be, $bf
 ; The codepoint $ff is hard-coded as end-of-dialog, so we may want to use
-; the codepoint $cf to access tile $ff:                                            vvv
+; the codepoint $af to access tile $ff:                                            vvv
+    db  $a0, $a1, $a2, $a3, $a4, $a5, $a6, $a7, $a8, $a9, $aa, $ab, $ac, $ad, $ae, $ff
+    db  $b0, $b1, $b2, $b3, $b4, $b5, $b6, $b7, $b8, $b9, $ba, $bb, $bc, $bd, $be, $bf
     db  $c0, $c1, $c2, $c3, $c4, $c5, $c6, $c7, $c8, $c9, $ca, $cb, $cc, $cd, $ce, $cf
-    db  $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $da, $db, $dc, $dd, $de, $df
+; We're repurposing $d0 and $d1 to draw [], but without the top diacritic,
+; so that they look like LJ, for fallback text. This hack didn't work with $c0 and $c1!
+;       vvv  vvv
+    db  $50, $51, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $da, $db, $dc, $dd, $de, $df
     db  $e0, $e1, $e2, $e3, $e4, $e5, $e6, $e7, $e8, $e9, $ea, $eb, $ec, $ed, $ee, $ef
     db  $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $fa, $fb, $fc, $fd, $fe, $ff
