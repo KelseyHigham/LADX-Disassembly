@@ -433,9 +433,15 @@ Dialog281:: ;🅿️; Owl Statue
     ;db "サイゴ　　ドクロナイト．．．@"
 
 Dialog282:: ;🆖; Owl Statue
-    db "Far away...     "
-    db "Do not fear,    "
-    db "dash and fly!@"
+    ;db "Far away...     "
+    ;db "Do not fear,    "
+    ;db "dash and fly!@"
+    ;db "トオイ　トコロ．．．．　　　　　"
+    ;db "オソレズ　ハシリ　トブベシ．．．"
+    ;db "@"
+    toki "o tawa wawa... o monsuta ala..."
+    toki "o tawa waso a!"
+    toki_li_pini
 
 Dialog283:: ;🆖; Owl Statue
     db "The glint of the"
@@ -498,12 +504,18 @@ Dialog28A:: ;🅿️; Owl Statue
     ;db "アオキ　クリスタルヲ　タタケ　@"
 
 Dialog28B:: ;🆖; Owl Statue
-    db "To defeat the   "
-    db "black monster   "
-    db "with the hard   "
-    db "shell, feed him "
-    db "something ex-   "
-    db "plosive.@"
+    ;db "To defeat the   "
+    ;db "black monster   "
+    ;db "with the hard   "
+    ;db "shell, feed him "
+    ;db "something ex-   "
+    ;db "plosive.@"
+    ;db "カタキ　カラヲモツ　クロキマモノ"
+    ;db "ウチガワヨリ　コウゲキ　クワエヨ"
+    ;db "@"
+    toki "monsuta pimeja pi selo kiwen..."
+    toki "o pakala e insa ona."
+    toki_li_pini
 
 Dialog28C:: ;🆖; Owl Statue
     db "Poke suspicious "

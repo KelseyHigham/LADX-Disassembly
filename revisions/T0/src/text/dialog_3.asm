@@ -992,10 +992,10 @@ Dialog13C:: ;🆖; Richard
     ;db "かおもみたくないよ！　シッシッ@"
 
 Dialog13D:: ;🆖; Richard ;
-    toki "a- sina wawa-"
+    toki "a-  sina wawa-"
     toki "sina kama jo e lipu kasi jelo ale a!"
 
-    toki "o tawa e poki ni."
+    toki "o tawa e poki <right>."
     toki "mi a li pana e pona tawa sina."
 
     toki_li_pini
@@ -1310,30 +1310,33 @@ Dialog147:: ;🆖; Ulrira
     ;db "うるりら－－　　ガチャッ」@"
 
 Dialog148:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Ulrira here! ..."
-    db "Shovel...  Did  "
-    db "you purchase a  "
-    db "shovel?  You may"
-    db "find something  "
-    db "if you dig here "
-    db "and there!  Bye!"
-    db "CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Ulrira here! ..."
+    ;db "Shovel...  Did  "
+    ;db "you purchase a  "
+    ;db "shovel?  You may"
+    ;db "find something  "
+    ;db "if you dig here "
+    ;db "and there!  Bye!"
+    ;db "CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。　スコップ．．．　"
     ;db "スコップは、かったかな？　　　　"
     ;db "あちこち　ほると　なにかある　　"
     ;db "かもしれんぞ。　　ガチャッ」@"
-    ;mu ilo mu ilo
-    ; toki! mi jan a!
-    ; ...lupa...
-    ; sina ken esun e ilo ni: ona li pali e lupa lon ma.
-    ; sina ni ala ni?
-    ; ni li ken pona... sina pali e lupa mute la, ijo li ken lon.
-    ; mi tawa!
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "...lupa..."
+    toki "sina ken esun e ilo ni: ona li pali e lupa lon ma."
+    toki "sina esun ala esun? ni li ken pona..."
+    toki "sina pali e lupa mute la, ijo li ken lon."
+    toki "mi tawa!"
+    toki "mu ilo pini"
+    toki_li_pini
 
-    ; unusual signoff
 
 
 
@@ -1384,15 +1387,15 @@ Dialog148:: ;🆖; Ulrira
 
 
 Dialog149:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Ya, it's Ulrira!"
-    db "The cave in the "
-    db "Ukuku Prairie is"
-    db "the key!  Yes, I"
-    db "mean the key    "
-    db "cave, no pun    "
-    db "intended!  Bye! "
-    db "CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Ya, it's Ulrira!"
+    ;db "The cave in the "
+    ;db "Ukuku Prairie is"
+    ;db "the key!  Yes, I"
+    ;db "mean the key    "
+    ;db "cave, no pun    "
+    ;db "intended!  Bye! "
+    ;db "CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。　ウククそうげんの"
@@ -1401,26 +1404,35 @@ Dialog149:: ;🆖; Ulrira
     ;db "．．．．．．．．ガチャッ！」@"
     ;this is the english and japanese dialogue from old man ulrira, a character in the legend of zelda: link's awakening. in the game, you can phone him for advice on where to go next. in the english version, he tells you to go to the Key Cave, found in Ukuku Prairie. what does the japanese version say? i prefer a literal translation, so that i can translate from japanese to another language.
     ; o tawa ma Ukuku. lupa ma li lon, li suli...
-    ; li suli poka  li suli sona kin a!
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "o tawa ma [utala kasi utala kasi utala]."
+    toki "tomo suli nanpa tu wan li lon li loje li lukin e sina."
+    toki "tomo kiwen li nasa lukin. ona li jo e lukin mute."
+    toki "o lukin e ona. o lukin open e lupa ona."
+    toki "...mu ilo pini"
+    toki_li_pini
 
     ; unusual signoff
 
 
 Dialog14A:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Hi, this is     "
-    db "Ulrira!  In the "
-    db "Yarna Desert,   "
-    db "which is located"
-    db "in the southeast"
-    db "of the island,  "
-    db "you will find   "
-    db "something called"
-    db "the Angler Key. "
-    db "Hmmm... How much"
-    db "more obvious do "
-    db "I have to be?   "
-    db "Bye! CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Hi, this is     "
+    ;db "Ulrira!  In the "
+    ;db "Yarna Desert,   "
+    ;db "which is located"
+    ;db "in the southeast"
+    ;db "of the island,  "
+    ;db "you will find   "
+    ;db "something called"
+    ;db "the Angler Key. "
+    ;db "Hmmm... How much"
+    ;db "more obvious do "
+    ;db "I have to be?   "
+    ;db "Bye! CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。　しまの、　　　　"
@@ -1429,22 +1441,27 @@ Dialog14A:: ;🆖; Ulrira
     ;db "あるそうじゃよ。　　　　　　　　"
     ;db "わしのヒントも　だいぶロコツに　"
     ;db "なってきたの－　ガチャッ」@"
-    ; ale ma la, poka <down><right> la, ma ko Yana li lon.
-    ; ilo lupa li lon, li open e lupa suli.
-    ; mi toki sona, anu seme?
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "ale ma la, poka <down><right>la,"
+    toki "ma ko [jelo anpa noka anpa] li lon."
+    toki "ilo lupa li lon, li open e lupa suli."
+    toki "...sina sona e ni, anu seme... mu ilo pini"
+    toki_li_pini
 
-    ; unusual signoff
 
 Dialog14B:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "This is Ulrira! "
-    db "Now you're being"
-    db "haunted by a    "
-    db "ghost?! Well,   "
-    db "how about taking"
-    db "him where he    "
-    db "wants to go?    "
-    db "Bye! CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "This is Ulrira! "
+    ;db "Now you're being"
+    ;db "haunted by a    "
+    ;db "ghost?! Well,   "
+    ;db "how about taking"
+    ;db "him where he    "
+    ;db "wants to go?    "
+    ;db "Bye! CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"    ;jpn pretty much says the same thing
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。　へんな　オバケに"
@@ -1452,38 +1469,52 @@ Dialog14B:: ;🆖; Ulrira
     ;db "そいつの　いきたいところに　　　"
     ;db "つれていって　やったらどうかな？"
     ;db "　　うるりら－　　ガチャッ！」@"
-    ; seme a? kon moli li tawa lon poka sina anu seme?
-    ; ona li wile tawa seme? o tawa e ona tawa ni...
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "seme a? kon moli li tawa lon poka sina anu seme?"
+    toki "ona li wile tawa seme? o tawa e ona tawa ni..."
+    toki "weka [uta linja uta linja ilo linja a]-" ; customize signoff
+    toki "mu ilo pini"
+    toki_li_pini
 
 
 Dialog14C:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Hi, it's Ulrira!"
-    db "The Catfish's   "
-    db "mouth is wide   "
-    db "open?  It sounds"
-    db "like a great    "
-    db "place to dive!  "
-    db "Bye!  CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Hi, it's Ulrira!"
+    ;db "The Catfish's   "
+    ;db "mouth is wide   "
+    ;db "open?  It sounds"
+    ;db "like a great    "
+    ;db "place to dive!  "
+    ;db "Bye!  CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。いりえで　ナマズが"
     ;db "おおぐちを、あけておるのう．．．"
     ;db "およいで　いってみてはどうかな　"
     ;db "　　うるりら－　　ガチャッ！」@"
-    ; kala soweli li lon telo, li open e uta ona...
-    ; o kama moku ona, anu seme?
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "kala soweli li lon telo, li open e uta ona..."
+    toki "o kama moku ona, anu seme?"
+    toki "weka [uta linja uta linja ilo linja a]-" ; customize signoff
+    toki "mu ilo pini"
+    toki_li_pini
 
 Dialog14D:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Ulrira here! ..."
-    db "Have you been to"
-    db "the Face Shrine?"
-    db "It is north of  "
-    db "Animal Village. "
-    db "That is a very  "
-    db "interesting     "
-    db "ruin... CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Ulrira here! ..."
+    ;db "Have you been to"
+    ;db "the Face Shrine?"
+    ;db "It is north of  "
+    ;db "Animal Village. "
+    ;db "That is a very  "
+    ;db "interesting     "
+    ;db "ruin... CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。カオのしんでんには"
@@ -1492,9 +1523,16 @@ Dialog14D:: ;🆖; Ulrira
     ;db "とてもためになる　イセキじゃよ　"
     ;db "　　うるりら－　　　ガチャッ！」"
     ;db "@"
-    ; sina sona ala sona e ma tomo soweli?
-    ; poka <up> ona la, tomo sewi li lon.
-    ; tomo sewi li pona...
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "sina sona ala sona e ma tomo soweli?"
+    toki "poka <up> ona la, tomo sewi li lon."
+    toki "tomo sewi li pona..."
+    toki "weka [uta linja uta linja ilo linja a]-" ; customize signoff
+    toki "mu ilo pini"
+    toki_li_pini
 
 Dialog14E:: ;🆖; Ulrira
     db "'BRRING! BRRING!"
@@ -1564,22 +1602,30 @@ Dialog150:: ;🅿️; Wind Fish, probably
     ;db "@"
 
 Dialog151:: ;🆖; Wind Fish, probably
-    ; this translation is fine, but I'm commenting it out to communicate that the translation is incomplete
     ; todo: uncomment
-    ;toki "...ma kasi......ma kasi..."
-    ;toki "   ...ma kasi li awen..."
-    ;toki_li_pini
-    db "  ...PRAIRIE... "
-    db "  ...PRAIRIE... "
-    db " The Prairie is "
-    db "     waiting...@"
+    toki "...ma kasi......ma kasi..."
+    toki "   ...ma kasi li awen..."
+    toki_li_pini
+    ;db "  ...PRAIRIE... "
+    ;db "  ...PRAIRIE... "
+    ;db " The Prairie is "
+    ;db "     waiting...@"
     ;db "．．．そうげん．．．そうげん　　"
     ;db "そうげんが、まっている．．．　@"
 
 Dialog152:: ;🆖; Wind Fish, probably
-    ;toki "...nasin telo... insa pi nasin telo..."
-    ;toki "ijo li len lon ona....."
+    ; this translation is fine, but I'm commenting it out to communicate that the translation is incomplete
+    toki "...nasin telo... insa pi nasin telo..."
+    toki "ijo li len lon ona....."
     ;toki_li_pini
+    toki ""
+    toki ""
+    toki "mu a! mi waso [ken.lukin insa]."
+    toki "mi ante e toki pi musi [suno esun tenpo alasa] ni."
+    toki "sina lukin e pali ale mi a! sina awen musi la,"
+    toki "toki li [ijo ni li ike] li nasa pakala."
+    toki ""
+    toki ""
     db "...WATERFALL... "
     db "It is hidden in "
     db "the waterfall...@"

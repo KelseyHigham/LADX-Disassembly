@@ -256,29 +256,57 @@ Dialog1A8:: ;🅿️; Signpost
     ;db "@"
 
 Dialog1A9:: ;🆖; Signpost
-    db "<down> GO THIS WAY@"
+    ;db "<down> GO THIS WAY@"
+    ;db "　<down>　の　ほうこうへすすめ@"
+    toki "      o tawa <down>@"
 
 Dialog1AA:: ;🆖; Signpost
-    db "<up> GO THIS WAY@"
+    ;db "<up> GO THIS WAY@"
+    ;db "　<up>　の　ほうこうへすすめ@"
+    toki "      o tawa <up>@"
 
 Dialog1AB:: ;🆖; Signpost
-    db "<right> GO THIS WAY@"
+    ;db "<right> GO THIS WAY@"
+    ;db "　<right>　の　ほうこうへすすめ@"
+    toki "      o tawa <right>@"
 
 Dialog1AC:: ;🆖; Signpost
-    db "<left> GO THIS WAY@"
+    ;db "<left> GO THIS WAY@"
+    ;db "　<left>　の　ほうこうへすすめ@"
+    toki "      o tawa <left>@"
 
 Dialog1AD:: ;🆖; Signpost
-    db " TRY AGAIN FROM "
-    db "   THE START@"
+    ;db " TRY AGAIN FROM "
+    ;db "   THE START@"
+    ;db "　　もういちど　さいしょから　　"
+    ;db "　　　やりなおし！@"
+    toki "      o alasa sin a!"
+    toki "       lon open@"
 
 Dialog1AE:: ;🆖; Signpost
-    db "GREAT!  YOU DID "
-    db "IT!  YOUR REWARD"
-    db "IS <right> THIS WAY!@"
+    ;db "GREAT!  YOU DID "
+    ;db "IT!  YOUR REWARD"
+    ;db "IS <right> THIS WAY!@"
+    ;db "おみごと！これで　クリア　です！"
+    ;db "ごほうびはあちら　<right>　　　　　　"
+    ;db "おたのしみに！　@"
+    ;“Well done! You've cleared it!
+    ;Your reward is that way — <right>!
+    ;Look forward to it!”
+    toki "sina pali pona a! sina pini a!"
+    toki "pona li tawa sina lon <right>"
+    toki_li_pini
 
 Dialog1AF:: ;🆖; Signpost
-    db "GONE ON TOUR    "
-    db "         MAMU@"
+    ;db "GONE ON TOUR    "
+    ;db "         MAMU@"
+    ;db "じゅんぎょうのため　たびにでます"
+    ;db "　　　　　　　　　　　マム－　　"
+    ;db "@"
+    toki "tenpo ni la, mi kalama musi lon ma ante."
+    toki "         akesi [mu akesi mu uta]"
+    toki_li_pini
+
 
 Dialog1B0:: ;🅿️; Signpost
     toki "<right> tomo pi jan nasa [telo esun suwi ilo]"
@@ -295,8 +323,12 @@ Dialog1B1:: ;🅿️; Signpost
     ;db "<down> Martha's Bay@"
 
 Dialog1B2:: ;🆖; Signpost
-    db "<right> Welcome to the"
-    db " Animal Village!@"
+    ;db "<right> Welcome to the"
+    ;db " Animal Village!@"
+    ;db "　<right>　どうぶつむら　にようこそ！"
+    ;db "@"
+    toki "<right> kama pona tawa ma tomo soweli a!"
+    toki_li_pini
 
 Dialog1B3:: ;🅿️; Signpost
     toki "<right> ma pi kiwen moli"
@@ -325,9 +357,9 @@ Dialog1B5:: ;🅿️; Signpost
     ;db "<left> Goponga Swamp @"
 
 Dialog1B6:: ;🅿️; Owl Statue
-    toki "o tawa sike sewi..."
-    toki "o kalama..."
-    toki "sewi li kute..."
+    toki "    o tawa sike sewi..."
+    toki "    o kalama..."
+    toki "    sewi li kute..."
     toki_li_pini
     ;db "MUSIC, THE FISH "
     ;db "STIRS IN THE EGG"
@@ -358,17 +390,23 @@ Dialog1B7:: ;🅿️; Owl Statue
     ;db "かぜをよぶが　とりにもあらず　　" ;it's called "wind", but it's not a bird
     ;db "@"
 
-Dialog1B8:: ;🆖; Owl Statue
-    db "IN SOIL SLEEPS  "
-    db "SECRETS, BENEATH"
-    db "YOUR SOLES...@"
+Dialog1B8:: ;🆖; Owl Statue. Unused?
+    ;db "IN SOIL SLEEPS  "
+    ;db "SECRETS, BENEATH"
+    ;db "YOUR SOLES...@"
     ;db "　　　あしもとに　ヒミツあり@"
+    toki "      pona li lon anpa"
+    toki "      pi noka sina."
+    toki_li_pini
 
-Dialog1B9:: ;🆖; Owl Statue
-    db "IN SOIL SLEEPS  "
-    db "SECRETS, BENEATH"
-    db "YOUR SOLES...@"
+Dialog1B9:: ;🆖; Owl Statue, reward for Richard quest
+    ;db "IN SOIL SLEEPS  "
+    ;db "SECRETS, BENEATH"
+    ;db "YOUR SOLES...@"
     ;db "　　　あしもとに　ヒミツあり@"
+    toki "      pona li lon anpa"
+    toki "      pi noka sina."
+    toki_li_pini
 
 Dialog1BA:: ;🆖; Owl Statue
     db "AROUND HERE,    "
@@ -376,10 +414,13 @@ Dialog1BA:: ;🆖; Owl Statue
     ;db "　　　このあたり　ヒミツあり@"
 
 Dialog1BB:: ;🆖; Owl Statue
-    db "SECRETS ARE LIKE"
-    db "WATER WHEN IT   "
-    db "COMES TO BRIDGES@"
+    ;db "SECRETS ARE LIKE"
+    ;db "WATER WHEN IT   "
+    ;db "COMES TO BRIDGES@"
     ;db "　　　ハシのした　ヒミツあり@"
+    toki "     nasin sewi la"
+    toki "     seme li lon anpa?"
+    toki_li_pini
 
 Dialog1BC:: ;🆖; Owl Statue
     db "NOW YOU NEED    "
@@ -409,23 +450,44 @@ Dialog1BE:: ;🆖; Owl Statue
 
 Dialog1BF:: ;🆖; Tarin
 Dialog1C0:: ;🆖; Tarin
-    db "Oh?!  #####, I  "
-    db "see ya have a   "
-    db "nice stick...   "
-    db "Can I borrow it "
-    db "for a second?   "
-    db "    Can  Can't<ask>"
+    ;db "Oh?!  #####, I  "
+    ;db "see ya have a   "
+    ;db "nice stick...   "
+    ;db "Can I borrow it "
+    ;db "for a second?   "
+    ;db "    Can  Can't<ask>"
+    ;db "おっ？　#####　　　　　　　"
+    ;db "いいものもってるだな。　　　　　"
+    ;db "うんまいハチミツわけてやるから　"
+    ;db "そのぼうきれ　かしてほし－だよ。"
+    ;db "　　　　いいよ　　だ－め<ask>"
+    toki "a! jan [#####] o"
+    toki "<stick>sina li pona..."
+    toki "sina wile ala wile esun? mi pana e ko suwi."
+    toki "    esun pona a   ala a<ask>"
 
 Dialog1C1:: ;🆖; Narrator
-    db "<stick> became the    "
-    db "honeycomb <honeycomb>!    "
-    db "You're not sure "
-    db "how it happened,"
-    db "but take it!@"
+    ;db "<stick> became the    "
+    ;db "honeycomb <honeycomb>!    "
+    ;db "You're not sure "
+    ;db "how it happened,"
+    ;db "but take it!@"
+    ;db "　<stick>　が　　　　　　　　　　　　"
+    ;db "ハチのす　<honeycomb>　になった。　　　　"
+    ;db "？？　なんかよくわからないけど　"
+    ;db "　とりあえず　もらっておこう！@"
+    toki "<stick>li kama <honeycomb>a! tan seme?"
+    toki "...suli ala. ale li pona."
+    toki_li_pini
 
-Dialog1C2:: ;🆖; Marin, probably
-    db "Hmmm, #####, you"
-    db "are mean!@"
+Dialog1C2:: ;🆖; Tarin, upon refusal
+    ;db "Hmmm, #####, you"
+    ;db "are mean!@"
+    ;db "う－ん　#####いけずだ－よ。"
+    ;db "@"
+    toki "a... suli ala..."
+    toki "ale li pona...        mu ike"
+    toki_li_pini
 
 Dialog1C3:: ;🅿️; Signpost
     toki "      pipi pi selo pakala      "
@@ -955,8 +1017,9 @@ Dialog1F8:: ;🆖; Photographer
     db "call it 'I Found"
     db "Zora.'@"
 
-Dialog1F9:: ;🅿️; Signpost maybe, and ; Map maybe
-    toki "  tomo ante pi jan lawa lili [wan ijo suli ale]@"
+Dialog1F9:: ;🅿️; Signpost, but not Map
+    toki "      tomo sin pi"
+    toki "   jan lawa lili [wan ijo suli ale]@"
     ;db "Richard's Villa @"
     ;db "　　　リチャ－ドのべっそう　　　"
     ;db "@"
@@ -1752,17 +1815,17 @@ Dialog227:: ;🆖; Secret Goriya
 
 
 Dialog228:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Ya, it's Ulrira!"
-    db "You haven't     "
-    db "found the 5     "
-    db "Golden Leaves?  "
-    db "Keep an eye on  "
-    db "the ones you    "
-    db "have. Someone   "
-    db "might try and   "
-    db "take 'em! Bye!  "
-    db "CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Ya, it's Ulrira!"
+    ;db "You haven't     "
+    ;db "found the 5     "
+    ;db "Golden Leaves?  "
+    ;db "Keep an eye on  "
+    ;db "the ones you    "
+    ;db "have. Someone   "
+    ;db "might try and   "
+    ;db "take 'em! Bye!  "
+    ;db "CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。　フム、「はっぱ」"
@@ -1770,18 +1833,27 @@ Dialog228:: ;🆖; Ulrira
     ;db "う－む．．．　テキの　へいしが　"
     ;db "もっておるのかも　しれんのう。　"
     ;db "　　うるりら－　　ガチャッ！」@"
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "lipu kasi jelo luka, anu seme..."
+    toki "jan utala li jo e ona, anu seme..."
+    toki "weka [uta linja uta linja ilo linja a]-"
+    toki "mu ilo pini"
+    toki_li_pini
 
 Dialog229:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Ya, it's Ulrira!"
-    db "You haven't     "
-    db "found the 5     "
-    db "Golden Leaves?  "
-    db "Try bombing sus-"
-    db "picious places. "
-    db "Hope that helps."
-    db "Bye!            "
-    db "CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Ya, it's Ulrira!"
+    ;db "You haven't     "
+    ;db "found the 5     "
+    ;db "Golden Leaves?  "
+    ;db "Try bombing sus-"
+    ;db "picious places. "
+    ;db "Hope that helps."
+    ;db "Bye!            "
+    ;db "CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。　フム、「はっぱ」"
@@ -1790,19 +1862,28 @@ Dialog229:: ;🆖; Ulrira
     ;db "バクダンをおいてみてはどうじゃ。"
     ;db "やくに　たったかな？　　　　　　"
     ;db "　　うるりら－　　　ガチャッ」@"
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "lipu kasi jelo luka, anu seme..."
+    toki "sike pakala li pona tawa ni, anu seme..."
+    toki "o alasa e ijo nasa. o pana e sike pakala tawa nasa."
+    toki "mi tawa.     mu ilo pini"
+    toki_li_pini
 
 Dialog22A:: ;🆖; Ulrira
-    db "'BRRING! BRRING!"
-    db "Ya, it's Ulrira!"
-    db "You haven't     "
-    db "found the 5     "
-    db "Golden Leaves?  "
-    db "Go scare that   "
-    db "crow by the     "
-    db "castle and see  "
-    db "if that helps!  "
-    db "Bye!            "
-    db "CLICK!'@"
+    ;db "'BRRING! BRRING!"
+    ;db "Ya, it's Ulrira!"
+    ;db "You haven't     "
+    ;db "found the 5     "
+    ;db "Golden Leaves?  "
+    ;db "Go scare that   "
+    ;db "crow by the     "
+    ;db "castle and see  "
+    ;db "if that helps!  "
+    ;db "Bye!            "
+    ;db "CLICK!'@"
     ;db "「チャッ　ジ－コ　ジ－コ　ジ－コ"
     ;db "．．．　プルルル　プルル　ガチャ"
     ;db "うるりらじゃ。　フム、「はっぱ」"
@@ -1810,7 +1891,15 @@ Dialog22A:: ;🆖; Ulrira
     ;db "よくわからんが　．．．カラス．．"
     ;db "おしろのカラスが　あやしいのう　"
     ;db "うるりら－－　　ガチャッ」@"
-
+    toki "mu ilo  mu ilo"
+    toki "mu ilo  mu ilo"
+    toki "toki a!"
+    toki "mi jan suli [uta linja uta linja ilo linja a] a!"
+    toki "lipu kasi jelo luka, anu seme..."
+    toki "waso nasa li lon poka pi tomo kiwen."
+    toki "waso nasa li lon tan seme..."
+    toki "mi tawa.     mu ilo pini"
+    toki_li_pini
 
 
 
@@ -1882,7 +1971,7 @@ Dialog230:: ;🅿️; Narrator
 Dialog231:: ;🆖; Narrator
     ; todo: available after dungeon 2
     toki "ni li lupa lupa. ona li lon ni tan seme?"
-    toki "sitelen li toki e ni: lupa lupa pi ilo lupa"
+    toki "sitelen li toki e ni: lupa lupa pi lukin ko"
     toki_li_pini
     ;db "Hunh?  A keyhole"
     ;db "here?  It says, "
@@ -2212,7 +2301,7 @@ Dialog24A:: ;🆖; idk
     db "lazy walrus is  "
     db "in the way!@"
 
-Dialog24B:: ;🆖; idk
+Dialog24B:: ;🆖; top-left bun
     db "Ahhh... Sigh... "
     db "On such a nice  "
     db "day, we need a  "

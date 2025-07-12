@@ -1195,8 +1195,8 @@ Dialog035:: ;🅿️; Shopkeeper
 
 Dialog036:: ;🅿️; Narrator
     toki "seme a!"
-    toki "sina jo e ijo kepeken mani ala a!"
-    toki "... ... ... ...a"
+    toki "sina esun e ijo kepeken mani ala a!"
+    toki "seme a-"
     toki_li_pini
     ;db "Guess what?  You"
     ;db "got it for free."
@@ -1232,7 +1232,7 @@ Dialog038:: ;🅿️; Shopkeeper
     ;db "しんでもらう！@" ; take it! (death)
 
 Dialog039:: ;🅿️; Narrator
-    toki "seme? lupa suli li open a!"
+    toki "seme? lupa suli pi tomo kiwen li open a!"
     toki "ni la, sina ken weka.@"
     toki_li_pini
     ;db "Hunh?  It sounds"
@@ -1803,9 +1803,9 @@ Dialog057:: ;🅿️; Map
     ;db "　　　　つぼのどうくつ@"
 
 Dialog058:: ;🅿️; Map
-    toki " tomo suli nanpa tu wan"
-    toki "    tomo anpa pi ilo lupa@"
-    toki_li_pini
+    toki " tomo suli nanpa tu wan"     ; "key cavern" is confusing to direct people to after Richard
+    toki "    tomo kiwen pi lukin ko@" ; also the key is called "slime key"
+    toki_li_pini                       ; so i just renamed it!
     ;db "Level 3--       "
     ;db "      Key Cavern@"
     ;db "    NIVEAU 3    "
@@ -2475,7 +2475,7 @@ Dialog094:: ;🅿️; Narrator
 
 Dialog095:: ;🅿️; Narrator
     toki "sina jo e len noka [poka en kon ale sewi ilo] a!"
-    toki "o pilin e nena ilo lon tenpo suli. la sina tawa wawa a!"
+    toki "o luka e nena ilo lon tenpo suli. la sina tawa wawa a!"
     toki_li_pini
     ;db "You've got the  "
     ;db "Pegasus Boots!  "
@@ -2636,7 +2636,7 @@ Dialog0A1:: ;🅿️; Narrator
 
 Dialog0A2:: ;🅿️; Narrator
     ; todo: revisit
-    toki "sina jo e ilo lupa pi ko lukin a!"
+    toki "sina jo e ilo lupa pi lukin ko a!"
     toki "ilo li ken open e lupa sin."
     toki "o tawa lupa lon ma kasi [utala kasi utala kasi utala].@"
     toki_li_pini
