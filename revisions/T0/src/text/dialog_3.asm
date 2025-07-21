@@ -731,7 +731,7 @@ Dialog130:: ;☀️; Madam MeowMeow
     ;db "ホ－ホッホッ　うちのワンワンは、"
     ;db "けなみがじまんざますのよ　ホッ@"
 
-Dialog131:: ;☀️; Madam MeowMeow
+Dialog131:: ;P2;☀️; Madam MeowMeow
     toki "ike a! ike a-!"
     ;toki "jan ike li kama jo e soweli mu mu mi a!"
     toki "soweli mu mu mi li weka tan jan... jan..."
@@ -778,7 +778,7 @@ Dialog132:: ;☀️; Madam MeowMeow
     ;db "それじゃ、おねがいするざますっ！"
     ;db "@"
 
-Dialog133:: ;☀️; Weird Mr. Write
+Dialog133:: ;P2;☀️; Weird Mr. Write
     toki "tenpo mute la, mi toki tawa jan ante kepeken sitelen a!"
     toki "taso, ona li toki ala tawa mi. ike-."
     toki_li_pini
@@ -862,7 +862,7 @@ Dialog139:: ;🆖; Weird Mr. Write
     ;db "てがみを　かいてるところですよ。"
     ;db "@"
 
-Dialog13A:: ;☀️; Richard
+Dialog13A:: ;P3;☀️; Richard
 ;toki a!
 ;mi suli. tenpo pini la, mi lape lon ma tomo kiwen.
 
@@ -1797,65 +1797,109 @@ Dialog165:: ;☀️; Kiki, Narrator, Link
     ;db "そいつを　オイラにくれないか？　"
     ;db "　　　　うん　　　いやだ<ask>"
 
-Dialog166:: ;🆖; Christine
-    db "You don't know  "
-    db "the proper      "
-    db "etiquette when  "
-    db "dealing with a  "
-    db "lady, do you?   "
-    db "You should have "
-    db "brought flowers "
-    db "or something,   "
-    db "then I might be "
-    db "more inclined to"
-    db "talk with you..."
-    db "Oh yes, in my   "
-    db "case, hibiscus  "
-    db "are best...@"
+Dialog166:: ;☀️; Christine
+    toki "mi meli suwi la sina o anpa tawa mi."
+    toki "sina pana e kasi kule la sina ken toki..."
+    toki_li_pini
+;    db "おとめのへやを、おとずれるときの"
+;    db "エチケット、ごぞんじないの？　　"
+;    db "おはなくらい、いただければ　　　"
+;    db "おはなしするきにもなるんですけど"
+;    db "そう、ハイビスカスがすきですの　"
+;    db "わたくしのばあい．．．　．．．@"
+    ;db "You don't know  "
+    ;db "the proper      "
+    ;db "etiquette when  "
+    ;db "dealing with a  "
+    ;db "lady, do you?   "
+    ;db "You should have "
+    ;db "brought flowers "
+    ;db "or something,   "
+    ;db "then I might be "
+    ;db "more inclined to"
+    ;db "talk with you..."
+    ;db "Oh yes, in my   "
+    ;db "case, hibiscus  "
+    ;db "are best...@"
 
-Dialog167:: ;🆖; Christine
-    db "Oh, you brought "
-    db "me a hibiscus!  "
-    db "How sweet! Well,"
-    db "since you are   "
-    db "such a gentleman"
-    db "I have a request"
-    db "to make of you. "
-    db "Will you listen?"
-    db "    Yes  No<ask>"
+Dialog167:: ;☀️; Christine
+    toki "a! sina pana e <flower2>anu seme? sina pona..."
+    toki "sina pona la sina wile ala wile pona sin e mi?"
+    toki "    wile     ala<ask>"
+;    db "あら、わたくしにその　<flower2>　を　　"
+;    db "くださるの？　どうもありがとう。"
+;    db "あの－．．．とってもしんしてきな"
+;    db "あなたに　おねがいがございますの"
+;    db "きいてくださいます？　　　　　　"
+;    db "　　　　ええ　　　いいえ<ask>"
+    ;db "Oh, you brought "
+    ;db "me a hibiscus!  "
+    ;db "How sweet! Well,"
+    ;db "since you are   "
+    ;db "such a gentleman"
+    ;db "I have a request"
+    ;db "to make of you. "
+    ;db "Will you listen?"
+    ;db "    Yes  No<ask>"
 
-Dialog168:: ;🆖; Christine
-    db "I would like you"
-    db "to take this    "
-    db "letter to a Mr. "
-    db "Write who lives "
-    db "on the border of"
-    db "the Mysterious  "
-    db "Forest, please!@"
+Dialog168:: ;☀️; Christine
+    toki "o pana e lipu ni tawa jan nasa [wawa ante sitelen ilo]."
+    toki "tomo ona li lon poka pi ma kasi nasa."
+    toki "sina pona a!"
+    toki_li_pini
+;    db "もりのはずれの　ライトさまに　　"
+;    db "てがみを　とどけていただきたいの"
+;    db "よろしく　おねがいいたしますわ！"
+;    db "@"
+    ;db "I would like you"
+    ;db "to take this    "
+    ;db "letter to a Mr. "
+    ;db "Write who lives "
+    ;db "on the border of"
+    ;db "the Mysterious  "
+    ;db "Forest, please!@"
 
-Dialog169:: ;🆖; Christine
-    db "...Is that so?  "
-    db "And I thought   "
-    db "you were a      "
-    db "gentleman...@"
+Dialog169:: ;☀️; Christine
+    toki "a... mi pakala. sina pona ala..."
+    toki_li_pini
+;    db "．．．そうなの。わたくしあなたは"
+;    db "いいかただと　おもいましたのに。"
+;    db "@"
+    ;db "...Is that so?  "
+    ;db "And I thought   "
+    ;db "you were a      "
+    ;db "gentleman...@"
 
-Dialog16A:: ;🆖; Narrator
-    db "You traded <flower2> for"
-    db "a goat's letter "
-    db "<letter>!  ...Great!?@"
+Dialog16A:: ;☀️; Narrator
+    toki "sina esun e <flower2>e <letter>a!"
+    toki "...wawa... wawa a!"
+;    db "<flower2>　がヤギのてがみ　<letter2>　になった"
+;    db "．．．．なんか．．．すごいぞ！@"
+    ;db "You traded <flower2> for"
+    ;db "a goat's letter "
+    ;db "<letter>!  ...Great!?@"
 
-Dialog16B:: ;🆖; Christine
-    db "You know, some- "
-    db "times I can't   "
-    db "help eating a   "
-    db "delicious piece "
-    db "of paper, even  "
-    db "if it's a letter"
-    db "to my darling   "
-    db "Mr. Write... How"
-    db "embarrassing!@"
+Dialog16B:: ;☀️; Christine
+    toki "tenpo la, mi moku e lipu suwi."
+    toki ""
+    toki "jan suwi [wawa ante sitelen ilo] li sitelen suwi tawa mi la"
+    toki "mi awen moku e lipu sitelen ona... pakala a!"
+;    db "わたくし、おいしそうな　かみだと"
+;    db "たとえライトさんの　おてがみでも"
+;    db "たべてしまうことが、ありますの　"
+;    db "．．．おはずかしい．．．．．．．"
+;    db "@"
+    ;db "You know, some- "
+    ;db "times I can't   "
+    ;db "help eating a   "
+    ;db "delicious piece "
+    ;db "of paper, even  "
+    ;db "if it's a letter"
+    ;db "to my darling   "
+    ;db "Mr. Write... How"
+    ;db "embarrassing!@"
 
-Dialog16C:: ;☀️; Narrator
+Dialog16C:: ;P2;☀️; Narrator
     toki "sina pona e soweli mu mu a!"
     toki "ona li suli li wawa a! ona o pakala ala e sina a!"
     toki_li_pini

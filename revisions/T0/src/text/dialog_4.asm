@@ -138,6 +138,13 @@ Dialog19A:: ;P3;☀️; Crazy Tracy, after you buy
 Dialog19B:: ;P4;🆖; Schule Donavitch
     ; akesi [sitelen unpa]
     ; brother of akesi [soweli esun]
+    toki "mi akesi [sitelen unpa] a!"
+    toki "ale li sona e mi tan sitelen pona mi."
+    toki "poka pi telo suli la, kiwen li lon, li sitelen e jan kala."
+    toki "jan kala kiwen li pali mi pi pona nanpa wan a!"
+    toki "taso, kiwen li pini ala tan...ijo. sitelen pona li wile"
+    toki "e wawa mute... sina sona ala e ni a a a!"
+    toki_li_pini
     ;db "ミ－が、ゆうめいなゲイジュツカ　"
     ;db "シュ－ル．ドナピッチ　ザンス！　"
     ;db "いりえの、にんぎょぞうも　　　　"
@@ -147,20 +154,25 @@ Dialog19B:: ;P4;🆖; Schule Donavitch
     ;db "ミ－のゲイジュツはムズカシすぎて"
     ;db "アンタには、むりザンスね．．．．"
     ;db "@"
-    db "Ya, I am Schule "
-    db "Donavitch!  Zee "
-    db "mermaid statue  "
-    db "by zee bay iz my"
-    db "masterpiece! ..."
-    db "To tell you zee "
-    db "truth, zis werk "
-    db "iz not complete!"
-    db "Zee art, it'z..."
-    db "difficult for   "
-    db "you to grasp, iz"
-    db "it not?@"
+    ;db "Ya, I am Schule "
+    ;db "Donavitch!  Zee "
+    ;db "mermaid statue  "
+    ;db "by zee bay iz my"
+    ;db "masterpiece! ..."
+    ;db "To tell you zee "
+    ;db "truth, zis werk "
+    ;db "iz not complete!"
+    ;db "Zee art, it'z..."
+    ;db "difficult for   "
+    ;db "you to grasp, iz"
+    ;db "it not?@"
 
 Dialog19C:: ;🆖; Mermaid Statue, Narrator
+    ;db "　「かなしみのにんぎょぞう」　　"
+    ;db "　　　　　　シュ－ルさく　　　　"
+    ;db "　　　　　　　　　　　　　　　　"
+    ;db "？．．ウロコが１まい　かけてる。"
+    ;db "@"
     db "  THE MOURNING  "
     db "     MERMAID    "
     db "    By SCHULE   "
@@ -694,37 +706,79 @@ Dialog1CD:: ;☀️; Sale
     ;db "タルタルこうちのヒガシのはずれに"
     ;db "あるわ、いっぺんいってみいな。@"
 
-Dialog1CE:: ;🆖; Chef Bear
-    db "Rik'm rak'm! I  "
-    db "ran out of      "
-    db "ingredients!  If"
-    db "I had honey, I  "
-    db "could make this "
-    db "fit for a king!@"
+Dialog1CE:: ;☀️; Chef Bear
+;    db "りょうりの　ざいりょうが　　　　"
+;    db "たりねえや。　こんちきしょう！　"
+;    db "ハチミツがありゃ－、べらぼうに　"
+;    db "うまくなるんだゼ。@"
+    ;db "Rik'm rak'm! I  "
+    ;db "ran out of      "
+    ;db "ingredients!  If"
+    ;db "I had honey, I  "
+    ;db "could make this "
+    ;db "fit for a king!@"
+    toki "pakala a! mi wile pali e moku"
+    toki "taso mi jo ala e ko suwi... ike a!"
+    toki "mi kama jo la  mi ken pali e moku pi suwi wawa a!"
+    toki_li_pini
 
-Dialog1CF:: ;🆖; Chef Bear
-    db "Hi ho! Hey you! "
-    db "Is that possibly"
-    db "a <honeycomb> you have?   "
-    db "I just ran out! "
-    db "Will you swap it"
-    db "for a pineapple?"
-    db "    Yes  No<ask>"
+Dialog1CF:: ;☀️; Chef Bear
+;    db "ハイホ－！　おめえさん、そいつあ"
+;    db "ひょっとすると　<honeycomb>　じゃねえか？"
+;    db "ちょうど、ハチミツきらしてんだ！"
+;    db "パイナップルとこうかんしねえか？"
+;    db "　　　　いいよ　　やだ<ask>"
+    ;db "Hi ho! Hey you! "
+    ;db "Is that possibly"
+    ;db "a <honeycomb> you have?   "
+    ;db "I just ran out! "
+    ;db "Will you swap it"
+    ;db "for a pineapple?"
+    ;db "    Yes  No<ask>"
+    toki "mu a! sina o!"
+    toki "sina jo e <honeycomb>anu seme a?!"
+    toki "tenpo poka a la mi kepeken ko suwi ale mi!"
+    toki "sina wile ala wile esun? mi pana e kili."
+    toki "    pona     ala a<ask>"
 
-Dialog1D0:: ;🆖; Narrator
-    db "You exchanged <honeycomb> "
-    db "for <pineapple>!  It's not"
-    db "as sweet, but it"
-    db "is delicious!   @"
 
-Dialog1D1:: ;🆖; Chef Bear
-    db "That's a crying "
-    db "shame, but I    "
-    db "realize those   "
-    db "are a rare      "
-    db "delicacy!@"
+Dialog1D0:: ;☀️; Narrator
+;    db "　<honeycomb>　を　　　　　　　　　　　　"
+;    db "パイナップル　<pineapple>　ととりかえた！"
+;    db "すっぱ－いけど　おいしい！　　　"
+;    db "おいし－けど　すっぱい！@"
+    ;db "You exchanged <honeycomb> "
+    ;db "for <pineapple>!  It's not"
+    ;db "as sweet, but it"
+    ;db "is delicious!   @"
+    toki "sina esun e <honeycomb>e <pineapple>a!"
+    toki "ona li suwi  taso nasa-   ona li nasa  taso suwi-"
+    toki_li_pini
 
-Dialog1D2:: ;🆖; Chef Bear
+Dialog1D1:: ;☀️; Chef Bear
+;    db "キショ－ッ！　　おしいゼ。　　　"
+;    db "めったにねえ　チンミなのによう。"
+;    db "@"
+    ;db "That's a crying "
+    ;db "shame, but I    "
+    ;db "realize those   "
+    ;db "are a rare      "
+    ;db "delicacy!@"
+    toki "pakala..."
+    toki "tenpo lili taso la mi ken moku e pona ni..."
+    toki_li_pini
+
+Dialog1D2:: ;🆖; Chef Bear, before Marin arrives
+;    db "オウ！オウ！　ヤ－ナさばくね　　"
+;    db "しってるぜ。このむらの　ミナミに"
+;    db "いりぐちが　あるんだがな、　　　"
+;    db "へんなヤツが　みちをふさいでんだ"
+;    db "．．．あいつは　いちどねちまうと"
+;    db "ず－－－－っと！うごかね－しな。"
+;    db "そっ！　マリンちゃんつれてきな！"
+;    db "あのコのうたで　おこしちまえよ！"
+;    db "ビックリ！　とびおきるぜ　きっと"
+;    db "　　　へっへっへっ！　　@"
     db "Hi ho! Yeah, I  "
     db "know, that tub  "
     db "of goo is asleep"
@@ -743,20 +797,40 @@ Dialog1D2:: ;🆖; Chef Bear
     db "he heard her    "
     db "sing, for sure! "
     db "Heh heh heh!@"
+    toki "mu a! sina o!"
+    toki ""
 
-Dialog1D3:: ;🆖; Chef Bear
-    db "My ultimate plan"
-    db "is to open a    "
-    db "branch in Mabe  "
-    db "Village!@"
+Dialog1D3:: ;☀️; Chef Bear
+;    db "おいらのユメは、メ－ベのむらに　"
+;    db "チェ－ンてんを　だすことなんだ。"
+;    db "@"
+    ;db "My ultimate plan"
+    ;db "is to open a    "
+    ;db "branch in Mabe  "
+    ;db "Village!@"
+    toki "tenpo kama weka la..."
+    toki "mi wile open e esun sin lon ma tomo [mu en pilin en]."
+    toki_li_pini
 
 Dialog1D4:: ;🆖; Chef Bear
+;    db "ハイホ－！！！　マリンちゃん　　"
+;    db "いらっしゃあい。　　　　　　　　"
+;    db "．．．．．．．．おっと？　イケネ"
+;    db "アンタもいたのか　スマンスマン。"
+;    db "@"
     db "HI HO!  Little  "
     db "Marin!  Welcome!"
     db "... ... ... ... "
     db "Oh, shucks!  You"
     db "are here too... "
     db "Sorry...@"
+
+
+
+
+
+
+
 
 Dialog1D5:: ;🆖; Marin, probably
     db "Oh, #####, I'm  "
@@ -852,6 +926,84 @@ Dialog1DF:: ;🆖; idk
     db "Get ready for   "
     db "THIS!@"
 
+;Dialog1D5::
+;    db "あら、#####　　　　　　　　"
+;    db "ここがよくわかったわね。　　　　"
+;    db "すこし　わたしとおはなししない？"
+;    db "　　　　いいよ　　しない<ask>"
+
+;Dialog1D6::
+;    db "そう、わたし　もうちょっとだけ　"
+;    db "ここで　うみをみてるわ。@"
+
+;Dialog1D7::
+;    db "　　はまべにいってます　　　　　"
+;    db "　　　　　　　　　　マリン　<marin>　"
+;    db "@"
+
+;Dialog1D8::
+;    db "このヤシのみは、いったい　　　　"
+;    db "どこからくるのかな．．．．　　　"
+;    db "うみのむこうには、なにもないって"
+;    db "タリンはいってたけれど．．．　　"
+;    db "きっと、なにかがあるって　　　　"
+;    db "わたし　しんじてるの！　　　　　"
+;    db "　．．．．　．．．．　．．．．　"
+;    db "　　　　　　　　　　　　　　　　"
+;    db "#####を、みつけたとき　　　"
+;    db "わたしドキドキしたわ。　　　　　"
+;    db "このひとは、うみのむこうから　　"
+;    db "なにかを、つげにきたんだって　　"
+;    db "@"
+
+;Dialog1D9::
+;    db "　．．．．　．．．．　．．．．　"
+;    db "　　　　　　　　　　　　　　　　"
+;    db "わたしが、カモメだったら．．．．"
+;    db "ずっと、とおくへ、とんでいくのに"
+;    db "いろんなところへ　いって、　　　"
+;    db "いろんなひとたちと　うたうの　　"
+;    db "「かぜのさかな」に、いのれば　　"
+;    db "わたしのおねがい　かなうのかしら"
+;    db "@"
+
+;Dialog1DA::
+;    db "ねえ#####ちゃんときいてる？"
+;    db "　　　　うん　　　ぜんぜん<ask>"
+
+;Dialog1DB::
+;    db "いつか、#####のふるさとに　"
+;    db "いってみたいな．．．．．．　　　"
+;    db "なあんてね！　　フフフ．．．@"
+
+;Dialog1DC::
+;    db "え？　セイウチさんが？？　　　　"
+;    db "．．．　いいわ、いっしょにいく！"
+;    db "@"
+
+;Dialog1DD::
+;    db "う－ん　う－ん　．．．．　　　　"
+;    db "ハチはもう　こりごりだあよ。　　"
+;    db "@"
+
+;Dialog1DE::
+;    db "モウ！うわのそらなんだからあ．．"
+;    db "こんどは、ちゃんときいてね。　　"
+;    db "@"
+
+;Dialog1DF::
+;    db "１ぴきでも　いきのこっていれば　"
+;    db "それで　じゅうぶんだぜ！　ぺっ！"
+;    db "いくらでも　なかまを　よんで　　"
+;    db "これるしな！いくぜ！オチビさん！"
+;    db "@"
+
+
+
+
+
+
+
 Dialog1E0:: ;☀️; Walrus
     toki "....mu lape....mu lape...."
     toki ".... <marin> ... <marin> ..."
@@ -861,6 +1013,13 @@ Dialog1E0:: ;☀️; Walrus
     ;db "@"
     ;db "ZZZ ZZZ ZZZ ZZZ "
     ;db " ... <marin> ... <marin> ...@"
+
+
+
+
+
+
+
 
 Dialog1E1:: ;🆖; Marin, probably, and Link
     db "Yes, it's that  "
@@ -899,6 +1058,40 @@ Dialog1E6:: ;🆖; Bow-Wow, maybe?
     db "Arfh! Arfh! Arf!"
     db " <marin>  <marin>!  <marin>   <marin>!  "
     db "..... <link>?? @"
+
+;Dialog1E1::
+;    db "あら？　いけないセイウチさんね。"
+;    db "ちょっとビックリさせちゃおうか？"
+;    db "　　　　うん　　　やめとこう<ask>"
+
+;Dialog1E2::
+;    db "アハハハッ！　ねおきの　いいコね"
+;    db "@"
+
+;Dialog1E3::
+;    db "あれっ？　わたしをよんでる．．．"
+;    db "きっと、いつものアレね．．フフフ"
+;    db "@"
+
+;Dialog1E4::
+;    db "そうね。　かわいそうだから　　　"
+;    db "そっと、ねかせてあげようね。@"
+
+;Dialog1E5::
+;    db "わたし、どうぶつむらへいってるわ"
+;    db "#####も、きっとよってね！　"
+;    db "@"
+
+;Dialog1E6::
+;    db "オウッ！　　　オウッ！　　　　　"
+;    db "　<marin>　<marin>　！　<marin>　<marin>　！　　　　"
+;    db "．．．．．　<link>　？？　　　　　　"
+;    db "@"
+
+
+
+
+
 
 Dialog1E7:: ;🆖; Fisherman
     db "It's no use,    "
@@ -2308,46 +2501,85 @@ Dialog249:: ;P3;☀️; Richard, Richard photo part 3
     toki_li_pini
 
 Dialog24A:: ;P4;🆖; top-left house bunny
-    db "Yarna Desert?   "
-    db "There's a way to"
-    db "get there to the"
-    db "south, but you  "
-    db "might not be    "
-    db "able to get     "
-    db "through if that "
-    db "lazy walrus is  "
-    db "in the way!@"
+    toki "ma ko [jelo anpa noka anpa], anu seme?"
+    toki "sina ken tawa lon poka <down>."
+    toki "taso, kala suli li pini e nasin..."
+    toki_li_pini
+    ;db "ヤ－ナさばく？　ミナミのほうに　"
+    ;db "いりぐちがあるけど．．．．　　　"
+    ;db "アイツが、みちを　ふさいじゃって"
+    ;db "いけないかもなあ。　　　　　　　"
+    ;db "@"
+    ;db "Yarna Desert?   "
+    ;db "There's a way to"
+    ;db "get there to the"
+    ;db "south, but you  "
+    ;db "might not be    "
+    ;db "able to get     "
+    ;db "through if that "
+    ;db "lazy walrus is  "
+    ;db "in the way!@"
 
 Dialog24B:: ;P4;🆖; top-left outside bunny
-    db "Ahhh... Sigh... "
-    db "On such a nice  "
-    db "day, we need a  "
-    db "song from Marin!@"
+    toki "mu lape... suno li suwi..."
+    toki "mi wile a kute e kalama musi a!"
+    toki_li_pini
+    ;db "あ－あ　こんなひには．．やっぱ　"
+    ;db "アレだよな　アレ．．．．　　　　"
+    ;db "@"
+    ;db "Ahhh... Sigh... "
+    ;db "On such a nice  "
+    ;db "day, we need a  "
+    ;db "song from Marin!@"
 
 Dialog24C:: ;P4;🆖; top-right outside bunny
-    db "Hey! Did ya know"
-    db "Animal Village  "
-    db "and Mabe Village"
-    db "are sister      "
-    db "cities?  Yes,   "
-    db "even though they"
-    db "aren't large    "
-    db "enough to be    "
-    db "called cities..."
-    db "Anyway, I heard "
-    db "from a very good"
-    db "source that they"
-    db "have a Dream    "
-    db "Shrine in Mabe, "
-    db "and that it has "
-    db "something good  "
-    db "inside...  Is   "
-    db "that true?@"
+    toki "ma tomo soweli en ma tomo [mu en pilin en] li olin."
+    toki "ona tu li lili, li esun e jan e musi e moku e pona."
+    toki "ma tomo [mu en pilin en] la, tomo sewi lape li lon."
+    toki "ijo pona li lon insa anu seme..."
+    toki_li_pini
+    ;db "どうぶつむらと、メ－ベのむらは　"
+    ;db "しまいていけいとし　なんだ　　　"
+    ;db "としって　いうほどじゃ　　　　　"
+    ;db "ないけどね．．．　　　　　　　　"
+    ;db "カンケイないけど、メ－ベのむらに"
+    ;db "ユメのほこらってのがあるでしょ。"
+    ;db "ある　たしかなスジのはなしじゃ　"
+    ;db "ＸＸＸが、おいてあるんだってさ。"
+    ;db "ホントかな？．．．@"
+    ;db "Hey! Did ya know"
+    ;db "Animal Village  "
+    ;db "and Mabe Village"
+    ;db "are sister      "
+    ;db "cities?  Yes,   "
+    ;db "even though they"
+    ;db "aren't large    "
+    ;db "enough to be    "
+    ;db "called cities..."
+    ;db "Anyway, I heard "
+    ;db "from a very good"
+    ;db "source that they"
+    ;db "have a Dream    "
+    ;db "Shrine in Mabe, "
+    ;db "and that it has "
+    ;db "something good  "
+    ;db "inside...  Is   "
+    ;db "that true?@"
 
 Dialog24D:: ;P4;🆖; bottom-right outide bunny
-    db "I can't go to   "
-    db "Mabe Village    "
-    db "because of all  "
-    db "the monsters.   "
-    db "I hope Marin    "
-    db "is all right.@"
+    toki "tenpo ni la, monsuta mute li lon,"
+    toki "la mi ken ala tawa ma tomo [mu en pilin en]."
+    toki "mu ike..."
+    toki "jan kalama [mu a loje ijo nena] o awen pona..."
+    toki_li_pini
+    ;db "さいきん　かいぶつがふえちゃって"
+    ;db "メ－ベのむらに　いけなくってさ　"
+    ;db "ハァ．．．マリンちゃん　　　　　"
+    ;db "げんきかな．．．．　　　　　　　"
+    ;db "@"
+    ;db "I can't go to   "
+    ;db "Mabe Village    "
+    ;db "because of all  "
+    ;db "the monsters.   "
+    ;db "I hope Marin    "
+    ;db "is all right.@"

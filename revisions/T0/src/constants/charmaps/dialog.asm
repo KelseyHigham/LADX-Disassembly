@@ -210,6 +210,7 @@ charmap         "<glass>", $9a
   nanpa_sitelen    "supa", $9c
   nanpa_sitelen    "taso", $9d
   nanpa_sitelen   "taso,", $9d
+  nanpa_sitelen  ", taso", $9d
   nanpa_sitelen    "tomo", $9e
   nanpa_sitelen    "walo", $9f
 
