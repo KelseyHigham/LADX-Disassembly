@@ -1,3 +1,15 @@
+# LADX Toki Pona Translation
+
+i, waso Keli, am doing all the translating because i want to!! but i'd love some specific kinds of help!
+- tell me if you're confused by one of my translations! i want everything to be understandable with little effort.
+- if you're good at pixel typography, i'd love help adjusting the following graphics:
+  - the wall of the stealing cutscene
+  - player select ("sina jan seme?")
+  - game over ("sina moli")
+  - the speech bubble in that enemy sprite sheet
+
+---
+
 # Links Awakening DX Disassembly
 
 Disassembly of one of my favorite games. Taking it easy for now.
