@@ -1108,10 +1108,14 @@ RenderIntroEntity::
     call func_001_762B                            ; $7534: $CD $2B $76
     ret                                           ; $7537: $C9
 
-Data_001_7538::
-    db   $00, $00, $1C, $02, $00, $08, $1E, $02   ; $7538 ; $7538
-    db   $10, $F8, $20, $02, $10, $00, $22, $02   ; $7540 ; $7540
-    db   $10, $08, $24, $02, $10, $10, $26, $02   ; $7548 ; $7548
+Data_001_7538:: ; ship
+    ;     Y    X   tile attr
+    db   $00, $00, $1C, $02
+    db   $00, $08, $1E, $02
+    db   $10, $F8, $20, $02
+    db   $10, $00, $22, $02
+    db   $10, $08, $24, $02
+    db   $10, $10, $26, $02
 
 Data_001_7550::
     db $F8, $04, $32, $01, $E8, $04, $32, $01, $D8, $04, $32, $01, $C8, $04, $32, $01 ; $7550
@@ -1195,19 +1199,35 @@ RenderIntroShip::
     pop  bc                                       ; $75C9: $C1
     ret                                           ; $75CA: $C9
 
-Data_001_75CB::
-    db   $00, $00, $34, $01, $00, $08, $36, $01   ; $75CB ; $75CB
-    db   $10, $00, $2C, $01, $20, $F8, $2C, $01   ; $75D3 ; $75D3
-    db   $28, $00, $2E, $21, $30, $F0, $2E, $01   ; $75DB ; $75DB
-    db   $08, $00, $36, $21, $08, $08, $34, $21   ; $75E3 ; $75E3
-    db   $18, $00, $30, $01, $18, $08, $2C, $21   ; $75EB ; $75EB
-    db   $28, $10, $2E, $21, $28, $10, $2E, $21   ; $75F3 ; $75F3
-    db   $00, $08, $34, $21, $00, $00, $36, $21   ; $75FB ; $75FB
-    db   $10, $08, $2C, $21, $20, $10, $2C, $21   ; $7603 ; $7603
-    db   $28, $08, $2E, $01, $30, $18, $2E, $21   ; $760B ; $760B
-    db   $08, $08, $36, $01, $08, $00, $34, $01   ; $7613 ; $7613
-    db   $18, $08, $30, $21, $18, $00, $2C, $01   ; $761B ; $761B
-    db   $28, $F8, $2E, $01, $28, $F8, $2E, $01   ; $7623 ; $7623
+Data_001_75CB:: ; lightning strikes
+    ;     Y    X   tile attr
+    db   $00, $00, $34, $01 ; cloud
+    db   $00, $08, $36, $01
+    db   $10, $00, $2C, $01 ; lightning
+    db   $20, $F8, $2C, $01
+    db   $28, $00, $2E, $21
+    db   $30, $F0, $2E, $01
+
+    db   $08, $00, $36, $21 ; cloud
+    db   $08, $08, $34, $21
+    db   $18, $00, $30, $01 ; lightning
+    db   $18, $08, $2C, $21
+    db   $28, $10, $2E, $21
+    db   $28, $10, $2E, $21
+
+    db   $00, $08, $34, $21 ; cloud
+    db   $00, $00, $36, $21
+    db   $10, $08, $2C, $21 ; lightning
+    db   $20, $10, $2C, $21
+    db   $28, $08, $2E, $01
+    db   $30, $18, $2E, $21
+
+    db   $08, $08, $36, $01 ; cloud
+    db   $08, $00, $34, $01
+    db   $18, $08, $30, $21 ; lightning
+    db   $18, $00, $2C, $01
+    db   $28, $F8, $2E, $01
+    db   $28, $F8, $2E, $01
 
 func_001_762B::
     ld   hl, wEntitiesStatusTable                 ; $762B: $21 $80 $C2
@@ -1460,7 +1480,7 @@ IntroMarinState4::
     ret                                           ; $77BC: $C9
 
 ; define sprite variants by selecting tile n° and setting OAM attributes (palette + flags) in a list
-Unknown003SpriteVariants::
+Unknown003SpriteVariants:: ; sparkles
 .variant0 ; $77BD
     db $38, OAMF_PAL0
     db $38, OAMF_PAL0 | OAMF_XFLIP
@@ -1516,8 +1536,9 @@ RenderIntroSparkle::
     ret                                           ; $7807: $C9
 
 IF LANG_JP
-Data_001_7808::
-    db   $00, $10, $2C, $05
+Data_001_7808:: ; DMG
+    ;     Y    X   tile attr
+    db   $00, $10, $2C, $05 ; DX gold, on black palm tree
     db   $10, $10, $2A, $05
     db   $00, $10, $28, $05
     db   $10, $08, $26, $05
@@ -1526,7 +1547,7 @@ Data_001_7808::
     db   $00, $00, $20, $05
 
 Data_001_7828::
-    db   $10, $18, $4F, $16
+    db   $10, $18, $4F, $16 ; DX gold, on white cloud
     db   $00, $18, $4D, $16
     db   $10, $10, $4B, $16
     db   $00, $10, $49, $16
@@ -1536,8 +1557,8 @@ Data_001_7828::
     db   $00, $00, $41, $16
 .end
 
-Data_001_7850:
-    db   $10, $10, $2A, $05
+Data_001_7850: ; GBC
+    db   $10, $10, $2A, $05 ; DX gold, on black palm tree
     db   $00, $10, $28, $05
     db   $10, $08, $26, $05
     db   $00, $08, $24, $05
@@ -1545,13 +1566,13 @@ Data_001_7850:
     db   $00, $00, $20, $05
 
 Data_001_7870:
-    db   $10, $15, $5A, $07
+    db   $10, $15, $5A, $07 ; DX white highlight, on black and white
     db   $00, $15, $58, $07
     db   $10, $0D, $56, $07
     db   $00, $0D, $54, $07
     db   $10, $05, $52, $07
     db   $00, $05, $50, $07
-    db   $10, $18, $4E, $16
+    db   $10, $18, $4E, $16 ; DX gold, on white cloud (different tile?)
     db   $00, $18, $4C, $16
     db   $10, $10, $4A, $16
     db   $00, $10, $48, $16
@@ -1562,7 +1583,7 @@ Data_001_7870:
 .end
 
 Data_001_7850_alt:
-    db   $10, $00, $5E, $14
+    db   $10, $00, $5E, $14 ; DX shine animation
     db   $00, $00, $5C, $14
     db   $10, $00, $62, $14
     db   $00, $60, $60, $14
@@ -1581,8 +1602,8 @@ Data_001_7850_alt:
     db   $10, $18, $7E, $14
     db   $00, $18, $7C, $14
 ELSE
-Data_001_7808::
-    db   $10, $18, $2E, $05                       ; $7808
+Data_001_7808:: ; DMG
+    db   $10, $18, $2E, $05                       ; $7808 ; DX on blue sky
     db   $00, $18, $2C, $05                       ; $780C
     db   $10, $10, $2A, $05                       ; $7810
     db   $00, $10, $28, $05                       ; $7814
@@ -1592,9 +1613,9 @@ Data_001_7808::
     db   $00, $00, $20, $05                       ; $7824
 
 Data_001_7828::
-    db   $00, $28, $52, $16                       ; $7828
+    db   $00, $28, $52, $16                       ; $7828 ; TM on white cloud
     db   $00, $20, $50, $16                       ; $782C
-    db   $10, $18, $4E, $16                       ; $7830
+    db   $10, $18, $4E, $16                       ; $7830 ; DX on white cloud
     db   $00, $18, $4C, $16                       ; $7834
     db   $10, $10, $4A, $16                       ; $7838
     db   $00, $10, $48, $16                       ; $783C
@@ -1604,8 +1625,8 @@ Data_001_7828::
     db   $00, $00, $40, $16                       ; $784C
 .end
 
-Data_001_7850::
-    db   $10, $18, $2E, $05                       ; $7850
+Data_001_7850:: ; GBC
+    db   $10, $18, $2E, $05                       ; $7850 ; DX on blue sky
     db   $00, $18, $2C, $05                       ; $7854
     db   $10, $10, $2A, $05                       ; $7858
     db   $00, $10, $28, $05                       ; $785C
@@ -1615,9 +1636,9 @@ Data_001_7850::
     db   $00, $00, $20, $05                       ; $786C
 
 Data_001_7870::
-    db   $00, $28, $52, $16                       ; $7870
+    db   $00, $28, $52, $16                       ; $7870 ; TM on white cloud
     db   $00, $20, $50, $16                       ; $7874
-    db   $10, $18, $4E, $16                       ; $7878
+    db   $10, $18, $4E, $16                       ; $7878 ; DX on white cloud
     db   $00, $18, $4C, $16                       ; $787C
     db   $10, $10, $4A, $16                       ; $7880
     db   $00, $10, $48, $16                       ; $7884
@@ -1651,62 +1672,62 @@ ENDC
 Data_001_78A0::
 IF LANG_JP
          ; Loaded in $18 byte chunks
-    db   $F5, $7A, $00, $00, $00, $00, $00, $00
-    db   $F5, $7A, $FF, $7F, $FF, $7F, $FF, $7F
-    db   $F5, $7A, $FF, $7F, $FF, $7F, $00, $00
+    rgb   #A8B8F0, #000000, #000000, #000000 ; DX on black palm tree, all-black start
+    rgb   #A8B8F0, #F8F8F8, #F8F8F8, #F8F8F8 ; DX on white cloud,     all-white start
+    rgb   #A8B8F0, #F8F8F8, #F8F8F8, #000000 ; DX highlight,          black and white start
 
-    db   $F5, $7A, $84, $04, $42, $00, $00, $00
-    db   $F5, $7A, $BE, $6F, $9C, $6B, $5A, $6B
-    db   $F5, $7A, $FF, $7F, $7B, $6B, $A5, $14
+    rgb   #A8B8F0, #202008, #101000, #000000
+    rgb   #A8B8F0, #F0E8D8, #E0E0D0, #D0D0D0
+    rgb   #A8B8F0, #F8F8F8, #D8D8D0, #282828
 
-    db   $F5, $7A, $E8, $08, $63, $00, $00, $00
-    db   $F5, $7A, $9E, $5F, $39, $5B, $D6, $5A
-    db   $F5, $7A, $FF, $7F, $F7, $5A, $29, $25
+    rgb   #A8B8F0, #403810, #181800, #000000
+    rgb   #A8B8F0, #F0E0B8, #C8C8B0, #B0B0B0
+    rgb   #A8B8F0, #F8F8F8, #B8B8B0, #484848
 
-    db   $F5, $7A, $4C, $09, $A5, $00, $00, $00
-    db   $F5, $7A, $7D, $4F, $D6, $46, $31, $46
-    db   $F5, $7A, $FF, $7F, $73, $46, $CE, $39
+    rgb   #A8B8F0, #605010, #282800, #000000
+    rgb   #A8B8F0, #E8D898, #B0B088, #888888
+    rgb   #A8B8F0, #F8F8F8, #989888, #707070
+                                             ; ...fade...
+    rgb   #A8B8F0, #806818, #303000, #000000
+    rgb   #A8B8F0, #E8C878, #989868, #686868
+    rgb   #A8B8F0, #F8F8F8, #808068, #909090
 
-    db   $F5, $7A, $B0, $0D, $C6, $00, $00, $00
-    db   $F5, $7A, $3D, $3F, $73, $36, $AD, $35
-    db   $F5, $7A, $FF, $7F, $10, $36, $52, $4A
+    rgb   #A8B8F0, #A08018, #404000, #000000
+    rgb   #A8B8F0, #E0C058, #808040, #404040
+    rgb   #A8B8F0, #F8F8F8, #606040, #B8B8B8
 
-    db   $F5, $7A, $14, $0E, $08, $01, $00, $00
-    db   $F5, $7A, $1C, $2F, $10, $22, $08, $21
-    db   $F5, $7A, $FF, $7F, $8C, $21, $F7, $5E
+    rgb   #A8B8F0, #C09820, #484800, #000000
+    rgb   #A8B8F0, #E0B838, #686820, #202020
+    rgb   #A8B8F0, #F8F8F8, #404020, #D8D8D8
 
-    db   $F5, $7A, $78, $12, $29, $01, $00, $00
-    db   $F5, $7A, $FC, $1E, $AD, $11, $84, $10
-    db   $F5, $7A, $FF, $7F, $08, $11, $7B, $6F
-
-    db   $F5, $7A, $DC, $12, $4A, $01, $00, $00
-    db   $F5, $7A, $DC, $12, $4A, $01, $00, $00
-    db   $F5, $7A, $FF, $7F, $A5, $00, $FF, $7F
+    rgb   #A8B8F0, #E0B020, #505000, #000000 ; DX on black palm tree, gold end
+    rgb   #A8B8F0, #E0B020, #505000, #000000 ; DX on white cloud,     gold end
+    rgb   #A8B8F0, #F8F8F8, #282800, #F8F8F8 ; DX highlight,          white end
 ELSE
          ; Loaded in $10 byte chunks
-    db   $F5, $7A, $8D, $7D, $8D, $7D, $8D, $7D   ; $78A0
-    db   $F5, $7A, $FF, $7F, $FF, $7F, $FF, $7F   ; $78A8
+    rgb   #A8B8F0, #6860F8, #6860F8, #6860F8 ; DX on blue sky,    all-blue start
+    rgb   #A8B8F0, #F8F8F8, #F8F8F8, #F8F8F8 ; DX on white cloud, all-white start
 
-    db   $F5, $7A, $6C, $6D, $8D, $71, $CF, $75   ; $78B0
-    db   $F5, $7A, $7B, $6F, $BD, $73, $FF, $77   ; $78B8
+    rgb   #A8B8F0, #6058D8, #6860E0, #7870E8
+    rgb   #A8B8F0, #D8D8D8, #E8E8E0, #F8F8E8
 
-    db   $F5, $7A, $2A, $5D, $8E, $65, $12, $6E   ; $78C0
-    db   $F5, $7A, $F7, $5E, $5B, $67, $DF, $6F   ; $78C8
+    rgb   #A8B8F0, #5048B8, #7060C8, #9080D8
+    rgb   #A8B8F0, #B8B8B8, #D8D0C8, #F8F0D8
 
-    db   $F5, $7A, $E8, $48, $8E, $59, $54, $66   ; $78D0
-    db   $F5, $7A, $52, $4A, $19, $5B, $BF, $67   ; $78D8
+    rgb   #A8B8F0, #403890, #7060B0, #A090C8
+    rgb   #A8B8F0, #909090, #C8C0B0, #F8E8C8 
+                                             ; ...fade...
+    rgb   #A8B8F0, #303070, #786090, #B8A0B0
+    rgb   #A8B8F0, #707070, #B8A890, #F8E8B0
 
-    db   $F5, $7A, $C6, $38, $8F, $49, $97, $5A   ; $78E0
-    db   $F5, $7A, $CE, $39, $B7, $4A, $BF, $5B   ; $78E8
+    rgb   #A8B8F0, #202048, #786078, #C8B0A0
+    rgb   #A8B8F0, #484848, #A89878, #F8E0A0
 
-    db   $F5, $7A, $84, $24, $8F, $3D, $D9, $52   ; $78F0
-    db   $F5, $7A, $29, $25, $75, $3E, $9F, $53   ; $78F8
+    rgb   #A8B8F0, #101028, #806060, #E0C090
+    rgb   #A8B8F0, #282828, #988060, #F8D890
 
-    db   $F5, $7A, $42, $14, $90, $31, $1C, $4B   ; $7900
-    db   $F5, $7A, $A5, $14, $13, $32, $7F, $4B   ; $7908
-
-    db   $F5, $7A, $00, $00, $B1, $21, $5F, $3F   ; $7910
-    db   $F5, $7A, $00, $00, $B1, $21, $5F, $3F   ; $7918
+    rgb   #A8B8F0, #000000, #886840, #F8D078 ; DX on blue sky,    gold end
+    rgb   #A8B8F0, #000000, #886840, #F8D078 ; DX on white cloud, gold end
 ENDC
 
 func_001_7920::
@@ -1961,7 +1982,7 @@ jr_001_7A19::
     ret                                           ; $7A26: $C9
 
 ; define sprite variants by selecting tile n° and setting OAM attributes (palette + flags) in a list
-Unknown004SpriteVariants::
+Unknown004SpriteVariants:: ; inert Link
 .variant0 ; $7A27
     db $10, OAMF_PAL0
     db $12, OAMF_PAL0
