@@ -1,3 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files
 # Prevent errors from checking out on Windows, then running `make` in WSL
-*.sh text eol=lf
 *.py text eol=lf
+
+# Enforce platform-specific encodings
+*.bat  text eol=crlf
+*.sh   text eol=lf
+*.md5  text eol=lf

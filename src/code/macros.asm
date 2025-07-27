@@ -1,16 +1,17 @@
 
-; Define a palette
-; usage: 
-;    rgb   #F8F8F8, #E83028, #B80028, #000000
+
+; GBC palette entry
+; usage:
+;    rgb   #F8F888, #000000, #10A840, #F8B888
 ; outputs:
-;    db   $FF, $7F, $DD, $14, $17, $14, $00, $00
+;    db   $FF, $47, $00, $00, $A2, $22, $FF, $46
 macro rgb
     REPT _NARG
       REDEF eval EQUS STRRPL("\1", "#", "$")
       REDEF arg EQU {eval}
-      redef red equ ((arg & $FF0000) >> 16) / 8
-      redef grn equ ((arg & $00FF00) >>  8) / 8
-      redef blu equ ((arg & $0000FF) >>  0) / 8
+      REDEF red EQU ((arg & $FF0000) >> 16) / 8
+      REDEF grn EQU ((arg & $00FF00) >>  8) / 8
+      REDEF blu EQU ((arg & $0000FF) >>  0) / 8
       dw (red) + (grn) << 5 + (blu) << 10
       SHIFT 1
     ENDR
