@@ -1076,19 +1076,19 @@ Dialog0F6:: ;🆖; Nightmare (final boss)
     db "Our world...    "
     db "Our... world... @"
 
-Dialog0F7:: ;🆖; Marin
+Dialog0F7:: ;🆖; Marin, following, Trendy Game
     db "Wow!  #####, can"
     db "I try this?!    "
     db "What do you say?"
     db "    Okay No Way<ask>"
 
-Dialog0F8:: ;🆖; Marin
+Dialog0F8:: ;🆖; Marin, if you say no
     db "C'mon!  I want  "
     db "to do it! Can I?"
     db "It looks so fun!"
     db "    Yes  Okay<ask>"
 
-Dialog0F9:: ;🆖; Trendy Gamester
+Dialog0F9:: ;🆖; Trendy Gamester, after Marin grabs him with the crane
     db "You're good!    "
     db "You're a pro,   "
     db "aren't you?     "

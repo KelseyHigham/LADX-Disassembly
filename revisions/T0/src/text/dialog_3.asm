@@ -38,7 +38,7 @@ Dialog10A:: ;☀️; Photographer
     ;db "それじゃ　みつかるまえに　　　　"
     ;db "#####もにげろよ！じゃっ@"
 
-Dialog10B:: ;☀️; Photographer
+Dialog10B:: ;☀️; Photographer ; plays at Toronbo Shores, and probably after every event?
     toki "mi tawa. mi pali e sitelen tan sina tawa sina."
     toki "o kama a! o lukin e ona a!"
     toki_li_pini
@@ -425,7 +425,7 @@ Dialog120:: ;☀️; Kid
     ;db "なんでかな．．おいらこどもだから"
     ;db "わかんないや。　@"
 
-Dialog121:: ;🆖; Kid
+Dialog121:: ;🆖; Every kid, when Marin is following
     db "Hey... Where're "
     db "you two going   "
     db "together?  Hunh?"

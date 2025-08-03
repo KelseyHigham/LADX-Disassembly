@@ -2391,7 +2391,8 @@ Dialog08E:: ;p?;☀️; Narrator
     ;db "@"
 
 Dialog08F:: ;p?;☀️; Marin
-    toki "o pini a! waso li pona a! mu ike a!"
+    toki "o pini a! waso li pona a! mu ike a!@"
+    toki_li_pini
     ;db "No!  No!  Poor  "
     ;db "hen!  Stop that!@"
     ;db "ダメ－－ッ！　ニワトリさんが　　"

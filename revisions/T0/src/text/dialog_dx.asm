@@ -6,8 +6,9 @@
 ; sitelen are defined in `src/constants/charmaps/dialog.asm`
 MACRO toki
     db \1
-    if charlen(\1) > 16 ; charlen counts sitelen after string conversion
-        warn "text has more than 16 sitelen: \1"
+    REDEF sitelencount EQU charlen(\1) ; charlen() counts sitelen after string conversion
+    if sitelencount > 16
+        fail "text has {d:sitelencount} sitelen. cap to 16: \1"
     endc
     ds 16 - charlen(\1), " " ; might crash lol
 ENDM
@@ -70,31 +71,31 @@ Dialog254:: ;☀️; Richard, Richard photo part 4
     toki "mi weka a!"
     toki_li_pini
 
-Dialog255:: ;🆖; Marin, probably
+Dialog255:: ;🆖; Marin, Toronbo Shores
     db "This is my first"
     db "walk with you,  "
     db "#####.@"
 
-Dialog256:: ;🆖; Marin, probably
+Dialog256:: ;🆖; Marin, Toronbo Shores
     db ". . . . .@"
 
-Dialog257:: ;🆖; Marin, probably
+Dialog257:: ;🆖; Marin, Toronbo Shores
     db "This cliff will "
     db "be our secret   "
     db "place. @"
 
-Dialog258:: ;🆖; Marin, probably
+Dialog258:: ;🆖; Marin, Toronbo Shores
     db "Aren't you going"
     db "to say anything?@"
 
-Dialog259:: ;🆖; Photographer, maybe
-    db "Oh how I love   "
-    db "pictures! Why   "
+Dialog259:: ;🆖; Photographer, Toronbo Shores
+    db "Oh how I love   " ; make it very clear that it's the Photographer, not Marin, talking.
+    db "pictures! Why   " ; he doesn't actually appear in frame
     db "don't you take  "
     db "a picture when  "
     db "no one is       "
     db "around? You can "
-    db "call it . . .@"
+    db "call it . . .@" ; he doesn't actually give it a name
 
 Dialog25A:: ;🆖; Narrator
     db "You've got the  "
@@ -186,12 +187,12 @@ Dialog266:: ;☀️; Narrator
 Dialog267:: ;☀️; Book, Narrator
     toki "ma kule sin li lon anpa pi kiwen moli luka."
     toki ""
-    toki " nanpa tu wan <up>  nanpa tu tu <right>  nanpa luka <up>"
-    toki " nanpa tu <left>  nanpa wan <down>"
-    toki "o alasa kepeken wawa sina ale  o open e nasin sin a!"
+    toki "nanpa tu wan la <up> nanpa tu tu la <right> nanpa luka la <up>"
+    toki " nanpa tu la <left>  nanpa wan la <down>"
+    toki "o alasa kepeken wawa ale sina  o open e nasin sin a!"
     toki "jan li pona la ona li kama jo e wawa kule."
     toki ""
-    toki "a... ma kule li seme?"
+    toki "n... ma kule li seme?"
     toki_li_pini
     ;db "New world of    "
     ;db "color under the "
