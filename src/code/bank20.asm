@@ -5931,99 +5931,36 @@ IndoorEntitySpritesheetsTable::
 ._80  db   $A4, $4D, $FF, $FF ;; 20:783B
 
 EndingWaterGeyserPalettes::
-    dw   Data_020_7845
-    dw   Data_020_787D
-    dw   Data_020_78B5
+    dw   EndingWaterGeyserPalette1
+    dw   EndingWaterGeyserPalette2
+    dw   EndingWaterGeyserPalette3
 
-Data_020_7845:
-    db   $00, $00
-    db   $C5, $4C
-    db   $68, $7D
-    db   $FF, $7F
-    db   $00, $00
-    db   $62, $3C
-    db   $E5, $68
-    db   $D6, $5E
-    db   $00, $00
-    db   $00, $20
-    db   $00, $50
-    db   $AD, $35
-    db   $00, $00
-    db   $0F, $66
-    db   $D6, $6E
-    db   $FF, $7F
-    db   $0F, $66
-    db   $0F, $66
-    db   $D6, $6E
-    db   $FF, $7F
-    db   $AC, $59
-    db   $0F, $66
-    db   $D6, $6E
-    db   $FF, $7F
-    db   $49, $4D
-    db   $0F, $66
-    db   $D6, $6E
-    db   $FF, $7F
+EndingWaterGeyserPalette1:
+    rgb   #000000, #283098, #4058F8, #F8F8F8
+    rgb   #000000, #101878, #2838D0, #B0B0B8
+    rgb   #000000, #000040, #0000A0, #686868
+    rgb   #000000, #7880C8, #B0B0D8, #F8F8F8
+    rgb   #7880C8, #7880C8, #B0B0D8, #F8F8F8
+    rgb   #6068B0, #7880C8, #B0B0D8, #F8F8F8
+    rgb   #485098, #7880C8, #B0B0D8, #F8F8F8
 
-Data_020_787D:
-    db   $00, $00
-    db   $68, $7D
-    db   $FF, $7F
-    db   $C5, $4C
-    db   $00, $00
-    db   $E5, $68
-    db   $D6, $5E
-    db   $62, $3C
-    db   $00, $00
-    db   $00, $50
-    db   $AD, $35
-    db   $00, $20
-    db   $00, $00
-    db   $D6, $6E
-    db   $FF, $7F
-    db   $0F, $66
-    db   $C5, $4C
-    db   $D6, $6E
-    db   $FF, $7F
-    db   $0F, $66
-    db   $62, $3C
-    db   $D6, $6E
-    db   $FF, $7F
-    db   $0F, $66
-    db   $00, $20
-    db   $D6, $6E
-    db   $FF, $7F
-    db   $0F, $66
+EndingWaterGeyserPalette2:
+    rgb   #000000, #4058F8, #F8F8F8, #283098
+    rgb   #000000, #2838D0, #B0B0B8, #101878
+    rgb   #000000, #0000A0, #686868, #000040
+    rgb   #000000, #B0B0D8, #F8F8F8, #7880C8
+    rgb   #283098, #B0B0D8, #F8F8F8, #7880C8
+    rgb   #101878, #B0B0D8, #F8F8F8, #7880C8
+    rgb   #000040, #B0B0D8, #F8F8F8, #7880C8
 
-Data_020_78B5:
-    db   $00, $00
-    db   $FF, $7F
-    db   $C5, $4C
-    db   $68, $7D
-    db   $00, $00
-    db   $D6, $5E
-    db   $62, $3C
-    db   $E5, $68
-    db   $00, $00
-    db   $AD, $35
-    db   $00, $20
-    db   $00, $50
-    db   $00, $00
-    db   $FF, $7F
-    db   $0F, $66
-    db   $D6, $6E
-    db   $68, $7D
-    db   $FF, $7F
-    db   $0F, $66
-    db   $D6, $6E
-    db   $E5, $68
-    db   $FF, $7F
-    db   $0F, $66
-    db   $D6, $6E
-    db   $00, $50
-    db   $FF, $7F
-    db   $0F, $66
-    db   $D6, $6E
+EndingWaterGeyserPalette3:
+    rgb   #000000, #F8F8F8, #283098, #4058F8
+    rgb   #000000, #B0B0B8, #101878, #2838D0
+    rgb   #000000, #686868, #000040, #0000A0
+    rgb   #000000, #F8F8F8, #7880C8, #B0B0D8
+    rgb   #4058F8, #F8F8F8, #7880C8, #B0B0D8
+    rgb   #2838D0, #F8F8F8, #7880C8, #B0B0D8
+    rgb   #0000A0, #F8F8F8, #7880C8, #B0B0D8
 
 ; Copy palette data to wDC10
 ; (Called during the Credits water geyser sequence; to animate the water?)
@@ -6051,7 +5988,8 @@ func_020_78ED::
     ld   [wPaletteDataFlags], a                   ;; 20:7911 $EA $D1 $DD
     ret                                           ;; 20:7914 $C9
 
-Data_020_7915::
+Data_020_7915:: ; geyser animation probably?
+;         y    x   tile attr
     db   $00, $00, $10, $17, $00, $08, $04, $17, $00, $10, $06, $17, $00, $18, $06, $37
     db   $00, $20, $04, $37, $00, $28, $10, $37, $10, $00, $08, $17, $10, $08, $0A, $17
     db   $10, $10, $0C, $17, $10, $18, $0C, $37, $10, $20, $0A, $37, $10, $28, $08, $37
