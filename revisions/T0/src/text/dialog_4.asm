@@ -914,20 +914,20 @@ Dialog1D8:: ;🆖; Marin
 
 
 Dialog1D9:: ;🆖; Marin
-    db "... ... ... ... "
-    db "... ... ... ... "
-    db "If I was a sea  "
-    db "gull, I would   "
-    db "fly as far as I "
-    db "could!  I would "
-    db "fly to far away "
-    db "places and sing "
-    db "for many people!"
-    db "...If I wish to "
-    db "the Wind Fish,  "
-    db "I wonder if my  "
-    db "dream will come "
-    db "true... ... ...@"
+    ;db "... ... ... ... "
+    ;db "... ... ... ... "
+    ;db "If I was a sea  "
+    ;db "gull, I would   "
+    ;db "fly as far as I "
+    ;db "could!  I would "
+    ;db "fly to far away "
+    ;db "places and sing "
+    ;db "for many people!"
+    ;db "...If I wish to "
+    ;db "the Wind Fish,  "
+    ;db "I wonder if my  "
+    ;db "dream will come "
+    ;db "true... ... ...@"
 ;    db "　．．．．　．．．．　．．．．　"
 ;    db "　　　　　　　　　　　　　　　　"
 ;    db "わたしが、カモメだったら．．．．"
@@ -937,24 +937,40 @@ Dialog1D9:: ;🆖; Marin
 ;    db "「かぜのさかな」に、いのれば　　"
 ;    db "わたしのおねがい　かなうのかしら"
 ;    db "@"
+    toki " .... .... ...."
+    toki ""
+    toki "mi wile kama waso..."
+    toki "mi wile tawa weka wawa."
+    toki "mi wile tawa ma mute."
+    toki "mi wile kalama musi lon poka pi jan mute."
+    toki "mi toki e wile mi tawa sewi kala kon la"
+    toki "ona li waso ala waso e mi..." ; ken, ken e ni/mi, pana, pali, waso e mi
+    toki_li_pini
 
 Dialog1DA:: ;🆖; Marin, Link
-    db "Hey!  Are you   "
-    db "listening?      "
-    db "#####, are you  "
-    db "listening to me?"
-    db "    Yeah No...<ask>"
+    ;db "Hey!  Are you   "
+    ;db "listening?      "
+    ;db "#####, are you  "
+    ;db "listening to me?"
+    ;db "    Yeah No...<ask>"
 ;    db "ねえ#####ちゃんときいてる？"
 ;    db "　　　　うん　　　ぜんぜん<ask>"
+    toki "jan [#####] o, sina awen ala awen kute?"
+    toki "    awen    ala a<ask>"
+    toki_li_pini
 
 Dialog1DB:: ;🆖; Marin, if you say yes
-    db "I want to know  "
-    db "everything about"
-    db "you...Err...Uhh,"
-    db "Ha ha ha ha!@"
+    ;db "I want to know  "
+    ;db "everything about"
+    ;db "you...Err...Uhh,"
+    ;db "Ha ha ha ha!@"
 ;    db "いつか、#####のふるさとに　"
 ;    db "いってみたいな．．．．．．　　　"
 ;    db "なあんてね！　　フフフ．．．@"
+    toki "tenpo kama la, mi wile tawa ma sina..."
+    toki ""
+    toki "a  n  mi musi taso a a..."
+    toki_li_pini
 
 Dialog1DC:: ;🆖; Marin, probably
     db "Hunh? The walrus"
@@ -978,14 +994,17 @@ Dialog1DD:: ;🆖; Tarin, sleeping, while Marin is following
 ;    db "@"
 
 Dialog1DE:: ;🆖; Marin, if you say no
-    db "Humph! Your head"
-    db "is always in the"
-    db "clouds! Will you"
-    db "please listen to"
-    db "me next time?!@"
+    ;db "Humph! Your head"
+    ;db "is always in the"
+    ;db "clouds! Will you"
+    ;db "please listen to"
+    ;db "me next time?!@"
 ;    db "モウ！うわのそらなんだからあ．．"
 ;    db "こんどは、ちゃんときいてね。　　"
 ;    db "@"
+    toki "a  tenpo mute la sina lape e lawa..."
+    toki "tenpo kama la o kute."
+    toki_li_pini
 
 Dialog1DF:: ;🆖; idk
     db "Ha! That's all  "
