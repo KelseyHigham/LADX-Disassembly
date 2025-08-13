@@ -1435,7 +1435,7 @@ ENDC
 ret_001_4F3A::
     ret                                           ;; 01:4F3A $C9
 
-Data_001_4F3B::
+Data_001_4F3B:: ; digit tiles
     db   $B0, $B1, $B2, $B3, $B4, $B5, $B6, $B7   ;; 01:4F3B
     db   $B8, $B9                                 ;; 01:4F43
 
