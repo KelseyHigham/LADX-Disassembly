@@ -54,3 +54,4 @@ DumpBanks
 *.sn7
 *.sn8
 *.sn9
+/private
