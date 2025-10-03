@@ -108,6 +108,11 @@ Dialog197:: ;🆖; Marin, probably
     db "wakes up, will  "
     db "he make my wish "
     db "come true?@"
+    ;db "「かぜのさかな」のうたは　　　　"
+    ;db "めざめの　うたなんだって。　　　"
+    ;db "もし、かみさまが　おきたら．．．"
+    ;db "わたしの　ねがいきいてくれるかな"
+    ;db "@"
 
 Dialog198:: ;🆖; Marin, probably
     db "Eh?  You want me"
@@ -116,11 +121,21 @@ Dialog198:: ;🆖; Marin, probably
     db "wait out here..."
     db "Take care of    "
     db "yourself, #####!@"
+    ;db "えっ？　なかに　はいるの？　　　"
+    ;db "わたし、ここでまってる．．．　　"
+    ;db "きをつけてネ#####．．．　　"
+    ;db "@"
 
-Dialog199:: ;🆖; Marin, probably
-    db "Ahhh!  Ahhh, you"
-    db "are a bad boy,  "
-    db "#####!@"
+Dialog199:: ;🆖; Marin, while following, if you break a pot in her house
+    ;db "Ahhh!  Ahhh, you"
+    ;db "are a bad boy,  "
+    ;db "#####!@"
+    ;db "　　　　　あ－－っ！　　　　　　"
+    ;db "．．．　あ－あ、イケナイんだあ！"
+    ;db "@"
+    toki "     a--!"
+    toki "... o ni ala a!"
+    toki_li_pini
 
 Dialog19A:: ;P3;☀️; Crazy Tracy, after you buy
     ;db "Here's some     "

@@ -656,6 +656,7 @@ Dialog0D0:: ;🆖; Wind Fish
     db " ... ... ... ..."
     db " I AM THE WIND  "
     db "      FISH...   "
+    db "<flower2><skull><link><marin><tarin><yoshi><ribbon><dogfood><bananas><stick><honeycomb><pineapple><flower2><broom><fishhook><bra><scale><glass><letter>"
     db " LONG HAS BEEN  "
     db "  MY SLUMBER... "
     db " IN MY DREAMS..."
