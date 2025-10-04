@@ -1,61 +1,81 @@
+; Boss, FinalBoss, EagleBossTransition, InstrumentSurfHarp
 MusicSpeedData_1e_4a9d::
     db   $01, $03, $06, $0c, $18, $30, $09, $12, $24, $02, $04, $08, $01, $01, $48
 
+; FinalBoss, ObtainInstrument, OverworldSwordless, DreamShrineDream,
+; FinalBossDefeat
 MusicSpeedData_1e_4aac::
     db   $02, $04, $08, $10, $20, $40, $0c, $18, $30, $02, $05, $03, $01, $01, $60
 
+; Miniboss, EagleBossLoop, EagleBossTransition, TailCave, BottleGrotto,
+; AnglersTunnel, DreamShrineSleep, SouthernShrine, Owl, InstrumentWindMarimba,
+; Henhouse
 MusicSpeedData_1e_4abb::
     db   $03, $05, $0a, $14, $28, $50, $0f, $1e, $3c, $02, $08, $10, $02, $01, $78
 
+; TurtleRock, IntroWakeUp, DreamShrineBed, DreamShrineDream, Cave,
+; MarinUnused, TitleCutscene, DreamShrineSleep, InstrumentCoralTriangle,
+; RoosterRevival, WindFish, BossDefeat
 MusicSpeedData_1e_4aca::
     db   $03, $06, $0c, $18, $30, $60, $12, $24, $48, $03, $08, $10, $02, $04, $90
 
+; FileSelect, KeyCavern, AfterBoss, CatfishsMaw, EaglesTower,
+; OpenAnglersTunnel, MarinBeachTalk, TitleCutscene, FinalBoss,
+; EggBalladDefault, EggBalladBell, EggBalladHarp, EggBalladMarimba,
+; EggBalladTriangle, EggBalladOrgan, EggBalladAll, InstrumentSeaLilysBell,
+; InstrumentThunderDrum, MarinSing, LearnBallad, GhostHouse, FileSelectZelda,
+; HeartContainer
 MusicSpeedData_1e_4ad9::
     db   $03, $07, $0e, $1c, $38, $70, $15, $2a, $54, $04, $09, $12, $02, $01, $a8
 
+; TitleCutscene, FinalBossIntro, KanaletCastle, FaceShrine, 2dUnderground,
+; MarinOnBeach, MarinBeachTalk, InstrumentFullMoonCello,
+; InstrumentOrganOfEveningCalm, HeartContainer
 MusicSpeedData_1e_4ae8::
     db   $04, $08, $10, $20, $40, $80, $18, $30, $60, $04, $02, $01, $01, $00, $c0
 
+; EggMaze, InstrumentConchHorn, L2Sword
 MusicSpeedData_1e_4af7::
     db   $04, $09, $12, $24, $48, $90, $1b, $36, $6c, $05, $0c, $18, $18, $06, $d8
 
+; ManbosMambo
 MusicSpeedData_1e_4b06::
     db   $05, $0a, $14, $28, $50, $a0, $1e, $3c, $78, $05, $01, $01, $01, $01, $f0
 
 HardcodedData_1e_4b15::
     db   $10, $32, $22, $47, $60, $20, $00
 
-Music14Channel1::
-Music17Channel3::
-Music1cChannel3::
-Music1eChannel3::
-Music1fChannel3::
-Music1fChannel4::
-Music20Channel1::
-Music21Channel1::
-Music21Channel3::
-Music22Channel3::
-Music24Channel3::
-Music26Channel3::
-Music28Channel1::
-Music29Channel1::
-Music2aChannel1::
-Music2cChannel1::
-Music2dChannel1::
-Music2eChannel1::
-Music2eChannel3::
-Music41Channel2::
-Music56Channel3::
-Music58Channel3::
-Music59Channel3::
-Music5cChannel3::
-Music5dChannel1::
-Music5dChannel3::
-Music5eChannel3::
-    dw   ChannelDefinition_1e_4b22
-    dw   $ffff, Music14Channel1
+MusicTailCave_Channel1_rest_1C0::
+MusicAnglersTunnel_Channel3_rest_1C0::
+MusicIntroWakeUp_Channel3_rest_1C0::
+MusicDreamShrineSleep_Channel3_rest_1C0::
+MusicSouthernShrine_Channel3_rest_1C0::
+MusicSouthernShrine_Channel4_rest_1C0::
+MusicInstrumentFullMoonCello_Channel1_rest_1C0::
+Music2dUnderground_Channel1_rest_1C0::
+Music2dUnderground_Channel3_rest_1C0::
+MusicOwl_Channel3_rest_1C0::
+MusicDreamShrineBed_Channel3_rest_1C0::
+MusicCave_Channel3_rest_1C0::
+MusicInstrumentConchHorn_Channel1_rest_1C0::
+MusicInstrumentSeaLilysBell_Channel1_rest_1C0::
+MusicInstrumentSurfHarp_Channel1_rest_1C0::
+MusicInstrumentCoralTriangle_Channel1_rest_1C0::
+MusicInstrumentOrganOfEveningCalm_Channel1_rest_1C0::
+MusicInstrumentThunderDrum_Channel1_rest_1C0::
+MusicInstrumentThunderDrum_Channel3_rest_1C0::
+MusicEggBalladDefault_Channel2_rest_1C0::
+MusicL2Sword_Channel3_rest_1C0::
+MusicFaceShrine_Channel3_rest_1C0::
+MusicWindFish_Channel3_rest_1C0::
+MusicEagleBossLoop_Channel3_rest_1C0::
+MusicFinalBossIntro_Channel1_rest_1C0::
+MusicFinalBossIntro_Channel3_rest_1C0::
+MusicBossDefeat_Channel3_rest_1C0::
+    dw   ChannelDefinition_1e_rest_1C0_1
+    dw   $ffff, MusicTailCave_Channel1_rest_1C0
 
-ChannelDefinition_1e_4b22::
+ChannelDefinition_1e_rest_1C0_1::
     begin_loop $20
         notelen 14
         rest
@@ -63,51 +83,51 @@ ChannelDefinition_1e_4b22::
 
     end_def
 
-Music49::
+MusicActivePowerUp::
     db   $00
     dw   MusicSpeedData_1e_4aca
-    dw   Music49Channel1
-    dw   Music49Channel2
-    dw   Music49Channel3
-    dw   Music49Channel4
+    dw   MusicActivePowerUp_Channel1
+    dw   MusicActivePowerUp_Channel2
+    dw   MusicActivePowerUp_Channel3
+    dw   MusicActivePowerUp_Channel4
 
-Music27::
+MusicObtainPowerup::
     db   $00
     dw   MusicSpeedData_1e_4aca
-    dw   Music27Channel1
-    dw   Music27Channel2
-    dw   Music27Channel3
-    dw   Music27Channel4
+    dw   MusicObtainPowerup_Channel1
+    dw   MusicObtainPowerup_Channel2
+    dw   MusicObtainPowerup_Channel3
+    dw   MusicObtainPowerup_Channel4
 
-Music27Channel1::
+MusicObtainPowerup_Channel1::
     dw   ChannelDefinition_1e_4b5e
 
 MusicLoop_1e_4b40::
-Music49Channel1::
+MusicActivePowerUp_Channel1::
     dw   ChannelDefinition_1e_4b65
     dw   $ffff, MusicLoop_1e_4b40
 
-Music27Channel2::
+MusicObtainPowerup_Channel2::
     dw   ChannelDefinition_1e_4b87
 
 MusicLoop_1e_4b48::
-Music49Channel2::
+MusicActivePowerUp_Channel2::
     dw   ChannelDefinition_1e_4b97
     dw   $ffff, MusicLoop_1e_4b48
 
-Music27Channel3::
+MusicObtainPowerup_Channel3::
     dw   ChannelDefinition_1e_4c19
 
 MusicLoop_1e_4b50::
-Music49Channel3::
+MusicActivePowerUp_Channel3::
     dw   ChannelDefinition_1e_4c1e
     dw   $ffff, MusicLoop_1e_4b50
 
-Music27Channel4::
+MusicObtainPowerup_Channel4::
     dw   ChannelDefinition_1e_4c2a
 
 MusicLoop_1e_4b58::
-Music49Channel4::
+MusicActivePowerUp_Channel4::
     dw   ChannelDefinition_1e_4c2f
     dw   $ffff, MusicLoop_1e_4b58
 
@@ -285,17 +305,16 @@ ChannelDefinition_1e_4c2f::
 
     end_def
 
-Music50::
+MusicMiniboss::
     db   $02
     dw   MusicSpeedData_1e_4abb
-    dw   Music50Channel1
-    dw   Music50Channel2
-    dw   Music50Channel3
-    dw   Music50Channel4
+    dw   MusicMiniboss_Channel1
+    dw   MusicMiniboss_Channel2
+    dw   MusicMiniboss_Channel3
+    dw   MusicMiniboss_Channel4
 
-Music50Channel1::
+MusicMiniboss_Channel1::
     dw   ChannelDefinition_1e_4c71
-
 MusicLoop_1e_4c45::
     dw   ChannelDefinition_1e_4c87
     dw   ChannelDefinition_1e_4c99
@@ -303,7 +322,7 @@ MusicLoop_1e_4c45::
     dw   ChannelDefinition_1e_4c99
     dw   $ffff, MusicLoop_1e_4c45
 
-Music50Channel2::
+MusicMiniboss_Channel2::
     dw   ChannelDefinition_1e_4c78
     dw   ChannelDefinition_1e_4c87
     dw   ChannelDefinition_1e_4c7d
@@ -312,15 +331,15 @@ Music50Channel2::
     dw   ChannelDefinition_1e_4cab
     dw   ChannelDefinition_1e_4c7d
     dw   ChannelDefinition_1e_4c99
-    dw   $ffff, Music50Channel2
+    dw   $ffff, MusicMiniboss_Channel2
 
-Music50Channel3::
+MusicMiniboss_Channel3::
     dw   ChannelDefinition_1e_4cbd
-    dw   $ffff, Music50Channel3
+    dw   $ffff, MusicMiniboss_Channel3
 
-Music50Channel4::
+MusicMiniboss_Channel4::
     dw   ChannelDefinition_1e_4cf0
-    dw   $ffff, Music50Channel4
+    dw   $ffff, MusicMiniboss_Channel4
 
 ChannelDefinition_1e_4c71::
     set_envelope_duty $43, $00, 0, 3
