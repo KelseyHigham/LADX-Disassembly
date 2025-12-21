@@ -228,8 +228,12 @@ SaveMenuTiles::
 incbin "gfx/menus/save_menu.dmg.2bpp"
 TitleLogoTiles::
 incbin "gfx/intro/title.dmg.2bpp"
+
+IF !STRCMP("{LANG}", "TP")
+ELSE
 FontTiles::
 incbin "gfx/fonts/font.2bpp"
+ENDC
 
 Overworld2Tiles::
 OverworldCameraShopTiles::
@@ -623,7 +627,11 @@ section "bank2F",romx[$4000],bank[$2F]
 incbin "gfx/menus/menu.cgb.2bpp"
 incbin "gfx/menus/save_menu.cgb.2bpp"
 incbin "gfx/intro/title.cgb.2bpp"
+
+IF !STRCMP("{LANG}", "TP")
+ELSE
 incbin "gfx/fonts/font.2bpp" ; unused
+ENDC
 
 Overworld2TilesCGB::
 OverworldCameraShopTilesCGB::
@@ -776,5 +784,9 @@ include "code/photos_bg.asm"
 ; Unused banks; make blank sections so they are filled with $00 instead of $ff to match
 ; the rom
 section "bank3E",romx[$4000],bank[$3E]
+IF !STRCMP("{LANG}", "TP")
+FontTiles::
+incbin "gfx/fonts/font.2bpp"    
+ENDC
 section "bank3F",romx[$4000],bank[$3F]
 include "text/dialog_5.asm"
