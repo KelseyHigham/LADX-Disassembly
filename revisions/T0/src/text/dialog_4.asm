@@ -987,23 +987,29 @@ Dialog1DB:: ;🆖; Marin, if you say yes
     toki "a  n  mi musi taso a a..."
     toki_li_pini
 
-Dialog1DC:: ;🆖; Marin, probably
-    db "Hunh? The walrus"
-    db "wants me to go  "
-    db "to him?  It     "
-    db "doesn't matter, "
-    db "I will go with  "
-    db "you to him...@"
+Dialog1DC:: ;🆖; Marin
+    toki "a! kala suli lape li wile e mi, anu seme?"
+    toki "pona. mi kama."
+    toki_li_pini
+    ;db "Hunh? The walrus"
+    ;db "wants me to go  "
+    ;db "to him?  It     "
+    ;db "doesn't matter, "
+    ;db "I will go with  "
+    ;db "you to him...@"
 ;    db "え？　セイウチさんが？？　　　　"
 ;    db "．．．　いいわ、いっしょにいく！"
 ;    db "@"
 
-Dialog1DD:: ;🆖; Tarin, sleeping, while Marin is following
-    db "Unnnngh! Owwwww!"
-    db "... ... ... ... "
-    db "I've sure lost  "
-    db "my taste for    "
-    db "honey!@"
+Dialog1DD:: ;🆖; Tarin, sleeping, after being stung by bees, while Marin is following
+    toki "mu ike... pipi li pakala e selo..."
+    toki "mi kama wile ala e ko suwi."
+    toki_li_pini
+    ;db "Unnnngh! Owwwww!"
+    ;db "... ... ... ... "
+    ;db "I've sure lost  "
+    ;db "my taste for    "
+    ;db "honey!@"
 ;    db "う－ん　う－ん　．．．．　　　　"
 ;    db "ハチはもう　こりごりだあよ。　　"
 ;    db "@"
@@ -1043,55 +1049,75 @@ Dialog1E0:: ;☀️; Walrus
     ;db " ... <marin> ... <marin> ...@"
 
 Dialog1E1:: ;🆖; Marin, probably, and Link
-    db "Yes, it's that  "
-    db "lazy walrus!    "
-    db "Shall we give   "
-    db "him a little    "
-    db "surprise?       "
-    db "    Yes  No...<ask>"
+    toki "kala suli li lape."
+    toki "mi o pini ala pini e lape?"
+    toki "    pini     mi wile ala"
+    toki_li_pini
+    ;db "Yes, it's that  "
+    ;db "lazy walrus!    "
+    ;db "Shall we give   "
+    ;db "him a little    "
+    ;db "surprise?       "
+    ;db "    Yes  No...<ask>"
 ;    db "あら？　いけないセイウチさんね。"
 ;    db "ちょっとビックリさせちゃおうか？"
 ;    db "　　　　うん　　　やめとこう<ask>"
 
 Dialog1E2:: ;🆖; Marin, probably
-    db "Aha ha ha!  Wow!"
-    db "He certainly    "
-    db "woke with a     "
-    db "start!@"
+    toki "a a a! wawa"
+    toki "o weka pona"
+    toki_li_pini
+    ;db "Aha ha ha!  Wow!"
+    ;db "He certainly    "
+    ;db "woke with a     "
+    ;db "start!@"
 ;    db "アハハハッ！　ねおきの　いいコね"
 ;    db "@"
 
 Dialog1E3:: ;🆖; Marin, probably
-    db "Hunh?  Oh, he's "
-    db "calling me...   "
-    db "It's the same as"
-    db "always... Ha ha!@"
+    toki "a! ona li wile e mi..."
+    toki "sama tenpo pini..."
+    toki_li_pini
+    ;db "Hunh?  Oh, he's "
+    ;db "calling me...   "
+    ;db "It's the same as"
+    ;db "always... Ha ha!@"
 ;    db "あれっ？　わたしをよんでる．．．"
 ;    db "きっと、いつものアレね．．フフフ"
 ;    db "@"
 
 Dialog1E4:: ;🆖; Marin, probably
-    db "You're right, it"
-    db "would be mean to"
-    db "wake him up now!"
-    db "Let's let him   "
-    db "sleep some more!@"
+    toki "lon a... ona li lape suwi..."
+    toki "mi o ken e lape."
+    toki_li_pini
+    ;db "You're right, it"
+    ;db "would be mean to"
+    ;db "wake him up now!"
+    ;db "Let's let him   "
+    ;db "sleep some more!@"
 ;    db "そうね。　かわいそうだから　　　"
 ;    db "そっと、ねかせてあげようね。@"
 
 Dialog1E5:: ;🆖; Marin, probably
-    db "#####, I'm going"
-    db "to the Animal   "
-    db "Village!  Please"
-    db "drop by, okay?@"
+    toki "jan [#####] o  mi tawa ma tomo soweli."
+    toki "sina kin o kama a!"
+    toki_li_pini
+    ;db "#####, I'm going"
+    ;db "to the Animal   "
+    ;db "Village!  Please"
+    ;db "drop by, okay?@"
 ;    db "わたし、どうぶつむらへいってるわ"
 ;    db "#####も、きっとよってね！　"
 ;    db "@"
 
 Dialog1E6:: ;🆖; Bow-Wow, maybe?
-    db "Arfh! Arfh! Arf!"
-    db " <marin>  <marin>!  <marin>   <marin>!  "
-    db "..... <link>?? @"
+    toki "mu  mu  mu a!"
+    toki "jan <marin> jan <marin>a! jan<marin>  jan<marin>a!"
+    toki "..... jan <link>anu seme a?"
+    toki_li_pini
+    ;db "Arfh! Arfh! Arf!"
+    ;db " <marin>  <marin>!  <marin>   <marin>!  "
+    ;db "..... <link>?? @"
 ;    db "オウッ！　　　オウッ！　　　　　"
 ;    db "　<marin>　<marin>　！　<marin>　<marin>　！　　　　"
 ;    db "．．．．．　<link>　？？　　　　　　"
