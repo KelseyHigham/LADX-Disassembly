@@ -1,3 +1,7 @@
+; P1: leadup to dungeon 1
+; P2: leadup to dungeon 2
+; etc
+
 ; 160 lines in this file
 ; 333 [P] lines
 ; 678 lines total

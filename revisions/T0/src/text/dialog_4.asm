@@ -988,7 +988,8 @@ Dialog1DB:: ;🆖; Marin, if you say yes
     toki_li_pini
 
 Dialog1DC:: ;🆖; Marin
-    toki "a! kala suli lape li wile e mi, anu seme?"
+    toki "a! ma tomo soweli la"
+    toki "kala suli lape li wile e mi, anu seme?"
     toki "pona. mi kama."
     toki_li_pini
     ;db "Hunh? The walrus"

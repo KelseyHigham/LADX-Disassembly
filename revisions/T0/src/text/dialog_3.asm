@@ -317,7 +317,7 @@ Dialog11D:: ;☀️; Kid
     ; Marin? She likes to go stare at the ocean all by herself...
     ; マリンは　いつも　すなはまへいって　ひとりで　うみ　みてるんだ
 
-    toki "sina tan seme?"
+    toki "sina tan ma seme?"
     toki "...ma weka anu seme a? weka li seme?"
     toki "mi lili la mi sona ala."
     toki_li_pini
