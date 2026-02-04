@@ -1134,6 +1134,11 @@ Dialog1E7:: ;🆖; Fisherman
     db "got a bite... I "
     db "thought this    "
     db "would happen...@"
+    ;db "いやあ、まいったよ。　サカナに　"
+    ;db "ハリを、とられてしまってね．．．"
+    ;db "いとだけ、たらしておるんだが　　"
+    ;db "やっぱりなにも　つれんようだよ。"
+    ;db "@"
 
 Dialog1E8:: ;🆖; Fisherman
     db "Oh! What is that"
@@ -1147,31 +1152,50 @@ Dialog1E8:: ;🆖; Fisherman
     db "catch if you let"
     db "me have it...   "
     db "    Okay No<ask>"
+    ;db "おお！　きみのもっているのは　　"
+    ;db "つりばりでは、ないかね？　　　　"
+    ;db "それを　わたしに、くれんかね？　"
+    ;db "なにかつれたらこうかんでどうだ？"
+    ;db "　　　　うん　　　いや<ask>"
 
 Dialog1E9:: ;🆖; Fisherman, probably
     db "Keep your eyes  "
     db "open and watch  "
     db "a pro at work.@"
+    ;db "では、プロのわざというやつを　　"
+    ;db "しかと　みていなさい！@"
 
 Dialog1EA:: ;🆖; Fisherman, probably
     db "You should be   "
     db "more kind to me!"
     db "I thought we    "
     db "were buddies!@"
+    ;db "もっと、やさしさを　もたないと　"
+    ;db "だめだよ！@"
 
 Dialog1EB:: ;🆖; Fisherman, probably
     db "My, that's a    "
     db "BIIIIG one!@"
+    ;db "おっ！　　これはでかいぞ！　　　"
+    ;db "でかいっ、でかいぞ！　　　　　　"
+    ;db "　　　　　そりゃ－！！　　　　　"
+    ;db "　　　　　　　　　　　　　　　　"
+    ;db "@"
 
 Dialog1EC:: ;🆖; Narrator
     db "The <fishhook> became a  "
     db "necklace <bra>!     "
     db "L-l-lucky!@"
+    ;db "<fishhook>　が　ピンクのブラジャ－　<bra>　"
+    ;db "になってしまった！ラ、ラッキ－！"
+    ;db "@"
 
 Dialog1ED:: ;🆖; Fisherman, probably
     db "I can't wait to "
     db "see what I'll   "
     db "catch next!@"
+    ;db "つぎは　なにがつれるか　　　　　"
+    ;db "ほんとうにたのしみだよ！@"
 
 Dialog1EE:: ;🆖; Mamasha
     ;db "My husband is   "
@@ -1196,6 +1220,11 @@ Dialog1EF:: ;🆖; Secret Zora or Secret Goriya, not sure
     db "maker. I just   "
     db "want to live in "
     db "peace.@"
+    ;db "ウォ、バレちまった。　　　　　　"
+    ;db "チッ、みとおしレンズか．．．　　"
+    ;db "オレは、ほかのヤツラとちがって　"
+    ;db "シズカにくらしたいだけなのにナ。"
+    ;db "@"
 
 Dialog1F0:: ;🆖; Mermaid
     ; original with the swimsuit top: 
