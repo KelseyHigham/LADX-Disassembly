@@ -301,9 +301,9 @@ Dialog0C0:: ;☀️; Owl
     ;db "ホホウ！ふしぎのもりに、ようこそ" hoo! welcome to strange forest.
     ;db "めざめをつげし、ゆうしゃどの　　" waking wo prophecy, this hero.
     ;db "このしまは、コホリントという　　" this island, Koholint
-    ;db "ちずにはけっして、のらぬしまぢゃ" never on the map, island 
+    ;db "ちずにはけっして、のらぬしまぢゃ" never on the map, island
 
-    ;db "ぼうやのせかいと、ちとちがう　　" 
+    ;db "ぼうやのせかいと、ちとちがう　　"
     ;db "ことわりで　なりたっておる。　　" this world operates by diff rules.
 
     ;db "しまからでるのは、むりぢゃのう。" it's impossible to leave island.
@@ -1049,7 +1049,7 @@ Dialog0F5:: ;🆖; Nightmare (final boss)
     db "You can never   "
     db "defeat us!!!    "
     db "Let's rumble!@"
-    
+
     ; GlitterBerri, literal:
     ; "We are those who were born
     ; from within a nightmare...
@@ -1065,7 +1065,7 @@ Dialog0F5:: ;🆖; Nightmare (final boss)
     ; You won't get in our way!
     ; Heh heh heh. Someone like
     ; you could never defeat us!
-    ;              Here we come!" 
+    ;              Here we come!"
 
 
 Dialog0F6:: ;🆖; Nightmare (final boss)

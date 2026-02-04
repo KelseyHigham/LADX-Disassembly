@@ -207,7 +207,7 @@ Dialog19E:: ;P4;☀️; Signpost
 
 Dialog19F:: ; Signpost
 Dialog1A0:: ;P1;☀️; Signpost
-    toki "       ma kasi nasa"      ; centered differently 
+    toki "       ma kasi nasa"      ; centered differently
     toki "      ona li nasa lili."  ; due to screen layout
     toki_li_pini
     ;db "   Mysterious   "
@@ -1228,7 +1228,7 @@ Dialog1EF:: ;🆖; Secret Zora or Secret Goriya, not sure
     ;db "@"
 
 Dialog1F0:: ;🆖; Mermaid
-    ; original with the swimsuit top: 
+    ; original with the swimsuit top:
     ; https://tcrf.net/Development:The_Legend_of_Zelda:_Link%27s_Awakening_(Game_Boy)/Text
     db "When I was swim-"
     db "ming in the bay,"
@@ -1451,7 +1451,7 @@ Dialog200:: ;P1;☀️; Book, Narrator
 
 Dialog201:: ;P1;☀️; Book
     ;toki "sina awen luka e nena la, "
-    ;sina awen luka e nena AB la, 
+    ;sina awen luka e nena AB la,
 
     toki "o awen luka e nena Aanu nena B"
     toki "jan ike li utala e sina la, sinpin awen li ken awen e sina."
@@ -1968,7 +1968,7 @@ Dialog21E:: ;🆖; Marin
     ; - exit at low health
 
     ; GB, CM Discord:
-    ;   いわんこっちゃない. . . . 
+    ;   いわんこっちゃない. . . .
     ;   えっ！？なに！？わたしなんにも
     ;   きこえないわよっ！  ほんとよ！
     ;

@@ -76,7 +76,7 @@ Dialog000:: ;P1;☀️; Tarin
 Dialog001:: ;P1;☀️; Marin
     ;; font test
     ;toki "a akesi ala alasa ale anpa ante anu awen e en esun ijo ike ilo insa"
-    ;toki "jaki jan jelo jo kala kalama kama kasi ken kepeken kili kiwen ko kon kule kulupu" 
+    ;toki "jaki jan jelo jo kala kalama kama kasi ken kepeken kili kiwen ko kon kule kulupu"
     ;toki "kute la lape laso lawa len lete li lili linja lipu loje lon luka lukin lupa"
     ;toki "ma mama mani mi moku moli monsi mu mun musi mute nanpa nasa nasin nena ni"
     ;toki "nimi noka o olin ona open pakala pali palisa pan pana pi pilin pimeja pini pipi"
@@ -176,16 +176,16 @@ Dialog002:: ;P1;☀️; Marin
     toki "o awen pona!"
     toki_li_pini
 
-    ;db "Follow the lane " 
-    ;db "south to reach  " 
-    ;db "the beach where " 
-    ;db "I found you.    " 
-    ;db "Since you washed" 
-    ;db "ashore, lots of " 
-    ;db "nasty monsters  " 
-    ;db "have been in the" 
-    ;db "area, so be     " 
-    ;db "careful, okay?@" 
+    ;db "Follow the lane "
+    ;db "south to reach  "
+    ;db "the beach where "
+    ;db "I found you.    "
+    ;db "Since you washed"
+    ;db "ashore, lots of "
+    ;db "nasty monsters  "
+    ;db "have been in the"
+    ;db "area, so be     "
+    ;db "careful, okay?@"
 
     ;db "Suis la route   "
     ;db "du Sud, vers    "
@@ -444,7 +444,7 @@ Dialog00B:: ;P1;☀️; Tarin
     ;db "Faut m'reposer  "
     ;db "avant d'rentrer."
     ;db "@"
-    ;db "おらは、もうすこしやすんでから　" me, 
+    ;db "おらは、もうすこしやすんでから　" me,
     ;db "うちへ　かえることにするだ。@"
 
 Dialog00C:: ;P1;☀️; Witch
@@ -1193,7 +1193,7 @@ Dialog034:: ;P1;☀️; Shopkeeper
     ;db "Reviens donc    "
     ;db "plus tard.@"
     ;db "おおっと、カネがたりないんじゃあ" hey, kane ga insufficient njyaa
-    ;db "しかたね－。でなおしておくんな！" way-. come again o young man! 
+    ;db "しかたね－。でなおしておくんな！" way-. come again o young man!
     ;db "@"
 
 Dialog035:: ;P1;☀️; Shopkeeper
@@ -1205,7 +1205,7 @@ Dialog035:: ;P1;☀️; Shopkeeper
     ;db "Merci beaucoup! "
     ;db "Et au plaisir!@"
     ;db "ありがとうございやした！　　　　" ty
-    ;db "また　よってくだせえ。@" 
+    ;db "また　よってくだせえ。@"
 
 Dialog036:: ;P1;☀️; Narrator
     toki "seme a!"
@@ -1312,7 +1312,7 @@ Dialog03D:: ;P1;☀️; Narrator
     ;db "Tu peux même y  "
     ;db "graver ton nom!@"
     ;db "タテをてにいれた！　　　　　　　" shield wo obtained!
-    ;db "うらになまえを　かいておこ－！@"    back ni namae wo write-te o ke- 
+    ;db "うらになまえを　かいておこ－！@"    back ni namae wo write-te o ke-
 
 Dialog03E:: ;P1;☀️; Trendy Gamester, Link
     toki "sina wile ala wile musi sin?"
@@ -1740,7 +1740,7 @@ Dialog054:: ;P1;☀️; Tarin
     ;db "やあ、#####　おきただか？　"    yaa, Link's here huh?
     ;db "おらは、タリン。きぶんはど－だ？" mi, Tarin. what's your mood?
     ;db "ん？！ど－してなまえがわかるのか" huh? why do i know your name?
-    ;db "ふしぎだってか．．．？　　　　　" nasa anu seme... 
+    ;db "ふしぎだってか．．．？　　　　　" nasa anu seme...
     ;db "タテのうらにかいてある、なまえを" shield's back ni written, namae o
     ;db "みただよ。　ほ－ら、このタテだ！" mitai da yo. hora, kono tate da!
     ;db "@"

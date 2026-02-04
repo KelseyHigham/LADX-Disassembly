@@ -937,13 +937,13 @@ Dialog13A:: ;P3;☀️; Richard
     ;db "マモノから　とりかえしてほしい！"
     ;db "　　　　わかった　いやだ<ask>"
 
-    ; Liz Bushouse: 
+    ; Liz Bushouse:
     ;   In J Richard literally says his servants were possessed by monsters, while in E he just says they went berserk.
-    ;   On E/J GB/C Richard comments that he knows Link is looking for the key to Ukuku Prairie and asks to strike a deal. 
+    ;   On E/J GB/C Richard comments that he knows Link is looking for the key to Ukuku Prairie and asks to strike a deal.
     ;   But on Switch this text was changed in both languages. In E, Richard only vaguely hints that he knows Link is looking for something. In J, he simply says, “Hey, will you do something for me? I’ll give you something nice in return.”
 
-    ; Switch version: 
-    ; 
+    ; Switch version:
+    ;
 
 
 Dialog13B:: ;☀️; Richard
@@ -963,12 +963,12 @@ Dialog13B:: ;☀️; Richard
     ; DMG version:
     ; Smashing!  To
     ; tell you the
-    ; truth, there are 
+    ; truth, there are
     ; five leaves, and
     ; I want them all!
     ; Okay, you'll need
     ; to do some dig-
-    ; ing, so buy a 
+    ; ing, so buy a
     ; shovel!  Are you
     ; off then? Good
     ; luck!
