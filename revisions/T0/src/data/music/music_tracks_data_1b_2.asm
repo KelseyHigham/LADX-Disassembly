@@ -872,13 +872,15 @@ ChannelDefinition_1b_5343:: ; Accompaniment
     notelen 4; 8 beats
     note D_3
     note C_3
+
+    ; 16 long beats
     set_speed MusicSpeedData_1b_4b04
-    notelen 4; 8 beats
+    notelen 4; 8 long beats
     note B_2
-    notelen 7
+    notelen 7; 6 long beats
     note A_2
     set_envelope_duty $52, $00, 2, 0
-    notelen 2
+    notelen 2; 2 long beats
     note D_3
     set_speed MusicSpeedData_1b_4af5
     end_def
@@ -892,51 +894,48 @@ ChannelDefinition_1b_5343:: ; Accompaniment
 ChannelDefinition_1b_53a5:: ; melody
     set_envelope_duty $56, $00, 2, 0
 
+    ; PART 1. IDENTICAL TO PART 2 EXCEPT THE LAST 3 MEASURES
+
     ; 16 beats
     notelen 3; 4 beats
     note D_5
     note G_4
     notelen 7; 6 beats
     note A_4
-    notelen 1; 1 beat
-    note B_4
-    note C_5
+    notelen 2; 2 beats
+    note E_5
 
     ; 16 beats
-    notelen 2; 2 beats
-    note D_5
     note D_5
     note G_4
-    note G_4
-    notelen 7; 6 beats
+    notelen 1; 1 beat
     note A_4
-    notelen 1; 1 beat
-    note B_4
+    notelen 2; 2 beats
     note C_5
+    notelen 1; 1 beat
+    note G_5
+    notelen 4; 8 beats
+    note D_5
 
     ; 16 beats
-    notelen 2; 2 beats
-    note B_4
-    note D_5
-    notelen 7; 6 beats
-    note A_5
-    notelen 2; 2 beats
-    note G_5
-    note A_5
-    note G_5
-
-    ; 16 beats
-    note D_5
-    notelen 1; 1 beat
-    note C_5
-    note B_4
     notelen 3; 4 beats
+    note D_5
+    note G_4
+    notelen 7; 6 beats
     note A_4
-    rest
-    notelen 1 ; 1 beat
-    rest
-    note B_4
-    note C_5
+    notelen 2; 2 beats
+    note E_5
+
+    ; 16 beats
+    note D_5
+    note G_4
+    notelen 1; 1 beat
+    note E_5
+    notelen 2; 2 beats
+    note F#5
+    notelen 1; 1 beat
+    note G_5
+    notelen 4; 8 beats
     note D_5
 
     ; 16 beats
@@ -944,46 +943,150 @@ ChannelDefinition_1b_53a5:: ; melody
     note E_5
     note G_4
     notelen 7; 6 beats
-    note F#4
-    notelen 1; 1 beat
     note A_4
+    notelen 1; 1 beats
+    note B_4
+    note C_5
+
+    ; 16 beats
+    notelen 7; 6 beats
+    note D_5
+    notelen 1; 1 beat
+    note B_4
+    note D_5
+    notelen 3; 4 beats
+    note A_5
+    notelen 2; 2 beats
+    note G_5
+    notelen 2; 2 beats
     note E_5
 
-    ; 16 beats
-    notelen 2; 2 beats
+    ; above is identical
+
+    ; 16 beats. yup
     note D_5
-    note D_5
-    note F#4
-    note F#4
-    notelen 7; 6 beats
-    note G_4
     notelen 1; 1 beat
+    note C_5
+    note B_4
+    notelen 7; 6 beats
     note G_4
-    note F#4
+    notelen 2; 2 beats
+    note D_4
+    notelen 2; 2 beats
+    note D_5
+    note C_5
 
     ; 16 beats
-    notelen 2; 2 beats
-    note E_4
-    note G_4
-    notelen 7; 6 beats
-    note B_4
-    notelen 2; 2 beats
-    note A_4
-    note G_4
-    note D#4
+    notelen 4; 8 beats
+    note D_5
+    rest
 
-    ; 16 beats, but 8 of them are slower
-    begin_loop $04
-        note D_4
-        note D_5
-    next_loop
+    ; 16 long beats
     set_speed MusicSpeedData_1b_4b04
-    begin_loop $04
-        notelen 2
-        note D_5
-        note D_6
-    next_loop
+    notelen 4; 8 long beats
+    rest
+    rest
     set_speed MusicSpeedData_1b_4af5
+
+
+
+    ; PART 2. IDENTICAL TO PART 1 EXCEPT THE LAST 3 MEASURES
+
+    ; 16 beats
+    notelen 3; 4 beats
+    note D_5
+    note G_4
+    notelen 7; 6 beats
+    note A_4
+    notelen 2; 2 beats
+    note E_5
+
+    ; 16 beats
+    note D_5
+    note G_4
+    notelen 1; 1 beat
+    note A_4
+    notelen 2; 2 beats
+    note C_5
+    notelen 1; 1 beat
+    note G_5
+    notelen 4; 8 beats
+    note D_5
+
+    ; 16 beats
+    notelen 3; 4 beats
+    note D_5
+    note G_4
+    notelen 7; 6 beats
+    note A_4
+    notelen 2; 2 beats
+    note E_5
+
+    ; 16 beats
+    note D_5
+    note G_4
+    notelen 1; 1 beat
+    note E_5
+    notelen 2; 2 beats
+    note F#5
+    notelen 1; 1 beat
+    note G_5
+    notelen 4; 8 beats
+    note D_5
+
+    ; 16 beats
+    notelen 3; 4 beats
+    note E_5
+    note G_4
+    notelen 7; 6 beats
+    note A_4
+    notelen 1; 1 beats
+    note B_4
+    note C_5
+
+    ; 16 beats
+    notelen 7; 6 beats
+    note D_5
+    notelen 1; 1 beat
+    note B_4
+    note D_5
+    notelen 3; 4 beats
+    note A_5
+    notelen 2; 2 beats
+    note G_5
+    notelen 2; 2 beats
+    note E_5
+
+    ; 16 beats
+    note D_5
+    notelen 1; 1 beat
+    note C_5
+    note B_4
+    notelen 2; 2 beats
+    note G_4
+    note G_4
+    notelen 3; 4 beats
+    note G_5
+    notelen 1; 1 beat
+    note C_5
+    notelen 2; 2 beats
+    note B_4
+    notelen 1; 1 beat
+    note G_4
+
+    ; 16 beats
+    notelen 4; 8 beats
+    note G_4
+    rest
+
+    ; 16 long beats
+    set_speed MusicSpeedData_1b_4b04
+    notelen 4; 8 long beats
+    rest
+    rest
+    set_speed MusicSpeedData_1b_4af5
+
+
 
     end_def
 
