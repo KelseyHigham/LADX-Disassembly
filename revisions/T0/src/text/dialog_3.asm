@@ -425,13 +425,17 @@ Dialog120:: ;🌞; Kid
     ;db "なんでかな．．おいらこどもだから"
     ;db "わかんないや。　@"
 
-Dialog121:: ;🆖; Every kid, when Marin is following
-    db "Hey... Where're "
-    db "you two going   "
-    db "together?  Hunh?"
-    db "Uh, I didn't    "
-    db "mean anything..."
-    db "I'm just a kid!@"
+Dialog121:: ;🌞; Every kid, when Marin is following
+    toki "suwi a-! sina tu li tawa seme-"
+    toki "a  mi toki ala. mi sona ala. mi lili."
+    toki " ... ... ... o olin pona"
+    toki_li_pini
+    ;db "Hey... Where're "
+    ;db "you two going   "
+    ;db "together?  Hunh?"
+    ;db "Uh, I didn't    "
+    ;db "mean anything..."
+    ;db "I'm just a kid!@"
     ;db "Où allez-vous   "
     ;db "tous les deux?  "
     ;db "Mais non, je    "

@@ -1077,26 +1077,49 @@ Dialog0F6:: ;🆖; Nightmare (final boss)
     db "Our world...    "
     db "Our... world... @"
 
-Dialog0F7:: ;🆖; Marin, following, Trendy Game
-    db "Wow!  #####, can"
-    db "I try this?!    "
-    db "What do you say?"
-    db "    Okay No Way<ask>"
+Dialog0F7:: ;🌞; Marin, following, Trendy Game
+    toki "wawa a! jan [#####]o"
+    toki "wawa la mi wile musi."
+    toki "mi ken ala ken?"
+    toki "    pona     ala a<ask>"
+    ;db "Wow!  #####, can"
+    ;db "I try this?!    "
+    ;db "What do you say?"
+    ;db "    Okay No Way<ask>"
+    ;db "キャ－－ッ！　ねえねえ#####"
+    ;db "やっていい！？　やっていい！？　"
+    ;db "どうしよう？　　　　　　　　　　"
+    ;db "　　　　いいよ　　ダ－メ！　　　"
+    ;db "<ask>"
 
-Dialog0F8:: ;🆖; Marin, if you say no
-    db "C'mon!  I want  "
-    db "to do it! Can I?"
-    db "It looks so fun!"
-    db "    Yes  Okay<ask>"
+Dialog0F8:: ;🌞; Marin, if you say no
+    toki "mi wile a! mi wile a-!"
+    toki "    pona     ...pona<ask>"
+    ;db "C'mon!  I want  "
+    ;db "to do it! Can I?"
+    ;db "It looks so fun!"
+    ;db "    Yes  Okay<ask>"
+    ;db "やりたい！　やりたい！！　　　　"
+    ;db "　　　　いいよ　　しょうがねえな"
+    ;db "<ask>"
 
-Dialog0F9:: ;🆖; Trendy Gamester, after Marin grabs him with the crane
-    db "You're good!    "
-    db "You're a pro,   "
-    db "aren't you?     "
-    db "... ... ... ... "
-    db "Well, beat it!  "
-    db "Pros aren't     "
-    db "allowed in here!@"
+Dialog0F9:: ;🌞; Trendy Gamester, after Marin grabs him with the crane
+    toki "sina wawa a! o awen a..."
+    toki "sina musi luka tawa pali mani  tawa ala musi  anu seme?"
+    toki "o weka a! tomo ni li tawa musi taso."
+    toki_li_pini
+    ;db "You're good!    "
+    ;db "You're a pro,   "
+    ;db "aren't you?     "
+    ;db "... ... ... ... "
+    ;db "Well, beat it!  "
+    ;db "Pros aren't     "
+    ;db "allowed in here!@"
+    ;db "いいウデ　してんじゃね－か。　　"
+    ;db "オメ－さては．．．プロだなっ！？"
+    ;db "プロは　おことわりだよっ！！　　"
+    ;db "け－－んなっ！！　　ケッ！　　　"
+    ;db "@"
 
 Dialog0FA:: ;🌞; Hippo
     ; naked hippo; has boobs in JPN

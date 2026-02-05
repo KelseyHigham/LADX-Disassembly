@@ -48,7 +48,7 @@ Dialog192:: ;🆖; Marin
     db "what is your    "
     db "favorite song?@"
 
-Dialog193:: ;🆖; Marin, probably
+Dialog193:: ;🆖; Marin, after teaching you her song in Animal Village
     db "Please, don't   "
     db "ever forget this"
     db "song...or me...@"
@@ -126,7 +126,7 @@ Dialog198:: ;🆖; Marin, probably
     ;db "きをつけてネ#####．．．　　"
     ;db "@"
 
-Dialog199:: ;🆖; Marin, while following, if you break a pot in her house
+Dialog199:: ;🌞; Marin, while following, if you break a pot in her house
     ;db "Ahhh!  Ahhh, you"
     ;db "are a bad boy,  "
     ;db "#####!@"
@@ -150,7 +150,7 @@ Dialog19A:: ;P3;🌞; Crazy Tracy, after you buy
     toki_li_pini
 
 
-Dialog19B:: ;P4;🆖; Schule Donavitch
+Dialog19B:: ;P4;🌞; Schule Donavitch
     ; akesi [sitelen unpa]
     ; brother of akesi [soweli esun]
     toki "mi akesi [sitelen unpa] a!"
@@ -783,7 +783,7 @@ Dialog1D1:: ;🌞; Chef Bear
     toki "tenpo lili taso la mi ken moku e pona ni..."
     toki_li_pini
 
-Dialog1D2:: ;🆖; Chef Bear, before Marin arrives
+Dialog1D2:: ;🌞; Chef Bear, before Marin arrives
 ;    db "オウ！オウ！　ヤ－ナさばくね　　"
 ;    db "しってるぜ。このむらの　ミナミに"
 ;    db "いりぐちが　あるんだがな、　　　"
@@ -847,7 +847,7 @@ Dialog1D4:: ;🆖; Chef Bear
     db "are here too... "
     db "Sorry...@"
 
-Dialog1D5:: ;🆖; Marin, probably
+Dialog1D5:: ;P4;🌞; Marin, Toronbo Shores
     ;db "Oh, #####, I'm  "
     ;db "glad you found  "
     ;db "this place.     "
@@ -863,7 +863,7 @@ Dialog1D5:: ;🆖; Marin, probably
     toki "sina wile ala wile toki?"
     toki "    mi wile    mi wile ala<ask>"
 
-Dialog1D6:: ;🆖; Marin, probably
+Dialog1D6:: ;P4;🌞; Marin, Toronbo Shores
     ;db "Okay, I'll just "
     ;db "watch the waves "
     ;db "for a while...@"
@@ -872,7 +872,7 @@ Dialog1D6:: ;🆖; Marin, probably
     toki "sona. mi awen lukin e telo..."
     toki_li_pini
 
-Dialog1D7:: ;🆖; Marin
+Dialog1D7:: ;P4;🌞; Marin, note in her house
     ;db "At the beach... "
     ;db " Marin  <marin>@"
     ;db "　　はまべにいってます　　　　　"
@@ -882,7 +882,7 @@ Dialog1D7:: ;🆖; Marin
     toki "    jan kalama [mu a loje ijo nena]  <marin>"
     toki_li_pini
 
-Dialog1D8:: ;🆖; Marin
+Dialog1D8:: ;P4;🌞; Marin
     ;db "I wonder where  "
     ;db "these coconut   "
     ;db "trees come from?"
@@ -928,7 +928,7 @@ Dialog1D8:: ;🆖; Marin
     toki_li_pini
 
 
-Dialog1D9:: ;🆖; Marin
+Dialog1D9:: ;P4;🌞; Marin
     ;db "... ... ... ... "
     ;db "... ... ... ... "
     ;db "If I was a sea  "
@@ -962,7 +962,7 @@ Dialog1D9:: ;🆖; Marin
     toki "ona li waso ala waso e mi..." ; ken, ken e ni/mi, pana, pali, waso e mi
     toki_li_pini
 
-Dialog1DA:: ;🆖; Marin, Link
+Dialog1DA:: ;P4;🌞; Marin, Link
     ;db "Hey!  Are you   "
     ;db "listening?      "
     ;db "#####, are you  "
@@ -974,7 +974,7 @@ Dialog1DA:: ;🆖; Marin, Link
     toki "    awen    ala a<ask>"
     toki_li_pini
 
-Dialog1DB:: ;🆖; Marin, if you say yes
+Dialog1DB:: ;P4;🌞; Marin, if you say yes
     ;db "I want to know  "
     ;db "everything about"
     ;db "you...Err...Uhh,"
@@ -987,7 +987,7 @@ Dialog1DB:: ;🆖; Marin, if you say yes
     toki "a  n  mi musi taso a a..."
     toki_li_pini
 
-Dialog1DC:: ;🆖; Marin
+Dialog1DC:: ;P4;🌞; Marin
     toki "a! ma tomo soweli la"
     toki "kala suli lape li wile e mi, anu seme?"
     toki "pona. mi kama."
@@ -1002,7 +1002,7 @@ Dialog1DC:: ;🆖; Marin
 ;    db "．．．　いいわ、いっしょにいく！"
 ;    db "@"
 
-Dialog1DD:: ;🆖; Tarin, sleeping, after being stung by bees, while Marin is following
+Dialog1DD:: ;P4;🌞; Tarin, sleeping, after being stung by bees, while Marin is following
     toki "mu ike... pipi li pakala e selo..."
     toki "mi kama wile ala e ko suwi."
     toki_li_pini
@@ -1015,7 +1015,7 @@ Dialog1DD:: ;🆖; Tarin, sleeping, after being stung by bees, while Marin is fo
 ;    db "ハチはもう　こりごりだあよ。　　"
 ;    db "@"
 
-Dialog1DE:: ;🆖; Marin, if you say no
+Dialog1DE:: ;P4;🌞; Marin, if you say no
     ;db "Humph! Your head"
     ;db "is always in the"
     ;db "clouds! Will you"
@@ -1039,7 +1039,7 @@ Dialog1DF:: ;🆖; idk
 ;    db "これるしな！いくぜ！オチビさん！"
 ;    db "@"
 
-Dialog1E0:: ;🌞; Walrus
+Dialog1E0:: ;P4;🌞; Walrus
     toki "....mu lape....mu lape...."
     toki ".... <marin> ... <marin> ..."
     toki_li_pini
@@ -1049,10 +1049,10 @@ Dialog1E0:: ;🌞; Walrus
     ;db "ZZZ ZZZ ZZZ ZZZ "
     ;db " ... <marin> ... <marin> ...@"
 
-Dialog1E1:: ;🆖; Marin, probably, and Link
+Dialog1E1:: ;P4;🌞; Marin, probably, and Link
     toki "kala suli li lape."
     toki "mi o pini ala pini e lape?"
-    toki "    pini     mi wile ala"
+    toki "    pini     mi wile ala<ask>"
     toki_li_pini
     ;db "Yes, it's that  "
     ;db "lazy walrus!    "
@@ -1064,7 +1064,7 @@ Dialog1E1:: ;🆖; Marin, probably, and Link
 ;    db "ちょっとビックリさせちゃおうか？"
 ;    db "　　　　うん　　　やめとこう<ask>"
 
-Dialog1E2:: ;🆖; Marin, probably
+Dialog1E2:: ;P4;🌞; Marin, probably
     toki "a a a! wawa"
     toki "o weka pona"
     toki_li_pini
@@ -1075,7 +1075,7 @@ Dialog1E2:: ;🆖; Marin, probably
 ;    db "アハハハッ！　ねおきの　いいコね"
 ;    db "@"
 
-Dialog1E3:: ;🆖; Marin, probably
+Dialog1E3:: ;P4;🌞; Marin, probably
     toki "a! ona li wile e mi..."
     toki "sama tenpo pini..."
     toki_li_pini
@@ -1087,7 +1087,7 @@ Dialog1E3:: ;🆖; Marin, probably
 ;    db "きっと、いつものアレね．．フフフ"
 ;    db "@"
 
-Dialog1E4:: ;🆖; Marin, probably
+Dialog1E4:: ;P4;🌞; Marin, probably
     toki "lon a... ona li lape suwi..."
     toki "mi o ken e lape."
     toki_li_pini
@@ -1099,7 +1099,7 @@ Dialog1E4:: ;🆖; Marin, probably
 ;    db "そうね。　かわいそうだから　　　"
 ;    db "そっと、ねかせてあげようね。@"
 
-Dialog1E5:: ;🆖; Marin, probably
+Dialog1E5:: ;🌞; Marin, probably
     toki "jan [#####] o  mi tawa ma tomo soweli."
     toki "sina kin o kama a!"
     toki_li_pini
@@ -1111,7 +1111,7 @@ Dialog1E5:: ;🆖; Marin, probably
 ;    db "#####も、きっとよってね！　"
 ;    db "@"
 
-Dialog1E6:: ;🆖; Bow-Wow, maybe?
+Dialog1E6:: ;🌞; Bow-Wow, maybe?
     toki "mu  mu  mu a!"
     toki "jan <marin> jan <marin>a! jan<marin>  jan<marin>a!"
     toki "..... jan <link>anu seme a?"
@@ -1198,7 +1198,7 @@ Dialog1ED:: ;🆖; Fisherman, probably
     ;db "つぎは　なにがつれるか　　　　　"
     ;db "ほんとうにたのしみだよ！@"
 
-Dialog1EE:: ;🆖; Mamasha
+Dialog1EE:: ;🌞; Mamasha
     ;db "My husband is   "
     ;db "lost in the     "
     ;db "woods! Please   "
@@ -1944,23 +1944,23 @@ Dialog21A:: ;🌞; Book, Narrator
     ;db "？？．．．う－ん　ひみつの　　　"
     ;db "ニオイが　するゾ。　　@"
 
-Dialog21B:: ;🆖; Marin, probably
+Dialog21B:: ;P4;🆖; Marin follower
     db "...You're late! "
     db "I thought you'd "
     db "never come back!@"
 
-Dialog21C:: ;🆖; Marin, probably
+Dialog21C:: ;P4;🆖; Marin follower
     db "...EEEK!  You're"
     db "hurt!  Arrrgh!  "
     db "Don't be so     "
     db "reckless!@"
 
-Dialog21D:: ;🆖; Marin, probably
+Dialog21D:: ;P4;🆖; Marin follower
     db "#####! You're   "
     db "back!  Are you  "
     db "hurt?@"
 
-Dialog21E:: ;🆖; Marin
+Dialog21E:: ;P4;🆖; Marin follower
 
     ; https://twitter.com/PPLToast/status/1259908351363817472 :
     ; 1/64 chance of this message appearing, if you
@@ -2344,25 +2344,49 @@ Dialog23C:: ;P3;🌞; Richard, Richard photo part 2
     toki "sina ken sitelen wan taso a!"
     toki_li_pini
 
-Dialog23D:: ;🆖; Tarin, photo in Mabe Village
-    db "Hey, Marin and  "
-    db "#####! Are you  "
-    db "taking pictures?"
-    db "You should take "
-    db "pictures of     "
-    db "everyone,       "
-    db "including me.@"
+Dialog23D:: ;P4;🌞; Tarin, group selfie in Mabe Village
+    toki "jan [mu a loje ijo nena] en"
+    toki "      jan [#####] o-"
+    toki "sina sitelen anu seme? kulupu a o lon sitelen a!"
+    toki "o pana e mi tawa sitelen."
+    toki_li_pini
+    ;db "Hey, Marin and  "
+    ;db "#####! Are you  "
+    ;db "taking pictures?"
+    ;db "You should take "
+    ;db "pictures of     "
+    ;db "everyone,       "
+    ;db "including me.@"
+    ;db "おっ、マリンと#####　　　　"
+    ;db "なにやってるだ？．．しゃしんか！"
+    ;db "しゃしんはみんなでとるもんだよ！"
+    ;db "おらも、まぜてほしいだよ。@"
 
-Dialog23E:: ;🆖; Photographer, probably
-    db "I use this to   "
-    db "take pictures.  "
-    db "Are you ready?  "
-    db "Say 'mushroom!'@"
+Dialog23E:: ;P4;🌞; Tarin, group selfie in Mabe Village
+    toki "mi kepeken ilo linja tawa sitelen."
+    toki "sina pona ala pona? sinpin o toki e pilin pona."
+    toki "sina pona la o toki e kili."
+    toki "kili-"
+    toki_li_pini
+    ;db "I use this to   "
+    ;db "take pictures.  "
+    ;db "Are you ready?  "
+    ;db "Say 'mushroom!'@"
+    ;db "これで、しゃしん　とるだよ！　　"
+    ;db "よし、じゅんびは　いいだか？　　"
+    ;db "ニッコリ　わらうだよ－　　　　　"
+    ;db "　　　　　　　　　　　　　　　　"
+    ;db "　　　　はい、キノコ！@"
 
-Dialog23F:: ;🆖; Photographer, probably
-    db "OK, I'm done.   "
-    db "I'll go home    "
-    db "now.@"
+Dialog23F:: ;P4;🌞; Tarin, group selfie in Mabe Village
+    toki "mi pini la mi tawa tomo."
+    toki_li_pini
+    ;db "OK, I'm done.   "
+    ;db "I'll go home    "
+    ;db "now.@"
+    ;db "よし、しゃしんも　とったことだし"
+    ;db "おら、もとのいちに　もどるだよ。"
+    ;db "@"
 
 
 
@@ -2568,7 +2592,7 @@ Dialog249:: ;P3;🌞; Richard, Richard photo part 3
     toki "lon tenpo wile  lon nasin wile"
     toki_li_pini
 
-Dialog24A:: ;P4;🆖; top-left house bunny
+Dialog24A:: ;P4;🌞; top-left house bunny
     toki "ma ko [jelo anpa noka anpa], anu seme?"
     toki "sina ken tawa lon poka <down>."
     toki "taso, kala suli li pini e nasin..."
@@ -2588,7 +2612,7 @@ Dialog24A:: ;P4;🆖; top-left house bunny
     ;db "lazy walrus is  "
     ;db "in the way!@"
 
-Dialog24B:: ;P4;🆖; top-left outside bunny
+Dialog24B:: ;P4;🌞; top-left outside bunny
     toki "mu lape... suno li suwi..."
     toki "mi wile a kute e kalama musi a!"
     toki_li_pini
@@ -2600,7 +2624,7 @@ Dialog24B:: ;P4;🆖; top-left outside bunny
     ;db "day, we need a  "
     ;db "song from Marin!@"
 
-Dialog24C:: ;P4;🆖; top-right outside bunny
+Dialog24C:: ;P4;🌞; top-right outside bunny
     toki "ma tomo soweli en ma tomo [mu en pilin en] li olin."
     toki "ona tu li lili, li esun e jan e musi e moku e pona."
     toki "ma tomo [mu en pilin en] la, tomo sewi lape li lon."
@@ -2634,7 +2658,7 @@ Dialog24C:: ;P4;🆖; top-right outside bunny
     ;db "inside...  Is   "
     ;db "that true?@"
 
-Dialog24D:: ;P4;🆖; bottom-right outide bunny
+Dialog24D:: ;P4;🌞; bottom-right outide bunny
     toki "tenpo ni la, monsuta mute li lon,"
     toki "la mi ken ala tawa ma tomo [mu en pilin en]."
     toki "mu ike..."

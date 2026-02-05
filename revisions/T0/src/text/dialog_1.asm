@@ -1,6 +1,13 @@
-; P1: leadup to dungeon 1
-; P2: leadup to dungeon 2
+; P1: Leadup to dungeon 1
+; P2: Leadup to dungeon 2
+; P3: Leadup to dungeon 3
+; P4: Leadup to dungeon 4. Includes Marin follower sequence, and Color Dungeon
 ; etc
+
+; To set up RGBDS:
+; 1. install rgbenv
+; 2. `rgbenv use 0.9.3`
+; 3. `make azlt-r1.gbc`
 
 ; 160 lines in this file
 ; 333 [P] lines
@@ -14,6 +21,11 @@
 ; 275 🆖
 ; 389 🌞
 ; 59% translated
+
+; Feb 4 2026
+; total:
+; 443 🌞
+; 233 🆖
 
 
 ; todo: add periods to the left sentences in "sina moli"
@@ -2562,7 +2574,7 @@ Dialog09A:: ;P3;🌞; Narrator
 
 Dialog09B:: ;P1;🌞; Narrator
     toki "sina jo e palisa utala sina a!"
-    toki "sina sitelen e nimi sina lon ona a!"
+    toki "tenpo pini la, sina sitelen e nimi sina lon ona a!"
     toki_li_pini
     ;db "You found your  "
     ;db "Sword!  It must "

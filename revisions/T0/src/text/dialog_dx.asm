@@ -71,24 +71,33 @@ Dialog254:: ;🌞; Richard, Richard photo part 4
     toki "mi weka a!"
     toki_li_pini
 
-Dialog255:: ;🆖; Marin, Toronbo Shores
+Dialog255:: ;P4;🆖; Marin follower, Toronbo Shores
     db "This is my first"
     db "walk with you,  "
     db "#####.@"
+    ;db "．．．いっしょに　あるくのって　"
+    ;db "はじめてだね、#####@"
 
-Dialog256:: ;🆖; Marin, Toronbo Shores
+Dialog256:: ;P4;🆖; Marin follower, Toronbo Shores, between every 2 lines
     db ". . . . .@"
+    ;db "　．．．．　．．．．　．．．．　"
+    ;db "@"
 
-Dialog257:: ;🆖; Marin, Toronbo Shores
+Dialog257:: ;P4;🆖; Marin follower, Toronbo Shores
     db "This cliff will "
     db "be our secret   "
     db "place. @"
+    ;db "うふふ、このみさきも　ふたりだけ"
+    ;db "のヒミツだね．．．@"
 
-Dialog258:: ;🆖; Marin, Toronbo Shores
+Dialog258:: ;P4;🆖; Marin follower, Toronbo Shores
     db "Aren't you going"
     db "to say anything?@"
+    ;db "や－だ、#####も　なにか　　"
+    ;db "いってよ．．てれくさいじゃない。"
+    ;db "@"
 
-Dialog259:: ;🆖; Photographer, Toronbo Shores
+Dialog259:: ;P4;🆖; Photographer, Toronbo Shores
     db "Oh how I love   " ; make it very clear that it's the Photographer, not Marin, talking.
     db "pictures! Why   " ; he doesn't actually appear in frame
     db "don't you take  "
@@ -96,43 +105,50 @@ Dialog259:: ;🆖; Photographer, Toronbo Shores
     db "no one is       "
     db "around? You can "
     db "call it . . .@" ; he doesn't actually give it a name
+    ;db "しゃしんスキスキしゃしんやさん！"
+    ;db "ときどきヤボな　しゃしんやです！"
+    ;db "どうです？むらのひとに　ジャマ　"
+    ;db "されないように、ここで１まい！　"
+    ;db "もちろんとりますよね！だいめいは"
+    ;db "「．．．．　．．．．　．．．．」"
+    ;db "@"
 
-Dialog25A:: ;🆖; Narrator
+Dialog25A:: ;P4;🆖; Narrator
     db "You've got the  "
     db "Blue Clothes!   "
     db "Your damage will"
     db "be reduced by   "
     db "half!@"
 
-Dialog25B:: ;🆖; Narrator
+Dialog25B:: ;P4;🆖; Narrator
     db "You've got the  "
     db "Red Clothes!    "
     db "Your body is    "
     db "full of energy! @"
 
-Dialog25C:: ;🆖; Fairy Queen (Color Dungeon)
+Dialog25C:: ;P4;🆖; Fairy Queen (Color Dungeon)
     db "Red for offense,"
     db "blue for        "
     db "defense. Which  "
     db "do you choose?  "
     db "    RED  BLUE<ask>"
 
-Dialog25D:: ;🆖; Fairy Queen (Color Dungeon), Link
+Dialog25D:: ;P4;🆖; Fairy Queen (Color Dungeon), Link
     db "Are you sure?   "
     db "    YES  NO<ask>"
 
-Dialog25E:: ;🆖; Dion (Color Dungeon)
+Dialog25E:: ;P4;🆖; Dion (Color Dungeon)
     db "The fairy queen "
     db "is waiting for  "
     db "you.@"
 
-Dialog25F:: ;🆖; Gar (Color Dungeon)
+Dialog25F:: ;P4;🆖; Gar (Color Dungeon)
     db "Do you have the "
     db "powder? If not, "
     db "you must go     "
     db "back.@"
 
-Dialog260:: ;🆖; Color Guard (Color Dungeon)
+Dialog260:: ;P4;🆖; Color Guard (Color Dungeon)
     db "Our colors are  "
     db "never the same! "
     db "If I am red, he "
@@ -142,13 +158,13 @@ Dialog260:: ;🆖; Color Guard (Color Dungeon)
     db "is my cloth?    "
     db "    Red  Blue<ask>"
 
-Dialog261:: ;🆖; idk
+Dialog261:: ;P4;🆖; idk
     db "BOO! I am no    "
     db "weakling! Your  "
     db "pitiful sword is"
     db "no match for me!@"
 
-Dialog262:: ;🆖; Color Guard (Color Dungeon)
+Dialog262:: ;P4;🆖; Color Guard (Color Dungeon)
     db "I am sorry, but "
     db "this is the     "
     db "Color Dungeon.  "
@@ -162,7 +178,7 @@ Dialog262:: ;🆖; Color Guard (Color Dungeon)
     db "enter.          "
     db "Farewell.@"
 
-Dialog263:: ;🆖; idk (Color Dungeon)
+Dialog263:: ;P4;🆖; idk (Color Dungeon)
     db "Here is your    "
     db "clue. Make      "
     db "all the red     "
@@ -188,7 +204,7 @@ Dialog267:: ;🌞; Book, Narrator
     toki "ma kule sin li lon anpa pi kiwen moli luka."
     toki ""
     toki "nanpa tu wan la <up> nanpa tu tu la <right> nanpa luka la <up>"
-    toki " nanpa tu la <left>  nanpa wan la <down>"
+    toki "nanpa tu la <left>  nanpa wan la <down>"
     toki "o alasa kepeken wawa ale sina  o open e nasin sin a!"
     toki "jan li pona la ona li kama jo e wawa kule."
     toki ""
@@ -264,23 +280,23 @@ Dialog26B:: ;🆖; Great Fairy
     db "Relax and close "
     db "your eyes.@"
 
-Dialog26C:: ;🆖; idk (Color Dungeon)
+Dialog26C:: ;P4;🆖; idk (Color Dungeon)
     db "I will now take "
     db "you out.@"
 
-Dialog26D:: ;🆖; idk (Color Dungeon)
+Dialog26D:: ;P4;🆖; idk (Color Dungeon)
     db "Blue is safe.   "
     db "Yellow is       "
     db "caution. Red is "
     db "danger.@"
 
-Dialog26E:: ;🆖; idk (Color Dungeon)
+Dialog26E:: ;P4;🆖; idk (Color Dungeon)
     db "Yellow is       "
     db "caution. Red is "
     db "danger,Take     "
     db "your time.@"
 
-Dialog26F:: ;🆖; idk (Color Dungeon)
+Dialog26F:: ;P4;🆖; idk (Color Dungeon)
     db "Blue. Start     "
     db "over. Yellow is "
     db "caution. Red is "
@@ -340,41 +356,74 @@ Dialog275:: ;🌞; BowWow
     ;db "GRRRR!@"
     ;db "　　バウッ！バウッ！バウッ！@"
 
-Dialog276:: ;🆖; Marin
-    db "Ha ha ha! Do it!"
-    db "Do it!  Do it   "
-    db "moooore! ... ..."
-    db "Hunh?  No, it's "
-    db "nothing... I    "
-    db "didn't mean it.@"
+Dialog276:: ;P4;🌞; Marin follower, when you attack a cucco a LOT, supposedly
+    toki "a a a-  pona-  o utala-"
+    toki "wawa mute- ... ..."
+    toki "a ala. mi toki ala."
+    toki_li_pini
+    ;db "Ha ha ha! Do it!"
+    ;db "Do it!  Do it   "
+    ;db "moooore! ... ..."
+    ;db "Hunh?  No, it's "
+    ;db "nothing... I    "
+    ;db "didn't mean it.@"
+    ;db "キャハッ！　　やれ－！　やれ－！"
+    ;db "もっとやれ－！　　．　．　．　．"
+    ;db "　　　　　　　　　　　　　　　　"
+    ;db "いやっ　なんでもないわ．．．@"
 
-Dialog277:: ;🆖; Marin
-    db "Not very good..."
-    db "Eh?  What?  Did "
-    db "I say something?"
-    db "No, you're hear-"
-    db "ing things...@"
+Dialog277:: ;P4;🌞; Marin follower
+    toki "pona lili taso..."
+    toki "a! seme? mi toki ala. sina kute e ala."
+    toki_li_pini
+    ;db "Not very good..."
+    ;db "Eh?  What?  Did "
+    ;db "I say something?"
+    ;db "No, you're hear-"
+    ;db "ing things...@"
+    ;db "　　　　　　　　　　　　　　　　"
+    ;db "　　　　　イマイチ．．．　　　　"
+    ;db "えっ！？　わたし　なにかいった？"
+    ;db "きのせ－よ！　きのせ－！　　@"
 
-Dialog278:: ;🆖; Marin
-    db "#####, do you   "
-    db "always look in  "
-    db "other people's  "
-    db "drawers?@"
+Dialog278:: ;P4;🌞; Marin follower
+    toki "jan [#####]o..."
+    toki "sina lukin e poki pi jan ante lon tenpo ale anu seme..."
+    toki_li_pini
+    ;db "#####, do you   "
+    ;db "always look in  "
+    ;db "other people's  "
+    ;db "drawers?@"
+    ;db "#####って　いつも　　　　　"
+    ;db "こんなことしてるの？？　　　　　"
+    ;db "@"
 
-Dialog279:: ;🆖; Marin, probably
-    db "Great!  Dig it! "
-    db "Dig it!  Dig to "
-    db "the center of   "
-    db "the earth!!@"
+Dialog279:: ;P4;🌞; Marin follower, anytime you dig
+    toki "mu-! o lupa a! o lupa a-!"
+    toki "o lupa wawa a!"
+    toki_li_pini
+    ;db "Great!  Dig it! "
+    ;db "Dig it!  Dig to "
+    ;db "the center of   "
+    ;db "the earth!!@"
+    ;db "　キャ－ッ！　ほって！ほって！　"
+    ;db "どんどん　ほりまくって！！　　　"
+    ;db "@"
 
 Dialog27A:: ;🆖; Marin, probably
     db "Whew!  What a   "
     db "surprise!@"
+    ;db "ふうっ．．　　びっくらこいた。@"
 
-Dialog27B:: ;🆖; Marin, probably
-    db "Ohh!  I'm sorry!"
-    db "Are you okay?!  "
-    db "#####?@"
+Dialog27B:: ;P4;🌞; Marin follower, after she falls on Link in the well
+    toki "pakala a! mi pakala."
+    toki "jan [#####] o, sina pona ala pona?"
+    toki_li_pini
+    ;db "Ohh!  I'm sorry!"
+    ;db "Are you okay?!  "
+    ;db "#####?@"
+    ;db "　ギャ－－ッ！　　ゴメンナサイ　"
+    ;db "だいじょうぶ？　　#####？@"
 
 Dialog27C:: ;🌞; Cukeman
     toki "sina pu ala pu?"
@@ -752,13 +801,21 @@ Dialog2A5:: ;🌞; Photographer
     ;db "アルバムだけでも　みていってね。"
     ;db "@"
 
-Dialog2A6:: ;🆖; Photographer
-    db "Hi! I'm the     "
-    db "photographer!   "
-    db "What a great    "
-    db "photo moment!   "
-    db "I'll call this  "
-    db "'Heads Up!'@"
+Dialog2A6:: ;🌞; Photographer, when Marin is following, after Link falls in the well and Marin falls on his head
+    toki "mi soweli sitelen a! mi olin e sitelen a!"
+    toki "mi pana e nimi ni tawa sitelen ni: anpa."
+    toki_li_pini
+    ;db "Hi! I'm the     "
+    ;db "photographer!   "
+    ;db "What a great    "
+    ;db "photo moment!   "
+    ;db "I'll call this  "
+    ;db "'Heads Up!'@"
+    ;db "このよくばりものめ．．．　　　　"
+    ;db "さらにチカラを　もとめるとは！　"
+    ;db "オマエのようなオロカモノは、この"
+    ;db "ハカのそこで、くちはてるがよい！"
+    ;db "@"
 
 Dialog2A7:: ;🆖; Photographer
     db "Hey, this       "
