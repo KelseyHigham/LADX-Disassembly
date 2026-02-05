@@ -26,7 +26,13 @@ MusicSpeedData_1b_4ae6::
 
 ; RichardHouse, MabeVillage, FishermanUnderBridge, Ending
 MusicSpeedData_1b_4af5::
+; Which entries are actually used?
     db   $04, $09, $12, $24, $48, $90, $1b, $36, $6c, $05, $0c, $18, $18, $06, $d8
+; Richard       1    2    3    4    5         7             10        12   13   14
+; Mabe          1    2    3    4              7
+; Fisherman     1    2    3    4         6    7    8                       13
+; Ending        1    2    3    4    5    6    7    8
+; ...available?                                         9        11
 
 ; MabeVillage, Shop, MysteriousForest, AnimalVillage
 MusicSpeedData_1b_4b04::

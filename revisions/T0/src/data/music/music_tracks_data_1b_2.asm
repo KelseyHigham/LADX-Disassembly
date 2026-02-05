@@ -1,3 +1,5 @@
+; TOKI PONA VERSION; FEEL FREE TO EDIT
+
 MusicTotakaUnused::
     db   $00
     dw   MusicSpeedData_1b_4ae6
@@ -763,6 +765,10 @@ ChannelDefinition_1b_5327::
     set_waveform waveform_1b_6f21, $20
     end_def
 
+
+
+; TOKI PONA VERSION; FEEL FREE TO EDIT
+
 MusicMabeVillage::
     db   $00
     dw   MusicSpeedData_1b_4af5
@@ -867,31 +873,23 @@ ChannelDefinition_1b_5343:: ; Accompaniment
     note D_3
     note C_3
     set_speed MusicSpeedData_1b_4b04
-    notelen 4; ??? beats
+    notelen 4; 8 beats
     note B_2
-    notelen 7; ??? beats
+    notelen 7
     note A_2
     set_envelope_duty $52, $00, 2, 0
-    notelen 2; 2 beats
+    notelen 2
     note D_3
     set_speed MusicSpeedData_1b_4af5
     end_def
 
-; Case study! This song uses MusicSpeedData_1b_4af5, stored in
-; music_tracks_data_1b_1.asm.
-;
-; `notelen *` is an index into that table. It gets durations in frames.
-;
-; To make it easier to think about, we can convert those frame values to
-; musical "beats" by finding their greatest common factor.
-;
-;     MusicSpeedData_1b_4af5::
-;     ; notelen       1    2    3    4              7
-;         db   $04, $09, $12, $24, $48, $90, $1b, $36, $6c, $05, $0c, $18, $18, $06, $d8
-;     ; decimal       9   18   36   72             54
-;     ; beats         1    2    4    8              6
+;MusicSpeedData_1b_4af5::
+;    db   $04, $09, $12, $24, $48, $90, $1b, $36, $6c, $05, $0c, $18, $18, $06, $d8
+;; notelen       1    2    3    4              7
+;; decimal       9   18   36   72             54
+;; beats         1    2    4    8              6
 
-ChannelDefinition_1b_53a5:: ; Melody
+ChannelDefinition_1b_53a5:: ; melody
     set_envelope_duty $56, $00, 2, 0
 
     ; 16 beats
@@ -934,10 +932,8 @@ ChannelDefinition_1b_53a5:: ; Melody
     note B_4
     notelen 3; 4 beats
     note A_4
-    set_envelope_duty $42, $00, 2, 0
-    note F#4 ; Using the melody channel for accompaniment, for this one note
-    set_envelope_duty $56, $00, 2, 0
-    notelen 1; 1 beat
+    rest
+    notelen 1 ; 1 beat
     rest
     note B_4
     note C_5
@@ -976,14 +972,14 @@ ChannelDefinition_1b_53a5:: ; Melody
     note G_4
     note D#4
 
-    ; 16? beats
+    ; 16 beats, but 8 of them are slower
     begin_loop $04
         note D_4
         note D_5
     next_loop
     set_speed MusicSpeedData_1b_4b04
     begin_loop $04
-        notelen 2; ??? beats
+        notelen 2
         note D_5
         note D_6
     next_loop
@@ -4903,7 +4899,7 @@ MusicFishermanUnderBridge_Channel2::
     dw   $ffff, MusicFishermanUnderBridge_Channel2
 
 MusicFishermanUnderBridge_Channel3::
-    dw   ChannelDefinition_1b_6f6b ; shared
+    dw   ChannelDefinition_1b_6f6b
     dw   ChannelDefinition_1b_64b5
     dw   $ffff, MusicFishermanUnderBridge_Channel3
 
@@ -5111,7 +5107,7 @@ MusicEnding_Channel1::
     dw   ChannelDefinition_1b_666d
     dw   ChannelDefinition_1b_668a
     dw   ChannelDefinition_1b_66ba
-    dw   ChannelDefinition_1b_709f ; set speed
+    dw   ChannelDefinition_1b_709f
     dw   ChannelDefinition_1b_66d8
     dw   ChannelDefinition_1b_6716
     dw   ChannelDefinition_1b_671b
@@ -5150,7 +5146,7 @@ MusicEnding_Channel2::
     dw   ChannelDefinition_1b_68cc
     dw   ChannelDefinition_1b_6fed
     dw   ChannelDefinition_1b_68d1
-    dw   ChannelDefinition_1b_709f ; set speed
+    dw   ChannelDefinition_1b_709f
     dw   ChannelDefinition_1b_68e8
     dw   ChannelDefinition_1b_5ecc
     dw   ChannelDefinition_1b_rest_1
@@ -5191,7 +5187,7 @@ MusicEnding_Channel3::
     dw   ChannelDefinition_1b_rest_5_1
     dw   ChannelDefinition_1b_rest_A
     dw   ChannelDefinition_1b_6a55
-    dw   ChannelDefinition_1b_709f ; set speed
+    dw   ChannelDefinition_1b_709f
     dw   ChannelDefinition_1b_6a7c
     dw   ChannelDefinition_1b_6f55
     dw   ChannelDefinition_1b_rest_2
