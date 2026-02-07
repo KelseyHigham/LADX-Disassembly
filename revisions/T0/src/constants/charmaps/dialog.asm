@@ -20,7 +20,7 @@ ENDM
 ;
 ; NASIN FOR CHARACTER ENCODING
 ; The Toki Pona version of `codepoint_to_tile.asm` returns the input, so we
-; can store tile addresses directly in this file. 
+; can store tile addresses directly in this file.
 ; (Except codepoint $ff, if we end up using it)
 ;
 
@@ -132,7 +132,7 @@ charmap              "] ", $51
   nanpa_sitelen    "anpa", $55
   nanpa_sitelen    "ante", $56
   nanpa_sitelen     "anu", $57
-  nanpa_sitelen   ", anu", $57
+  nanpa_sitelen   ", anu", $57 ; anu seme
   nanpa_sitelen    "awen", $58
   nanpa_sitelen       "e", $59
   nanpa_sitelen    "jaki", $5a
@@ -237,8 +237,8 @@ charmap         "<glass>", $9a
 charmap            "<ask>", $fe ; END-OF-DIALOG; QUESTION
 charmap                "@", $ff ; END-OF-DIALOG
 
-; codepoint is $af, but tilemap address is $ff. 
-; we do the conversion in codepoint_to_tile.asm 
+; codepoint is $af, but tilemap address is $ff.
+; we do the conversion in codepoint_to_tile.asm
 ; for drawing my name glyph, probably only used during development
   nanpa_sitelen     "Keli", $af
 

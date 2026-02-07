@@ -8,7 +8,7 @@ MACRO toki
     db \1
     REDEF sitelencount EQU charlen(\1) ; charlen() counts sitelen after string conversion
     if sitelencount > 16
-        fail "text has {d:sitelencount} sitelen. cap to 16: \1"
+        fail "Text has {d:sitelencount} sitelen. Cap to 16: \1"
     endc
     ds 16 - charlen(\1), " " ; might crash lol
 ENDM
@@ -46,18 +46,25 @@ Dialog251:: ;🆖; Rabbit
     db "just a rabbit,  "
     db "so I don't know!@"
 
-Dialog252:: ;🆖; idk
+Dialog252:: ;🆖; Rabbit, probably
     db "Ahhh!  It's her!"
     db "Little Marin!!@"
 
-Dialog253:: ;🆖; idk
-    db "If you have no  "
-    db "courage,then    "
-    db "you have no     "
-    db "strength.       "
-    db "Gravestones     "
-    db "won't move for  "
-    db "cowards.@"
+Dialog253:: ;🌞; Entrance to the Color Dungeon, when Marin is with you
+    toki "sina pilin monsuta la, sina kama e kulupu la, sina ken ala kama."
+    toki "jan wan wawa taso li ken kama."
+    toki_li_pini
+    ;db "If you have no  "
+    ;db "courage,then    "
+    ;db "you have no     "
+    ;db "strength.       "
+    ;db "Gravestones     "
+    ;db "won't move for  "
+    ;db "cowards.@"
+    ;db "　「ひとりでいどむ　ゆうきが　　"
+    ;db "　　ないもの、ちからなきもの！　"
+    ;db "　　そのようなものがおしても　　"
+    ;db "　　このはかは　うごかせぬ！」@"
 
 Dialog254:: ;🌞; Richard, Richard photo part 4
     ;db "I'm not afraid. "
@@ -71,40 +78,54 @@ Dialog254:: ;🌞; Richard, Richard photo part 4
     toki "mi weka a!"
     toki_li_pini
 
-Dialog255:: ;P4;🆖; Marin follower, Toronbo Shores
-    db "This is my first"
-    db "walk with you,  "
-    db "#####.@"
+Dialog255:: ;P4;🌞; Marin follower, Toronbo Shores
+    toki "...jan [#####] o"
+    toki "tenpo pini ala la mi tu li tawa noka lon poka."
+    toki_li_pini
+    ;db "This is my first"
+    ;db "walk with you,  "
+    ;db "#####.@"
     ;db "．．．いっしょに　あるくのって　"
     ;db "はじめてだね、#####@"
 
-Dialog256:: ;P4;🆖; Marin follower, Toronbo Shores, between every 2 lines
+Dialog256:: ;P4;🌞; Marin follower, Toronbo Shores, between every 2 lines
     db ". . . . .@"
     ;db "　．．．．　．．．．　．．．．　"
     ;db "@"
 
-Dialog257:: ;P4;🆖; Marin follower, Toronbo Shores
-    db "This cliff will "
-    db "be our secret   "
-    db "place. @"
+Dialog257:: ;P4;🌞; Marin follower, Toronbo Shores
+    toki "mu musi  mu musi... mi tu li wile toki len la"
+    toki "mi ken kama tawa poka ma ni."
+    toki_li_pini
+    ;db "This cliff will "
+    ;db "be our secret   "
+    ;db "place. @"
     ;db "うふふ、このみさきも　ふたりだけ"
     ;db "のヒミツだね．．．@"
 
-Dialog258:: ;P4;🆖; Marin follower, Toronbo Shores
-    db "Aren't you going"
-    db "to say anything?@"
+Dialog258:: ;P4;🌞; Marin follower, Toronbo Shores
+    toki "sina-sina toki ala la mi pilin monsuta lili..."
+    toki "o toki a a a..."
+    toki_li_pini
+    ;db "Aren't you going"
+    ;db "to say anything?@"
     ;db "や－だ、#####も　なにか　　"
     ;db "いってよ．．てれくさいじゃない。"
     ;db "@"
 
-Dialog259:: ;P4;🆖; Photographer, Toronbo Shores
-    db "Oh how I love   " ; make it very clear that it's the Photographer, not Marin, talking.
-    db "pictures! Why   " ; he doesn't actually appear in frame
-    db "don't you take  "
-    db "a picture when  "
-    db "no one is       "
-    db "around? You can "
-    db "call it . . .@" ; he doesn't actually give it a name
+Dialog259:: ;P4;🌞; Photographer, Toronbo Shores
+    toki ""
+    toki "...toki a! mi soweli sitelen a! mi olin e sitelen."
+    toki "mi tu wan taso li lon la mi o sitelen."
+    toki "mi pana e nimi ni tawa sitelen: ..."
+    toki_li_pini
+    ;db "Oh how I love   " ; make it very clear that it's the Photographer, not Marin, talking.
+    ;db "pictures! Why   " ; he doesn't actually appear in frame
+    ;db "don't I take    "
+    ;db "a picture while "
+    ;db "no one is       "
+    ;db "around? We can  "
+    ;db "call it . . .@" ; he doesn't actually give it a name
     ;db "しゃしんスキスキしゃしんやさん！"
     ;db "ときどきヤボな　しゃしんやです！"
     ;db "どうです？むらのひとに　ジャマ　"
@@ -113,85 +134,167 @@ Dialog259:: ;P4;🆖; Photographer, Toronbo Shores
     ;db "「．．．．　．．．．　．．．．」"
     ;db "@"
 
-Dialog25A:: ;P4;🆖; Narrator
-    db "You've got the  "
-    db "Blue Clothes!   "
-    db "Your damage will"
-    db "be reduced by   "
-    db "half!@"
+Dialog25A:: ;P4;🌞; Narrator
+    toki "sina kepeken len laso a!"
+    toki "ike li pakala e sina la len li lili e pakala."
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Blue Clothes!   "
+    ;db "Your damage will"
+    ;db "be reduced by   "
+    ;db "half!@"
+    ;db "あおいふくを　てにいれた！　　　"
+    ;db "これでハ－トがへりにくくなった。"
+    ;db "@"
 
-Dialog25B:: ;P4;🆖; Narrator
-    db "You've got the  "
-    db "Red Clothes!    "
-    db "Your body is    "
-    db "full of energy! @"
+Dialog25B:: ;P4;🌞; Narrator
+    toki "sina kepeken len loje a!"
+    toki "wawa mute li tawa sijelo."
+    toki_li_pini
+    ;db "You've got the  "
+    ;db "Red Clothes!    "
+    ;db "Your body is    "
+    ;db "full of energy! @"
+    ;db "あかいふくを　てにいれた！　　　"
+    ;db "からだに、ちからがみなぎってくる"
+    ;db "@"
 
-Dialog25C:: ;P4;🆖; Fairy Queen (Color Dungeon)
-    db "Red for offense,"
-    db "blue for        "
-    db "defense. Which  "
-    db "do you choose?  "
-    db "    RED  BLUE<ask>"
+Dialog25C:: ;P4;🌞; Fairy Queen (Color Dungeon)
+    toki "loje li suli e wawa utala."
+    toki "laso li suli e wawa awen."
+    toki "sina wile e seme?"
+    toki "    loje utala    laso awen<ask>"
+    toki_li_pini
+    ;db "Red for offense,"
+    ;db "blue for        "
+    ;db "defense. Which  "
+    ;db "do you choose?  "
+    ;db "    RED  BLUE<ask>"
+    ;db "こうげきのアカ、ぼうぎょのアオ、"
+    ;db "どちらをえらぶのですか？　　　　"
+    ;db "　　　　アカ　　　アオ<ask>"
 
-Dialog25D:: ;P4;🆖; Fairy Queen (Color Dungeon), Link
-    db "Are you sure?   "
-    db "    YES  NO<ask>"
+Dialog25D:: ;P4;🌞; Fairy Queen (Color Dungeon), if you pick the red clothes
+    toki "len loje li pona, anu seme?"
+    toki "    pona     n! mi lukin sin<ask>"
+    toki_li_pini
+    ;db "Are you sure?   "
+    ;db "    YES  NO<ask>"
+    ;db "あかいふくで　よいのですね？　　"
+    ;db "　　　　はい　　　いいえ<ask>"
 
-Dialog25E:: ;P4;🆖; Dion (Color Dungeon)
-    db "The fairy queen "
-    db "is waiting for  "
-    db "you.@"
+Dialog25E:: ;P4;🌞; Dion (Color Dungeon)
+    toki "jan sewi li awen tawa sina."
+    toki_li_pini
+    ;db "The fairy queen "
+    ;db "is waiting for  "
+    ;db "you.@"
+    ;db "ようせいの　じょ－おうさまが、　"
+    ;db "まってるよ！@"
 
-Dialog25F:: ;P4;🆖; Gar (Color Dungeon)
-    db "Do you have the "
-    db "powder? If not, "
-    db "you must go     "
-    db "back.@"
+Dialog25F:: ;P4;🌞; Gar (Color Dungeon)
+    toki "sina jo ala jo e ko?"
+    toki "jo ala la o jo."
+    toki_li_pini
+    ;db "Do you have the "
+    ;db "powder? If not, "
+    ;db "you must go     "
+    ;db "back.@"
+    ;db "こな、もってる？　まほうのこな！"
+    ;db "ないのなら、もどったほうがいいよ"
+    ;db "@"
 
-Dialog260:: ;P4;🆖; Color Guard (Color Dungeon)
-    db "Our colors are  "
-    db "never the same! "
-    db "If I am red, he "
-    db "is blue! If he  "
-    db "is red, I am    "
-    db "blue! What color"
-    db "is my cloth?    "
-    db "    Red  Blue<ask>"
+Dialog260:: ;P4;🌞; Color Guard (Color Dungeon)
+    toki "mi en jan mi li kule ante a!"
+    toki "mi laso la ona li loje a!"
+    toki "ona li laso la mi loje a!"
+    toki "len mi li kule seme?"
+    toki "    loje     laso<ask>"
+    toki_li_pini
+    ;db "Our colors are  "
+    ;db "never the same! "
+    ;db "If I am red, he "
+    ;db "is blue! If he  "
+    ;db "is red, I am    "
+    ;db "blue! What color"
+    ;db "is my cloth?    "
+    ;db "    Red  Blue<ask>"
+    ;db "ボクとコイツは、ちがう　イロ！　"
+    ;db "ボクがアカなら、コイツはアオ！　"
+    ;db "コイツがアカなら、ボクはアオ！　"
+    ;db "くらべてみよう、カラ－でね！　　"
+    ;db "さて、ボクのふくは　なにいろ？　"
+    ;db "　　　　アカ　　　アオ<ask>"
 
-Dialog261:: ;P4;🆖; idk
-    db "BOO! I am no    "
-    db "weakling! Your  "
-    db "pitiful sword is"
-    db "no match for me!@"
+Dialog261:: ;P4;🌞; Giant Buzz Blob (Color Dungeon)
+    toki "mu ko--- mi ante e sijelo tawa ni:"
+    toki "palisa sina li ken ala pakala e mi a!"
+    toki "mi pana e sona kepeken utala a!"
+    toki_li_pini
+    ;db "BOO! I am no    "
+    ;db "weakling! Your  "
+    ;db "pitiful sword is"
+    ;db "no match for me!@"
+    ;db "ボヨヨン！　オレたちが　ザコじゃ"
+    ;db "ないことを　おもいしらせてやる！"
+    ;db "オマエのニガテな、アイツに　　　"
+    ;db "ヘンシンだ！ケンなど　きかぬゾ！"
+    ;db "@"
 
-Dialog262:: ;P4;🆖; Color Guard (Color Dungeon)
-    db "I am sorry, but "
-    db "this is the     "
-    db "Color Dungeon.  "
-    db "Only those with "
-    db "the power of    "
-    db "color may enter."
-    db "If you can tell "
-    db "who wears red   "
-    db "and who wears   "
-    db "blue, you may   "
-    db "enter.          "
-    db "Farewell.@"
+Dialog262:: ;P4;🌞; Color Guard (Color Dungeon)
+    toki "pakala... ni li tomo kule."
+    toki "jan li sona e kule la, ona li ken kama."
+    toki "mi seme li laso? mi seme li loje?"
+    toki "sina sona la sina ken kama."
+    toki "tawa pona."
+    toki_li_pini
+    ;db "I am sorry, but "
+    ;db "this is the     "
+    ;db "Color Dungeon.  "
+    ;db "Only those with "
+    ;db "the power of    "
+    ;db "color may enter."
+    ;db "If you can tell "
+    ;db "who wears red   "
+    ;db "and who wears   "
+    ;db "blue, you may   "
+    ;db "enter.          "
+    ;db "Farewell.@"
+    ;db "う－ん、ゴメンね。このダンジョン"
+    ;db "はべつめい、カラ－ダンジョン！　"
+    ;db "カラ－せんようなんだ。ボクたちの"
+    ;db "どっちがアカで、どっちがアオの　"
+    ;db "ふくを　きているか　わかったら　"
+    ;db "はいれるようになるよ。またね。@"
 
-Dialog263:: ;P4;🆖; idk (Color Dungeon)
-    db "Here is your    "
-    db "clue. Make      "
-    db "all the red     "
-    db "blue.@"
+Dialog263:: ;P4;🌞; Owl Statue (Color Dungeon)
+    toki "sike o kule wan taso."
+    toki "loje o kama wan laso."
+    toki_li_pini
+    ;db "Here is your    "
+    ;db "clue. Make      "
+    ;db "all the red     "
+    ;db "blue.@"
+    ;db "イロ　ツキシ　トコロ　タタクベシ"
+    ;db "スベテ　アオ　ニテ　ナゾ　トケリ"
+    ;db "@"
 
-Dialog264:: ;🆖; idk
-    db "No,  no. Take a "
-    db "closer look and "
-    db "try again.@"
+Dialog264:: ;🌞; Color Guard, if you answer wrong
+    toki "ala a-"
+    toki "o lukin pona. o toki sin."
+    toki_li_pini
+    ;db "No,  no. Take a "
+    ;db "closer look and "
+    ;db "try again.@"
+    ;db "ちがうよ、ちがうよ、　　　　　　"
+    ;db "もう１ど　よくみて　こたえて！@"
 
-Dialog265:: ;🆖; idk
-    db "Don't tell      "
-    db "anyone.@"
+Dialog265:: ;🌞; Color Guard, if you answer correctly
+    toki "o len e sona ni."
+    toki_li_pini
+    ;db "Don't tell      "
+    ;db "anyone.@"
+    ;db "みんなには、ナイショだよ．．．@"
 
 Dialog266:: ;🌞; Narrator
     toki "sina wile ala wile lukin e lipu ni?"
@@ -236,20 +339,28 @@ Dialog267:: ;🌞; Book, Narrator
     ;db "うむむ？．．カラ－の　せかいって"
     ;db "どういうことだろう？@"
 
-Dialog268:: ;🆖; Fairy Queen (Color Dungeon)
-    db "Welcome, #####. "
-    db "I admire you for"
-    db "coming this far."
-    db "I will give you "
-    db "the power of    "
-    db "color. If you   "
-    db "want offense,   "
-    db "choose red. If  "
-    db "you want defense"
-    db "choose blue.    "
-    db "Which power do  "
-    db "you want?       "
-    db "    RED  BLUE<ask>"
+Dialog268:: ;🌞; Fairy Queen (Color Dungeon)
+    toki "jan lili wawa [#####] o..."
+    toki "sina kama la sina wawa mute."
+    toki "mi pana e wawa kule tawa sina."
+    toki "sina wile pakala wawa e monsuta la, o wile e wawa loje."
+    toki "sina wile awen e sijelo sina la, o wile e wawa laso."
+    toki "sina wile e wawa seme?"
+    toki "    loje utala    laso awen<ask>"
+    toki_li_pini
+    ;db "Welcome, #####. "
+    ;db "I admire you for"
+    ;db "coming this far."
+    ;db "I will give you "
+    ;db "the power of    "
+    ;db "color. If you   "
+    ;db "want offense,   "
+    ;db "choose red. If  "
+    ;db "you want defense"
+    ;db "choose blue.    "
+    ;db "Which power do  "
+    ;db "you want?       "
+    ;db "    RED  BLUE<ask>"
     ;db "めざめのししゃ、#####よ！　"
     ;db "よく、ここまでたどりつきました。"
     ;db "あなたをしかくあるものと　みとめ"
@@ -261,46 +372,90 @@ Dialog268:: ;🆖; Fairy Queen (Color Dungeon)
     ;db "さあ、どちらを　えらぶのですか？"
     ;db "　　　　アカ　　　アオ<ask>"
 
-Dialog269:: ;🆖; idk
-    db "You fool! Your  "
-    db "sword won't     "
-    db "work! Try       "
-    db "something else!@"
+Dialog269:: ;🌞; Giant Buzz Blob (Color Dungeon)
+    toki "a a a! sina wawa lawa lili a!"
+    toki "palisa sina li ken ala pakala e mi a! o kepeken ijo ante a!"
+    toki_li_pini
+    ;db "You fool! Your  "
+    ;db "sword won't     "
+    ;db "work! Try       "
+    ;db "something else!@"
+    ;db "バカめ、ケンなど　きかんわ！コナ"
+    ;db "でも、テッポウでも　もってこい！"
+    ;db "@"
 
-Dialog26A:: ;🆖; idk
-    db "What a greedy   "
-    db "fool! You want  "
-    db "more power?! A  "
-    db "buffoon like you"
-    db "might as well   "
-    db "give up and     "
-    db "go home!@"
+Dialog26A:: ;🌞; Stone Hinox (Color Dungeon)
+    toki "sina jaki o... sina alasa e wawa sin..."
+    toki "sina o moli ike a! o kama ko lon tomo ni!"
+    toki_li_pini
+    ;db "What a greedy   "
+    ;db "fool! You want  "
+    ;db "more power?! A  "
+    ;db "buffoon like you"
+    ;db "might as well   "
+    ;db "give up and     "
+    ;db "go home!@"
+    ;db "このよくばりものめ．．．　　　　"
+    ;db "さらにチカラを　もとめるとは！　"
+    ;db "オマエのようなオロカモノは、この"
+    ;db "ハカのそこで、くちはてるがよい！"
+    ;db "@"
 
-Dialog26B:: ;🆖; Great Fairy
-    db "Relax and close "
-    db "your eyes.@"
+Dialog26B:: ;🌞; Great Fairy
+    toki "mi pana e wawa kule. o pini e lukin..."
+    toki_li_pini
+    ;db "Relax and close "
+    ;db "your eyes.@"
+    ;db "いろのちからを　さずけましょう。"
+    ;db "すこしのあいだ、めをとじて．．．"
+    ;db "@"
 
-Dialog26C:: ;P4;🆖; idk (Color Dungeon)
-    db "I will now take "
-    db "you out.@"
+Dialog26C:: ;P4;🌞; Great Fairy (Color Dungeon)
+    toki "mi tawa e sina tawa open tomo."
+    toki_li_pini
+    ;db "I will now take "
+    ;db "you out.@"
+    ;db "あなたを　ちじょうまで　　　　　"
+    ;db "おくりとどけてあげましょう！@"
 
-Dialog26D:: ;P4;🆖; idk (Color Dungeon)
-    db "Blue is safe.   "
-    db "Yellow is       "
-    db "caution. Red is "
-    db "danger.@"
+Dialog26D:: ;P4;🌞; Hardhit Beetle (Color Dungeon)
+    ; spoken at the start
+    toki "mu ilo    mu ilo     laso la pona  pona"
+    toki "jelo la ike     loje la... moli@"
+    toki_li_pini
+    ;db "Blue is safe.   "
+    ;db "Yellow is       "
+    ;db "caution. Red is "
+    ;db "danger.@"
+    ;db "アオ、アンゼン　アンゼン！　　　"
+    ;db "キイロ、チュウイ！アカ．．キケン"
+    ;db "@"
 
-Dialog26E:: ;P4;🆖; idk (Color Dungeon)
-    db "Yellow is       "
-    db "caution. Red is "
-    db "danger,Take     "
-    db "your time.@"
+Dialog26E:: ;P4;🌞; Hardhit Beetle (Color Dungeon)
+    ; spoken when you hit it enough times to turn it yellow
+    toki "mu ilo     mu ilo     jelo la ike a"
+    toki "loje la moli...   o awen! o awen!@"
+    toki_li_pini
+    ;db "Yellow is       "
+    ;db "caution. Red is "
+    ;db "danger,Take     "
+    ;db "your time.@"
+    ;db "キイロ、チュウイ！アカ、キケン！"
+    ;db "ジカンカセギ．．．ジカンカセギ！"
+    ;db "@"
 
-Dialog26F:: ;P4;🆖; idk (Color Dungeon)
-    db "Blue. Start     "
-    db "over. Yellow is "
-    db "caution. Red is "
-    db "danger.@"
+Dialog26F:: ;P4;🌞; Hardhit Beetle (Color Dungeon)
+    ; spoken when you haven't hit it enough times, and it changes back to blue
+    toki "mu ilo     mu ilo     laso la open sin"
+    toki "jelo la ike     loje la... moli"
+    toki_li_pini
+    ;db "Blue. Start     "
+    ;db "over. Yellow is "
+    ;db "caution. Red is "
+    ;db "danger.@"
+    ;db "フッカツ！　アオ．．．フリダシ！"
+    ;db "キイロ、チュウイ！アカ、キケン！"
+    ;db "@"
 
 Dialog270:: ;🌞; Photographer
     toki "pona a! ni li pana e pilin pona a!"
@@ -410,13 +565,15 @@ Dialog279:: ;P4;🌞; Marin follower, anytime you dig
     ;db "どんどん　ほりまくって！！　　　"
     ;db "@"
 
-Dialog27A:: ;🆖; Marin, probably
-    db "Whew!  What a   "
-    db "surprise!@"
+Dialog27A:: ;🌞; Marin follower, after she falls on Link in the well
+    toki "mu kon... ni li monsuta a!"
+    toki_li_pini
+    ;db "Whew!  What a   "
+    ;db "surprise!@"
     ;db "ふうっ．．　　びっくらこいた。@"
 
 Dialog27B:: ;P4;🌞; Marin follower, after she falls on Link in the well
-    toki "pakala a! mi pakala."
+    toki "a--- pakala a! mi pakala."
     toki "jan [#####] o, sina pona ala pona?"
     toki_li_pini
     ;db "Ohh!  I'm sorry!"
@@ -854,9 +1011,13 @@ Dialog2AD:: ;🌞; Photographer, probably
     toki "ni taso."
     toki_li_pini
 
-Dialog2AE:: ;🆖; Photographer, probably
-    db "Are you sure?   "
-    db "    YES  NO<ask>"
+Dialog2AE:: ;P4;🌞; Fairy Queen (Color Dungeon), if you pick blue clothes
+    toki "len laso li pona, anu seme?"
+    toki "    pona     n! mi lukin sin<ask>"
+    ;db "Are you sure?   "
+    ;db "    YES  NO<ask>"
+    ;db "あおいふくで　よいのですね？　　"
+    ;db "　　　　はい　　　いいえ<ask>"
 
 Dialog2AF:: ;🆖; Photographer, probably
     db "Ah how I love   "

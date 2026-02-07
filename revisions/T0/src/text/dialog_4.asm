@@ -114,19 +114,23 @@ Dialog197:: ;🆖; Marin, probably
     ;db "わたしの　ねがいきいてくれるかな"
     ;db "@"
 
-Dialog198:: ;🆖; Marin, probably
-    db "Eh?  You want me"
-    db "to go in there? "
-    db "No, I think I'll"
-    db "wait out here..."
-    db "Take care of    "
-    db "yourself, #####!@"
+Dialog198:: ;🌞; Marin follower, probably
+    toki "a! sina tawa insa anu seme?"
+    toki "mi awen lon weka..."
+    toki "jan [#####] o awen pona"
+    toki_li_pini
+    ;db "Eh?  You want me"
+    ;db "to go in there? "
+    ;db "No, I think I'll"
+    ;db "wait out here..."
+    ;db "Take care of    "
+    ;db "yourself, #####!@"
     ;db "えっ？　なかに　はいるの？　　　"
     ;db "わたし、ここでまってる．．．　　"
     ;db "きをつけてネ#####．．．　　"
     ;db "@"
 
-Dialog199:: ;🌞; Marin, while following, if you break a pot in her house
+Dialog199:: ;🌞; Marin follower, if you break a pot in her house
     ;db "Ahhh!  Ahhh, you"
     ;db "are a bad boy,  "
     ;db "#####!@"
@@ -1944,24 +1948,42 @@ Dialog21A:: ;🌞; Book, Narrator
     ;db "？？．．．う－ん　ひみつの　　　"
     ;db "ニオイが　するゾ。　　@"
 
-Dialog21B:: ;P4;🆖; Marin follower
-    db "...You're late! "
-    db "I thought you'd "
-    db "never come back!@"
+Dialog21B:: ;P4;🌞; Marin follower
+    toki "...sina kepeken tenpo suli."
+    toki "mi pilin e ni: sina kama ala..."
+    toki_li_pini
+    ;db "...You're late! "
+    ;db "I thought you'd "
+    ;db "never come back!@"
+    ;db "．．．おそかったね。　　もう　　"
+    ;db "かえってこないかとおもった．．．"
+    ;db "@"
 
-Dialog21C:: ;P4;🆖; Marin follower
-    db "...EEEK!  You're"
-    db "hurt!  Arrrgh!  "
-    db "Don't be so     "
-    db "reckless!@"
+Dialog21C:: ;P4;🌞; Marin follower
+    toki "a---! sijelo sina li pakala a!"
+    toki "o pona tawa sijelo a!"
+    toki_li_pini
+    ;db "...EEEK!  You're"
+    ;db "hurt!  Arrrgh!  "
+    ;db "Don't be so     "
+    ;db "reckless!@"
+    ;db "キャ－－－っ！！　すごいケガッ！"
+    ;db "もうっ！　ムチャしちゃだめ！　@"
 
-Dialog21D:: ;P4;🆖; Marin follower
-    db "#####! You're   "
-    db "back!  Are you  "
-    db "hurt?@"
+Dialog21D:: ;P4;🌞; Marin follower
+    toki "a- kama pona, jan [####] o."
+    toki "sina pakala ala, anu seme?"
+    toki_li_pini
+    ;db "#####! You're   "
+    ;db "back!  Are you  "
+    ;db "hurt?@"
+    ;db "あっ！　おかえり#####　　　"
+    ;db "ケガしなかった？@"
 
-Dialog21E:: ;P4;🆖; Marin follower
-
+Dialog21E:: ;P4;🌞; Marin follower
+    toki "mu ilo  mu ilo  mu ilo  mu ilo  mu ilo"
+    toki "o moku e pilin a! mi wile ala kute e mu pi pakala sijelo."
+    toki_li_pini
     ; https://twitter.com/PPLToast/status/1259908351363817472 :
     ; 1/64 chance of this message appearing, if you
     ; - enter a dungeon with health
@@ -1978,12 +2000,17 @@ Dialog21E:: ;P4;🆖; Marin follower
     ;
     ;   I assume she's referring to the beeping
 
-    db "...You idiot!   "
-    db "I told you this "
-    db "would happen... "
-    db "Eh?!  What?  I  "
-    db "didn't say any- "
-    db "thing, really!@"
+    ;db "...You idiot!   "
+    ;db "I told you this "
+    ;db "would happen... "
+    ;db "Eh?!  What?  I  "
+    ;db "didn't say any- "
+    ;db "thing, really!@"
+    ;db "　　　　　　　　　　　　　　　　"
+    ;db "　　　いわんこっちゃない．．．．"
+    ;db "えっ！？なに！？わたしなんにも　"
+    ;db "きこえないわよっ！　ほんとよ！　"
+    ;db "@"
 
 Dialog21F:: ; Kid
 Dialog220:: ;P2;🌞; Kid
@@ -2328,13 +2355,6 @@ Dialog23C:: ;P3;🌞; Richard, Richard photo part 2
     ;db "キネンをのこすに　あたいするね！"
     ;db "よし、１まいとることをゆるすぞ！"
     ;db "@"
-    ;ChatGPT: "You all, are you looking at my castle?"
-    ;"Are you mesmerized?" or "Are you entranced?"
-    ;"Actually, this castle is expensive!"
-    ;"It costs money, you know!"
-    ;"But still, my courage..."
-    ;"It's worth leaving a memorial!"
-    ;"Alright, I’ll allow you to take one photo!"
     toki "a-  sina lukin e tomo mi a!"
     toki "sina pilin e wawa anu seme..."
     toki "lon la... tomo li wile e mani a!"

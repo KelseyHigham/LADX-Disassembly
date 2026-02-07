@@ -48,8 +48,6 @@ Dialog10B:: ;🌞; Photographer ; plays at Toronbo Shores, and probably after ev
     ;db "それじゃ、げんぞうしときますから"
     ;db "できたしゃしんも　みにきてね！@"
 
-    ; CONTINUE TRANSLATING/REVIEWING FROM HERE
-
 Dialog10C:: ;🌞; Photographer
     toki "mi olin e sitelen a! mi soweli sitelen a!"
     toki "mi ken ala ken sitelen e sina a?"

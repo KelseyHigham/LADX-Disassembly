@@ -18,14 +18,18 @@
 ; 157 🌞
 ; 2 🆖
 ; total:
-; 275 🆖
 ; 389 🌞
+; 275 🆖
 ; 59% translated
 
 ; Feb 4 2026
 ; total:
 ; 443 🌞
 ; 233 🆖
+
+; Feb 6
+; 478 🌞
+; 202 🆖
 
 
 ; todo: add periods to the left sentences in "sina moli"
