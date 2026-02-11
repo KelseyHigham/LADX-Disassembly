@@ -1,7 +1,7 @@
 ; P1: Leadup to dungeon 1
 ; P2: Leadup to dungeon 2
 ; P3: Leadup to dungeon 3
-; P4: Leadup to dungeon 4. Includes Marin follower sequence, and Color Dungeon
+; P4: Leadup to dungeon 4. Includes Marin follower sequence, and Color Dungeon, and Papahl pineapple
 ; etc
 
 ; To set up RGBDS:
@@ -39,8 +39,6 @@
 
 ; resources:
 ; https://jisho.org/ - dictionary
-; https://www.deepl.com/ - machine translation
-; https://translate.google.com - machine translation
 ; https://lizbushouse.com/zelda-links-awakening-script-comparison/
 
 ; notes:
@@ -71,7 +69,7 @@
 
 Dialog000:: ;P1;🌞; Tarin
     ;toki "jan lili o! o awen a! mi wile toki tawa sina."
-    toki "a- o awen! o kama!@"
+    toki "a-  o awen! o kama!@"
     toki_li_pini
 
     ;db "Whoa, boy! Where"
@@ -224,7 +222,6 @@ Dialog002:: ;P1;🌞; Marin
     ;db "ウロウロするようになったの。　　" wander became.
     ;db "きをつけていってね。　　　　　　" be careful, okay?
     ;db "@"
-        ; Bing chat: “あるけば” is a contraction of “あるく” (to walk) and “ば” (if). It is a conditional form that means “if you walk”.
 
 Dialog003:: ;P1;🌞; Marin
     toki "a! jan [#####] o! toki."
@@ -622,7 +619,7 @@ Dialog012:: ;P3;🌞; Talking Tree
     ;db "こわせるんだよ！　きがついてた？" kowaserundayo! notice?
     ;db "@"
 
-Dialog013:: ;p?;🌞; Narrator, probably
+Dialog013:: ;P4;🌞; Narrator, probably
     toki "jan [mu a loje ijo nena] li pana e ken pi"
     toki "kalama musi pi kala kon a!"
     toki "kalama uta ona li suwi"
@@ -646,7 +643,7 @@ Dialog013:: ;p?;🌞; Narrator, probably
     ;db "ここちよく　みみにのこる。　　　" comfortable/pleasant   ear ni remain.
     ;db "@"
 
-Dialog014:: ;p?;🌞; Marin, probably
+Dialog014:: ;P4;🌞; Marin, probably
     ;toki "o kalama ni lon tenpo. sona kalama o awen a!"
     ;toki "kalama o awen lon lawa. o kalama lon tenpo tawa ni a!"
     toki "kalama musi ni li suli tawa mi. o awen sona e ona."
@@ -667,7 +664,7 @@ Dialog014:: ;p?;🌞; Marin, probably
     ;db "このうた、わすれないように　　　" this song, not forget  in order to
     ;db "ときどき　うたってね！@"        sometimes  please sing!
 
-Dialog015:: ;p?;🌞; Marin, probably
+Dialog015:: ;P4;🌞; Marin, probably
     toki "a! o kama sona a!"
     toki "kalama musi ni li pona nanpa wan tawa mi."
     toki_li_pini
@@ -682,7 +679,7 @@ Dialog015:: ;p?;🌞; Marin, probably
     ;db "え－っ！　ちゃんとおぼえてね！　"
     ;db "わたしのすきな　うたなんだから@"
 
-Dialog016:: ;p?;🌞; Marin, probably
+Dialog016:: ;P4;🌞; Marin, probably
     toki "kalama o pona tawa sina."
     toki "ona li wawa e pilin."
     toki "ona li awen ala awen lon lawa sina?"
@@ -859,9 +856,9 @@ Dialog01E:: ;P4;🌞; Crazy Tracy
     ;db "７ルピ－に　オマケしちゃうわあん"
     ;db "@"
 
-Dialog01F:: ;p?;🌞; Narrator
+Dialog01F:: ;P4;🌞; Narrator
     toki "jan [mu a loje ijo nena] li kama lon poka sina a!"
-    toki "o olin pona!@"
+    toki "suwi...@"
     toki_li_pini
     ;db "You got Marin!  "
     ;db "Is this your big"
@@ -1572,7 +1569,7 @@ Dialog04B:: ;P1;🌞; Fisherman, Link
     ;db "　　　　もちろん　けっこうです<ask>" ;of course! no thanks
 
 Dialog04C:: ;P1;🌞; Fisherman, Link
-    toki "a- mi ken ala ni. tawa pona."
+    toki "a-  mi ken ala ni. tawa pona."
     toki_li_pini
     ;db "Did I say that? "
     ;db "Forget it, okay?"
@@ -1995,7 +1992,6 @@ Dialog067:: ;P1;🌞; Map
     ;db "　　　　　　おばあさん@" ; grandma
 
 Dialog068:: ;P1;🌞; Map
-    ; DeepL says that やーな means "hey you" fwiw
     toki "    ma ko [jelo anpa noka anpa]@"
     toki_li_pini
     ;db "  Yarna Desert@"
@@ -2122,11 +2118,6 @@ Dialog075:: ;P1;🌞; Map
 
 Dialog076:: ;P1;🌞; Map
     ; according to jan GB, formerly known as Wakiiga Swap
-    ; DeepL translator mysteriously says:
-    ; goponga (Orectolobus goponga, extinct)
-    ; https://en.wikipedia.org/wiki/Orectolobus
-    ; it's found in Japan!
-
     toki "   ma ko [palisa o noka kala a]@"
     toki_li_pini
     ;db "  Goponga Swamp@"

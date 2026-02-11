@@ -490,17 +490,31 @@ Dialog0C5:: ;🌞; Owl
     ;db "ゆくみちの、てがかりとなろう。　"
     ;db "　　　ホッホウ！　ホッホウ！@"
 
-Dialog0C6:: ;🆖; Owl
-    db "Hoot!  The shape"
-    db "of the key shows"
-    db "a fish, swimming"
-    db "up a cascade of "
-    db "water!  Go now  "
-    db "to the mountain "
-    db "waterfall!  A   "
-    db "leap from the   "
-    db "top and you will"
-    db "reach your goal!@"
+Dialog0C6:: ;P4;🌞; Owl
+    toki "    mu sona"
+    toki "          mu sona"
+    toki "sina jo e ilo lupa. sijelo ilo li toki e kala ni:"
+    toki "ona li tawa sewi pi telo tawa."
+    toki "o tawa telo sama. telo li tawa tan sewi nena tawa anpa."
+    toki "sina kin o open lon sewi nena... mu sona  mu sona"
+    toki_li_pini
+    ;db "Hoot!  The shape"
+    ;db "of the key shows"
+    ;db "a fish, swimming"
+    ;db "up a cascade of "
+    ;db "water!  Go now  "
+    ;db "to the mountain "
+    ;db "waterfall!  A   "
+    ;db "leap from the   "
+    ;db "top and you will"
+    ;db "reach your goal!@"
+    ;db "　　　ホッホウ！　ホッホウ！　　"
+    ;db "そのカギは、たきを　のぼりゆく　"
+    ;db "さかなを、あらわしておるのう。　"
+    ;db "ホッ！やまのたきへむかうのぢゃ！"
+    ;db "みずが、のぼりつめたなら　　　　"
+    ;db "あとは、とびおりるだけぢゃて．．"
+    ;db "　　　ホッホウ！　ホッホウ！　@"
 
 Dialog0C7:: ;🆖; Owl
     db "Hoot!  There are"
@@ -792,10 +806,16 @@ Dialog0D9:: ;🌞; Owl
     ;db "　　　ホッホウ！　ホッホウ！　　"
     ;db "@"
 
-Dialog0DA:: ;🆖; Lanmola
-    db "Annoyance!  You "
-    db "are only getting"
-    db "in the way!@"
+Dialog0DA:: ;P4;🌞; Lanmola
+    toki "     mu jaki  mu jaki"
+    toki "    jan ike jaki  ike lukin jaki@"
+    toki_li_pini
+    ;db "Annoyance!  You "
+    ;db "are only getting"
+    ;db "in the way!@"
+    ;db "　　　ウゴゴ！ウゴゴ！　　　　　"
+    ;db "ジャマゲジッ！　メザワリゲジッ！"
+    ;db "@"
 
 Dialog0DB:: ;🆖; Mamu
     db "Ribbit!  Ribbit!"
@@ -986,7 +1006,7 @@ Dialog0EE:: ;🆖; Narrator
     db "lift a whale!@"
 
 Dialog0EF:: ;🌞; Narrator
-    toki "sina kama jo e kiwen kala a!"
+    toki "sina jo e kiwen kala a!"
     toki "sina jo e kiwen mute la, pona li kama a!"
     toki_li_pini
     ;db "You found a     "

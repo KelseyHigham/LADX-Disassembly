@@ -25,14 +25,14 @@ Dialog24E:: ;🆖; idk
     db "I wonder if it's"
     db "true...@"
 
-Dialog24F:: ;🆖; idk
+Dialog24F:: ;🆖; Rabbit, probably
     db "Aaaah, Little   "
     db "Marin... I want "
     db "her to come back"
     db "again...Her song"
     db "is the best...@"
 
-Dialog250:: ;🆖; idk
+Dialog250:: ;🆖; Rabbit
     db "I dreamed that  "
     db "I turned into a "
     db "carrot last     "
@@ -46,11 +46,15 @@ Dialog251:: ;🆖; Rabbit
     db "just a rabbit,  "
     db "so I don't know!@"
 
-Dialog252:: ;🆖; Rabbit, probably
-    db "Ahhh!  It's her!"
-    db "Little Marin!!@"
+Dialog252:: ;P4;🌞; All rabbits, when she arrives
+    toki "a! jan suwi [mu a loje ijo nena] o!@"
+    toki_li_pini
+    ;db "Ahhh!  It's her!"
+    ;db "Little Marin!!@"
+    ;db "あっ！　マリンちゃんだ！！　　　"
+    ;db "@"
 
-Dialog253:: ;🌞; Entrance to the Color Dungeon, when Marin is with you
+Dialog253:: ;P4;🌞; Entrance to the Color Dungeon, when Marin is with you
     toki "sina pilin monsuta la, sina kama e kulupu la, sina ken ala kama."
     toki "jan wan wawa taso li ken kama."
     toki_li_pini
@@ -227,7 +231,7 @@ Dialog260:: ;P4;🌞; Color Guard (Color Dungeon)
     ;db "　　　　アカ　　　アオ<ask>"
 
 Dialog261:: ;P4;🌞; Giant Buzz Blob (Color Dungeon)
-    toki "mu ko--- mi ante e sijelo tawa ni:"
+    toki "mu ko---  mi ante e sijelo tawa ni:"
     toki "palisa sina li ken ala pakala e mi a!"
     toki "mi pana e sona kepeken utala a!"
     toki_li_pini
@@ -565,7 +569,9 @@ Dialog279:: ;P4;🌞; Marin follower, anytime you dig
     ;db "どんどん　ほりまくって！！　　　"
     ;db "@"
 
-Dialog27A:: ;🌞; Marin follower, after she falls on Link in the well
+Dialog27A:: ;P4;🌞; Marin follower (unused)
+    ; Marin, after she falls on Link in the well. But the line isn't triggered on GBC:
+    ; https://lizbushouse.com/links-awakening-script-comparison-hanging-out-with-marin/
     toki "mu kon... ni li monsuta a!"
     toki_li_pini
     ;db "Whew!  What a   "
@@ -573,7 +579,7 @@ Dialog27A:: ;🌞; Marin follower, after she falls on Link in the well
     ;db "ふうっ．．　　びっくらこいた。@"
 
 Dialog27B:: ;P4;🌞; Marin follower, after she falls on Link in the well
-    toki "a--- pakala a! mi pakala."
+    toki "a---  pakala a! mi pakala."
     toki "jan [#####] o, sina pona ala pona?"
     toki_li_pini
     ;db "Ohh!  I'm sorry!"
