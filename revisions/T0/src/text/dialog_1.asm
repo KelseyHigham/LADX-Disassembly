@@ -31,6 +31,10 @@
 ; 478 🌞
 ; 202 🆖
 
+; Feb 10
+; 495 🌞
+; 185 🆖
+
 
 ; todo: add periods to the left sentences in "sina moli"
 
